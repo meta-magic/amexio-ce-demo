@@ -38,8 +38,6 @@ export class AppComponent implements OnInit {
   }
 
   onNodeClick(data: any) {
-
-    console.log('aksndklnad');
   }
 
 }
