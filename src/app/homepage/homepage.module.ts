@@ -8,7 +8,7 @@ import { AmexioWidgetModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEn
    AmexioMapModule } from 'amexio-ng-extensions';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DashboardOneComponent } from '../dashboardone/dashboardone.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 import { userProfileComponent } from '../userprofile/userprofile.component';
 import { AmexioChartD3Module } from 'amexio-chart-d3';
 import { HttpClient } from '@angular/common/http';
@@ -18,22 +18,20 @@ import { HttpClientModule } from '@angular/common/http';
  * Created by kedar on 11/2/19.
  */
 
-
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'dashboard-page', component: DashboardOneComponent },
-  { path: 'userprofile-page', component: userProfileComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'userprofile', component: userProfileComponent },
 ];
 
-
 @NgModule({
-  declarations: [HomeComponent, DashboardOneComponent, userProfileComponent],
-  imports: [CommonModule, AmexioChartD3Module,
+  declarations: [HomeComponent, DashboardComponent, userProfileComponent],
+  imports: [CommonModule,
     FormsModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule, HttpClientModule,
     RouterModule.forChild(routes),
   ],
+  bootstrap: [HomeComponent],
   providers: [],
-
 })
 export class HomeModule { }
