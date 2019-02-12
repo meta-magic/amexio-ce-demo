@@ -23,7 +23,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/amexio-chart-d3/lib/styles/amexio-chart-d3-components.css",
+              "node_modules/font-awesome/scss/font-awesome.scss",
+              "node_modules/amexio-ng-extensions/styles/mda/at-md-black.scss"
             ],
             "scripts": []
           },
@@ -72,7 +75,10 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "styles.css"
+              "styles.css",
+              "node_modules/amexio-chart-d3/lib/styles/amexio-chart-d3-components.css",
+              "node_modules/font-awesome/scss/font-awesome.scss",
+              "node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss"
             ],
             "scripts": [],
             "assets": [

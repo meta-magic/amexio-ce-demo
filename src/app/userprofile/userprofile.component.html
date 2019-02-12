@@ -1,0 +1,114 @@
+<amexio-row>
+    <amexio-column size="3">
+
+    </amexio-column>
+    <amexio-column size="9" style="padding-top:4%">
+
+        <amexio-row>
+            <amexio-column size="8">
+
+
+                <amexio-card-ce [style-type]="'narrower-header'">
+                    <amexio-header-ce [align]="'left'" [color]="'white'" [background]="'green'">
+                        <amexio-label [size]="'large'">
+                            Edit Profile
+                        </amexio-label>
+                        <br />
+                        <amexio-label [size]="'medium'">
+                            Complete your profie
+                        </amexio-label>
+                    </amexio-header-ce>
+
+                    <amexio-body-ce>
+
+
+                        <amexio-row>
+                            <amexio-column size="4">
+                                <amexio-text-input disabled="true" [field-label]="'Company'" name="company"
+                                    place-holder="Enter Company Name" has-label="false">
+                                </amexio-text-input>
+                            </amexio-column>
+                            <amexio-column size="4">
+                                <amexio-text-input [field-label]="'User Name'" name="user name" place-holder="Enter  User Name"
+                                    has-label="false">
+                                </amexio-text-input>
+
+
+                            </amexio-column>
+                            <amexio-column size="4">
+                                <amexio-email-input name="email" [field-label]="'Email Address'" [place-holder]="'Enter Email Id'"
+                                    [disabled]="false">
+                                </amexio-email-input>
+                            </amexio-column>
+                        </amexio-row>
+
+                        <amexio-row>
+                            <amexio-column size="6">
+                                <amexio-text-input enable-popover="true" field-label="First Name" name="name"
+                                    place-holder="Enter name" allow-blank="false" error-msg="Please enter last name"
+                                    min-length="1" min-error-msg="Minimum 1 char required" max-length="10"
+                                    max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                                </amexio-text-input>
+
+                            </amexio-column>
+
+                            <amexio-column size="6">
+
+                                    <amexio-text-input enable-popover="true" field-label="Last Name" name="name"
+                                    place-holder="Enter Last Name" allow-blank="false" error-msg="Please enter last name"
+                                    min-length="1" min-error-msg="Minimum 1 char required" max-length="10"
+                                    max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                                </amexio-text-input>
+                            </amexio-column>
+
+                        </amexio-row>
+
+                    </amexio-body-ce>
+
+
+                    <amexio-action-ce [align]="'end'" [border-top]="true">
+                        <amexio-button [label]="'Update Profile'" [type]="'green'" [tooltip]="'UPDATE PROFILE'">
+                        </amexio-button>
+                    </amexio-action-ce>
+                </amexio-card-ce>
+            </amexio-column>
+
+
+
+            <amexio-column size="4">
+                <amexio-card-ce align="center">
+                    <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'75px'" align="center">
+                        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'"
+                            path="assets/images/john.jpg"></amexio-image>
+                    </amexio-header-ce>
+                    <amexio-body-ce [align]="'start'">
+                        <br />
+                        <p>
+                            CEO/ C0-FOUNDER
+                        </p>
+                        <amexio-label [size]="'medium'">
+                            Alec Thompson
+                        </amexio-label>
+
+                        <p>
+                            Don't be scared of the truth because we need to restart the human foundation in truth And I
+                            love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                        </p>
+                    </amexio-body-ce>
+                    <amexio-action-ce [align]="'center'" [border-top]="true">
+                        <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus fa-2x'">
+                        </amexio-floating-button>
+                        <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook  fa-2x'">
+                        </amexio-floating-button>
+                        <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin  fa-2x'">
+                        </amexio-floating-button>
+                        <br />
+                    </amexio-action-ce>
+
+                </amexio-card-ce>
+            </amexio-column>
+
+        </amexio-row>
+
+    </amexio-column>
+</amexio-row>

@@ -1,0 +1,38 @@
+.full-page {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.main-class {
+    text-align: center;
+    width: 50%;
+}
+
+.horizontal-position {
+
+    text-align: -webkit-center;
+}
+.ok {
+    box-shadow: none !important;
+    background-color: transparent !important; 
+}
+
+.pic-style {
+
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%; 
+    z-index:-1;
+}
+
+.login {
+    text-align: center;
+    font-size: 2em;
+    font-weight: normal;
+}
