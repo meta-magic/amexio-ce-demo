@@ -1,0 +1,65 @@
+<amexio-row>
+
+    <amexio-column size="4">
+        <amexio-card-ce [align]="'center'">
+            <amexio-body-ce>
+                <b> Traffic Consumption </b>
+                <amexio-chart-line [data]="lineChartData">
+                    <amexio-chart-legend [position]="'top'">
+                    </amexio-chart-legend>
+                </amexio-chart-line>
+            </amexio-body-ce>
+        </amexio-card-ce>
+        <br />
+        <amexio-card-ce [align]="'center'">
+            <amexio-body-ce>
+
+            </amexio-body-ce>
+        </amexio-card-ce>
+    </amexio-column>
+    <amexio-column size="8">
+        <amexio-card-ce>
+            <amexio-header-ce>
+                <amexio-label size="medium-bold">Security Cameras</amexio-label>
+            </amexio-header-ce>
+
+            <div class="image-style">
+                <amexio-image [filter]="'normal'" [overlay-effect]="'slide-left'" [overlay-text]="'Market City #1'"
+                    [image-title]="'Camera #1'" [title-position]="'bottom-left'" path="assets/images/city1.jpg"></amexio-image>
+                <amexio-image [filter]="'normal'" [overlay-effect]="'slide-right'" [overlay-text]="'Golden City #2'"
+                    [image-title]="'Camera #2'" [title-position]="'bottom-left'" path="assets/images/city5.jpg"></amexio-image>
+            </div>
+
+            <div  class="image-style">
+                <amexio-image [filter]="'normal'" [overlay-effect]="'slide-left'" [overlay-text]="'Pink City #3'"
+                    [image-title]="'Camera #3'" [title-position]="'bottom-left'" path="assets/images/city7.jpeg"></amexio-image>
+                <amexio-image [filter]="'normal'" [overlay-effect]="'slide-left'" [overlay-text]="'Light City #4'"
+                    [image-title]="'Camera #4'" [title-position]="'bottom-left'" path="assets/images/city2.jpg"></amexio-image>
+
+                <amexio-image [filter]="'normal'" [overlay-effect]="'slide-right'" [overlay-text]="'Wonder City #5'"
+                    [image-title]="'Camera #5'" [title-position]="'bottom-left'" path="assets/images/city3.jpg"></amexio-image>
+
+                <amexio-image [filter]="'normal'" [overlay-effect]="'slide-right'" [overlay-text]="'Electronic City #6'"
+                    [image-title]="'Camera #6'" [title-position]="'bottom-left'" path="assets/images/city6.jpeg"></amexio-image>
+
+            </div>
+            <amexio-action-ce [align]="'start'">
+                   <span>
+                        <amexio-image [icon-class]="'fa fa-apple fa-2x'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                   </span>
+                    <amexio-column size="3">
+                        <amexio-image [icon-class]="'fa fa-btc fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+                    </amexio-column>
+                    <amexio-column size="3">
+
+                        <amexio-image [icon-class]="'fa fa-facebook-square fa-2x'" [tooltip]="'Fontawesome facebook'"></amexio-image>
+                    </amexio-column>
+                    <amexio-column size="3">
+                        <amexio-image [icon-class]="'fa fa-github fa-2x'" [tooltip]="'Fontawesome github'"></amexio-image>
+                    </amexio-column>
+
+            </amexio-action-ce>
+        </amexio-card-ce>
+
+    </amexio-column>
+</amexio-row>

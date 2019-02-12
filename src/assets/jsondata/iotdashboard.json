@@ -1,0 +1,40 @@
+{
+    "data": [
+      {
+        "path": "assets/images/city1.jpg",
+        "image-title": "Camera #1",
+        "overlay-effect": "slide-left",
+        "overlay-text": "Market City #1"
+      },
+      {
+        "path": "assets/images/city5.jpg",
+        "image-title": "Camera #2",
+        "overlay-effect": "slide-right",
+        "overlay-text": "Golden City #2"
+      },
+      {
+        "path": "assets/images/city7.jpeg",
+        "image-title": "Camera #3",
+        "overlay-effect": "slide-left",
+        "overlay-text": "Pink City #3"
+      },
+      {
+        "path": "assets/images/city2.jpg",
+        "image-title": "Camera #4",
+        "overlay-effect": "slide-left",
+        "overlay-text": "Light City #4"
+      },
+      {
+        "path": "assets/images/city3.jpg",
+        "image-title": "Camera #5",
+        "overlay-effect": "slide-right",
+        "overlay-text": "Wonder City #5"
+      },
+      {
+        "path": "assets/images/city6.jpeg",
+        "image-title": "Camera #6",
+        "overlay-effect": "slide-right",
+        "overlay-text": "Electronic City #6"
+      }
+    ]
+  }
