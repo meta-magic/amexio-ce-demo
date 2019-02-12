@@ -11,6 +11,7 @@ import { CREATIVE_DEMO_ROUTE } from "./app.routes";
 
 import { LoginPageComponent } from './loginpage/loginpage.component';
 import { RoutingService } from './routing-service';
+import { HttpClientModule } from '@angular/common/http';
 
 /**
  * Created by kedar on 11/2/19.
@@ -20,6 +21,7 @@ import { RoutingService } from './routing-service';
   imports: [BrowserModule,
     FormsModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule,
+    HttpClientModule,
     RouterModule.forRoot(CREATIVE_DEMO_ROUTE)],
 
   bootstrap: [AppComponent],

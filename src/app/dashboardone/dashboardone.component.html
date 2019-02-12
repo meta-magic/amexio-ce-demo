@@ -1,1 +1,66 @@
-okokokok
+<amexio-row>
+    <amexio-column size="6" [fit]="true">
+        <amexio-card-ce [style-type]="'narrower-header'">
+            <amexio-header-ce [background]="'#26c6da'">
+                <amexio-d3-chart-line [title]="'Popularity Of XYZ & PQR'" [data]="lineChartData">
+                </amexio-d3-chart-line>
+            </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-row>
+                    <amexio-column size="1">
+                        <amexio-image [icon-class]="'material-icons'" [mda]="'access_time'"></amexio-image>
+                    </amexio-column>
+                    <amexio-column size="11">
+                        <amexio-label size="medium">updated 4 minutes ago</amexio-label>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-body-ce>
+        </amexio-card-ce>
+    </amexio-column>
+    <amexio-column size="6" [fit]="true">
+        <amexio-card-ce>
+            <amexio-header-ce [background]="'#ef5350'">
+                <amexio-row>
+                    <amexio-column size="12">
+                        <amexio-d3-chart-bar [data]="cityPopulationData" [title]="'Population of Cities in India'" [label-color]="'white'" [label]="true" [legend]="false">
+                        </amexio-d3-chart-bar>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-row>
+                    <amexio-column size="1">
+                        <amexio-image [icon-class]="'material-icons'" [mda]="'access_time'"></amexio-image>
+                    </amexio-column>
+                    <amexio-column size="11">
+                        <amexio-label size="medium">updated 4 minutes ago</amexio-label>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-body-ce>
+        </amexio-card-ce>
+    </amexio-column>
+</amexio-row>
+<br /><br />
+<amexio-row>
+    <amexio-column [size]="3">
+        <amexio-card-ce>
+            <amexio-header-ce [height]="'50px'" [align]="'end'" [direction]="'column'">
+                <amexio-layout-columns [fit]="true" [orientation]="'horizontal'" [border]="false" [alignment]="'start'">
+                    <amexio-layout-item [fit]="true">
+                        <amexio-badge [width]="'70px'" [height]="'80px'" [absolute]="true" [background]="'linear-gradient(60deg,#66bb6a,#43a047)'" [color]="'white'" [top]="'-20px'" [left]="'10%'">
+                            <amexio-image [icon-class]="'material-icons'" [mda]="'trending_up'"></amexio-image>
+                        </amexio-badge>
+                    </amexio-layout-item>
+                    <amexio-layout-item style="text-align: end;">
+                        <amexio-label [size]="'medium'">Revenue</amexio-label><br />
+                        <amexio-label [size]="'medium-bold'">$15,245</amexio-label>
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+            </amexio-header-ce>
+            <amexio-body-ce></amexio-body-ce>
+            <amexio-action-ce [align]="'start'" [border-top]="true">
+                Last 24 Hours
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
+</amexio-row>
