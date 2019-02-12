@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/creative-demo-app",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -78,7 +78,7 @@
               "styles.css",
               "node_modules/amexio-chart-d3/lib/styles/amexio-chart-d3-components.css",
               "node_modules/font-awesome/scss/font-awesome.scss",
-              "node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss"
+              "node_modules/amexio-ng-extensions/styles/mda/at-md-black.scss"
             ],
             "scripts": [],
             "assets": [
