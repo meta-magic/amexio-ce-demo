@@ -15,13 +15,13 @@ export class HomeComponent implements OnInit {
   }
 
   dashboardOneClick() {
-    this.router.navigate(['home-page/dashboard-page']);
+    this.router.navigate(['home/dashboard']);
   }
   // timeLineClick() {
   //   this.router.navigate(['home-page/dashboard-page']);
   // }
   userProfileClick() {
-    this.router.navigate(['home-page/userprofile-page']);
+    this.router.navigate(['home/userprofile']);
   }
 
 

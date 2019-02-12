@@ -6,8 +6,6 @@
 
         <amexio-row>
             <amexio-column size="8">
-
-
                 <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header-ce [align]="'left'" [color]="'white'" [background]="'green'">
                         <amexio-label [size]="'large'">
@@ -20,8 +18,6 @@
                     </amexio-header-ce>
 
                     <amexio-body-ce>
-
-
                         <amexio-row>
                             <amexio-column size="4">
                                 <amexio-text-input disabled="true" [field-label]="'Company'" name="company"
@@ -41,7 +37,6 @@
                                 </amexio-email-input>
                             </amexio-column>
                         </amexio-row>
-
                         <amexio-row>
                             <amexio-column size="6">
                                 <amexio-text-input enable-popover="true" field-label="First Name" name="name"
@@ -53,27 +48,57 @@
                             </amexio-column>
 
                             <amexio-column size="6">
-
-                                    <amexio-text-input enable-popover="true" field-label="Last Name" name="name"
+                                <amexio-text-input enable-popover="true" field-label="Last Name" name="name"
                                     place-holder="Enter Last Name" allow-blank="false" error-msg="Please enter last name"
                                     min-length="1" min-error-msg="Minimum 1 char required" max-length="10"
                                     max-error-msg="Maximum 10 char allowed" icon-feedback="true">
                                 </amexio-text-input>
                             </amexio-column>
+                        </amexio-row>
+
+                        <amexio-row>
+                            <amexio-column size="12">
+                                <amexio-textarea-input [enable-popover]="true" [field-label]="'Address'" name="Address"
+                                    [place-holder]="'permanent Address'" [allow-blank]="false" [error-msg]="'Please enter Address'"
+                                    [icon-feedback]="true" [rows]="'2'" [columns]="'2'">
+                                </amexio-textarea-input>
+                            </amexio-column>
+                        </amexio-row>
+                        <amexio-row>
+                            <amexio-column size="4">
+                                <amexio-text-input disabled="false" [field-label]="'City'" name="city" place-holder="Enter city Name"
+                                    has-label="false">
+                                </amexio-text-input>
+                            </amexio-column>
+                            <amexio-column size="4">
+                                <amexio-text-input [field-label]="'Country'" name="country" place-holder="Enter country name"
+                                    has-label="false">
+                                </amexio-text-input>
+                            </amexio-column>
+                            <amexio-column size="4">
+                                <amexio-email-input name="email" [field-label]="'Postal Code'" [disabled]="false">
+                                </amexio-email-input>
+                            </amexio-column>
+                        </amexio-row>
+                        <amexio-row>
+                            <amexio-column size="12">
+
+                                About Me
+                                <label> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+                                <amexio-textarea-input [enable-popover]="true" [allow-blank]="true" [icon-feedback]="true"
+                                    [rows]="'2'" [columns]="'2'">
+                                </amexio-textarea-input>
+                            </amexio-column>
 
                         </amexio-row>
 
                     </amexio-body-ce>
-
-
-                    <amexio-action-ce [align]="'end'" [border-top]="true">
+                    <amexio-action-ce [align]="'end'" [border-top]="false">
                         <amexio-button [label]="'Update Profile'" [type]="'green'" [tooltip]="'UPDATE PROFILE'">
                         </amexio-button>
                     </amexio-action-ce>
                 </amexio-card-ce>
             </amexio-column>
-
-
 
             <amexio-column size="4">
                 <amexio-card-ce align="center">
