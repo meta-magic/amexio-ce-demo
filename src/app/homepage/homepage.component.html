@@ -1,5 +1,5 @@
 <amexio-row>
-    <amexio-column size="3"[fit]="false">
+    <amexio-column size="3" [fit]="false">
         <amexio-side-nav [width]="'320px'" [position]="'relative'">
             <amexio-sidenav-node>
                 <amexio-row>
@@ -14,12 +14,13 @@
                     </amexio-column>
                 </amexio-row>
             </amexio-sidenav-node>
-            <amexio-sidenav-node [enable-border]="true" [label]="'Dashboard'" [icon]="'fa fa-address-book-o'" (nodeClick)="dashboardOneClick()">
+            <amexio-sidenav-node [enable-border]="true" [label]="'Dashboard'" [icon]="'fa fa-th'" (nodeClick)="dashboardOneClick()">
             </amexio-sidenav-node>
-            <amexio-sidenav-node [enable-border]="true" [label]="'User Profile'" [icon]="'fa fa-address-book-o'" (nodeClick)="userProfileClick()">
+            <amexio-sidenav-node [enable-border]="true" [label]="'User Profile'" [icon]="'fa fa-user'" (nodeClick)="userProfileClick()">
             </amexio-sidenav-node>
-            <!-- <amexio-sidenav-node [enable-border]="true" [label]="'TimeLine'" [icon]="'fa fa-address-book-o'" (nodeClick)="timeLineClick()">
-            </amexio-sidenav-node> -->
+            <amexio-sidenav-node [enable-border]="true" [label]="'TimeLine'" [icon]="'fa fa-user'" (nodeClick)="userProfileClick()">
+                </amexio-sidenav-node>
+
 
         </amexio-side-nav>
 
@@ -35,4 +36,4 @@
     </amexio-column>
 
 
-</amexio-row> 
+</amexio-row>
