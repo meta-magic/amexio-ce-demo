@@ -1,17 +1,16 @@
-
 <div>
   <img src="assets/images/cycle.jpg" class="pic-style">
   <amexio-row>
     <!-- Nav bar  -->
 
-<amexio-nav [enable-side-nav-position]="false" class="ok" [title]="'Amexio'" [logo]="'assets/images/amexio-logo.png'">
-  
-   
-    <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-address-card'" [title]="'Register'">
-    </amexio-nav-item>
-    <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-hand-o-right'" [title]="'Login'">
+    <amexio-nav [enable-side-nav-position]="false" class="ok" [title]="'Amexio'" [logo]="'assets/images/amexio-logo.png'">
+
+
+      <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-address-card'" [title]="'Register'">
       </amexio-nav-item>
-</amexio-nav> 
+      <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-hand-o-right'" [title]="'Login'">
+      </amexio-nav-item>
+    </amexio-nav>
 
     <amexio-column size="12" style="padding-top:6%">
 
@@ -42,30 +41,31 @@
                               [max-error-msg]="'Maximum 32 char allowed'" [icon-feedback]="true">
                             </amexio-password-input>
                           </amexio-column>
-                            <amexio-checkbox  [field-label]="'Subscribe to newsletter'">
-                            </amexio-checkbox>
-                          
+                          <amexio-checkbox [field-label]="'Subscribe to newsletter'">
+                          </amexio-checkbox>
+
                         </amexio-row>
-                        <br> 
+                        <br>
                         <amexio-row>
                           <amexio-column size="12">
                             <amexio-button [label]="'Get Started'" [type]="'yellow'" [tooltip]="'Get Started'" [block]="true"
-                              (onClick)="onGetStartedClick()">
+                              (onClick)="onLoginBtnClick()">
                             </amexio-button>
                             <br>
                             <amexio-layout-columns [border]="false" [fit]="true" [alignment]="'space-between'"
                               [orientation]="'horizontal'">
                               <amexio-layout-item>
-                                  <amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'" [type]="'google'" >
-                                    </amexio-login-social>
+                                <amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'"
+                                  [type]="'google'">
+                                </amexio-login-social>
                               </amexio-layout-item>
                               <amexio-layout-item>
-                                  <amexio-login-social [style-type]="'circle'" [api-key]="'320512778592240'" [type]="'facebook'" >
-                                    </amexio-login-social>
+                                <amexio-login-social [style-type]="'circle'" [api-key]="'320512778592240'" [type]="'facebook'">
+                                </amexio-login-social>
                               </amexio-layout-item>
                               <amexio-layout-item>
-                                  <amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'" >
-                                    </amexio-login-social>
+                                <amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'">
+                                </amexio-login-social>
                               </amexio-layout-item>
                             </amexio-layout-columns>
 

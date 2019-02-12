@@ -3,7 +3,7 @@
  */
 import {Component, OnInit} from '@angular/core';
 @Component({
-  selector: 'dashboard-one',
+  selector: 'dashboard-page',
   templateUrl: './dashboardone.component.html',
 })
 export class DashboardOneComponent implements OnInit {

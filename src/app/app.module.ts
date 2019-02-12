@@ -9,18 +9,14 @@ import { AmexioWidgetModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEn
 import { RouterModule } from "@angular/router";
 import { CREATIVE_DEMO_ROUTE } from "./app.routes";
 
-import { DashboardOneComponent } from './dashboardone/dashboardone.component';
 import { LoginPageComponent } from './loginpage/loginpage.component';
 import { RoutingService } from './routing-service';
-import { userProfileComponent} from './userprofile/userprofile.component';
 
 /**
  * Created by kedar on 11/2/19.
  */
 @NgModule({
-  declarations: [AppComponent, LoginPageComponent, DashboardOneComponent, userProfileComponent],
-
-
+  declarations: [AppComponent, LoginPageComponent],
   imports: [BrowserModule,
     FormsModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule,

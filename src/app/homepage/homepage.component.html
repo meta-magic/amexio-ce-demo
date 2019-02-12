@@ -1,0 +1,38 @@
+<amexio-row>
+    <amexio-column size="3"[fit]="false">
+        <amexio-side-nav [width]="'320px'" [position]="'relative'">
+            <amexio-sidenav-node>
+                <amexio-row>
+                    <amexio-column size="5">
+                        <amexio-image [height]="'89.75px'" [width]="'89.75px'" [c-class]="'image-round'" path="assets/images/mark.jpg">
+                        </amexio-image>
+                    </amexio-column>
+                    <amexio-column size="7">
+                        <amexio-label> John Deo</amexio-label>
+                        <amexio-label> xyz@metamagic.in</amexio-label>
+                        <amexio-label> Software Engineer</amexio-label>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-sidenav-node>
+            <amexio-sidenav-node [enable-border]="true" [label]="'Dashboard'" [icon]="'fa fa-address-book-o'" (nodeClick)="dashboardOneClick()">
+            </amexio-sidenav-node>
+            <amexio-sidenav-node [enable-border]="true" [label]="'User Profile'" [icon]="'fa fa-address-book-o'" (nodeClick)="userProfileClick()">
+            </amexio-sidenav-node>
+            <!-- <amexio-sidenav-node [enable-border]="true" [label]="'TimeLine'" [icon]="'fa fa-address-book-o'" (nodeClick)="timeLineClick()">
+            </amexio-sidenav-node> -->
+
+        </amexio-side-nav>
+
+
+
+
+
+    </amexio-column>
+    <amexio-column size="9" style="padding-top:68px;" [fit]="false">
+
+        <router-outlet></router-outlet>
+
+    </amexio-column>
+
+
+</amexio-row> 

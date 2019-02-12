@@ -13,11 +13,10 @@ export class LoginPageComponent implements OnInit {
   constructor(private router: Router, public _routingService: RoutingService) {
   }
   ngOnInit() {
-    debugger;
     this._routingService.showSideNav = false;
   }
-  onGetStartedClick() {
-    this.router.navigate(['/dashboard-one-demo']);
+  onLoginBtnClick() {
+    this.router.navigate(['/home-page']);
   }
 }
 

@@ -8,8 +8,6 @@ import { RoutingService } from './routing-service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
-
   sideNavList: any; 
   constructor(public _routingService: RoutingService) {
     this.sideNavList = {
@@ -33,7 +31,6 @@ export class AppComponent implements OnInit {
     }
   }
   ngOnInit() { 
-    debugger;
     this._routingService.showSideNav = true;
   }
 
