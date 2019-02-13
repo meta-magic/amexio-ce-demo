@@ -34,11 +34,11 @@ export class DashboardComponent implements OnInit {
 
     this.lastThreeYearsData =
     [
-      ['Last 4 Years', 'Year', 'Revenue'],
-      ['2015', 150],
-      ['2016', 180 ],
-      ['2017', 100],
-      ['2018', 80],
+      ['Year',  'Revenue','color'],
+      ['2015', 150, 'hsla(0,0%,100%,.8)'],
+      ['2016', 180, 'hsla(0,0%,100%,.8)' ],
+      ['2017', 100, 'hsla(0,0%,100%,.8)'],
+      ['2018', 80, 'hsla(0,0%,100%,.8)'],
      
       
     ];

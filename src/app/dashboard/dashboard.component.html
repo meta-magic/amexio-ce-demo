@@ -1,76 +1,130 @@
 <amexio-row>
     <amexio-column size="4" [fit]="true">
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'#26c6da'" >
-                    <div style="display: block; width: 100%;">
-                <amexio-d3-chart-line [legend]="false" [yaxis-interval]="5" [data]="lineChartData">
-                </amexio-d3-chart-line>
+            <amexio-header-ce [background]="'linear-gradient(to right, #6DD5FA, #2980B9)'">
+                <div style="display: block; width: 100%;">
+                    <amexio-d3-chart-line [legend]="false" [yaxis-interval]="5" [data]="lineChartData">
+                    </amexio-d3-chart-line>
                 </div>
             </amexio-header-ce>
             <amexio-body-ce>
-               
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'vertical'">
+                    <amexio-layout-item [fit]="true">
+                        <amexio-label [size]="'medium-bold'">Daily Sales</amexio-label>
+                    </amexio-layout-item>
+                    <amexio-layout-item style="color: green;">
+                        <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
+                            <amexio-layout-item>
+                                <amexio-image [icon-class]="'fa fa-long-arrow-up'" [tooltip]="'UP'"></amexio-image>
+                            </amexio-layout-item>
+                            <amexio-layout-item>
+                                15% Increase in todays sales
+                            </amexio-layout-item>
+                        </amexio-layout-columns>
+                    </amexio-layout-item>
+                </amexio-layout-columns>
             </amexio-body-ce>
-            <amexio-action-ce>
-                Daily Sales
+            <amexio-action-ce [border-top]="true" [align]="'start'" [color]="'lightgrey'">
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
+                    <amexio-layout-item>
+                        <amexio-image [icon-class]="'fa fa-refresh'" [tooltip]="'UP'"></amexio-image>
+                    </amexio-layout-item>
+                    <amexio-layout-item>
+                        Updated 30 minutes ago
+                    </amexio-layout-item>
+                </amexio-layout-columns>
             </amexio-action-ce>
         </amexio-card-ce>
     </amexio-column>
     <amexio-column size="4" [fit]="true">
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'#ef5350'">
-                
-                            <div style="display: block; width: 100%;">
-                        <amexio-d3-chart-bar  [data]="cityPopulationData" [horizontal-scale]="false" [label-color]="'white'" [label]="false" [legend]="false">
-                        </amexio-d3-chart-bar>
-                        </div>
-                   
+            <amexio-header-ce [background]="'linear-gradient(to right, #ff9068, #ff4b1f)'">
+                <div style="display: block; width: 100%;">
+                    <amexio-d3-chart-bar [data]="cityPopulationData" [horizontal-scale]="false" [label-color]="'white'"
+                        [label]="false" [legend]="false">
+                    </amexio-d3-chart-bar>
+                </div>
             </amexio-header-ce>
             <amexio-body-ce>
-                
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'vertical'">
+                    <amexio-layout-item [fit]="true">
+                        <amexio-label [size]="'medium-bold'">Quarterwise Sales</amexio-label>
+                    </amexio-layout-item>
+                    <amexio-layout-item>
+                        Quarterwise Sales for 2018
+                    </amexio-layout-item>
+                </amexio-layout-columns>
             </amexio-body-ce>
-            <amexio-action-ce>
-                    Quater Sales
-                </amexio-action-ce>
+            <amexio-action-ce [border-top]="true" [align]="'start'" [color]="'lightgrey'">
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
+                    <amexio-layout-item>
+                        <amexio-image [icon-class]="'fa fa-refresh'" [tooltip]="'UP'"></amexio-image>
+                    </amexio-layout-item>
+                    <amexio-layout-item>
+                        Updated 10 minutes ago
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+            </amexio-action-ce>
         </amexio-card-ce>
     </amexio-column>
     <amexio-column size="4" [fit]="true">
-            <amexio-card-ce [style-type]="'narrower-header'">
-                <amexio-header-ce [background]="'linear-gradient(60deg,#66bb6a,#43a047)'" >
-                        <div style="display: block; width: 100%;">
-                    
-                    <amexio-d3-chart-bar  [data]="lastThreeYearsData" [horizontal-scale]="false" [label-color]="'white'" [label]="false" [legend]="false">
-                        </amexio-d3-chart-bar>
-                    </div>
-                </amexio-header-ce>
-                <amexio-body-ce>
-                   
-                </amexio-body-ce>
-                <amexio-action-ce>
-                        Last Four Years
-                </amexio-action-ce>
-            </amexio-card-ce>
-        </amexio-column>
+        <amexio-card-ce [style-type]="'narrower-header'">
+            <amexio-header-ce [background]="'linear-gradient(to right, #38ef7d, #11998e)'">
+                <div style="display: block; width: 100%;">
+                    <amexio-d3-chart-bar [data]="lastThreeYearsData" [horizontal-scale]="false" [label-color]="'white'"
+                        [label]="false" [legend]="false">
+                    </amexio-d3-chart-bar>
+                </div>
+            </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'vertical'">
+                    <amexio-layout-item [fit]="true">
+                        <amexio-label [size]="'medium-bold'">Last Four Year Sales</amexio-label>
+                    </amexio-layout-item>
+                    <amexio-layout-item>
+                        2015-2018
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+            </amexio-body-ce>
+            <amexio-action-ce [border-top]="true" [align]="'start'" [color]="'lightgrey'">
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
+                    <amexio-layout-item>
+                        <amexio-image [icon-class]="'fa fa-refresh'" [tooltip]="'UP'"></amexio-image>
+                    </amexio-layout-item>
+                    <amexio-layout-item>
+                        Updated 3 minutes ago
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
 </amexio-row>
 <br /><br />
 <amexio-row>
-    <amexio-column [size]="3">
-        <amexio-card-ce>
-            <amexio-header-ce [height]="'50px'" [align]="'end'" [direction]="'column'">
+    <amexio-column [size]=3 *ngFor="let item of [1,2,3,4]">
+        <amexio-card-ce [style-type]="'narrower-header'">
+            <amexio-header-ce [background]="'linear-gradient(to right, #38ef7d, #11998e)'" [align]="'end'" [direction]="'column'">
                 <amexio-layout-columns [fit]="true" [orientation]="'horizontal'" [border]="false" [alignment]="'start'">
                     <amexio-layout-item [fit]="true">
-                        <amexio-badge [width]="'70px'" [height]="'80px'" [absolute]="true" [background]="'linear-gradient(60deg,#66bb6a,#43a047)'" [color]="'white'" [top]="'-20px'" [left]="'10%'">
-                            <amexio-image [icon-class]="'material-icons'" [mda]="'trending_up'"></amexio-image>
-                        </amexio-badge>
+                        <amexio-image [icon-class]="'fa fa-line-chart fa-3x'"></amexio-image>
                     </amexio-layout-item>
-                    <amexio-layout-item style="text-align: end;">
-                        <amexio-label [size]="'medium'">Revenue</amexio-label><br />
-                        <amexio-label [size]="'medium-bold'">$15,245</amexio-label>
+                    <amexio-layout-item style="text-align: center;">
+                        <amexio-label [size]="'medium'">Sales Volume</amexio-label><br />
+                        <amexio-label [size]="'medium-bold'">$200 Million</amexio-label>
                     </amexio-layout-item>
                 </amexio-layout-columns>
             </amexio-header-ce>
             <amexio-body-ce></amexio-body-ce>
-            <amexio-action-ce [align]="'start'" [border-top]="true">
-                Last 24 Hours
+            <amexio-action-ce [height]="'50px'" [align]="'center'" [border-top]="true">
+                    
+                            <amexio-layout-columns style="color: green;" [border]="false" [fit]="true" [orientation]="'horizontal'">
+                                <amexio-layout-item>
+                                    <amexio-image [icon-class]="'fa fa-long-arrow-up'" [tooltip]="'UP'"></amexio-image>
+                                </amexio-layout-item>
+                                <amexio-layout-item>
+                                    15% Increase in todays sales
+                                </amexio-layout-item>
+                            </amexio-layout-columns>
             </amexio-action-ce>
         </amexio-card-ce>
     </amexio-column>
