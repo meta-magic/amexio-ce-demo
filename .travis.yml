@@ -24,6 +24,7 @@ before_script:
   - npm install --global gulp --save
 script: 
   - npm install
+  - npm i https://github.com/meta-magic/d3-charts-tar/blob/master/amexio-chart-d3.tgz?raw=true
   - npm i https://github.com/meta-magic/amexio-ios/blob/v5.5/amexio-ng-extensions.tgz?raw=true
   - ng build --prod
 after_success: 
