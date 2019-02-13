@@ -8,7 +8,8 @@ export class DashboardThreeComponent {
 
     lastTenMonthRevenue: any[];
     lastTenMonthUsers : any[];
-    
+    globalVists : any;
+
     constructor(){
         this.lastTenMonthRevenue = [
             [{ "datatype": "number", "label": 'Month' }, { "datatype": "number", "label": 'Revenue' },
@@ -43,6 +44,15 @@ export class DashboardThreeComponent {
             ['NOV', 30],
             ['DEC', 40],
             
-          ]
+          ];
+
+          this.globalVists=[
+            ['Country', 'Popularity'],
+            ['Germany', 200],
+            ['United States', 400],
+            ['France', 550],
+            ['RU', 350],
+            ['India',300]
+          ];
     }
 }

@@ -102,3 +102,19 @@
         </amexio-card-ce>
     </amexio-column>
 </amexio-row>
+
+<amexio-label [size]="'medium-bold'">Global Visits</amexio-label>
+<amexio-row>
+    <amexio-column [size]=12>
+        <amexio-card-ce>
+            <amexio-header-ce [border-bottom]="true">
+                <amexio-label [size]="'medium'">Region wise</amexio-label>
+            </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-map-geo-chart [width]="'100%'" [data]="globalVists">
+                </amexio-map-geo-chart>
+                
+            </amexio-body-ce>
+        </amexio-card-ce>
+    </amexio-column>
+</amexio-row>
