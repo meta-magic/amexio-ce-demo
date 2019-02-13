@@ -1,7 +1,7 @@
 <amexio-row>
     <amexio-column [size]=3>
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'#00d3ee'" [align]="'space-between'">
+            <amexio-header-ce [background]="'linear-gradient(to right, #6DD5FA, #2980B9)'" [align]="'space-between'">
                 <amexio-image [icon-class]="'fa fa-usd fa-3x'"></amexio-image>
                 <div style="text-align: center;">
                     <amexio-label [size]="'large-bold'">$34,245</amexio-label><br />
@@ -71,7 +71,7 @@
     </amexio-column>
     <amexio-column [size]=3>
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'#4caf50'" [align]="'space-between'">
+            <amexio-header-ce [background]="'linear-gradient(to right, #38ef7d, #11998e)'" [align]="'space-between'">
                 <amexio-image [icon-class]="'fa fa-users fa-3x'"></amexio-image>
                 <div style="text-align: center;">
                     <amexio-label [size]="'large-bold'">20k</amexio-label><br />
@@ -198,3 +198,44 @@
     </amexio-column>
 </amexio-row>
 <br /><br />
+
+
+<amexio-row>
+    <amexio-column size="12">
+        <amexio-card-ce [style-type]="'narrower-header'">
+            <amexio-header-ce [background]="'linear-gradient(to right, rgb(255, 144, 104), rgb(255, 75, 31))'">
+                <div>
+                    <amexio-label [size]="'medium'">
+                        Employee Stats
+                    </amexio-label> <br />
+                    <label>
+                        New employees on 15th Jan, 2019
+                    </label>
+                </div>
+            </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-datagrid [page-size]="10" [data-reader]="'data'" [http-url]="'assets/jsondata/datagrid.json'"
+                    [http-method]="'get'" [enable-data-filter]="false">
+                    <amexio-data-table-column [width]="'6'" [data-index]="'id'" [data-type]="'string'" [hidden]="false"
+                        [text]="'ID'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [width]="'9'" [data-index]="'name'" [data-type]="'string'"
+                        [hidden]="false" [text]="'Name'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [width]="'7'" [data-index]="'salary'" [data-type]="'number'"
+                        [hidden]="false" [text]="'Salary'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [width]="'9'" [data-index]="'country'" [data-type]="'string'"
+                        [hidden]="false" [text]="'Country'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [width]="'10'" [data-index]="'city'" [data-type]="'string'"
+                        [hidden]="false" [text]="'City'">
+                    </amexio-data-table-column>
+                </amexio-datagrid>
+            </amexio-body-ce>
+        </amexio-card-ce>
+    </amexio-column>
+
+
+
+</amexio-row>

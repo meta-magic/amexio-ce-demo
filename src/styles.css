@@ -17,3 +17,9 @@
 .card-container-ce {
     border-radius: 10px;
 }
+
+.datatable .datatable-header{
+    background-color: unset;
+    color: rgb(255, 75, 31);
+
+}
