@@ -1,4 +1,4 @@
-<amexio-nav  [enable-side-nav-position]="false" class="ok" [title]="'Creative'" [logo]="'assets/images/think.png'">
+<amexio-nav [enable-side-nav-position]="false" class="ok" [title]="'Creative'" [logo]="'assets/images/think.png'">
 
 
     <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-bell'">
@@ -10,32 +10,39 @@
 </amexio-nav>
 <amexio-row>
 
-    <amexio-column size="2" style="padding-top:65px;">
-        <amexio-side-nav [width]="'230px'" [height]="'92%'" [background]="'rgba(0,0,0,.7)'" [color]="'white'" [bg-image]="'assets/images/p.jpeg'">
-           <br/>
+    <amexio-column [size]="'2pt5'" style="padding-top:65px;">
+        <amexio-side-nav [height]="'92%'" [background]="'rgba(0,0,0,.7)'" [color]="'white'"
+            [bg-image]="'assets/images/p.jpeg'">
+            <br />
             <amexio-sidenav-node>
-                <amexio-row>
-                    <amexio-column size="6">
-                        <amexio-image [height]="'79.75px'" [width]="'79.75px'" [c-class]="'image-round'" path="assets/images/john.jpg">
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
+                    <amexio-layout-item>
+                        <amexio-image [height]="'79.75px'" [width]="'79.75px'" [c-class]="'image-round'"
+                            path="assets/images/john.jpg">
                         </amexio-image>
-                    </amexio-column>
-                    <amexio-column size="6">
-                        <amexio-label> John Deo</amexio-label>
-                        <p style="font-size:12px">"A satisfied customer is the best business strategy of all"</p>
-                    </amexio-column>
-                </amexio-row>
+                    </amexio-layout-item>
+                    <amexio-layout-item>
+                        <amexio-label [size]="medium-bold"> John Deo</amexio-label>
+                        <amexio-label> CEO/CO-Founder</amexio-label>
+
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+
             </amexio-sidenav-node>
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='dashboardMenu'  [label]="'Dashboard'" [icon]="'fa fa-th'" (nodeClick)="onDashboardClick($event)">
+            <br />
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='dashboardMenu' [label]="'Dashboard'"
+                [icon]="'fa fa-th'" (nodeClick)="onDashboardClick($event)">
             </amexio-sidenav-node>
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='pageMenu'  [label]="'Pages'" [icon]="'fa fa-address-card'" (nodeClick)="onPageClick($event)">
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='pageMenu' [label]="'Pages'"
+                [icon]="'fa fa-address-card'" (nodeClick)="onPageClick($event)">
             </amexio-sidenav-node>
-           
+
 
         </amexio-side-nav>
 
 
     </amexio-column>
-    <amexio-column size="10" style="padding-top:68px;" [fit]="false">
+    <amexio-column [size]="'9pt5'" style="padding-top:68px;" [fit]="false">
         <div *ngIf="isRouteLoading">
             <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'"
                 [color]="'black'" [size]="'7px'">
@@ -43,8 +50,8 @@
 
         </div>
         <div style="padding-top:1.8%">
-        <router-outlet></router-outlet>
-</div>
+            <router-outlet></router-outlet>
+        </div>
     </amexio-column>
 
 
