@@ -103,16 +103,12 @@
 <amexio-row>
     <amexio-column [size]=3 *ngFor="let item of [1,2,3,4]">
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(to right, #38ef7d, #11998e)'" [align]="'end'" [direction]="'column'">
-                <amexio-layout-columns [fit]="true" [orientation]="'horizontal'" [border]="false" [alignment]="'start'">
-                    <amexio-layout-item [fit]="true">
-                        <amexio-image [icon-class]="'fa fa-line-chart fa-3x'"></amexio-image>
-                    </amexio-layout-item>
-                    <amexio-layout-item style="text-align: center;">
-                        <amexio-label [size]="'medium'">Sales Volume</amexio-label><br />
-                        <amexio-label [size]="'medium-bold'">$200 Million</amexio-label>
-                    </amexio-layout-item>
-                </amexio-layout-columns>
+            <amexio-header-ce [background]="'linear-gradient(to right, #38ef7d, #11998e)'" [align]="'space-between'">
+                    <amexio-image [icon-class]="'fa fa-line-chart fa-3x'"></amexio-image>
+                    <div>
+                    <amexio-label [size]="'medium'">Revenue</amexio-label><br />
+                        <amexio-label [size]="'medium-bold'">$34,245</amexio-label>
+                    </div>              
             </amexio-header-ce>
             <amexio-body-ce></amexio-body-ce>
             <amexio-action-ce [height]="'50px'" [align]="'center'" [border-top]="true">
