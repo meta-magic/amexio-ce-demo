@@ -1,0 +1,104 @@
+<amexio-label [size]="'medium-bold'">Last Month Stats</amexio-label><br />
+<amexio-row>
+    <amexio-column [size]=3 [fit]="true">
+        <amexio-card-ce>
+            <amexio-header-ce [align]="'center'">
+                <div style="text-align: center;">
+                    <amexio-label [size]="'large-bold'">$13,245</amexio-label><br />
+                    <amexio-image style="color:#fbc658" [icon-class]="'fa fa-money fa-3x'"></amexio-image>
+                </div>
+            </amexio-header-ce>
+            <amexio-action-ce [align]="'center'" [border-top]="true">
+                Revenue
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
+
+    <amexio-column [size]=3 [fit]="true">
+        <amexio-card-ce>
+            <amexio-header-ce [align]="'center'">
+                <div style="text-align: center;">
+                    <amexio-label [size]="'large-bold'">105 PB</amexio-label><br />
+                    <amexio-image style="color:#6bd098;" [icon-class]="'fa fa-database fa-3x'"></amexio-image>
+                </div>
+            </amexio-header-ce>
+            <amexio-action-ce [align]="'center'" [border-top]="true">
+                Data indexed
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
+
+    <amexio-column [size]=3 [fit]="true">
+        <amexio-card-ce>
+            <amexio-header-ce [align]="'center'">
+                <div style="text-align: center;">
+                    <amexio-label [size]="'large-bold'">75</amexio-label><br />
+                    <amexio-image style="color:red;" [icon-class]="'fa fa fa-bug fa-3x'"></amexio-image>
+                </div>
+            </amexio-header-ce>
+            <amexio-action-ce [align]="'center'" [border-top]="true">
+                Issue Fixed
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
+
+    <amexio-column [size]=3 [fit]="true">
+        <amexio-card-ce>
+            <amexio-header-ce [align]="'center'">
+                <div style="text-align: center;">
+                    <amexio-label [size]="'large-bold'">20k</amexio-label><br />
+                    <amexio-image style="color:steelblue;" [icon-class]="'fa fa-users fa-3x'"></amexio-image>
+                </div>
+            </amexio-header-ce>
+            <amexio-action-ce [align]="'center'" [border-top]="true">
+                New User added
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
+
+</amexio-row>
+<br />
+<amexio-label [size]="'medium-bold'">Financial Statistics</amexio-label>
+
+<amexio-row>
+
+    <amexio-column [size]=6 [fit]="true">
+        <amexio-card-ce>
+            <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
+                <amexio-label [size]="'medium'">$1,60,000K</amexio-label>
+                <amexio-badge [background]="'green'" [color]="'white'">
+                    <amexio-label size="small">+18%</amexio-label>
+                </amexio-badge>
+            </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5"
+                    [data]="lastTenMonth">
+                </amexio-d3-chart-line>
+            </amexio-body-ce>
+            <amexio-action-ce [align]="'center'" [height]="'50px'" [align]="'center'" [color]="'grey'"
+                [border-top]="true">
+                Total revenue in last 12 months
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
+
+    <amexio-column [size]=6 [fit]="true">
+        <amexio-card-ce>
+            <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
+                <amexio-label [size]="'medium'">$1,60,000K</amexio-label>
+                <amexio-badge [background]="'green'" [color]="'white'">
+                    <amexio-label size="small">+18%</amexio-label>
+                </amexio-badge>
+            </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5"
+                    [data]="lastTenMonth">
+                </amexio-d3-chart-line>
+            </amexio-body-ce>
+            <amexio-action-ce [align]="'center'" [height]="'50px'" [align]="'center'" [color]="'grey'"
+                [border-top]="true">
+                Total revenue in last 12 months
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
+</amexio-row>

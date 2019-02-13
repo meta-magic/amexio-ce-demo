@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
         "text": "Dashboard Three",
         "icon": "fa fa-table",
         "mdaIcon": "link",
-        "link": "home/iot-dashboard"
+        "link": "home/dashboardthree"
       }
 
     ];

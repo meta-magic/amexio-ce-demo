@@ -14,6 +14,7 @@ import { userProfileComponent } from '../userprofile/userprofile.component';
 import { AmexioChartD3Module } from 'amexio-chart-d3';
 import { HttpClientModule } from '@angular/common/http';
 import { IOTDashboardComponent } from '../iotdashboard/iotdashboard.component';
+import { DashboardThreeComponent } from '../dashboardthree/dashboardthree.component';
 
 /**
  * Created by kedar on 11/2/19.
@@ -25,6 +26,7 @@ const routes: Routes = [
     children: [
 
       { path: 'dashboard', component: DashboardComponent },
+      { path: 'dashboardthree', component: DashboardThreeComponent },
       { path: 'userprofile', component: userProfileComponent },
       { path: 'iot-dashboard', component: IOTDashboardComponent },
     ]
@@ -32,7 +34,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, DashboardComponent, userProfileComponent, IOTDashboardComponent],
+  declarations: [HomeComponent, DashboardComponent, userProfileComponent, IOTDashboardComponent, DashboardThreeComponent],
   imports: [CommonModule,
     FormsModule, AmexioChartD3Module, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule, HttpClientModule,

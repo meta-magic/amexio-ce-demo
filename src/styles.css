@@ -4,3 +4,16 @@
     margin-top: -25px;
     width: 50%;
 }
+
+.card-container-narrower-header amexio-header-ce {
+    margin-top: -20px;
+    border-radius : 10px;
+}
+ 
+.card-container-header{
+    border-radius: 10px;
+}
+
+.card-container-ce {
+    border-radius: 10px;
+}
