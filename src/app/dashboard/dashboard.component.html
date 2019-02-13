@@ -10,7 +10,7 @@
             <amexio-body-ce>
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'vertical'">
                     <amexio-layout-item [fit]="true">
-                        <amexio-label [size]="'medium-bold'">Daily Sales</amexio-label>
+                        <amexio-label [size]="'medium-bold'">Daily Traffic</amexio-label>
                     </amexio-layout-item>
                     <amexio-layout-item style="color: green;">
                         <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
@@ -18,13 +18,13 @@
                                 <amexio-image [icon-class]="'fa fa-long-arrow-up'" [tooltip]="'UP'"></amexio-image>
                             </amexio-layout-item>
                             <amexio-layout-item>
-                                15% Increase in todays sales
+                                15% Increase in todays traffic
                             </amexio-layout-item>
                         </amexio-layout-columns>
                     </amexio-layout-item>
                 </amexio-layout-columns>
             </amexio-body-ce>
-            <amexio-action-ce [border-top]="true" [align]="'start'" [color]="'lightgrey'">
+            <amexio-action-ce [border-top]="true" [align]="'start'" [color]="'grey'">
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
                     <amexio-layout-item>
                         <amexio-image [icon-class]="'fa fa-refresh'" [tooltip]="'UP'"></amexio-image>
@@ -48,14 +48,14 @@
             <amexio-body-ce>
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'vertical'">
                     <amexio-layout-item [fit]="true">
-                        <amexio-label [size]="'medium-bold'">Quarterwise Sales</amexio-label>
+                        <amexio-label [size]="'medium-bold'">Quarterwise Traffic</amexio-label>
                     </amexio-layout-item>
                     <amexio-layout-item>
-                        Quarterwise Sales for 2018
+                        Quarterwise Traffic for 2018
                     </amexio-layout-item>
                 </amexio-layout-columns>
             </amexio-body-ce>
-            <amexio-action-ce [border-top]="true" [align]="'start'" [color]="'lightgrey'">
+            <amexio-action-ce [border-top]="true" [align]="'start'" [color]="'grey'">
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
                     <amexio-layout-item>
                         <amexio-image [icon-class]="'fa fa-refresh'" [tooltip]="'UP'"></amexio-image>
@@ -79,14 +79,14 @@
             <amexio-body-ce>
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'vertical'">
                     <amexio-layout-item [fit]="true">
-                        <amexio-label [size]="'medium-bold'">Last Four Year Sales</amexio-label>
+                        <amexio-label [size]="'medium-bold'">Last Four Weeks Traffic</amexio-label>
                     </amexio-layout-item>
                     <amexio-layout-item>
-                        2015-2018
+                        Jan 2018
                     </amexio-layout-item>
                 </amexio-layout-columns>
             </amexio-body-ce>
-            <amexio-action-ce [border-top]="true" [align]="'start'" [color]="'lightgrey'">
+            <amexio-action-ce [border-top]="true" [align]="'start'" [color]="'grey'">
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
                     <amexio-layout-item>
                         <amexio-image [icon-class]="'fa fa-refresh'" [tooltip]="'UP'"></amexio-image>
@@ -105,21 +105,21 @@
     <amexio-column [size]=3>
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(to right, #38ef7d, #11998e)'" [align]="'space-between'">
-                <amexio-image [icon-class]="'fa fa-home fa-3x'"></amexio-image>
-                <div>
-                    <amexio-label [size]="'medium'">Revenue</amexio-label><br />
-                    <amexio-label [size]="'medium-bold'">$34,245</amexio-label>
+                <amexio-image [icon-class]="'fa fa-usd fa-3x'"></amexio-image>
+                <div style="text-align: center;">
+                    <amexio-label [size]="'large-bold'">$34,245</amexio-label><br />
+                    <amexio-label [size]="'medium'">Revenue</amexio-label>
                 </div>
             </amexio-header-ce>
             <amexio-body-ce></amexio-body-ce>
-            <amexio-action-ce [height]="'50px'" [align]="'center'" [color]="'lightgrey'" [border-top]="true">
+            <amexio-action-ce [height]="'50px'" [align]="'center'" [color]="'grey'" [border-top]="true">
 
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
                     <amexio-layout-item>
                         <amexio-image [icon-class]="'fa fa-calendar-o'" [tooltip]="'UP'"></amexio-image>
                     </amexio-layout-item>
                     <amexio-layout-item>
-                        Last 24 Hours
+                        Last Month
                     </amexio-layout-item>
                 </amexio-layout-columns>
             </amexio-action-ce>
@@ -128,10 +128,10 @@
     <amexio-column [size]=3>
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(to left, #f46b45, #eea849)'" [align]="'space-between'">
-                <amexio-image [icon-class]="'fa fa-file-o fa-3x'"></amexio-image>
-                <div>
-                    <amexio-label [size]="'medium'">Used Space</amexio-label><br />
-                    <amexio-label [size]="'medium-bold'">49/50 GB</amexio-label>
+                <amexio-image [icon-class]="'fa fa-database fa-3x'"></amexio-image>
+                <div style="text-align: center;">
+                    <amexio-label [size]="'large-bold'">105 PB</amexio-label><br />
+                    <amexio-label [size]="'medium'">Data Indexed</amexio-label>
                 </div>
             </amexio-header-ce>
             <amexio-body-ce></amexio-body-ce>
@@ -152,21 +152,20 @@
     <amexio-column [size]=3>
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(to right, #cb2d3e, #ef473a)'" [align]="'space-between'">
-                <amexio-image [icon-class]="'fa fa-info-circle fa-3x'"></amexio-image>
+                <amexio-image [icon-class]="'fa fa fa-bug fa-3x'"></amexio-image>
                 <div>
-                    <amexio-label [size]="'medium'">Fixed Issues</amexio-label><br />
-                    <amexio-label [size]="'medium-bold'">75</amexio-label>
+                    <amexio-label [size]="'large-bold'">75</amexio-label><br />
+                    <amexio-label [size]="'medium'">Open Issues</amexio-label>
                 </div>
             </amexio-header-ce>
             <amexio-body-ce></amexio-body-ce>
-            <amexio-action-ce [height]="'50px'" [color]="'lightgrey'" [align]="'center'" [border-top]="true">
+            <amexio-action-ce [height]="'50px'" [color]="'grey'" [align]="'center'" [border-top]="true">
 
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
                     <amexio-layout-item>
                         <amexio-image [icon-class]="'fa fa-link'" [tooltip]="'UP'"></amexio-image>
                     </amexio-layout-item>
                     <amexio-layout-item>
-
                         Tracked from Github
                     </amexio-layout-item>
                 </amexio-layout-columns>
@@ -176,21 +175,21 @@
     <amexio-column [size]=3>
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(to right, #2193b0, #6dd5ed)'" [align]="'space-between'">
-                <amexio-image [icon-class]="'fa fa-twitter fa-3x'"></amexio-image>
-                <div>
-                    <amexio-label [size]="'medium'">Followers</amexio-label><br />
-                    <amexio-label [size]="'medium-bold'">+245</amexio-label>
+                <amexio-image [icon-class]="'fa fa-users fa-3x'"></amexio-image>
+                <div style="text-align: center;">
+                    <amexio-label [size]="'large-bold'">20k</amexio-label><br />
+                    <amexio-label [size]="'medium'">New User</amexio-label>
                 </div>
             </amexio-header-ce>
             <amexio-body-ce></amexio-body-ce>
-            <amexio-action-ce [height]="'50px'" [color]="'lightgrey'" [align]="'center'" [border-top]="true">
+            <amexio-action-ce [height]="'50px'" [color]="'grey'" [align]="'center'" [border-top]="true">
 
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
                     <amexio-layout-item>
-                        <amexio-image [icon-class]="'fa fa-repeat'" [tooltip]="'UP'"></amexio-image>
+                        <amexio-image [icon-class]="'fa fa-calendar-o'"  [tooltip]="'UP'"></amexio-image>
                     </amexio-layout-item>
                     <amexio-layout-item>
-                            Just Updated
+                            Last Month
                     </amexio-layout-item>
                 </amexio-layout-columns>
             </amexio-action-ce>
