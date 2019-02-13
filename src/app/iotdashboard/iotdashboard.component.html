@@ -24,10 +24,21 @@
             </amexio-header-ce>
 
             <div class="image-style">
-                <amexio-image [filter]="'normal'" [overlay-effect]="'slide-left'" [overlay-text]="'Market City #1'"
-                    [image-title]="'Camera #1'" [title-position]="'bottom-left'" path="assets/images/city1.jpg"></amexio-image>
-                <amexio-image [filter]="'normal'" [overlay-effect]="'slide-right'" [overlay-text]="'Golden City #2'"
-                    [image-title]="'Camera #2'" [title-position]="'bottom-left'" path="assets/images/city5.jpg"></amexio-image>
+            <amexio-layout-columns   [fit]="true" [orientation]="'horizontal'" [border]="false" [alignment]="'start'">
+                <amexio-layout-item>
+                    <amexio-image [filter]="'normal'" [overlay-effect]="'slide-left'" [overlay-text]="'Market City #1'"
+                        [image-title]="'Camera #1'" [title-position]="'bottom-left'" path="assets/images/city1.jpg"></amexio-image>
+                </amexio-layout-item>
+            </amexio-layout-columns>
+            <amexio-layout-columns [fit]="true" [orientation]="'horizontal'" [border]="false" [alignment]="'end'">
+                <amexio-layout-item>
+                    <amexio-image [filter]="'normal'" [overlay-effect]="'slide-right'" [overlay-text]="'Golden City #2'"
+                        [image-title]="'Camera #2'" [title-position]="'bottom-left'" path="assets/images/city5.jpg"></amexio-image>
+                </amexio-layout-item>
+            </amexio-layout-columns>
+
+
+
             </div>
 
             <div  class="image-style">
@@ -45,19 +56,19 @@
 
             </div>
             <amexio-action-ce [align]="'start'">
-                   <span>
-                        <amexio-image [icon-class]="'fa fa-apple fa-2x'" [tooltip]="'Fontawesome apple'"></amexio-image>
-                   </span>
                     <amexio-column size="3">
-                        <amexio-image [icon-class]="'fa fa-btc fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+                    <amexio-image [icon-class]="'fa fa-pause fa-2x'" [tooltip]="'pause'"></amexio-image>
                     </amexio-column>
                     <amexio-column size="3">
+                    <amexio-image [icon-class]="'fa fa-list fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+                </amexio-column>
+                <amexio-column size="3">
 
-                        <amexio-image [icon-class]="'fa fa-facebook-square fa-2x'" [tooltip]="'Fontawesome facebook'"></amexio-image>
-                    </amexio-column>
-                    <amexio-column size="3">
-                        <amexio-image [icon-class]="'fa fa-github fa-2x'" [tooltip]="'Fontawesome github'"></amexio-image>
-                    </amexio-column>
+                    <amexio-image [icon-class]="'fa fa-search fa-2x'" [tooltip]="'Fontawesome facebook'"></amexio-image>
+                </amexio-column>
+                <amexio-column size="3">
+                    <amexio-image [icon-class]="'fa fa-cog fa-2x'" [tooltip]="'Fontawesome github'"></amexio-image>
+                </amexio-column>
 
             </amexio-action-ce>
         </amexio-card-ce>
