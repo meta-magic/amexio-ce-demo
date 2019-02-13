@@ -58,7 +58,7 @@
 
 </amexio-row>
 <br />
-<amexio-label [size]="'medium-bold'">Financial Statistics</amexio-label>
+<amexio-label [size]="'medium-bold'">Statistics</amexio-label>
 
 <amexio-row>
 
@@ -72,7 +72,7 @@
             </amexio-header-ce>
             <amexio-body-ce>
                 <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5"
-                    [data]="lastTenMonth">
+                    [data]="lastTenMonthRevenue">
                 </amexio-d3-chart-line>
             </amexio-body-ce>
             <amexio-action-ce [align]="'center'" [height]="'50px'" [align]="'center'" [color]="'grey'"
@@ -85,19 +85,19 @@
     <amexio-column [size]=6 [fit]="true">
         <amexio-card-ce>
             <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
-                <amexio-label [size]="'medium'">$1,60,000K</amexio-label>
-                <amexio-badge [background]="'green'" [color]="'white'">
-                    <amexio-label size="small">+18%</amexio-label>
+                <amexio-label [size]="'medium'">1.8 Million New User</amexio-label>
+                <amexio-badge [background]="'red'" [color]="'white'">
+                    <amexio-label size="small">-8%</amexio-label>
                 </amexio-badge>
             </amexio-header-ce>
             <amexio-body-ce>
-                <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5"
-                    [data]="lastTenMonth">
-                </amexio-d3-chart-line>
+                <amexio-d3-chart-bar [legend]="false" [label-color]="'white'" [yaxis-interval]="5"
+                    [data]="lastTenMonthUsers">
+                </amexio-d3-chart-bar>
             </amexio-body-ce>
             <amexio-action-ce [align]="'center'" [height]="'50px'" [align]="'center'" [color]="'grey'"
                 [border-top]="true">
-                Total revenue in last 12 months
+                Total New User In Last 12 Months
             </amexio-action-ce>
         </amexio-card-ce>
     </amexio-column>
