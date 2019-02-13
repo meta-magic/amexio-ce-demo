@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
   lineChartData: any;
+  lastThreeYearsData: any;
   cityPopulationData: any;
   constructor() {
     this.lineChartData = [
@@ -21,16 +22,26 @@ export class DashboardComponent implements OnInit {
       ['SAT', 20],
       ['SUN', 40],
       
-    ]
+    ];
 
     this.cityPopulationData = [
-      ['city', 'population'],
-      ['Mumbai', 94423],
-      ['Kochi', 69932],
-      ['Chennai', 46467],
-      ['Pune', 31244],
-    ]
-;
+      ['Quaters', 'population', 'color'],
+      ['Q1', 383 , 'hsla(0,0%,100%,.8)'],
+      ['Q2', 943, 'hsla(0,0%,100%,.8)'],
+      ['Q3', 692,'hsla(0,0%,100%,.8)'],
+      ['Q4', 467, 'hsla(0,0%,100%,.8)']
+    ];
+
+    this.lastThreeYearsData =
+    [
+      ['Last 4 Years', 'Year', 'Revenue'],
+      ['2015', 150],
+      ['2016', 180 ],
+      ['2017', 100],
+      ['2018', 80],
+     
+      
+    ];
   }
   ngOnInit() {
   }
