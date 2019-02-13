@@ -1,0 +1,18 @@
+{
+    "data": [{
+            "text": "Home",
+            "link": "getting-started",
+            "icon": "fa fa-home fa-fw"
+        },
+        {
+            "text": "Amexio Colors",
+            "link": "amexio-colors",
+            "icon": "fa fa-snowflake-o fa-fw"
+        },
+        {
+            "text": "Amexio D3 Charts",
+            "link": "d3-charts",
+            "icon": "fa fa-openid fa-fw"
+        }
+    ]
+}
