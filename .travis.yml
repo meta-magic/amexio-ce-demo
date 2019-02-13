@@ -30,6 +30,6 @@ after_success:
   - codecov
   - git add docs
   - git commit -m "[skip travis]  docs-updated"
-  - git push  "https://deepali-arvind:${TOKEN_REPO}@github.com/meta-magic/amexio-ce-demo.git" HEAD:master
+  - git push  "https://deepali-arvind:${GITHUB_TOKEN}@github.com/meta-magic/amexio-ce-demo.git" HEAD:master
 cache:
   yarn: true
