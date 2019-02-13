@@ -1,18 +1,17 @@
 <div>
-  <img src="assets/images/cycle.jpg" class="pic-style">
+  <img src="assets/images/backPic.jpeg" class="pic-style">
   <amexio-row>
     <!-- Nav bar  -->
 
-    <amexio-nav [enable-side-nav-position]="false" class="ok" [title]="'Amexio'" [logo]="'assets/images/amexio-logo.png'">
-
+    <amexio-nav [enable-side-nav-position]="true" transparent="true" [enable-side-nav-position]="false" class="ok" [title]="'Creative'" [logo]="'assets/images/think.png'">
 
       <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-address-card'" [title]="'Register'">
       </amexio-nav-item>
-      <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-hand-o-right'" [title]="'Login'">
+      <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-sign-in'" [title]="'Login'">
       </amexio-nav-item>
-    </amexio-nav>
+    </amexio-nav> 
 
-    <amexio-column size="12" style="padding-top:6%">
+    <amexio-column size="12" style="padding-top:10%">
 
       <amexio-layout-columns class="horizontal-position" [orientation]="'horizontal'" [border]="false" [alignment]="'center'">
         <amexio-layout-item>
@@ -64,7 +63,7 @@
                                 </amexio-login-social>
                               </amexio-layout-item>
                               <amexio-layout-item>
-                                <amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'">
+                                <amexio-login-social  [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'">
                                 </amexio-login-social>
                               </amexio-layout-item>
                             </amexio-layout-columns>
@@ -85,8 +84,6 @@
           </amexio-layout-columns>
         </amexio-layout-item>
       </amexio-layout-columns>
-
-
 
     </amexio-column>
   </amexio-row>

@@ -1,19 +1,24 @@
+<br/>
+<br/>
+
 <amexio-row>
 
-    <amexio-column size="12" style="padding-top:4%">
+    <amexio-column size="12" >
 
         <amexio-row>
             <amexio-column size="8">
                 <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header-ce [align]="'left'" [color]="'white'" [background]="'#43a047'">
+                        <div>
                         <amexio-label [size]="'medium'">
                             Edit Profile
-                        </amexio-label>
+                        </amexio-label> <br/>
                         <label>
                             Complete your profile
                         </label>
+                    </div>
                     </amexio-header-ce>
-
+<br/>
                     <amexio-body-ce>
                         <amexio-row>
                             <amexio-column size="4">
@@ -91,7 +96,7 @@
 
                     </amexio-body-ce>
                     <amexio-action-ce [align]="'end'" [border-top]="false">
-                        <amexio-button [label]="'Update Profile'" [type]="'green'" [tooltip]="'UPDATE PROFILE'">
+                        <amexio-button  [label]="'Update Profile'" [icon]="'fa fa-save'" [type]="'green'" [tooltip]="'UPDATE PROFILE'">
                         </amexio-button>
                     </amexio-action-ce>
                     <br />
@@ -100,8 +105,8 @@
 
             <amexio-column size="4">
                 <amexio-card-ce align="center">
-                    <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'75px'" align="center">
-                        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'"
+                    <amexio-header-ce   [height]="'75px'" align="center">
+                        <amexio-image [c-class]="'image-top-center'" [filter]="'round'"
                             path="assets/images/john.jpg"></amexio-image>
                     </amexio-header-ce>
                     <amexio-body-ce [align]="'start'">

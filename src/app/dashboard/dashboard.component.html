@@ -1,9 +1,11 @@
 <amexio-row>
     <amexio-column size="6" [fit]="true">
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'#26c6da'">
-                <amexio-d3-chart-line [title]="'Popularity Of XYZ & PQR'" [data]="lineChartData">
+            <amexio-header-ce [background]="'#26c6da'" >
+                    <div style="display: block; width: 100%;">
+                <amexio-d3-chart-line [legend]="false" [yaxis-interval]="10" [data]="lineChartData">
                 </amexio-d3-chart-line>
+                </div>
             </amexio-header-ce>
             <amexio-body-ce>
                 <amexio-row>

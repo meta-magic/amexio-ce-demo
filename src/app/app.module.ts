@@ -22,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule,
     HttpClientModule,
-    RouterModule.forRoot(CREATIVE_DEMO_ROUTE)],
+    RouterModule.forRoot(CREATIVE_DEMO_ROUTE, {useHash: true})],
 
   bootstrap: [AppComponent],
   providers: [RoutingService],

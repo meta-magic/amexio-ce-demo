@@ -1,4 +1,4 @@
-.full-page {
+/* .full-page {
     position: absolute;
     z-index: 1;
     height: 100%;
@@ -6,7 +6,7 @@
     display: block;
     top: 0;
     left: 0;
-}
+} */
 .main-class {
     text-align: center;
     width: 50%;
