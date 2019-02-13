@@ -3,7 +3,7 @@
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(to right, #6DD5FA, #2980B9)'">
                 <div style="display: block; width: 100%;">
-                    <amexio-d3-chart-line [legend]="false" [yaxis-interval]="5" [data]="lineChartData">
+                    <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5" [data]="lineChartData">
                     </amexio-d3-chart-line>
                 </div>
             </amexio-header-ce>
@@ -101,27 +101,100 @@
 </amexio-row>
 <br /><br />
 <amexio-row>
-    <amexio-column [size]=3 *ngFor="let item of [1,2,3,4]">
+
+    <amexio-column [size]=3>
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(to right, #38ef7d, #11998e)'" [align]="'space-between'">
-                    <amexio-image [icon-class]="'fa fa-line-chart fa-3x'"></amexio-image>
-                    <div>
+                <amexio-image [icon-class]="'fa fa-home fa-3x'"></amexio-image>
+                <div>
                     <amexio-label [size]="'medium'">Revenue</amexio-label><br />
-                        <amexio-label [size]="'medium-bold'">$34,245</amexio-label>
-                    </div>              
+                    <amexio-label [size]="'medium-bold'">$34,245</amexio-label>
+                </div>
             </amexio-header-ce>
             <amexio-body-ce></amexio-body-ce>
-            <amexio-action-ce [height]="'50px'" [align]="'center'" [border-top]="true">
-                    
-                            <amexio-layout-columns style="color: green;" [border]="false" [fit]="true" [orientation]="'horizontal'">
-                                <amexio-layout-item>
-                                    <amexio-image [icon-class]="'fa fa-long-arrow-up'" [tooltip]="'UP'"></amexio-image>
-                                </amexio-layout-item>
-                                <amexio-layout-item>
-                                    15% Increase in todays sales
-                                </amexio-layout-item>
-                            </amexio-layout-columns>
+            <amexio-action-ce [height]="'50px'" [align]="'center'" [color]="'lightgrey'" [border-top]="true">
+
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
+                    <amexio-layout-item>
+                        <amexio-image [icon-class]="'fa fa-calendar-o'" [tooltip]="'UP'"></amexio-image>
+                    </amexio-layout-item>
+                    <amexio-layout-item>
+                        Last 24 Hours
+                    </amexio-layout-item>
+                </amexio-layout-columns>
             </amexio-action-ce>
         </amexio-card-ce>
     </amexio-column>
+    <amexio-column [size]=3>
+        <amexio-card-ce [style-type]="'narrower-header'">
+            <amexio-header-ce [background]="'linear-gradient(to left, #f46b45, #eea849)'" [align]="'space-between'">
+                <amexio-image [icon-class]="'fa fa-file-o fa-3x'"></amexio-image>
+                <div>
+                    <amexio-label [size]="'medium'">Used Space</amexio-label><br />
+                    <amexio-label [size]="'medium-bold'">49/50 GB</amexio-label>
+                </div>
+            </amexio-header-ce>
+            <amexio-body-ce></amexio-body-ce>
+            <amexio-action-ce [height]="'50px'" [align]="'center'" [border-top]="true">
+
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
+                    <amexio-layout-item style="color:rgb(226, 49, 43)">
+                        <amexio-image [icon-class]="'fa fa-exclamation-triangle'" [tooltip]="'UP'"></amexio-image>
+                    </amexio-layout-item>
+                    <amexio-layout-item style="color:blueviolet">
+                        Get More Space...
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
+
+    <amexio-column [size]=3>
+        <amexio-card-ce [style-type]="'narrower-header'">
+            <amexio-header-ce [background]="'linear-gradient(to right, #cb2d3e, #ef473a)'" [align]="'space-between'">
+                <amexio-image [icon-class]="'fa fa-info-circle fa-3x'"></amexio-image>
+                <div>
+                    <amexio-label [size]="'medium'">Fixed Issues</amexio-label><br />
+                    <amexio-label [size]="'medium-bold'">75</amexio-label>
+                </div>
+            </amexio-header-ce>
+            <amexio-body-ce></amexio-body-ce>
+            <amexio-action-ce [height]="'50px'" [color]="'lightgrey'" [align]="'center'" [border-top]="true">
+
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
+                    <amexio-layout-item>
+                        <amexio-image [icon-class]="'fa fa-link'" [tooltip]="'UP'"></amexio-image>
+                    </amexio-layout-item>
+                    <amexio-layout-item>
+
+                        Tracked from Github
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
+    <amexio-column [size]=3>
+        <amexio-card-ce [style-type]="'narrower-header'">
+            <amexio-header-ce [background]="'linear-gradient(to right, #2193b0, #6dd5ed)'" [align]="'space-between'">
+                <amexio-image [icon-class]="'fa fa-twitter fa-3x'"></amexio-image>
+                <div>
+                    <amexio-label [size]="'medium'">Followers</amexio-label><br />
+                    <amexio-label [size]="'medium-bold'">+245</amexio-label>
+                </div>
+            </amexio-header-ce>
+            <amexio-body-ce></amexio-body-ce>
+            <amexio-action-ce [height]="'50px'" [color]="'lightgrey'" [align]="'center'" [border-top]="true">
+
+                <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
+                    <amexio-layout-item>
+                        <amexio-image [icon-class]="'fa fa-repeat'" [tooltip]="'UP'"></amexio-image>
+                    </amexio-layout-item>
+                    <amexio-layout-item>
+                            Just Updated
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
+
 </amexio-row>
