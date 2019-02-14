@@ -15,6 +15,8 @@ import { AmexioChartD3Module } from 'amexio-chart-d3';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardThreeComponent } from '../dashboardthree/dashboardthree.component';
 import { DashboardTWoComponent } from '../dashboardtwo/dashboardtwo.component';
+import { TimelineComponent } from '../timeline/timeline.component';
+import { MapComponent } from '../map/map.component';
 
 /**
  * Created by kedar on 11/2/19.
@@ -29,12 +31,14 @@ const routes: Routes = [
       { path: 'dashboardthree', component: DashboardThreeComponent },
       { path: 'userprofile', component: userProfileComponent },
       { path: 'dashboardtwo', component: DashboardTWoComponent },
+      { path: 'timeline', component: TimelineComponent },
+      { path: 'map', component: MapComponent },
     ]
   },
 ];
 
 @NgModule({
-  declarations: [HomeComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
+  declarations: [HomeComponent, TimelineComponent,MapComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
   imports: [CommonModule,
     FormsModule, AmexioChartD3Module, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule, HttpClientModule,

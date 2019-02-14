@@ -48,13 +48,13 @@ export class HomeComponent implements OnInit {
         "text": "TimeLine",
         "icon": "fa fa-th-list",
         "mdaIcon": "link",
-        "link": "home/iot-dashboard"
+        "link": "home/timeline"
       },
       {
         "text": "Map",
         "icon": "fa fa-map",
         "mdaIcon": "link",
-        "link": "home/iot-dashboard"
+        "link": "home/map"
       }
 
     ];
