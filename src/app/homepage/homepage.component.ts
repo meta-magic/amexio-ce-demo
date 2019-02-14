@@ -16,19 +16,19 @@ export class HomeComponent implements OnInit {
     this.dashboardMenu = [
 
       {
-        "text": "Dashboard One",
+        "text": "Demo One",
         "icon": "fa fa-th-large",
         "mdaIcon": "link",
         "link": "home/dashboard"
       },
       {
-        "text": "Dashboard Two",
+        "text": "Demo Two",
         "icon": "fa fa-th-list",
         "mdaIcon": "link",
         "link": "home/iot-dashboard"
       },
       {
-        "text": "Dashboard Three",
+        "text": "Demo Three",
         "icon": "fa fa-table",
         "mdaIcon": "link",
         "link": "home/dashboardthree"

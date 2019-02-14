@@ -24,7 +24,6 @@ const routes: Routes = [
   {
     path: '', component: HomeComponent,
     children: [
-
       { path: 'dashboard', component: DashboardComponent },
       { path: 'dashboardthree', component: DashboardThreeComponent },
       { path: 'userprofile', component: userProfileComponent },
