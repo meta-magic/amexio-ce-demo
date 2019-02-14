@@ -10,9 +10,10 @@
     border-radius : 10px;
 }
  
-.card-container-header{
+.card-container-header, .card-container-narrower-header, .amexio-badge{
     border-radius: 10px;
 }
+
 
 .card-container-ce {
     border-radius: 10px;
@@ -39,3 +40,7 @@
     color:  #ff7c6b; 
 }
   
+
+dashboard-three .datatable-height, .datatable-header, .datatable{
+    box-shadow: unset;
+}

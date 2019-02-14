@@ -8,7 +8,8 @@ export class DashboardThreeComponent {
 
     lastTenMonthRevenue: any[];
     lastTenMonthUsers : any[];
-    globalVists : any;
+    globalVists : any[];
+    globalVistsData : any[];
 
     constructor(){
         this.lastTenMonthRevenue = [
@@ -53,6 +54,14 @@ export class DashboardThreeComponent {
             ['France', 550],
             ['RU', 350],
             ['India',300]
+          ];
+
+          this.globalVistsData=[
+            {'country':'Germany','count':200, 'flag':'DE-32.png'},
+            {'country':'United States','count':400, 'flag':'US-32.png'},
+            {'country':'France','count':500, 'flag':'FR-32.png'},
+            {'country':'Russia','count':350, 'flag':'RU-32.png'},
+            {'country':'India','count':300, 'flag':'IN-32.png'}
           ];
     }
 }

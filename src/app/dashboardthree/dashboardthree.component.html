@@ -55,13 +55,10 @@
             </amexio-action-ce>
         </amexio-card-ce>
     </amexio-column>
-
 </amexio-row>
 <br />
 <amexio-label [size]="'medium-bold'">Statistics</amexio-label>
-
 <amexio-row>
-
     <amexio-column [size]=6 [fit]="true">
         <amexio-card-ce>
             <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
@@ -102,20 +99,31 @@
         </amexio-card-ce>
     </amexio-column>
 </amexio-row>
-
-<amexio-label [size]="'medium-bold'">Global Visits</amexio-label>
-<amexio-row>
-    <amexio-column [size]=12>
-        <amexio-card-ce>
-            <amexio-header-ce [border-bottom]="true">
-                <amexio-label [size]="'medium'">Region wise</amexio-label>
-            </amexio-header-ce>
-            <amexio-body-ce>
-                <amexio-map-geo-chart [width]="'100%'" [data]="globalVists">
+<br />
+<amexio-label [size]="'medium-bold'">Global Trafic</amexio-label>
+<amexio-card-ce>
+    <amexio-header-ce [border-bottom]="true">
+        <amexio-label [size]="'medium'">Region wise</amexio-label>
+    </amexio-header-ce>
+    <amexio-body-ce>
+        <amexio-row>
+            <amexio-column [size]=6>
+                <amexio-datagrid [page-size]="10" [data]="globalVistsData" [enable-data-filter]="false">
+                    <amexio-data-table-column [data-index]="'country'" [data-type]="'string'" [hidden]="false" [text]="'Country'">
+                            <ng-template #amexioBodyTmpl let-column let-row="row">
+                                    <amexio-label>
+                                      <amexio-image [width]="100" [path]="'https://api.amexio.org/api/v5.5/assets/images/flags/flags/'+row.flag"></amexio-image>
+                                    </amexio-label>
+                                    <amexio-label>&nbsp;{{row.country}}</amexio-label>
+                            </ng-template>                        
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'count'" [data-type]="'number'" [text]="'Count'"></amexio-data-table-column>                   
+                </amexio-datagrid>
+            </amexio-column>
+            <amexio-column [size]=6>
+                <amexio-map-geo-chart [height]="'300px'" [width]="'100%'" [data]="globalVists">
                 </amexio-map-geo-chart>
-                
-            </amexio-body-ce>
-        </amexio-card-ce>
-    </amexio-column>
-</amexio-row>
-
+            </amexio-column>
+        </amexio-row>
+    </amexio-body-ce>
+</amexio-card-ce>
