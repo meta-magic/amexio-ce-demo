@@ -1,1 +1,24 @@
 MAP WIP
+<amexio-row>
+        <amexio-column [size]=12>
+          <amexio-button
+            [label]="'Remove Location'"
+            [type]="'theme-color'"
+            [size]="'small'"
+            [loading]="false"
+            [block]="false"
+            (onClick)="removeLocation($event)">
+          </amexio-button>
+          <amexio-button
+            [label]="'Add Location'"
+            [type]="'theme-color'"
+            [size]="'small'"
+            [loading]="false"
+            [block]="false"
+            (onClick)="addLocation($event)">
+          </amexio-button>
+          <amexio-google-map [initial-zoom-level]="2" [height]="'500px'" [data]="data" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'"
+                            >
+          </amexio-google-map>
+        </amexio-column>
+      </amexio-row>
