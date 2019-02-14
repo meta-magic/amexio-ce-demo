@@ -14,6 +14,9 @@
     border-radius: 10px;
 }
 
+.timeline .timeline-item .timeline-panel{
+    padding: 10px 0px;
+}
 .datatable .datatable-header{
     background-color: unset;
     color: rgb(255, 75, 31);

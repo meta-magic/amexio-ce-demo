@@ -100,8 +100,7 @@
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#26c6da,#00acc1)'">
                 <div style="display: block; width: 100%;">
-                    <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5"
-                        [data]="lineChartData">
+                    <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5" [data]="lineChartData">
                     </amexio-d3-chart-line>
                 </div>
             </amexio-header-ce>
@@ -201,7 +200,7 @@
 
 
 <amexio-row>
-    <amexio-column size="12">
+    <amexio-column size="6" [fit]="true">
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#ffa726,#fb8c00)'">
                 <div>
@@ -219,21 +218,60 @@
                     <amexio-data-table-column [width]="'6'" [data-index]="'id'" [data-type]="'string'" [hidden]="false"
                         [text]="'ID'">
                     </amexio-data-table-column>
-                    <amexio-data-table-column [width]="'9'" [data-index]="'name'" [data-type]="'string'"
-                        [hidden]="false" [text]="'Name'">
+                    <amexio-data-table-column [width]="'9'" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                        [text]="'Name'">
                     </amexio-data-table-column>
-                    <amexio-data-table-column [width]="'7'" [data-index]="'salary'" [data-type]="'number'"
-                        [hidden]="false" [text]="'Salary'">
+                    <amexio-data-table-column [width]="'7'" [data-index]="'salary'" [data-type]="'number'" [hidden]="false"
+                        [text]="'Salary'">
                     </amexio-data-table-column>
-                    <amexio-data-table-column [width]="'9'" [data-index]="'country'" [data-type]="'string'"
-                        [hidden]="false" [text]="'Country'">
+                    <amexio-data-table-column [width]="'9'" [data-index]="'country'" [data-type]="'string'" [hidden]="false"
+                        [text]="'Country'">
                     </amexio-data-table-column>
-                    <amexio-data-table-column [width]="'10'" [data-index]="'city'" [data-type]="'string'"
-                        [hidden]="false" [text]="'City'">
+                    <amexio-data-table-column [width]="'10'" [data-index]="'city'" [data-type]="'string'" [hidden]="false"
+                        [text]="'City'">
                     </amexio-data-table-column>
                 </amexio-datagrid>
             </amexio-body-ce>
         </amexio-card-ce>
+    </amexio-column>
+
+    <amexio-column size="6" [fit]="true">
+        <amexio-card-ce [style-type]="'narrower-header'">
+            <amexio-header-ce [background]="'linear-gradient(60deg,#66bb6a,#43a047)'">
+                <div>
+                    <amexio-label [size]="'medium'">
+                        Tasks
+                    </amexio-label><br />
+                    <label>
+                        User Assigned Task
+                    </label>
+                </div>
+            </amexio-header-ce>
+
+            <amexio-body-ce>
+
+
+                <amexio-datagrid [http-url]="'assets/jsondata/listbox.json'" [http-method]="'get'" [data-reader]="'data'">
+
+                    <amexio-data-table-column [sort]="false" [data-index]="'name'" [text]="'Description'" [data-type]="'string'"
+                        [hidden]="false">
+                    </amexio-data-table-column>
+
+                    <amexio-data-table-column [sort]="false" [width]="'10'" [data-index]="'edit'" [data-type]="'string'"
+                        [hidden]="false">
+                        <ng-template #amexioBodyTmpl let-column let-row="row">
+                            <amexio-image style="color:grey;" [icon-class]="'fa fa-edit  fa-2x'"></amexio-image>
+                        </ng-template>
+                    </amexio-data-table-column>
+
+                </amexio-datagrid>
+
+
+            </amexio-body-ce>
+
+        </amexio-card-ce>
+
+
     </amexio-column>
 
 
