@@ -21,5 +21,21 @@
 .datatable .datatable-header{
     background-color: unset;
     color: rgb(255, 75, 31);
-
 }
+
+.sidenav .activenode{
+    background-color: unset;
+    color: #ff7c6b;
+}
+
+.sidenav .defaultnode:hover{
+    background-color: unset;
+    color: #ff7c6b;
+}
+
+
+.sidenav .headernode:hover {
+    background-color: unset;
+    color:  #ff7c6b; 
+}
+  
