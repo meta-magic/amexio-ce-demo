@@ -89,5 +89,8 @@ export class HomeComponent implements OnInit {
 
   }
 
+  logout(event:any){
+    this.router.navigate(['login']);
+  }
 
 }

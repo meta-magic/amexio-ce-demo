@@ -5,7 +5,7 @@
     </amexio-nav-item>
     <amexio-nav-item position-right [type]="'textfield'" [title]="'Enter your name'">
     </amexio-nav-item>
-    <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-sign-out'" [title]="'Logout'">
+    <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-sign-out'" [title]="'Logout'" (onNavItemClick)="logout($event)">
     </amexio-nav-item>
 </amexio-nav>
 <amexio-row>
