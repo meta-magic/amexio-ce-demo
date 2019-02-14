@@ -44,3 +44,12 @@
 dashboard-three .datatable-height, .datatable-header, .datatable{
     box-shadow: unset;
 }
+
+.temperature {
+    width: 100%;
+}
+
+.temperature td{
+   width: 25%;
+   text-align: center;
+}

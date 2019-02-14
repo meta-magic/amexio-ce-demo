@@ -11,6 +11,7 @@ import { HttpClient } from '@angular/common/http';
 export class IOTDashboardComponent implements OnInit {
   lineChartData: any;
   arrayData: any;
+  tempData : any[];
   constructor(private http:HttpClient) {
     this.lineChartData = [
       [{ "datatype": "number", "label": 'Day' }, { "datatype": "number", "label": 'Guardians of the Galaxy' },
@@ -29,7 +30,22 @@ export class IOTDashboardComponent implements OnInit {
       [12, 6.6],
       [13, 4.8],
       [14, 4.2]
-    ]
+    ];
+
+    this.tempData = [
+      ["date", "Temp"],
+      ["06:00", 14],
+      ["07:00", 15],
+      ["08:00", 17],
+      ["09:00", 18],
+      ["10:00", 19],
+      ["11:00", 20],
+      ["12:00", 21],
+      ["13:00", 24],
+      ["14:00", 23],
+      ["15:00", 20],
+      ["16:00", 20]
+ ]; 
 
   }
   ngOnInit() {
