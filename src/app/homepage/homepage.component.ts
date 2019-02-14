@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
         "text": "Demo Two",
         "icon": "fa fa-th-list",
         "mdaIcon": "link",
-        "link": "home/iot-dashboard"
+        "link": "home/dashboardtwo"
       },
       {
         "text": "Demo Three",

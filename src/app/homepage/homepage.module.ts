@@ -13,8 +13,8 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
 import { userProfileComponent } from '../userprofile/userprofile.component';
 import { AmexioChartD3Module } from 'amexio-chart-d3';
 import { HttpClientModule } from '@angular/common/http';
-import { IOTDashboardComponent } from '../iotdashboard/iotdashboard.component';
 import { DashboardThreeComponent } from '../dashboardthree/dashboardthree.component';
+import { DashboardTWoComponent } from '../dashboardtwo/dashboardtwo.component';
 
 /**
  * Created by kedar on 11/2/19.
@@ -24,16 +24,17 @@ const routes: Routes = [
   {
     path: '', component: HomeComponent,
     children: [
+      { path: '', redirectTo:'dashboard', pathMatch:'full' },
       { path: 'dashboard', component: DashboardComponent },
       { path: 'dashboardthree', component: DashboardThreeComponent },
       { path: 'userprofile', component: userProfileComponent },
-      { path: 'iot-dashboard', component: IOTDashboardComponent },
+      { path: 'dashboardtwo', component: DashboardTWoComponent },
     ]
   },
 ];
 
 @NgModule({
-  declarations: [HomeComponent, DashboardComponent, userProfileComponent, IOTDashboardComponent, DashboardThreeComponent],
+  declarations: [HomeComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
   imports: [CommonModule,
     FormsModule, AmexioChartD3Module, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule, HttpClientModule,

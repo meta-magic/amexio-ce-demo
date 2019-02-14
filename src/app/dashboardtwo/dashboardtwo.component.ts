@@ -4,11 +4,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 @Component({
-  selector: 'dashboard',
-  templateUrl: './iotdashboard.component.html',
-  styleUrls: ['./iotdashboard.component.css']
+  selector: 'dashboard-two',
+  templateUrl: './dashboardtwo.component.html',
+  styleUrls: ['./dashboardtwo.component.css']
 })
-export class IOTDashboardComponent implements OnInit {
+export class DashboardTWoComponent implements OnInit {
   lineChartData: any;
   arrayData: any;
   tempData : any[];
