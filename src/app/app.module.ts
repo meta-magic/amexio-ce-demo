@@ -12,6 +12,7 @@ import { CREATIVE_DEMO_ROUTE } from "./app.routes";
 import { LoginPageComponent } from './loginpage/loginpage.component';
 import { RoutingService } from './routing-service';
 import { HttpClientModule } from '@angular/common/http';
+import { HTTPService } from './service/http.service';
 
 /**
  * Created by kedar on 11/2/19.
@@ -25,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule.forRoot(CREATIVE_DEMO_ROUTE, {useHash: true})],
 
   bootstrap: [AppComponent],
-  providers: [RoutingService],
+  providers: [RoutingService, HTTPService],
 
 })
 export class AppModule { }
