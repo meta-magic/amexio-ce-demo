@@ -1,91 +1,56 @@
-<div>
-  <img src="assets/images/backPic.jpeg" class="pic-style">
-  <amexio-row>
-    <!-- Nav bar  -->
+<div style=" width: 100%; height: 100%; background-image: url('assets/images/backPic.jpeg');">
 
-    <amexio-nav [enable-side-nav-position]="true"  [transparent]="true" [enable-side-nav-position]="false" class="ok" [title]="'Creative'" [logo]="'assets/images/a_Logo.png'">
+  <amexio-nav [enable-side-nav-position]="true" [transparent]="true" [enable-side-nav-position]="true" [title]="'Creative'" [logo]="'assets/images/a_Logo.png'">
+    <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-address-card'" [title]="'Register'"></amexio-nav-item>
+    <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-sign-in'" [title]="'Login'"></amexio-nav-item>
+  </amexio-nav>
 
-      <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-address-card'" [title]="'Register'">
-      </amexio-nav-item>
-      <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-sign-in'" [title]="'Login'">
-      </amexio-nav-item>
-    </amexio-nav> 
+  <amexio-layout-columns [orientation]="'vertical'" [border]="false" [alignment]="'center'">
+    <amexio-layout-item>
+      <amexio-layout-columns [fit]="true" [orientation]="'horizontal'" [border]="false" [alignment]="'center'">
+        <amexio-layout-item> &nbsp;</amexio-layout-item>
+        <amexio-layout-item  style="min-width: 300px;">
 
-    <amexio-column size="12" style="padding-top:10%">
+          <amexio-card-ce>
 
-      <amexio-layout-columns class="horizontal-position" [orientation]="'horizontal'" [border]="false" [alignment]="'center'">
-        <amexio-layout-item>
+            <amexio-header-ce [border-bottom]="true">
+              <amexio-label  size="large-bold">
+                   Login
+              </amexio-label>
+            </amexio-header-ce>
 
-          <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'vertical'" [alignment]="'center'">
-            <amexio-layout-item>
+            <amexio-body-ce>
+              <amexio-layout-columns style="font-size:2em;" [border]="false" [fit]="true"
+                [alignment]="'start'" [orientation]="'vertical'">
+                <amexio-layout-item>
+                  <amexio-text-input [field-label]="'User Id'"  [allow-blank]="false"  [place-holder]="'Please enter userid'"></amexio-text-input>
+                  <amexio-password-input [field-label]="'Password'" [place-holder]="'Please enter password'" [allow-blank]="false" > </amexio-password-input>
+                </amexio-layout-item>
+                <amexio-layout-item>
+                  <amexio-checkbox [field-label]="'Subscribe to newsletter'"></amexio-checkbox>
+                </amexio-layout-item>
+                <amexio-layout-item>
+                  <amexio-button [label]="'Get Started'" [type]="'yellow'" [tooltip]="'Get Started'" [block]="true" (onClick)="onLoginBtnClick()">
+                  </amexio-button>
+                </amexio-layout-item>
+              </amexio-layout-columns>
+            </amexio-body-ce>
 
-              <div class="main-class">
-                <amexio-row>
-                  <amexio-column size="12" [fit]="true">
-                    <amexio-card>
-                      <amexio-body>
-                        <h3 class="login">Login</h3>
-                        <amexio-row>
-                          <amexio-column [size]="12">
-                            <amexio-text-input [field-label]="'Name'" [place-holder]="'First Name...'" [enable-popover]="true"
-                              [icon-feedback]="true" [allow-blank]="false" [error-msg]="'Please enter name'"
-                              [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
-                              [max-error-msg]="'Name should be less than 15 characters'">
-                            </amexio-text-input>
-                          </amexio-column>
-                          <amexio-column [size]="12">
-                            <amexio-password-input [enable-popover]="true" [field-label]="'Password'" name="password"
-                              [place-holder]="'Enter Password'" [allow-blank]="false" [error-msg]="'Please enter password'"
-                              [min-length]="6" [min-error-msg]="'Minimum 6 char required'" [max-length]="32"
-                              [max-error-msg]="'Maximum 32 char allowed'" [icon-feedback]="true">
-                            </amexio-password-input>
-                          </amexio-column>
-                          <amexio-checkbox [field-label]="'Subscribe to newsletter'">
-                          </amexio-checkbox>
+            <amexio-action-ce [border-top]="true" [align]="'center'" style="color:white; font-size:2em;">
+                  <amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'" [type]="'google'">
+                  </amexio-login-social>
+                  <amexio-login-social [style-type]="'circle'" [api-key]="'320512778592240'" [type]="'facebook'">
+                  </amexio-login-social>
+                  <amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'">
+                  </amexio-login-social>
+            </amexio-action-ce>
 
-                        </amexio-row>
-                        <br>
-                        <amexio-row>
-                          <amexio-column size="12">
-                            <amexio-button [label]="'Get Started'" [type]="'yellow'" [tooltip]="'Get Started'" [block]="true"
-                              (onClick)="onLoginBtnClick()">
-                            </amexio-button>
-                            <br>
-                            <amexio-layout-columns style="color:white; font-size:2em;" [border]="false" [fit]="true" [alignment]="'space-between'"
-                              [orientation]="'horizontal'">
-                              <amexio-layout-item>
-                                <amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'"
-                                  [type]="'google'">
-                                </amexio-login-social>
-                              </amexio-layout-item>
-                              <amexio-layout-item>
-                                <amexio-login-social [style-type]="'circle'" [api-key]="'320512778592240'" [type]="'facebook'">
-                                </amexio-login-social>
-                              </amexio-layout-item>
-                              <amexio-layout-item>
-                                <amexio-login-social  [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'">
-                                </amexio-login-social>
-                              </amexio-layout-item>
-                            </amexio-layout-columns>
+          </amexio-card-ce>
 
-                          </amexio-column>
-
-                        </amexio-row>
-                      </amexio-body>
-
-                    </amexio-card>
-
-                  </amexio-column>
-
-                </amexio-row>
-              </div>
-
-            </amexio-layout-item>
-          </amexio-layout-columns>
         </amexio-layout-item>
+        <amexio-layout-item> &nbsp;</amexio-layout-item>
       </amexio-layout-columns>
 
-    </amexio-column>
-  </amexio-row>
-
+    </amexio-layout-item>
+  </amexio-layout-columns>
 </div>
