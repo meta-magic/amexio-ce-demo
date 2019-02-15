@@ -2,142 +2,128 @@
 <br />
 
 <amexio-row>
+    <amexio-column size="8">
+        <amexio-card-ce [style-type]="'narrower-header'">
+            <amexio-header-ce [align]="'left'" [color]="'white'" [background]="'#43a047'">
+                <div>
+                    <amexio-label [size]="'medium'">
+                        Edit Profile
+                    </amexio-label> <br />
+                    <label>
+                        Complete your profile
+                    </label>
+                </div>
+            </amexio-header-ce>
+            <br />
+            <amexio-body-ce>
 
-    <amexio-column size="12">
+                <amexio-row>
+                    <amexio-column size="4">
+                        <amexio-text-input [field-label]="'Company'" name="company" place-holder="Please Enter Company Name"
+                            has-label="false">
+                        </amexio-text-input>
+                    </amexio-column>
+                    <amexio-column size="4">
+                        <amexio-text-input [field-label]="'User Name'" name="user name" place-holder="Please Enter User Name"
+                            has-label="false">
+                        </amexio-text-input>
+                    </amexio-column>
+                    <amexio-column size="4">
+                        <amexio-email-input name="email" [field-label]="'Email Address'"
+                            [place-holder]="'Please Enter Email Id'" [disabled]="false">
+                        </amexio-email-input>
+                    </amexio-column>
+                </amexio-row>
 
-        <amexio-row>
-            <amexio-column size="8">
-                <amexio-card-ce [style-type]="'narrower-header'">
-                    <amexio-header-ce [align]="'left'" [color]="'white'" [background]="'#43a047'">
-                        <div>
-                            <amexio-label [size]="'medium'">
-                                Edit Profile
-                            </amexio-label> <br />
-                            <label>
-                                Complete your profile
-                            </label>
-                        </div>
-                    </amexio-header-ce>
-                    <br />
-                    <amexio-body-ce>
-                        <amexio-row>
-                            <amexio-column size="4">
-                                <amexio-text-input  [field-label]="'Company'" name="company"
-                                    place-holder="Enter Company Name" has-label="false">
-                                </amexio-text-input>
-                            </amexio-column>
-                            <amexio-column size="4">
-                                <amexio-text-input [field-label]="'User Name'" name="user name" place-holder="Enter  User Name"
-                                    has-label="false">
-                                </amexio-text-input>
+                <amexio-row>
+                    <amexio-column size="6">
+                        <amexio-text-input enable-popover="true" field-label="First Name" name="name"
+                            place-holder="Please Enter name" allow-blank="false" error-msg="Please enter last name"
+                            min-length="1" min-error-msg="Minimum 1 char required" max-length="10"
+                            max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                        </amexio-text-input>
+                    </amexio-column>
+                    <amexio-column size="6">
+                        <amexio-text-input enable-popover="true" field-label="Last Name" name="name"
+                            place-holder="Please Enter Last Name" allow-blank="false" error-msg="Please enter last name"
+                            min-length="1" min-error-msg="Minimum 1 char required" max-length="10"
+                            max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                        </amexio-text-input>
+                    </amexio-column>
+                </amexio-row>
 
+                <amexio-row>
+                    <amexio-column size="12">
+                        <amexio-textarea-input [enable-popover]="true" [field-label]="'Address'" name="Address"
+                            [place-holder]="'Please Enter Permanent Address'" [allow-blank]="false"
+                            [error-msg]="'Please enter Address'" [icon-feedback]="true" [rows]="'2'" [columns]="'2'">
+                        </amexio-textarea-input>
+                    </amexio-column>
+                </amexio-row>
 
-                            </amexio-column>
-                            <amexio-column size="4">
-                                <amexio-email-input name="email" [field-label]="'Email Address'" [place-holder]="'Enter Email Id'"
-                                    [disabled]="false">
-                                </amexio-email-input>
-                            </amexio-column>
-                        </amexio-row>
-                        <amexio-row>
-                            <amexio-column size="6">
-                                <amexio-text-input enable-popover="true" field-label="First Name" name="name"
-                                    place-holder="Enter name" allow-blank="false" error-msg="Please enter last name"
-                                    min-length="1" min-error-msg="Minimum 1 char required" max-length="10"
-                                    max-error-msg="Maximum 10 char allowed" icon-feedback="true">
-                                </amexio-text-input>
+                <amexio-row>
+                    <amexio-column size="4">
+                        <amexio-text-input [field-label]="'Country'" name="country" place-holder="Please Enter country name"
+                            has-label="false">
+                        </amexio-text-input>
+                    </amexio-column>
+                    <amexio-column size="4">
+                        <amexio-text-input [field-label]="'City'" name="city" place-holder="Please Enter city Name"
+                            has-label="false">
+                        </amexio-text-input>
+                    </amexio-column>
+                    <amexio-column size="4">
+                        <amexio-email-input name="email" [field-label]="'Postal Code'" place-holder="Please Postal code">
+                        </amexio-email-input>
+                    </amexio-column>
+                </amexio-row>
 
-                            </amexio-column>
+                <amexio-row>
+                    <amexio-column size="12">
+                        About Me
+                        <amexio-textarea-input [enable-popover]="true" [allow-blank]="true" [icon-feedback]="true"
+                            [rows]="'2'" [columns]="'2'">
+                        </amexio-textarea-input>
+                    </amexio-column>
+                </amexio-row>
 
-                            <amexio-column size="6">
-                                <amexio-text-input enable-popover="true" field-label="Last Name" name="name"
-                                    place-holder="Enter Last Name" allow-blank="false" error-msg="Please enter last name"
-                                    min-length="1" min-error-msg="Minimum 1 char required" max-length="10"
-                                    max-error-msg="Maximum 10 char allowed" icon-feedback="true">
-                                </amexio-text-input>
-                            </amexio-column>
-                        </amexio-row>
+            </amexio-body-ce>
 
-                        <amexio-row>
-                            <amexio-column size="12">
-                                <amexio-textarea-input [enable-popover]="true" [field-label]="'Address'" name="Address"
-                                    [place-holder]="'Permanent Address'" [allow-blank]="false" [error-msg]="'Please enter Address'"
-                                    [icon-feedback]="true" [rows]="'2'" [columns]="'2'">
-                                </amexio-textarea-input>
-                            </amexio-column>
-                        </amexio-row>
-                        <amexio-row>
+            <amexio-action-ce [align]="'end'" [border-top]="true">
+                <amexio-button [size]="'large'" [label]="'Update Profile'" [icon]="'fa fa-save'" [type]="'green'"
+                    [tooltip]="'UPDATE PROFILE'">
+                </amexio-button>
+            </amexio-action-ce>
+        </amexio-card-ce>
+    </amexio-column>
 
-                            <amexio-column size="4">
-                                <amexio-text-input [field-label]="'Country'" name="country" place-holder="Enter country name"
-                                    has-label="false">
-                                </amexio-text-input>
-                            </amexio-column>
-                            <amexio-column size="4">
-                                <amexio-text-input  [field-label]="'City'" name="city" place-holder="Enter city Name"
-                                    has-label="false">
-                                </amexio-text-input>
-                            </amexio-column>
-                            <amexio-column size="4">
-                                <amexio-email-input name="email" [field-label]="'Postal Code'" [disabled]="false">
-                                </amexio-email-input>
-                            </amexio-column>
-                        </amexio-row>
-                        <amexio-row>
-                            <amexio-column size="12">
+    <amexio-column size="4">
+        <amexio-card-ce align="center">
+            <amexio-header-ce [height]="'75px'" align="center">
+                <amexio-image [c-class]="'image-top-center'" [filter]="'round'" path="assets/images/john.jpg">
+                </amexio-image>
+            </amexio-header-ce>
+            <amexio-body-ce [align]="'start'">
+                <br />
+                <p>
+                    CEO/ C0-FOUNDER
+                </p>
+                <amexio-label [size]="'medium'">John Deo</amexio-label>
+                <p>
+                    Don't be scared of the truth because we need to restart the human foundation in truth And I
+                    love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                </p>
+            </amexio-body-ce>
+            
+            <amexio-action-ce style="color:white; font-size:2em;" [align]="'center'" [border-top]="true">
+                <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus'">
+                </amexio-floating-button>
+                <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook'">
+                </amexio-floating-button>
+                <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
+                </amexio-floating-button>
+            </amexio-action-ce>
 
-                                About Me
-                                <label> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-                                <amexio-textarea-input [enable-popover]="true" [allow-blank]="true" [icon-feedback]="true"
-                                    [rows]="'2'" [columns]="'2'">
-                                </amexio-textarea-input>
-                            </amexio-column>
-
-                        </amexio-row>
-
-                    </amexio-body-ce>
-                    <amexio-action-ce [align]="'end'" [border-top]="true">
-                        <amexio-button [size]="'large'" [label]="'Update Profile'" [icon]="'fa fa-save'" [type]="'green'"
-                            [tooltip]="'UPDATE PROFILE'">
-                        </amexio-button>
-                    </amexio-action-ce>
-                    <br />
-                </amexio-card-ce>
-            </amexio-column>
-
-            <amexio-column size="4">
-                <amexio-card-ce align="center">
-                    <amexio-header-ce [height]="'75px'" align="center">
-                        <amexio-image [c-class]="'image-top-center'" [filter]="'round'" path="assets/images/john.jpg"></amexio-image>
-                    </amexio-header-ce>
-                    <amexio-body-ce [align]="'start'">
-                        <br />
-                        <p>
-                            CEO/ C0-FOUNDER
-                        </p>
-                        <amexio-label [size]="'medium'">
-                            John Deo
-                        </amexio-label>
-
-                        <p>
-                            Don't be scared of the truth because we need to restart the human foundation in truth And I
-                            love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-                        </p>
-                    </amexio-body-ce>
-                    <br>
-                    <amexio-action-ce  style="color:white; font-size:2em;" [align]="'center'" [border-top]="true">
-                        <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus'">
-                        </amexio-floating-button>
-                        <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook'">
-                        </amexio-floating-button>
-                        <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
-                        </amexio-floating-button>
-                    </amexio-action-ce>
-
-                </amexio-card-ce>
-            </amexio-column>
-
-        </amexio-row>
-
+        </amexio-card-ce>
     </amexio-column>
 </amexio-row>
