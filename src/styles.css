@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+.Layout1{ 
+    gap: 0px !important;
+}
+
+.chartLayout{ 
+    gap: 0px !important;
+}
+
+
 .image-top-center{
     margin-top: -25px;
     width: 50%;
