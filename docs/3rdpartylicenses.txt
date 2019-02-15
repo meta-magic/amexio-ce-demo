@@ -210,7 +210,7 @@ font-awesome@4.7.0
 (OFL-1.1 AND MIT)
 (OFL-1.1 AND MIT)
 
-core-js@2.6.4
+core-js@2.6.5
 MIT
 Copyright (c) 2014-2019 Denis Pushkarev
 
