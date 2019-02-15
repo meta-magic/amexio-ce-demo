@@ -33,14 +33,14 @@ export class DashboardThreeComponent {
   }
 
   createLayouts() {
-    this.gridDesktop = new GridConfig('Layout1', GridConstants.Desktop)
+    this.gridDesktop = new GridConfig('dashboardtwolayout', GridConstants.Desktop)
       .addlayout(["gridheader1", "gridheader2", "gridheader3", "gridheader4"])
       .addlayout(["label1", "label1", "label1", "label1"])
       .addlayout(["gridchart1", "gridchart1", "gridchart2", "gridchart2"])
       .addlayout(["label2", "label2", "label2", "label2"])
       .addlayout(["gridmap", "gridmap", "gridmap", "gridmap"])
 
-    this.gridTablet = new GridConfig('Layout1', GridConstants.Tablet)
+    this.gridTablet = new GridConfig('dashboardtwolayout', GridConstants.Tablet)
       .addlayout(["gridheader1", "gridheader1", "gridheader2", "gridheader2"])
       .addlayout(["gridheader3", "gridheader3", "gridheader4", "gridheader4"])
       .addlayout(["label1", "label1", "label1", "label1"])
@@ -49,7 +49,7 @@ export class DashboardThreeComponent {
       .addlayout(["gridmap", "gridmap", "gridmap", "gridmap"])
 
 
-    this.gridMobile = new GridConfig('Layout1', GridConstants.Mobile)
+    this.gridMobile = new GridConfig('dashboardtwolayout', GridConstants.Mobile)
       .addlayout(["gridheader1", "gridheader1", "gridheader1", "gridheader1"])
       .addlayout(["gridheader2", "gridheader2", "gridheader2", "gridheader2"])
       .addlayout(["gridheader3", "gridheader3", "gridheader3", "gridheader3"])
