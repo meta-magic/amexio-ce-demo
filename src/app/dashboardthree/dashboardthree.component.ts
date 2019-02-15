@@ -66,7 +66,6 @@ export class DashboardThreeComponent {
   fetchData() {
     let response: any;
     this.httpService.fetch("assets/jsondata/dashboardthree.json").subscribe((resp: any) => {
-      debugger;
       this.lastTenMonthRevenue = resp.lastTenMonthRevenue;
       this.lastTenMonthUsers = resp.lastTenMonthUsers;
       this.globalVists = resp.globalVists;

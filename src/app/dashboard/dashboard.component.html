@@ -1,5 +1,5 @@
-<amexio-row>
-    <amexio-column [size]=3>
+<amexio-layout-grid [layout]="'Layout1'">
+    <amexio-grid-item [name]="'gridheader1'">
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#26c6da,#00acc1)'" [align]="'space-between'">
                 <amexio-image [icon-class]="'fa fa-usd fa-3x'"></amexio-image>
@@ -21,8 +21,10 @@
                 </amexio-layout-columns>
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
-    <amexio-column [size]=3>
+
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'gridheader2'">
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#ef5350,#e53935)'" [align]="'space-between'">
                 <amexio-image [icon-class]="'fa fa-database fa-3x'"></amexio-image>
@@ -44,9 +46,9 @@
                 </amexio-layout-columns>
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
+    </amexio-grid-item>
 
-    <amexio-column [size]=3>
+    <amexio-grid-item [name]="'gridheader3'">
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#ffa726,#fb8c00)'" [align]="'space-between'">
                 <amexio-image [icon-class]="'fa fa fa-bug fa-3x'"></amexio-image>
@@ -68,8 +70,10 @@
                 </amexio-layout-columns>
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
-    <amexio-column [size]=3>
+    </amexio-grid-item>
+
+
+    <amexio-grid-item [name]="'gridheader4'">
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#66bb6a,#43a047)'" [align]="'space-between'">
                 <amexio-image [icon-class]="'fa fa-users fa-3x'"></amexio-image>
@@ -91,12 +95,19 @@
                 </amexio-layout-columns>
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
 
-</amexio-row>
+    </amexio-grid-item>
+
+
+</amexio-layout-grid>
+
 <br /><br />
-<amexio-row>
-    <amexio-column size="4" [fit]="true">
+
+
+<amexio-layout-grid [layout]="'chartLayout'">
+
+    <amexio-grid-item [name]="'gridchart1'">
+
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#26c6da,#00acc1)'">
                 <div style="display: block; width: 100%;">
@@ -109,15 +120,9 @@
                     <amexio-layout-item [fit]="true">
                         <amexio-label [size]="'medium-bold'">Daily Traffic</amexio-label>
                     </amexio-layout-item>
-                    <amexio-layout-item style="color: green;">
-                        <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
-                            <amexio-layout-item>
-                                <amexio-image [icon-class]="'fa fa-long-arrow-up'" [tooltip]="'UP'"></amexio-image>
-                            </amexio-layout-item>
-                            <amexio-layout-item>
-                                15% Increase in todays traffic
-                            </amexio-layout-item>
-                        </amexio-layout-columns>
+                    <amexio-layout-item>
+                        <amexio-image style="color:green;" [icon-class]="'fa fa-long-arrow-up'" [tooltip]="'UP'"></amexio-image>
+                        15% Increase in todays traffic
                     </amexio-layout-item>
                 </amexio-layout-columns>
             </amexio-body-ce>
@@ -132,8 +137,11 @@
                 </amexio-layout-columns>
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
-    <amexio-column size="4" [fit]="true">
+
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'gridchart2'">
+
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#ef5350,#e53935)'">
                 <div style="display: block; width: 100%;">
@@ -163,8 +171,11 @@
                 </amexio-layout-columns>
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
-    <amexio-column size="4" [fit]="true">
+
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'gridchart3'">
+
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#66bb6a,#43a047)'">
                 <div style="display: block; width: 100%;">
@@ -194,13 +205,11 @@
                 </amexio-layout-columns>
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
-</amexio-row>
-<br /><br /><br />
 
+    </amexio-grid-item>
 
-<amexio-row>
-    <amexio-column size="6" [fit]="true">
+    <amexio-grid-item [name]="'datagrid1'">
+        <br /> <br />
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#ffa726,#fb8c00)'">
                 <div>
@@ -233,9 +242,11 @@
                 </amexio-datagrid>
             </amexio-body-ce>
         </amexio-card-ce>
-    </amexio-column>
 
-    <amexio-column size="6" [fit]="true">
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'datagrid2'">
+        <br /> <br />
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#66bb6a,#43a047)'">
                 <div>
@@ -271,9 +282,6 @@
 
         </amexio-card-ce>
 
+    </amexio-grid-item>
 
-    </amexio-column>
-
-
-
-</amexio-row>
+</amexio-layout-grid>
