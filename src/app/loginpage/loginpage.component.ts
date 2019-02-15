@@ -3,17 +3,19 @@
  */
 import {Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'login',
-  templateUrl: './loginpage.component.html',
-  styleUrls: ['./loginpage.component.css']
+  templateUrl: './loginpage.component.html'
 })
 export class LoginPageComponent implements OnInit {
+
   constructor(private router: Router) {
   }
-  ngOnInit() {
-    
+
+  ngOnInit() {  
   }
+
   onLoginBtnClick() {
     this.router.navigate(['/home']);
   }
