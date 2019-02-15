@@ -1,6 +1,8 @@
 <amexio-label [size]="'medium-bold'">Last Month Stats</amexio-label><br />
-<amexio-row>
-    <amexio-column [size]=3 [fit]="true">
+
+
+<amexio-layout-grid [layout]="'Layout1'">
+    <amexio-grid-item [name]="'gridheader1'">
         <amexio-card-ce>
             <amexio-header-ce [align]="'center'">
                 <div style="text-align: center;">
@@ -12,9 +14,9 @@
                 Revenue
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
+    </amexio-grid-item>
 
-    <amexio-column [size]=3 [fit]="true">
+    <amexio-grid-item [name]="'gridheader2'">
         <amexio-card-ce>
             <amexio-header-ce [align]="'center'">
                 <div style="text-align: center;">
@@ -26,9 +28,10 @@
                 Data indexed
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
+    </amexio-grid-item>
 
-    <amexio-column [size]=3 [fit]="true">
+
+    <amexio-grid-item [name]="'gridheader3'">
         <amexio-card-ce>
             <amexio-header-ce [align]="'center'">
                 <div style="text-align: center;">
@@ -40,9 +43,9 @@
                 Issue Fixed
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
+    </amexio-grid-item>
 
-    <amexio-column [size]=3 [fit]="true">
+    <amexio-grid-item [name]="'gridheader4'">
         <amexio-card-ce>
             <amexio-header-ce [align]="'center'">
                 <div style="text-align: center;">
@@ -54,12 +57,12 @@
                 New User added
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
-</amexio-row>
-<br />
-<amexio-label [size]="'medium-bold'">Statistics</amexio-label>
-<amexio-row>
-    <amexio-column [size]=6 [fit]="true">
+    </amexio-grid-item>
+    <br />
+    <amexio-grid-item [name]="'label1'">
+        <amexio-label [size]="'medium-bold'">Statistics</amexio-label>
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gridchart1'">
         <amexio-card-ce>
             <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
                 <amexio-label [size]="'medium'">$1,60,000K</amexio-label>
@@ -68,18 +71,16 @@
                 </amexio-badge>
             </amexio-header-ce>
             <amexio-body-ce>
-                <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5"
-                    [data]="lastTenMonthRevenue">
+                <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5" [data]="lastTenMonthRevenue">
                 </amexio-d3-chart-line>
             </amexio-body-ce>
-            <amexio-action-ce [align]="'center'" [height]="'50px'" [align]="'center'" [color]="'grey'"
-                [border-top]="true">
+            <amexio-action-ce [align]="'center'" [height]="'50px'" [align]="'center'" [color]="'grey'" [border-top]="true">
                 Total revenue in last 12 months
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
+    </amexio-grid-item>
 
-    <amexio-column [size]=6 [fit]="true">
+    <amexio-grid-item [name]="'gridchart2'">
         <amexio-card-ce>
             <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
                 <amexio-label [size]="'medium'">1.8 Million New User</amexio-label>
@@ -88,43 +89,48 @@
                 </amexio-badge>
             </amexio-header-ce>
             <amexio-body-ce>
-                <amexio-d3-chart-bar [legend]="false" [label-color]="'white'" [yaxis-interval]="5"
-                    [data]="lastTenMonthUsers">
+                <amexio-d3-chart-bar [legend]="false" [label-color]="'white'" [yaxis-interval]="5" [data]="lastTenMonthUsers">
                 </amexio-d3-chart-bar>
             </amexio-body-ce>
-            <amexio-action-ce [align]="'center'" [height]="'50px'" [align]="'center'" [color]="'grey'"
-                [border-top]="true">
+            <amexio-action-ce [align]="'center'" [height]="'50px'" [align]="'center'" [color]="'grey'" [border-top]="true">
                 Total New User In Last 12 Months
             </amexio-action-ce>
         </amexio-card-ce>
-    </amexio-column>
-</amexio-row>
-<br />
-<amexio-label [size]="'medium-bold'">Global Trafic</amexio-label>
-<amexio-card-ce>
-    <amexio-header-ce [border-bottom]="true">
-        <amexio-label [size]="'medium'">Region wise</amexio-label>
-    </amexio-header-ce>
-    <amexio-body-ce>
-        <amexio-row>
-            <amexio-column [size]=6>
-                <amexio-datagrid [page-size]="10" [data]="globalVistsData" [enable-data-filter]="false">
-                    <amexio-data-table-column [data-index]="'country'" [data-type]="'string'" [hidden]="false" [text]="'Country'">
-                            <ng-template #amexioBodyTmpl let-column let-row="row">
+    </amexio-grid-item>
+    <br />
+
+    <amexio-grid-item [name]="'label2'">
+        <amexio-label [size]="'medium-bold'">Global Trafic</amexio-label>
+
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gridmap'">
+
+        <amexio-card-ce>
+            <amexio-header-ce [border-bottom]="true">
+                <amexio-label [size]="'medium'">Region wise</amexio-label>
+            </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-row>
+                    <amexio-column [size]=6>
+                        <amexio-datagrid [page-size]="10" [data]="globalVistsData" [enable-data-filter]="false">
+                            <amexio-data-table-column [data-index]="'country'" [data-type]="'string'" [hidden]="false"
+                                [text]="'Country'">
+                                <ng-template #amexioBodyTmpl let-column let-row="row">
                                     <amexio-label>
-                                      <amexio-image [width]="100" [path]="'https://api.amexio.org/api/v5.5/assets/images/flags/flags/'+row.flag"></amexio-image>
+                                        <amexio-image [width]="100" [path]="'https://api.amexio.org/api/v5.5/assets/images/flags/flags/'+row.flag"></amexio-image>
                                     </amexio-label>
                                     <amexio-label>&nbsp;{{row.country}}</amexio-label>
-                            </ng-template>                        
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'count'" [data-type]="'number'" [text]="'Count'"></amexio-data-table-column>                   
-                </amexio-datagrid>
-            </amexio-column>
-            <amexio-column [size]=6>
-                <amexio-map-geo-chart [height]="'300px'" [width]="'100%'" [data]="globalVists">
-                </amexio-map-geo-chart>
-            </amexio-column>
-        </amexio-row>
-    </amexio-body-ce>
-</amexio-card-ce>
-
+                                </ng-template>
+                            </amexio-data-table-column>
+                            <amexio-data-table-column [data-index]="'count'" [data-type]="'number'" [text]="'Count'"></amexio-data-table-column>
+                        </amexio-datagrid>
+                    </amexio-column>
+                    <amexio-column [size]=6>
+                        <amexio-map-geo-chart [height]="'300px'" [width]="'100%'" [data]="globalVists">
+                        </amexio-map-geo-chart>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-body-ce>
+        </amexio-card-ce>
+    </amexio-grid-item>
+</amexio-layout-grid>
