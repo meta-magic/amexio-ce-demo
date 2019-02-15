@@ -1,6 +1,7 @@
 <div style=" width: 100%; height: 100%; background-image: url('assets/images/backPic.jpeg');">
 
-  <amexio-nav [enable-side-nav-position]="true" [transparent]="true" [enable-side-nav-position]="true" [title]="'Creative'" [logo]="'assets/images/a_Logo.png'">
+  <amexio-nav [enable-side-nav-position]="true" [transparent]="true" [enable-side-nav-position]="true" [title]="'Creative'"
+    [logo]="'assets/images/a_Logo.png'">
     <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-address-card'" [title]="'Register'"></amexio-nav-item>
     <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-sign-in'" [title]="'Login'"></amexio-nav-item>
   </amexio-nav>
@@ -9,40 +10,43 @@
     <amexio-layout-item>
       <amexio-layout-columns [fit]="true" [orientation]="'horizontal'" [border]="false" [alignment]="'center'">
         <amexio-layout-item> &nbsp;</amexio-layout-item>
-        <amexio-layout-item  style="min-width: 300px;">
+        <amexio-layout-item style="min-width: 300px;">
 
           <amexio-card-ce>
 
             <amexio-header-ce [border-bottom]="true">
-              <amexio-label  size="large-bold">
-                   Login
+              <amexio-label size="large-bold">
+                Login
               </amexio-label>
             </amexio-header-ce>
 
             <amexio-body-ce>
-              <amexio-layout-columns style="font-size:2em;" [border]="false" [fit]="true"
-                [alignment]="'start'" [orientation]="'vertical'">
+              <amexio-layout-columns style="font-size:2em;" [border]="false" [fit]="true" [alignment]="'start'"
+                [orientation]="'vertical'">
                 <amexio-layout-item>
-                  <amexio-text-input [field-label]="'User Id'"  [allow-blank]="false"  [place-holder]="'Please enter userid'"></amexio-text-input>
-                  <amexio-password-input [field-label]="'Password'" [place-holder]="'Please enter password'" [allow-blank]="false" > </amexio-password-input>
+                  <amexio-text-input [field-label]="'User Id'" [allow-blank]="false" [place-holder]="'Please enter userid'"></amexio-text-input>
+                  <amexio-password-input [field-label]="'Password'" [place-holder]="'Please enter password'"
+                    [allow-blank]="false"> </amexio-password-input>
                 </amexio-layout-item>
                 <amexio-layout-item>
                   <amexio-checkbox [field-label]="'Subscribe to newsletter'"></amexio-checkbox>
                 </amexio-layout-item>
                 <amexio-layout-item>
-                  <amexio-button [label]="'Get Started'" [type]="'yellow'" [tooltip]="'Get Started'" [block]="true" (onClick)="onLoginBtnClick()">
+                  <amexio-button [label]="'Get Started'" [type]="'yellow'" [tooltip]="'Get Started'" [block]="true"
+                    (onClick)="onLoginBtnClick()">
                   </amexio-button>
                 </amexio-layout-item>
               </amexio-layout-columns>
             </amexio-body-ce>
 
             <amexio-action-ce [border-top]="true" [align]="'center'" style="color:white; font-size:2em;">
-                  <amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'" [type]="'google'">
-                  </amexio-login-social>
-                  <amexio-login-social [style-type]="'circle'" [api-key]="'320512778592240'" [type]="'facebook'">
-                  </amexio-login-social>
-                  <amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'">
-                  </amexio-login-social>
+              <amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'"
+                [type]="'google'">
+              </amexio-login-social>
+              <amexio-login-social [style-type]="'circle'" [api-key]="'320512778592240'" [type]="'facebook'">
+              </amexio-login-social>
+              <amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'">
+              </amexio-login-social>
             </amexio-action-ce>
 
           </amexio-card-ce>

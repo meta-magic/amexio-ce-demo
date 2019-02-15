@@ -1,24 +1,24 @@
+<amexio-timeline>
 
-<amexio-timeline > 
-
-    <amexio-timeline-event [content-alignment]="(((i % 2)==0) ? 'left':'right')" *ngFor="let item of timeLineData;  index as i" [icon]="item.icon" [content-border]="false">
+    <amexio-timeline-event [content-alignment]="(((i % 2)==0) ? 'left':'right')" *ngFor="let item of timeLineData;  index as i"
+        [icon]="item.icon" [content-border]="false">
         <amexio-card-ce>
             <amexio-header-ce [height]="'200px'" [color]="'white'" [bg-image]="item.path">
-                <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [bottom]="item.bottom" [right]="item.right">
+                <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [bottom]="item.bottom"
+                    [right]="item.right">
                     <amexio-label>{{item.firstlabel}}</amexio-label>
                     <amexio-label>{{item.secondlabel}}</amexio-label>
                 </amexio-badge>
             </amexio-header-ce>
 
             <amexio-body-ce>
-                <amexio-label size="medium-bold" font-color ="rgb(2, 2, 134)">
-                   {{item.title}}
+                <amexio-label size="medium-bold" font-color="rgb(2, 2, 134)">
+                    {{item.title}}
                 </amexio-label>
                 <label>{{item.des}}
                 </label>
             </amexio-body-ce>
         </amexio-card-ce>
-    </amexio-timeline-event> 
+    </amexio-timeline-event>
 
 </amexio-timeline>
-

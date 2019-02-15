@@ -8,13 +8,12 @@ import { GoogleMapOverlays } from 'amexio-ng-extensions';
 })
 export class MapComponent {
 
-
     data: GoogleMapOverlays[];
 
-    constructor(){
+    constructor() {
         this.addLocation();
     }
-   
+
     addLocation() {
         this.data = [];
         this.data.push(new GoogleMapOverlays(27.165440, 78.054520, 'Delhi, India', true, 'assets/images/location-logo.png', { country: 'India', capital: 'Delhi', }));

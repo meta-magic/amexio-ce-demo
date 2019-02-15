@@ -8,7 +8,6 @@ import { AmexioGridLayoutService, GridConfig, GridConstants } from "amexio-ng-ex
 })
 export class DashboardThreeComponent {
 
-
   gridDesktop: GridConfig;
   gridTablet: GridConfig;
   gridMobile: GridConfig;
@@ -51,16 +50,15 @@ export class DashboardThreeComponent {
 
 
     this.gridMobile = new GridConfig('Layout1', GridConstants.Mobile)
-      .addlayout(["gridheader1","gridheader1","gridheader1","gridheader1"])
-      .addlayout(["gridheader2","gridheader2","gridheader2","gridheader2"])
-      .addlayout(["gridheader3","gridheader3","gridheader3","gridheader3"])
-      .addlayout(["gridheader4","gridheader4","gridheader4","gridheader4"])
+      .addlayout(["gridheader1", "gridheader1", "gridheader1", "gridheader1"])
+      .addlayout(["gridheader2", "gridheader2", "gridheader2", "gridheader2"])
+      .addlayout(["gridheader3", "gridheader3", "gridheader3", "gridheader3"])
+      .addlayout(["gridheader4", "gridheader4", "gridheader4", "gridheader4"])
       .addlayout(["label1", "label1", "label1", "label1"])
-      .addlayout(["gridchart1","gridchart1","gridchart1","gridchart1",])
-      .addlayout(["gridchart2","gridchart2","gridchart2","gridchart2",])
+      .addlayout(["gridchart1", "gridchart1", "gridchart1", "gridchart1",])
+      .addlayout(["gridchart2", "gridchart2", "gridchart2", "gridchart2",])
       .addlayout(["label2", "label2", "label2", "label2"])
-      .addlayout(["gridmap","gridmap","gridmap","gridmap",])
-
+      .addlayout(["gridmap", "gridmap", "gridmap", "gridmap",])
   }
 
   fetchData() {

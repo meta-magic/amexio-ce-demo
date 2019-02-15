@@ -26,7 +26,7 @@ const routes: Routes = [
   {
     path: '', component: HomeComponent,
     children: [
-      { path: '', redirectTo:'dashboard', pathMatch:'full' },
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', component: DashboardComponent },
       { path: 'dashboardthree', component: DashboardThreeComponent },
       { path: 'userprofile', component: userProfileComponent },
@@ -38,7 +38,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, TimelineComponent,MapComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
+  declarations: [HomeComponent, TimelineComponent, MapComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
   imports: [CommonModule,
     FormsModule, AmexioChartD3Module, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule, HttpClientModule,

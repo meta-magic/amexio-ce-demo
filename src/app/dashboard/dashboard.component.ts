@@ -11,12 +11,9 @@ import { AmexioGridLayoutService, GridConfig, GridConstants } from "amexio-ng-ex
 })
 export class DashboardComponent implements OnInit {
 
-
-
   gridDesktop: GridConfig;
   gridTablet: GridConfig;
   gridMobile: GridConfig;
-
 
   chartGridDesktop: GridConfig;
   chartGridTablet: GridConfig;
@@ -81,9 +78,7 @@ export class DashboardComponent implements OnInit {
 
     this.chartGridMobile = new GridConfig('chartLayout', GridConstants.Mobile)
       .addlayout(["gridchart1", "gridchart1", "gridchart1", "gridchart1", "gridchart1", "gridchart1",])
-
       .addlayout(["gridchart2", "gridchart2", "gridchart2", "gridchart2", "gridchart2", "gridchart2",])
-
       .addlayout(["gridchart3", "gridchart3", "gridchart3", "gridchart3", "gridchart3", "gridchart3",])
       .addlayout(["datagrid1", "datagrid1", "datagrid1", "datagrid1", "datagrid1", "datagrid1",])
       .addlayout(["datagrid2", "datagrid2", "datagrid2", "datagrid2", "datagrid2", "datagrid2",]);

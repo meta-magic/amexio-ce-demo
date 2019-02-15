@@ -14,9 +14,7 @@ export class HomeComponent implements OnInit {
   dashboardMenu: any;
   isRouteLoading: boolean = false;
 
-  constructor(private router: Router, private httpService : HTTPService) {
-    
-
+  constructor(private router: Router, private httpService: HTTPService) {
   }
 
   ngOnInit() {
@@ -30,10 +28,10 @@ export class HomeComponent implements OnInit {
     this.fetchData();
   }
 
-  fetchData(){
-    this.httpService.fetch("assets/jsondata/sidenav.json").subscribe((resp:any) =>{
+  fetchData() {
+    this.httpService.fetch("assets/jsondata/sidenav.json").subscribe((resp: any) => {
       this.dashboardMenu = resp.dashboard;
-      this.pageMenu  = resp.userprofile;
+      this.pageMenu = resp.userprofile;
     });
   }
 
@@ -43,8 +41,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  logout(event:any){
+  logout(event: any) {
     this.router.navigate(['login']);
   }
-
 }

@@ -10,7 +10,6 @@ import { RouterModule } from "@angular/router";
 import { CREATIVE_DEMO_ROUTE } from "./app.routes";
 
 import { LoginPageComponent } from './loginpage/loginpage.component';
-import { RoutingService } from './routing-service';
 import { HttpClientModule } from '@angular/common/http';
 import { HTTPService } from './service/http.service';
 
@@ -23,10 +22,10 @@ import { HTTPService } from './service/http.service';
     FormsModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule,
     HttpClientModule,
-    RouterModule.forRoot(CREATIVE_DEMO_ROUTE, {useHash: true})],
+    RouterModule.forRoot(CREATIVE_DEMO_ROUTE, { useHash: true })],
 
   bootstrap: [AppComponent],
-  providers: [RoutingService, HTTPService],
+  providers: [HTTPService],
 
 })
 export class AppModule { }

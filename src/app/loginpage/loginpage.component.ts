@@ -1,7 +1,7 @@
 /**
  * Created by kedar on 11/2/19.
  */
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,7 +13,7 @@ export class LoginPageComponent implements OnInit {
   constructor(private router: Router) {
   }
 
-  ngOnInit() {  
+  ngOnInit() {
   }
 
   onLoginBtnClick() {

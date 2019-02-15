@@ -20,7 +20,6 @@ export class DashboardTWoComponent implements OnInit {
     this.fetchData();
   }
 
-
   fetchData() {
     this.httpService.fetch("assets/jsondata/temperature.json").subscribe((resp: any) => {
       this.tempData = resp;

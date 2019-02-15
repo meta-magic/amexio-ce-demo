@@ -15,8 +15,7 @@
             <amexio-sidenav-node>
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
                     <amexio-layout-item>
-                        <amexio-image [height]="'79.75px'" [width]="'79.75px'" [c-class]="'image-round'"
-                            path="assets/images/john.jpg">
+                        <amexio-image [height]="'79.75px'" [width]="'79.75px'" [c-class]="'image-round'" path="assets/images/john.jpg">
                         </amexio-image>
                     </amexio-layout-item>
                     <amexio-layout-item>
@@ -26,13 +25,13 @@
                 </amexio-layout-columns>
             </amexio-sidenav-node>
             <br />
-            
+
             <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='dashboardMenu' [label]="'Dashboards'"
                 [icon]="'fa fa-th'" (nodeClick)="onMenuClick($event)">
             </amexio-sidenav-node>
-            
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='pageMenu' [label]="'Pages'"
-                [icon]="'fa fa-address-card'" (nodeClick)="onMenuClick($event)">
+
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='pageMenu' [label]="'Pages'" [icon]="'fa fa-address-card'"
+                (nodeClick)="onMenuClick($event)">
             </amexio-sidenav-node>
 
         </amexio-side-nav>
@@ -40,7 +39,8 @@
 
     <amexio-column [size]="'9pt5'" style="padding-top:68px;">
         <div *ngIf="isRouteLoading">
-            <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'" [color]="'black'" [size]="'7px'">
+            <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'"
+                [color]="'black'" [size]="'7px'">
             </amexio-spinner>
         </div>
         <div style="padding-top:1.8%">
