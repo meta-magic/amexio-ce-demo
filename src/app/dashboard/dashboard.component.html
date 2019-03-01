@@ -111,7 +111,7 @@
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#26c6da,#00acc1)'">
                 <div style="display: block; width: 100%;">
-                    <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5" [data]="lineChartData">
+                    <amexio-d3-chart-line [horizontal-scale]="false" [height]="125" [yaxis-interval] = "3" [legend]="false" [label-color]="'white'" [yaxis-interval]="5" [data]="lineChartData">
                     </amexio-d3-chart-line>
                 </div>
             </amexio-header-ce>
@@ -145,7 +145,7 @@
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#ef5350,#e53935)'">
                 <div style="display: block; width: 100%;">
-                    <amexio-d3-chart-bar [data]="cityPopulationData" [horizontal-scale]="false" [label-color]="'white'"
+                    <amexio-d3-chart-bar [height]="125" [yaxis-interval] = "3" [data]="cityPopulationData" [horizontal-scale]="false" [label-color]="'white'"
                         [label]="false" [legend]="false">
                     </amexio-d3-chart-bar>
                 </div>
@@ -179,7 +179,7 @@
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce [background]="'linear-gradient(60deg,#66bb6a,#43a047)'">
                 <div style="display: block; width: 100%;">
-                    <amexio-d3-chart-bar [data]="lastThreeYearsData" [horizontal-scale]="false" [label-color]="'white'"
+                    <amexio-d3-chart-bar [height]="125" [yaxis-interval] = "3" [data]="lastThreeYearsData" [horizontal-scale]="false" [label-color]="'white'"
                         [label]="false" [legend]="false">
                     </amexio-d3-chart-bar>
                 </div>
