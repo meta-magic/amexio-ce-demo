@@ -45,8 +45,7 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['login']);
   }
 
-  navigateToGithub(event:any){
-    debugger;
+  navigateToGithub(event: any) {
     window.open('https://github.com/meta-magic/amexio-ce-demo', '_blank');
   }
 }
