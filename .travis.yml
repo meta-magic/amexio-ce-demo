@@ -23,6 +23,7 @@ before_script:
   - sh -e /etc/init.d/xvfb start
   - npm install --global gulp --save
 script: 
+  - rm -rf docs
   - npm install
   - npm i https://github.com/meta-magic/d3-charts-tar/blob/master/amexio-chart-d3.tgz?raw=true
   - npm i https://github.com/meta-magic/amexio-ios/blob/v5.7/amexio-ng-extensions.tgz?raw=true
