@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "text": "Home",
+            "link": "/home",
+            "select": true
+        },
+        {
+            "text": "Electronics",
+            "link": "/Electronics",
+            "select": true
+        },
+        {
+            "text": "Kids",
+            "link": "/kids",
+            "select": true
+        },
+        {
+            "text": "Offer ",
+            "link": "/Offer ",
+            "select": true
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "dashboard":[
+        {
+          "text": "Demo One",
+          "icon": "fa fa-th-large",
+          "mdaIcon": "link",
+          "link": "home/dashboard"
+        },
+        {
+          "text": "Demo Two",
+          "icon": "fa fa-th-list",
+          "mdaIcon": "link",
+          "link": "home/dashboardtwo"
+        },
+        {
+          "text": "Demo Three",
+          "icon": "fa fa-table",
+          "mdaIcon": "link",
+          "link": "home/dashboardthree"
+        }
+    
+      ],
+    "userprofile":[
+
+        {
+          "text": "User Profile",
+          "icon": "fa fa-user",
+          "mdaIcon": "link",
+          "link": "home/userprofile"
+        },
+        {
+          "text": "TimeLine",
+          "icon": "fa fa-th-list",
+          "mdaIcon": "link",
+          "link": "home/timeline"
+        },
+        {
+          "text": "Map",
+          "icon": "fa fa-map",
+          "mdaIcon": "link",
+          "link": "home/map"
+        }
+  
+      ]
+}
