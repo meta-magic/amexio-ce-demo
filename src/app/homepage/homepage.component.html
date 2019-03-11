@@ -1,24 +1,23 @@
-<amexio-nav [enable-side-nav-position]="true" class="ok" [title]="'CREATIVE'" [logo]="'assets/images/a_Logo.png'">
-    <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-bell'">
-    </amexio-nav-item>
-    <amexio-nav-item position-right [type]="'textfield'" [title]="'Enter your name'">
-    </amexio-nav-item>
-    <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-sign-out'" [title]="'Logout'"
-        (onNavItemClick)="logout($event)">
-    </amexio-nav-item>
-</amexio-nav>
+<amexio-homepage-ce [type]="homePageType">
+    <amexio-homepage-northpanel>
+        <amexio-nav [enable-side-nav-position]="true" class="ok" [title]="'CREATIVE'" [logo]="'assets/images/a_Logo.png'">
+            <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-bell'">
+            </amexio-nav-item>
+            <amexio-nav-item position-right [type]="'textfield'" [title]="'Enter your name'">
+            </amexio-nav-item>
+            <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-sign-out'" [title]="'Logout'" (onNavItemClick)="logout($event)">
+            </amexio-nav-item>
+        </amexio-nav>
 
-<amexio-row>
-    <amexio-column [size]="'2pt5'" style="padding-top:64px;">
-        <amexio-side-nav [height]="'92%'" [background]="'rgba(0,0,0,.7)'" [color]="'white'"
-            [bg-image]="'assets/images/p.jpeg'">
+    </amexio-homepage-northpanel>
+    <amexio-homepage-westpanel>
+        <amexio-side-nav [height]="'92%'" [background]="'rgba(0,0,0,.7)'" [color]="'white'" [bg-image]="'assets/images/p.jpeg'">
 
             <br />
             <amexio-sidenav-node>
                 <amexio-layout-columns [border]="false" [fit]="true" [orientation]="'horizontal'">
                     <amexio-layout-item>
-                        <amexio-image [height]="'79.75px'" [width]="'79.75px'" [c-class]="'image-round'"
-                            path="assets/images/john.jpg">
+                        <amexio-image [height]="'79.75px'" [width]="'79.75px'" [c-class]="'image-round'" path="assets/images/john.jpg">
                         </amexio-image>
                     </amexio-layout-item>
                     <amexio-layout-item>
@@ -29,29 +28,23 @@
             </amexio-sidenav-node>
             <br />
 
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='dashboardMenu' [label]="'Dashboards'"
-                [icon]="'fa fa-th'" (nodeClick)="onMenuClick($event)">
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='dashboardMenu' [label]="'Dashboards'" [icon]="'fa fa-th'" (nodeClick)="onMenuClick($event)">
             </amexio-sidenav-node>
 
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='pageMenu' [label]="'Pages'"
-                [icon]="'fa fa-address-card'" (nodeClick)="onMenuClick($event)">
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='pageMenu' [label]="'Pages'" [icon]="'fa fa-address-card'" (nodeClick)="onMenuClick($event)">
             </amexio-sidenav-node>
 
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Github'"
-                [icon]="'fa fa-github'" (nodeClick)="navigateToGithub($event)">
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Github'" [icon]="'fa fa-github'" (nodeClick)="navigateToGithub($event)">
             </amexio-sidenav-node>
 
         </amexio-side-nav>
-    </amexio-column>
-
-    <amexio-column [size]="'9pt5'" style="padding-top:68px;">
+    </amexio-homepage-westpanel>
+    <amexio-homepage-centerpanel>
         <div *ngIf="isRouteLoading">
-            <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'"
-                [color]="'black'" [size]="'7px'">
+            <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'" [color]="'black'" [size]="'7px'">
             </amexio-spinner>
         </div>
-        <div style="padding-top:1.8%">
-            <router-outlet></router-outlet>
-        </div>
-    </amexio-column>
-</amexio-row>
+
+        <router-outlet></router-outlet>
+    </amexio-homepage-centerpanel>
+</amexio-homepage-ce>

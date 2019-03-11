@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouteConfigLoadStart, RouteConfigLoadEnd } from '@angular/router';
 import { HTTPService } from '../service/http.service';
+import { ActivatedRoute } from '@angular/router';
+import { debug } from 'util';
 
 @Component({
   selector: 'home-demo',
@@ -13,11 +15,16 @@ export class HomeComponent implements OnInit {
   pageMenu: any;
   dashboardMenu: any;
   isRouteLoading: boolean = false;
-
-  constructor(private router: Router, private httpService: HTTPService) {
+  homePageType = '1';
+  constructor(private router: Router, private httpService: HTTPService, private rt: ActivatedRoute) {
   }
 
   ngOnInit() {
+    this.rt.queryParamMap.subscribe((params: any) => {
+      if (params && params.params) {
+        this.homePageType = params.params.type;
+      }
+   });
     this.router.events.subscribe(event => {
       if (event instanceof RouteConfigLoadStart) {
         this.isRouteLoading = true;

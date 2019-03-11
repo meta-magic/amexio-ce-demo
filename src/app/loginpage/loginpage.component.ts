@@ -3,21 +3,28 @@
  */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { debug } from 'util';
 
 @Component({
   selector: 'login',
   templateUrl: './loginpage.component.html'
 })
 export class LoginPageComponent implements OnInit {
-
-  constructor(private router: Router) {
+  type = '1';
+  constructor(private router: Router, private rt: ActivatedRoute) {
   }
 
   ngOnInit() {
+    this.rt.queryParamMap.subscribe((params: any) => {
+      if (params && params.params) {
+        this.type = params.params.type;
+      }
+   });
   }
 
   onLoginBtnClick() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/home'], { queryParams: { type: this.type } });
   }
 }
 
