@@ -219,21 +219,30 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
  */
 
 
+
 var LoginPageComponent = /** @class */ (function () {
-    function LoginPageComponent(router) {
+    function LoginPageComponent(router, rt) {
         this.router = router;
+        this.rt = rt;
+        this.type = '1';
     }
     LoginPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.rt.queryParamMap.subscribe(function (params) {
+            if (params && params.params) {
+                _this.type = params.params.type;
+            }
+        });
     };
     LoginPageComponent.prototype.onLoginBtnClick = function () {
-        this.router.navigate(['/home']);
+        this.router.navigate(['/home'], { queryParams: { type: this.type } });
     };
     LoginPageComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'login',
             template: __webpack_require__(/*! ./loginpage.component.html */ "./src/app/loginpage/loginpage.component.html")
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]])
     ], LoginPageComponent);
     return LoginPageComponent;
 }());
