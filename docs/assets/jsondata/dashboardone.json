@@ -1,1 +1,96 @@
-{"lineChartData":[[{"datatype":"number","label":"Day"},{"datatype":"number","label":"Sales"}],["MON",10],["TUE",30],["WED",20],["THU",10],["FRI",30],["SAT",20],["SUN",40]],"cityPopulationData":[["Quaters","population","color"],["Q1",383,"hsla(0,0%,100%,.8)"],["Q2",943,"hsla(0,0%,100%,.8)"],["Q3",692,"hsla(0,0%,100%,.8)"],["Q4",467,"hsla(0,0%,100%,.8)"]],"lastThreeYearsData":[["Year","Revenue","color"],["2015",150,"hsla(0,0%,100%,.8)"],["2016",180,"hsla(0,0%,100%,.8)"],["2017",100,"hsla(0,0%,100%,.8)"],["2018",80,"hsla(0,0%,100%,.8)"]]}
+{
+    "lineChartData": [
+        [
+            {
+                "datatype": "number",
+                "label": "Day"
+            },
+            {
+                "datatype": "number",
+                "label": "Sales"
+            }
+        ],
+        [
+            0,
+            10
+        ],
+        [
+            1,
+            30
+        ],
+        [
+            2,
+            20
+        ],
+        [
+            3,
+            10
+        ],
+        [
+            4,
+            30
+        ],
+        [
+            5,
+            20
+        ],
+        [
+            6,
+            40
+        ]
+    ],
+    "cityPopulationData": [
+        [
+            "Quaters",
+            "population",
+            "color"
+        ],
+        [
+            "Q1",
+            383,
+            "hsla(0,0%,100%,.8)"
+        ],
+        [
+            "Q2",
+            943,
+            "hsla(0,0%,100%,.8)"
+        ],
+        [
+            "Q3",
+            692,
+            "hsla(0,0%,100%,.8)"
+        ],
+        [
+            "Q4",
+            467,
+            "hsla(0,0%,100%,.8)"
+        ]
+    ],
+    "lastThreeYearsData": [
+        [
+            "Year",
+            "Revenue",
+            "color"
+        ],
+        [
+            "2015",
+            150,
+            "hsla(0,0%,100%,.8)"
+        ],
+        [
+            "2016",
+            180,
+            "hsla(0,0%,100%,.8)"
+        ],
+        [
+            "2017",
+            100,
+            "hsla(0,0%,100%,.8)"
+        ],
+        [
+            "2018",
+            80,
+            "hsla(0,0%,100%,.8)"
+        ]
+    ]
+}
