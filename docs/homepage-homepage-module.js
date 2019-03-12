@@ -41103,7 +41103,7 @@ var DashboardTWoComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<amexio-nav [enable-side-nav-position]=\"true\" class=\"ok\" [title]=\"'CREATIVE'\" [logo]=\"'assets/images/a_Logo.png'\">\n    <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-bell'\">\n    </amexio-nav-item>\n    <amexio-nav-item position-right [type]=\"'textfield'\" [title]=\"'Enter your name'\">\n    </amexio-nav-item>\n    <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-sign-out'\" [title]=\"'Logout'\"\n        (onNavItemClick)=\"logout($event)\">\n    </amexio-nav-item>\n</amexio-nav>\n\n<amexio-row>\n    <amexio-column [size]=\"'2pt5'\" style=\"padding-top:64px;\">\n        <amexio-side-nav [height]=\"'92%'\" [background]=\"'rgba(0,0,0,.7)'\" [color]=\"'white'\"\n            [bg-image]=\"'assets/images/p.jpeg'\">\n\n            <br />\n            <amexio-sidenav-node>\n                <amexio-layout-columns [border]=\"false\" [fit]=\"true\" [orientation]=\"'horizontal'\">\n                    <amexio-layout-item>\n                        <amexio-image [height]=\"'79.75px'\" [width]=\"'79.75px'\" [c-class]=\"'image-round'\"\n                            path=\"assets/images/john.jpg\">\n                        </amexio-image>\n                    </amexio-layout-item>\n                    <amexio-layout-item>\n                        <amexio-label [size]=\"'medium'\"> John Deo</amexio-label>\n                        <amexio-label> CEO/CO-Founder</amexio-label>\n                    </amexio-layout-item>\n                </amexio-layout-columns>\n            </amexio-sidenav-node>\n            <br />\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='dashboardMenu' [label]=\"'Dashboards'\"\n                [icon]=\"'fa fa-th'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='pageMenu' [label]=\"'Pages'\"\n                [icon]=\"'fa fa-address-card'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Github'\"\n                [icon]=\"'fa fa-github'\" (nodeClick)=\"navigateToGithub($event)\">\n            </amexio-sidenav-node>\n\n        </amexio-side-nav>\n    </amexio-column>\n\n    <amexio-column [size]=\"'9pt5'\" style=\"padding-top:68px;\">\n        <div *ngIf=\"isRouteLoading\">\n            <amexio-spinner [type]=\"'rectanglebounce'\" [vertical-position]=\"'center'\" [horizontal-position]=\"'center'\"\n                [color]=\"'black'\" [size]=\"'7px'\">\n            </amexio-spinner>\n        </div>\n        <div style=\"padding-top:1.8%\">\n            <router-outlet></router-outlet>\n        </div>\n    </amexio-column>\n</amexio-row>"
+module.exports = "<amexio-homepage-ce [type]=\"homePageType\">\n    <amexio-homepage-northpanel>\n        <amexio-nav [enable-side-nav-position]=\"true\" class=\"ok\" [title]=\"'CREATIVE'\" [logo]=\"'assets/images/a_Logo.png'\">\n            <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-bell'\">\n            </amexio-nav-item>\n            <amexio-nav-item position-right [type]=\"'textfield'\" [title]=\"'Enter your name'\">\n            </amexio-nav-item>\n            <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-sign-out'\" [title]=\"'Logout'\" (onNavItemClick)=\"logout($event)\">\n            </amexio-nav-item>\n        </amexio-nav>\n\n    </amexio-homepage-northpanel>\n    <amexio-homepage-westpanel>\n        <amexio-side-nav [height]=\"'92%'\" [background]=\"'rgba(0,0,0,.7)'\" [color]=\"'white'\" [bg-image]=\"'assets/images/p.jpeg'\">\n\n            <br />\n            <amexio-sidenav-node>\n                <amexio-layout-columns [border]=\"false\" [fit]=\"true\" [orientation]=\"'horizontal'\">\n                    <amexio-layout-item>\n                        <amexio-image [height]=\"'79.75px'\" [width]=\"'79.75px'\" [c-class]=\"'image-round'\" path=\"assets/images/john.jpg\">\n                        </amexio-image>\n                    </amexio-layout-item>\n                    <amexio-layout-item>\n                        <amexio-label [size]=\"'medium'\"> John Deo</amexio-label>\n                        <amexio-label> CEO/CO-Founder</amexio-label>\n                    </amexio-layout-item>\n                </amexio-layout-columns>\n            </amexio-sidenav-node>\n            <br />\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='dashboardMenu' [label]=\"'Dashboards'\" [icon]=\"'fa fa-th'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='pageMenu' [label]=\"'Pages'\" [icon]=\"'fa fa-address-card'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Github'\" [icon]=\"'fa fa-github'\" (nodeClick)=\"navigateToGithub($event)\">\n            </amexio-sidenav-node>\n\n        </amexio-side-nav>\n    </amexio-homepage-westpanel>\n    <amexio-homepage-centerpanel>\n        <div *ngIf=\"isRouteLoading\">\n            <amexio-spinner [type]=\"'rectanglebounce'\" [vertical-position]=\"'center'\" [horizontal-position]=\"'center'\" [color]=\"'black'\" [size]=\"'7px'\">\n            </amexio-spinner>\n        </div>\n\n        <router-outlet></router-outlet>\n    </amexio-homepage-centerpanel>\n</amexio-homepage-ce>"
 
 /***/ }),
 
@@ -41132,14 +41132,22 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(router, httpService) {
+    function HomeComponent(router, httpService, rt) {
         this.router = router;
         this.httpService = httpService;
+        this.rt = rt;
         this.isRouteLoading = false;
+        this.homePageType = '1';
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.rt.queryParamMap.subscribe(function (params) {
+            if (params && params.params) {
+                _this.homePageType = params.params.type;
+            }
+        });
         this.router.events.subscribe(function (event) {
             if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouteConfigLoadStart"]) {
                 _this.isRouteLoading = true;
@@ -41173,7 +41181,7 @@ var HomeComponent = /** @class */ (function () {
             selector: 'home-demo',
             template: __webpack_require__(/*! ./homepage.component.html */ "./src/app/homepage/homepage.component.html"),
         }),
-        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _service_http_service__WEBPACK_IMPORTED_MODULE_2__["HTTPService"]])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _service_http_service__WEBPACK_IMPORTED_MODULE_2__["HTTPService"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"]])
     ], HomeComponent);
     return HomeComponent;
 }());
