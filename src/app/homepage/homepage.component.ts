@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
   }
 
   onMenuClick(node: any) {
-    if (node.hasOwnProperty('link')) {
+    if (node && node.hasOwnProperty('link')) {
       this.router.navigate([node.link]);
     }
   }
