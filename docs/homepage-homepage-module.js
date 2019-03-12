@@ -41166,7 +41166,7 @@ var HomeComponent = /** @class */ (function () {
         });
     };
     HomeComponent.prototype.onMenuClick = function (node) {
-        if (node.hasOwnProperty('link')) {
+        if (node && node.hasOwnProperty('link')) {
             this.router.navigate([node.link]);
         }
     };
