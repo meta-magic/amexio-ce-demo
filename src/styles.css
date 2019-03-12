@@ -19,7 +19,7 @@
     border-radius : 10px;
 }
  
-.card-container-header, .card-container-narrower-header, amexio-card-ce > div , .card-container-ce {
+.header-ce, .card-container-narrower-header, amexio-card-ce > div , .card-container-ce {
     border-radius: 10px;
 }
 
