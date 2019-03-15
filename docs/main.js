@@ -53,7 +53,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet>\n\n\n</router-outlet>"
+module.exports = "<router-outlet>\n\n</router-outlet>"
 
 /***/ }),
 
