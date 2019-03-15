@@ -25,6 +25,9 @@ export class HomeComponent implements OnInit {
         this.homePageType = params.params.type;
       }
    });
+   if (!this.homePageType) {
+    this.homePageType = '1';
+   }
     this.router.events.subscribe(event => {
       if (event instanceof RouteConfigLoadStart) {
         this.isRouteLoading = true;
