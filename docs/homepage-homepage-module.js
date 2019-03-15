@@ -41148,6 +41148,9 @@ var HomeComponent = /** @class */ (function () {
                 _this.homePageType = params.params.type;
             }
         });
+        if (!this.homePageType) {
+            this.homePageType = '1';
+        }
         this.router.events.subscribe(function (event) {
             if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouteConfigLoadStart"]) {
                 _this.isRouteLoading = true;
