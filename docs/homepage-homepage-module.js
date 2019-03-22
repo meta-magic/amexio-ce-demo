@@ -34042,7 +34042,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function(series, order) {
-  if (!((n = series.length) > 1)) return;
+  if (!((n = series.length) > 0)) return;
   for (var i, j = 0, d, dy, yp, yn, n, m = series[order[0]].length; j < m; ++j) {
     for (yp = yn = 0, i = 0; i < n; ++i) {
       if ((dy = (d = series[order[i]][j])[1] - d[0]) >= 0) {
@@ -41143,11 +41143,15 @@ var HomeComponent = /** @class */ (function () {
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.rt.queryParamMap.subscribe(function (params) {
-            if (params && params.params) {
-                _this.homePageType = params.params.type;
+        this.rt.queryParamMap.subscribe(function (paramsObject) {
+            if (paramsObject && paramsObject.params) {
+                _this.homePageType = paramsObject.params.type;
             }
         });
+        if (this.homePageType === '2') {
+            this.newTheme = 'assets/theme/at-md-pumpkin-fire.css';
+            this.addNewTheme(this.newTheme);
+        }
         if (!this.homePageType) {
             this.homePageType = '1';
         }
@@ -41160,6 +41164,15 @@ var HomeComponent = /** @class */ (function () {
             }
         });
         this.fetchData();
+    };
+    HomeComponent.prototype.addNewTheme = function (newTheme) {
+        var linkEl = document.createElement('link');
+        linkEl.onload = function () {
+        };
+        linkEl.setAttribute('rel', 'stylesheet');
+        linkEl.id = 'themeid';
+        linkEl.href = newTheme;
+        document.head.appendChild(linkEl);
     };
     HomeComponent.prototype.fetchData = function () {
         var _this = this;
