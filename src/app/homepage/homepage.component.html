@@ -45,3 +45,37 @@
         <router-outlet></router-outlet>
     </amexio-homepage-centerpanel>
 </amexio-homepage-ce>
+
+<amexio-floating-panel [event]="event" [show]="showfloatplanel">
+    <amexio-card >
+      <amexio-body>
+        <div class="floating-theme">
+        <amexio-tab-view  [closable]="false">
+          <amexio-tab title="Material" [active]="true">
+            <div style="height: 350px;overflow-x: auto">
+              <amexio-row *ngFor="let objArray of materialThemeArray" >
+                <ng-container *ngFor="let obj of objArray">
+                  <amexio-column style="cursor: pointer" [size]="4"  (click)="themeChange(obj)">
+                  {{obj.themeName}}
+                    <!-- <amexio-image [path]="'assets/images/themematerialicons/'+ obj.link"></amexio-image><br><b>{{obj.themeName}}</b> -->
+                  </amexio-column>
+                </ng-container>
+              </amexio-row>
+            </div>
+          </amexio-tab>
+          <amexio-tab title="Amexio">
+            <div style="height: 350px;overflow-x: auto">
+              <amexio-row *ngFor="let objArray of amexioThemeArray" >
+                <ng-container *ngFor="let obj of objArray">
+                  <amexio-column style="cursor: pointer" [size]="4"  (click)="themeChange(obj)">
+                    <amexio-image [path]="'assets/images/themeamexioicon/'+ obj.link"></amexio-image><br><b>{{obj.themeName}}</b>
+                  </amexio-column>
+                </ng-container>
+              </amexio-row>
+            </div>
+          </amexio-tab>
+        </amexio-tab-view>
+      </div>
+      </amexio-body>
+    </amexio-card>
+    </amexio-floating-panel>

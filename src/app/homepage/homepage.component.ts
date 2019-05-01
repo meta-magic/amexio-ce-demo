@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router, RouteConfigLoadStart, RouteConfigLoadEnd } from '@angular/router';
 import { HTTPService } from '../service/http.service';
 import { ActivatedRoute } from '@angular/router';
+import {CookieService} from 'ngx-cookie-service';
+import { debug } from 'util';
 
 @Component({
   selector: 'home-demo',
@@ -16,7 +18,10 @@ export class HomeComponent implements OnInit {
   isRouteLoading: boolean = false;
   homePageType = '1';
   newTheme: string;
-  constructor(private router: Router, private httpService: HTTPService, private rt: ActivatedRoute) {
+  newThemePath: string;
+  flag: boolean;
+  materialThemeArray:any;
+  constructor(private router: Router, private httpService: HTTPService,private cookieService: CookieService, private rt: ActivatedRoute) {
   }
 
   ngOnInit() {
@@ -40,6 +45,7 @@ export class HomeComponent implements OnInit {
       }
     });
     this.fetchData();
+    this.getTheThemesData();
 
   }
 
@@ -75,4 +81,73 @@ export class HomeComponent implements OnInit {
   navigateToGithub(event: any) {
     window.open('https://github.com/meta-magic/amexio-ce-demo', '_blank');
   }
+
+  //////
+
+  themeChange(theme: any) {
+    debugger;
+  //   this.newThemePath = 'assets/theme/' + theme.themeCSS3File + '.scss';
+  //   let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
+  //   // this.removeExistingTheme(currentTheme);
+  //   this.addNewTheme1(this.newThemePath,currentTheme);
+  //   this.cookieService.set('theme_name_v4', theme.themeCssFile);
+  //   this.toggle();
+  //  // window.location.reload();
+  //   this.showfloatplanel = false;
+
+  let response:any;
+  this.httpService.fetch('assets/themejson/'+theme.themeJSONFile).subscribe(data => {
+    response = data;
+  }, error => {
+  }, () => {
+    let themeColor = response.themeColor;
+    let appColor = response.appColor;
+    let compColor = response.compColor;
+   themeColor.forEach((style:any) => {
+     let value=style.value.replace(';','');
+    document.documentElement.style.setProperty(style.key,value);
+    
+    });
+
+    appColor.forEach((style:any) => {
+      let value=style.value.replace(';','');
+     document.documentElement.style.setProperty(style.key,value);
+       
+     });
+
+     compColor.forEach((style:any) => {
+      let value=style.value.replace(';','');
+     document.documentElement.style.setProperty(style.key,value);
+       
+     });
+
+
+  });
+  }
+
+   //Window Open
+   toggle() {
+    this.flag = !this.flag;
+  }
+
+
+
+
+
+
+
+    getTheThemesData() {
+      
+      let amexioThemeRepsonse: any;
+      let materialThemeResponse: any;
+  
+      //HTML FILE
+      debugger;
+      this.httpService.fetch('assets/theme/material.json').subscribe(data => {
+        materialThemeResponse = data;
+      }, error => {
+      }, () => {
+        this.materialThemeArray = materialThemeResponse;
+      });
+    }
 }

@@ -2,6 +2,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import {CookieService} from 'ngx-cookie-service';
+
 import { HomeComponent } from './homepage.component';
 import {
   AmexioWidgetModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule,
@@ -17,6 +19,7 @@ import { DashboardThreeComponent } from '../dashboardthree/dashboardthree.compon
 import { DashboardTWoComponent } from '../dashboardtwo/dashboardtwo.component';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { MapComponent } from '../map/map.component';
+import {AmexioFloatingPanelComponent} from '../floatingpanel/floatingpanel.component';
 
 /**
  * Created by kedar on 11/2/19.
@@ -38,13 +41,13 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, TimelineComponent, MapComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
+  declarations: [HomeComponent, TimelineComponent, AmexioFloatingPanelComponent, MapComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
   imports: [CommonModule,
     FormsModule, AmexioChartD3Module, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule, HttpClientModule,
     RouterModule.forChild(routes),
   ],
   bootstrap: [HomeComponent],
-  providers: [],
+  providers: [CookieService],
 })
 export class HomeModule { }
