@@ -47,6 +47,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
   ],
   bootstrap: [HomeComponent],
-  providers: [CookieService],
+  providers: [],
 })
 export class HomeModule { }
