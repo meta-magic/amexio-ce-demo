@@ -41337,7 +41337,6 @@ var HomeComponent = /** @class */ (function () {
     };
     //////
     HomeComponent.prototype.themeChange = function (theme) {
-        debugger;
         //   this.newThemePath = 'assets/theme/' + theme.themeCSS3File + '.scss';
         //   let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
         //   // this.removeExistingTheme(currentTheme);
@@ -41377,7 +41376,6 @@ var HomeComponent = /** @class */ (function () {
         var amexioThemeRepsonse;
         var materialThemeResponse;
         //HTML FILE
-        debugger;
         this.httpService.fetch('assets/theme/material.json').subscribe(function (data) {
             materialThemeResponse = data;
         }, function (error) {
