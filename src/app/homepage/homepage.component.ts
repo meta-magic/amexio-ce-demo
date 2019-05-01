@@ -84,7 +84,6 @@ export class HomeComponent implements OnInit {
   //////
 
   themeChange(theme: any) {
-    debugger;
   //   this.newThemePath = 'assets/theme/' + theme.themeCSS3File + '.scss';
   //   let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
   //   // this.removeExistingTheme(currentTheme);
@@ -141,7 +140,6 @@ export class HomeComponent implements OnInit {
       let materialThemeResponse: any;
   
       //HTML FILE
-      debugger;
       this.httpService.fetch('assets/theme/material.json').subscribe(data => {
         materialThemeResponse = data;
       }, error => {
