@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router, RouteConfigLoadStart, RouteConfigLoadEnd } from '@angular/router';
 import { HTTPService } from '../service/http.service';
 import { ActivatedRoute } from '@angular/router';
-import {CookieService} from 'ngx-cookie-service';
 import { debug } from 'util';
 
 @Component({
@@ -21,7 +20,7 @@ export class HomeComponent implements OnInit {
   newThemePath: string;
   flag: boolean;
   materialThemeArray:any;
-  constructor(private router: Router, private httpService: HTTPService,private cookieService: CookieService, private rt: ActivatedRoute) {
+  constructor(private router: Router, private httpService: HTTPService, private rt: ActivatedRoute) {
   }
 
   ngOnInit() {

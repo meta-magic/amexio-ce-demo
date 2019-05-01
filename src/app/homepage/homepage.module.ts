@@ -2,7 +2,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import {CookieService} from 'ngx-cookie-service';
 
 import { HomeComponent } from './homepage.component';
 import {
