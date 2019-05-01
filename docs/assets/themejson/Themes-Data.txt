@@ -1,0 +1,106 @@
+// Amexio Themes v4.0 - Jan 31, 2018
+// Design-Type : Material Design
+// Theme-Version : 4.0
+// Date : Jan 31, 2018
+army-olive,#4B5320,#708238
+ash-stone-black,#544C4A,#877F7D
+black,#000000,#290500
+blue-grey,#153746,#455A64
+blue,#1565C0,#2196F3
+bruntor-tangerine,#964000,#CF912A
+cerise-magenta,#DE3163,#FF0090
+charcoal-iron,#222021,#48494B
+chocolate-russet,#7F461B,#2B1700
+fern-lime,#4F7942,#C7EA46
+frenchrose-mulberry,#e52e90,#d60a4e
+gingerbread,#BCAAA4,#BCAAA4
+gold-amber,#FFA000,#FFC107
+grape-violet,#6F2DA8,#B200ED
+honey-mustard,#EB9605,#FEDC56
+hot-pink-fuchsia,#F81894,#FF00FF
+indigo,#3f4ea2, #9FA8DA
+jungle-mint,#29AB87,#98BF98
+mahogany-barny-red,#420D09,#7C0A02
+mauve-orchid,#784B84,#AF69EE
+maya,#4ddfe8,#81D4F9
+navy-egyptian,#000080,#1134A6
+pineapple-flaxen,#FEE12B,#D5B85A
+pumpkin-fire,#FF7417,#FDA50F
+rasberry-sangria,#5E1914,#D21F3C
+red-maroon,#800000,#D30000
+sacramento-jade,#043927,#00A86B
+tronbone-royal,#D2B558,#FADA5E
+yale-azure,#0E4C92,#2196F3
+// Amexio Themes v4.1 - Feb 28, 2018
+// Design-Type : Material Design
+// Theme-Version : 4.1
+// Date : Feb 28, 2018
+hot-pink-violetred,#F81894,#C71585
+orangered-tomato,#FF4500,#FF6347
+rebeccapurple-orchid,#663399,#BA55D3
+indigo-darkviolet,#4B0082,#9400D3
+indigo-slateblue,#4B0082,#483D8B
+darkgreen-teal,#006400,#008080
+royalblue-dodgerblue,#4169E1,#1E90FF
+mediumblue-slateblue,#0000CD,#7B68EE
+sienna-rosybrown,#A0522D,#BC8F8F
+darkslategray-dimgray,#2F4F4F,#696969
+mediumblue-deepskyblue,#0000CD,#38cdff
+darkturquoise-aquamarine,#00ecf0,#7FFFD4
+darkkhaki-moccasin,#BDB76B,#FFE4B5
+indianred-salmon,#CD5C5C,#FA8072
+darkmagenta-darkorchid,#8B008B,#9932CC
+darkslateblue-indigo,#483D8B,#4B0082
+darkgreen-darkolivegreen,#006400,#556B2F
+navy-royalblue,#000080,#4169E1
+saddlebrown-peru,#8B4513,#CD853F
+mediumvioletred-hotpink,#C71585,#FF69B4
+firebrick-crimson,#B22222,#DC143C
+// Themes based on Countries
+z-flag-india,#ff8000,#008000
+z-flag-uSA,#E0162B,#0052A5
+z-flag-france,#0052A5,#E0162B
+z-flag-italy,#008000,#0052A5
+z-flag-germany,#E0162B,#ffff00
+z-flag-bahamas,#00ABC9,#FAE042
+z-flag-japan,#FFFFFF,#DC143C
+// Amexio Themes v5.11 - April 26, 2019
+// Design-Type : Material Design
+// Theme-Version : 5.11
+// Date : April 26, 2019
+// Color-Algo : 2
+z-ce-cas-firebrick, #B22222
+z-ce-cas-deep-blue, #0914F5
+z-ce-cas-fluro-green, #09F551
+z-ce-cas-fluro-lime, #CAF509
+z-ce-cas-zen-pink, #E309F5
+z-ce-cas-cool-violet, #8A09F5
+z-ce-cas-real-blue, #1B09F5
+z-ce-cas-brick-red, #F50929
+z-ce-cas-dark-red, #AF0306
+z-ce-cas-military-green, #028C0A
+z-ce-cas-forest-green, #738C02
+// Color-Algo : 3
+z-ce-cad-firebrick, #B22222
+z-ce-cad-deep-blue, #0914F5
+z-ce-cad-fluro-green, #09F551
+z-ce-cad-fluro-lime, #CAF509
+z-ce-cad-zen-pink, #E309F5
+z-ce-cad-cool-violet, #8A09F5
+z-ce-cad-real-blue, #1B09F5
+z-ce-cad-brick-red, #F50929
+z-ce-cad-dark-red, #AF0306
+z-ce-cad-military-green, #028C0A
+z-ce-cad-forest-green, #738C02
+// Color-Algo : 7
+z-ce-cts-firebrick, #F11D07
+z-ce-cts-deep-blue, #0720F1
+z-ce-cts-fluro-green, #C0F107
+z-ce-cts-fluro-lime, #D1F107
+z-ce-cts-zen-pink, #F107DC
+z-ce-cts-cool-violet, #AE07F1
+z-ce-cts-real-blue, #070EF1
+z-ce-cts-brick-red, #F10739
+z-ce-cts-dark-red, #AF0306
+z-ce-cts-military-green, #028C0A
+z-ce-cts-forest-green, #738C02
