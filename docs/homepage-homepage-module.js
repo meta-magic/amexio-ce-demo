@@ -41356,8 +41356,8 @@ var HomeComponent = /** @class */ (function () {
                 document.documentElement.style.setProperty(style.key, value);
             });
             compColor.forEach(function (style) {
-                var value = style.value.replace(';', '');
-                document.documentElement.style.setProperty(style.key, value);
+                // let value=style.value.replace(';','');
+                document.documentElement.style.setProperty(style.key, style.value);
             });
         });
     };
