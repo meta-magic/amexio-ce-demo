@@ -84,17 +84,11 @@ export class HomeComponent implements OnInit {
   //////
 
   themeChange(theme: any) {
-  //   this.newThemePath = 'assets/theme/' + theme.themeCSS3File + '.scss';
-  //   let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
-  //   // this.removeExistingTheme(currentTheme);
-  //   this.addNewTheme1(this.newThemePath,currentTheme);
-  //   this.cookieService.set('theme_name_v4', theme.themeCssFile);
-  //   this.toggle();
-  //  // window.location.reload();
-  //   this.showfloatplanel = false;
+console.log("theme", theme);
 
   let response:any;
-  this.httpService.fetch('assets/themejson/'+theme.themeJSONFile).subscribe(data => {
+  debugger;
+  this.httpService.fetch('https://api.amexio.org/api/mda/'+theme.themeJSONFile).subscribe(data => {
     response = data;
   }, error => {
   }, () => {
