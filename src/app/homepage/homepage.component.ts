@@ -108,8 +108,8 @@ console.log("theme", theme);
      });
 
      compColor.forEach((style:any) => {
-      let value=style.value.replace(';','');
-     document.documentElement.style.setProperty(style.key,value);
+      // let value=style.value.replace(';','');
+     document.documentElement.style.setProperty(style.key,style.value);
        
      });
 
