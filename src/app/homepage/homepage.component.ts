@@ -84,8 +84,6 @@ export class HomeComponent implements OnInit {
   //////
 
   themeChange(theme: any) {
-console.log("theme", theme);
-
   let response:any;
   debugger;
   this.httpService.fetch('https://api.amexio.org/api/mda/'+theme.themeJSONFile).subscribe(data => {
