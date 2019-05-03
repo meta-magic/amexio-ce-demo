@@ -41109,6 +41109,146 @@ var DashboardTWoComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/floatingpanel/floatingpanel.component.html":
+/*!************************************************************!*\
+  !*** ./src/app/floatingpanel/floatingpanel.component.html ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"floatingpanel\">\n    <div class=\"floatingpanelbutton\"> \n        <amexio-floating-button [relative] = \"true\"\n            [icon]=\"'fa fa-ellipsis-v'\" [type]=\"'red'\">\n        </amexio-floating-button>\n        <div class=\"floatingcontent\">\n                <ng-content></ng-content>\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/floatingpanel/floatingpanel.component.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/floatingpanel/floatingpanel.component.ts ***!
+  \**********************************************************/
+/*! exports provided: AmexioFloatingPanelComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AmexioFloatingPanelComponent", function() { return AmexioFloatingPanelComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+/**
+ * Created by rashmi on 03/05/19.
+ */
+/*
+ * Copyright 2016-2017 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Author - Rashmi Thakkar
+ *
+ */
+
+
+var AmexioFloatingPanelComponent = /** @class */ (function () {
+    function AmexioFloatingPanelComponent(document, elementRef) {
+        this.document = document;
+        this.elementRef = elementRef;
+        this.show = true;
+    }
+    Object.defineProperty(AmexioFloatingPanelComponent.prototype, "event", {
+        get: function () {
+            return this._event;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AmexioFloatingPanelComponent.prototype, "setEvent", {
+        set: function (value) {
+            this._event = value;
+            this.adjustPosition();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    AmexioFloatingPanelComponent.prototype.ngOnInit = function () {
+    };
+    AmexioFloatingPanelComponent.prototype.adjustPosition = function () {
+        var cr = this.event.currentTarget.getBoundingClientRect();
+        var x = cr.x;
+        var y = cr.y;
+        var wwidth = window.innerWidth;
+        var wheight = window.innerHeight;
+        this.top = null;
+        this.bottom = null;
+        this.left = null;
+        this.right = null;
+        if ((wwidth - x) < 100) {
+            console.log("position at right");
+            this.right = "5px";
+        }
+        else {
+            console.log("position at left");
+            this.left = (x + cr.width) + "px";
+        }
+        if ((wheight - y) < 100) {
+            this.bottom = "100px";
+        }
+        else {
+            this.top = (y + cr.height) + "px";
+        }
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])('position-top'),
+        __metadata("design:type", String)
+    ], AmexioFloatingPanelComponent.prototype, "top", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])('position-bottom'),
+        __metadata("design:type", String)
+    ], AmexioFloatingPanelComponent.prototype, "bottom", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])('position-left'),
+        __metadata("design:type", String)
+    ], AmexioFloatingPanelComponent.prototype, "left", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])('position-right'),
+        __metadata("design:type", String)
+    ], AmexioFloatingPanelComponent.prototype, "right", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])('event'),
+        __metadata("design:type", Object),
+        __metadata("design:paramtypes", [Object])
+    ], AmexioFloatingPanelComponent.prototype, "setEvent", null);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])('show'),
+        __metadata("design:type", Boolean)
+    ], AmexioFloatingPanelComponent.prototype, "show", void 0);
+    AmexioFloatingPanelComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'amexio-floating-panel',
+            template: __webpack_require__(/*! ./floatingpanel.component.html */ "./src/app/floatingpanel/floatingpanel.component.html")
+        }),
+        __param(0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"])),
+        __metadata("design:paramtypes", [Object, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]])
+    ], AmexioFloatingPanelComponent);
+    return AmexioFloatingPanelComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/homepage/homepage.component.html":
 /*!**************************************************!*\
   !*** ./src/app/homepage/homepage.component.html ***!
@@ -41116,7 +41256,7 @@ var DashboardTWoComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<amexio-homepage-ce [type]=\"homePageType\">\n    <amexio-homepage-northpanel>\n        <amexio-nav [enable-side-nav-position]=\"true\" class=\"ok\" [title]=\"'CREATIVE'\" [logo]=\"'assets/images/a_Logo.png'\">\n            <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-bell'\">\n            </amexio-nav-item>\n            <amexio-nav-item position-right [type]=\"'textfield'\" [title]=\"'Enter your name'\">\n            </amexio-nav-item>\n            <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-sign-out'\" [title]=\"'Logout'\" (onNavItemClick)=\"logout($event)\">\n            </amexio-nav-item>\n        </amexio-nav>\n    </amexio-homepage-northpanel>\n    <amexio-homepage-westpanel>\n        <amexio-side-nav [height]=\"'92%'\" [background]=\"'rgba(0,0,0,.7)'\" [color]=\"'white'\" [bg-image]=\"'assets/images/p.jpeg'\">\n\n            <amexio-sidenav-node>\n                <amexio-layout-columns [border]=\"false\" [fit]=\"true\" [orientation]=\"'horizontal'\">\n                    <amexio-layout-item>\n                        <amexio-image [height]=\"'79.75px'\" [width]=\"'79.75px'\" [c-class]=\"'image-round'\" path=\"assets/images/john.jpg\">\n                        </amexio-image>\n                    </amexio-layout-item>\n                    <amexio-layout-item>\n                        <amexio-label [size]=\"'medium'\"> John Deo</amexio-label>\n                        <amexio-label> CEO/CO-Founder</amexio-label>\n                    </amexio-layout-item>\n                </amexio-layout-columns>\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='dashboardMenu' [label]=\"'Dashboards'\" [icon]=\"'fa fa-th'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='pageMenu' [label]=\"'Pages'\" [icon]=\"'fa fa-address-card'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Github'\" [icon]=\"'fa fa-github'\" (nodeClick)=\"navigateToGithub($event)\">\n            </amexio-sidenav-node>\n\n        </amexio-side-nav>\n    </amexio-homepage-westpanel>\n    <amexio-homepage-centerpanel>\n        <div *ngIf=\"isRouteLoading\">\n            <amexio-spinner [type]=\"'rectanglebounce'\" [vertical-position]=\"'center'\" [horizontal-position]=\"'center'\" [color]=\"'black'\" [size]=\"'7px'\">\n            </amexio-spinner>\n        </div>\n\n        <router-outlet></router-outlet>\n    </amexio-homepage-centerpanel>\n</amexio-homepage-ce>"
+module.exports = "<amexio-homepage-ce [type]=\"homePageType\">\n    <amexio-homepage-northpanel>\n        <amexio-nav [enable-side-nav-position]=\"true\" class=\"ok\" [title]=\"'CREATIVE'\" [logo]=\"'assets/images/a_Logo.png'\">\n            <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-bell'\">\n            </amexio-nav-item>\n            <amexio-nav-item position-right [type]=\"'textfield'\" [title]=\"'Enter your name'\">\n            </amexio-nav-item>\n            <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-sign-out'\" [title]=\"'Logout'\" (onNavItemClick)=\"logout($event)\">\n            </amexio-nav-item>\n        </amexio-nav>\n    </amexio-homepage-northpanel>\n    <amexio-homepage-westpanel>\n        <amexio-side-nav [height]=\"'92%'\" [background]=\"'rgba(0,0,0,.7)'\" [color]=\"'white'\" [bg-image]=\"'assets/images/p.jpeg'\">\n\n            <amexio-sidenav-node>\n                <amexio-layout-columns [border]=\"false\" [fit]=\"true\" [orientation]=\"'horizontal'\">\n                    <amexio-layout-item>\n                        <amexio-image [height]=\"'79.75px'\" [width]=\"'79.75px'\" [c-class]=\"'image-round'\" path=\"assets/images/john.jpg\">\n                        </amexio-image>\n                    </amexio-layout-item>\n                    <amexio-layout-item>\n                        <amexio-label [size]=\"'medium'\"> John Deo</amexio-label>\n                        <amexio-label> CEO/CO-Founder</amexio-label>\n                    </amexio-layout-item>\n                </amexio-layout-columns>\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='dashboardMenu' [label]=\"'Dashboards'\" [icon]=\"'fa fa-th'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='pageMenu' [label]=\"'Pages'\" [icon]=\"'fa fa-address-card'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Github'\" [icon]=\"'fa fa-github'\" (nodeClick)=\"navigateToGithub($event)\">\n            </amexio-sidenav-node>\n\n        </amexio-side-nav>\n    </amexio-homepage-westpanel>\n    <amexio-homepage-centerpanel>\n        <div *ngIf=\"isRouteLoading\">\n            <amexio-spinner [type]=\"'rectanglebounce'\" [vertical-position]=\"'center'\" [horizontal-position]=\"'center'\" [color]=\"'black'\" [size]=\"'7px'\">\n            </amexio-spinner>\n        </div>\n\n        <router-outlet></router-outlet>\n    </amexio-homepage-centerpanel>\n</amexio-homepage-ce>\n\n<amexio-floating-panel [event]=\"event\" [show]=\"showfloatplanel\">\n    <amexio-card [header]=\"false\">\n      <amexio-body>\n        <div class=\"floating-theme\">\n\n            <div style=\" width:400px; height: 350px;overflow-x: auto\">\n              <amexio-row *ngFor=\"let objArray of materialThemeArray\" >\n                <ng-container *ngFor=\"let obj of objArray\">\n                  <amexio-column style=\"cursor: pointer\" [size]=\"4\"  (click)=\"themeChange(obj)\">\n                    <amexio-image [path]=\"'assets/themeimages/'+ obj.link\"></amexio-image><br><b>{{obj.themeName}}</b>\n                  </amexio-column>\n                </ng-container>\n              </amexio-row>\n            </div>\n    \n        \n      </div>\n      </amexio-body>\n    </amexio-card>\n    </amexio-floating-panel>"
 
 /***/ }),
 
@@ -41173,6 +41313,7 @@ var HomeComponent = /** @class */ (function () {
             }
         });
         this.fetchData();
+        this.getTheThemesData();
     };
     HomeComponent.prototype.fetchData = function () {
         var _this = this;
@@ -41191,6 +41332,40 @@ var HomeComponent = /** @class */ (function () {
     };
     HomeComponent.prototype.navigateToGithub = function (event) {
         window.open('https://github.com/meta-magic/amexio-ce-demo', '_blank');
+    };
+    HomeComponent.prototype.getTheThemesData = function () {
+        var _this = this;
+        var amexioThemeRepsonse;
+        var materialThemeResponse;
+        //HTML FILE
+        this.httpService.fetch('assets/theme/material.json').subscribe(function (data) {
+            materialThemeResponse = data;
+        }, function (error) {
+        }, function () {
+            _this.materialThemeArray = materialThemeResponse;
+        });
+    };
+    HomeComponent.prototype.themeChange = function (theme) {
+        var response;
+        this.httpService.fetch('https://api.amexio.org/api/mda/' + theme.themeJSONFile).subscribe(function (data) {
+            response = data;
+        }, function (error) {
+        }, function () {
+            var themeColor = response.themeColor;
+            var appColor = response.appColor;
+            var compColor = response.compColor;
+            themeColor.forEach(function (style) {
+                var value = style.value.replace(';', '');
+                document.documentElement.style.setProperty(style.key, value);
+            });
+            appColor.forEach(function (style) {
+                var value = style.value.replace(';', '');
+                document.documentElement.style.setProperty(style.key, value);
+            });
+            compColor.forEach(function (style) {
+                document.documentElement.style.setProperty(style.key, style.value);
+            });
+        });
     };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -41230,12 +41405,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dashboardtwo_dashboardtwo_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../dashboardtwo/dashboardtwo.component */ "./src/app/dashboardtwo/dashboardtwo.component.ts");
 /* harmony import */ var _timeline_timeline_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../timeline/timeline.component */ "./src/app/timeline/timeline.component.ts");
 /* harmony import */ var _map_map_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../map/map.component */ "./src/app/map/map.component.ts");
+/* harmony import */ var _floatingpanel_floatingpanel_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../floatingpanel/floatingpanel.component */ "./src/app/floatingpanel/floatingpanel.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -41272,7 +41449,7 @@ var HomeModule = /** @class */ (function () {
     }
     HomeModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            declarations: [_homepage_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], _timeline_timeline_component__WEBPACK_IMPORTED_MODULE_12__["TimelineComponent"], _map_map_component__WEBPACK_IMPORTED_MODULE_13__["MapComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_6__["DashboardComponent"], _userprofile_userprofile_component__WEBPACK_IMPORTED_MODULE_7__["userProfileComponent"], _dashboardtwo_dashboardtwo_component__WEBPACK_IMPORTED_MODULE_11__["DashboardTWoComponent"], _dashboardthree_dashboardthree_component__WEBPACK_IMPORTED_MODULE_10__["DashboardThreeComponent"]],
+            declarations: [_homepage_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], _timeline_timeline_component__WEBPACK_IMPORTED_MODULE_12__["TimelineComponent"], _floatingpanel_floatingpanel_component__WEBPACK_IMPORTED_MODULE_14__["AmexioFloatingPanelComponent"], _map_map_component__WEBPACK_IMPORTED_MODULE_13__["MapComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_6__["DashboardComponent"], _userprofile_userprofile_component__WEBPACK_IMPORTED_MODULE_7__["userProfileComponent"], _dashboardtwo_dashboardtwo_component__WEBPACK_IMPORTED_MODULE_11__["DashboardTWoComponent"], _dashboardthree_dashboardthree_component__WEBPACK_IMPORTED_MODULE_10__["DashboardThreeComponent"]],
             imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], amexio_chart_d3__WEBPACK_IMPORTED_MODULE_8__["AmexioChartD3Module"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioChartsModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioDashBoardModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioEnterpriseModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioMapModule"],
                 amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioWidgetModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"],
