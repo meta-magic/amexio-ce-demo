@@ -45,3 +45,24 @@
         <router-outlet></router-outlet>
     </amexio-homepage-centerpanel>
 </amexio-homepage-ce>
+
+<amexio-floating-panel [event]="event" [show]="showfloatplanel">
+    <amexio-card [header]="false">
+      <amexio-body>
+        <div class="floating-theme">
+
+            <div style=" width:400px; height: 350px;overflow-x: auto">
+              <amexio-row *ngFor="let objArray of materialThemeArray" >
+                <ng-container *ngFor="let obj of objArray">
+                  <amexio-column style="cursor: pointer" [size]="4"  (click)="themeChange(obj)">
+                    <amexio-image [path]="'assets/themeimages/'+ obj.link"></amexio-image><br><b>{{obj.themeName}}</b>
+                  </amexio-column>
+                </ng-container>
+              </amexio-row>
+            </div>
+    
+        
+      </div>
+      </amexio-body>
+    </amexio-card>
+    </amexio-floating-panel>

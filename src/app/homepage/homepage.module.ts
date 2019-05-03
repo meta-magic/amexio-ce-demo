@@ -17,6 +17,7 @@ import { DashboardThreeComponent } from '../dashboardthree/dashboardthree.compon
 import { DashboardTWoComponent } from '../dashboardtwo/dashboardtwo.component';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { MapComponent } from '../map/map.component';
+import {AmexioFloatingPanelComponent} from '../floatingpanel/floatingpanel.component';
 
 /**
  * Created by kedar on 11/2/19.
@@ -38,7 +39,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, TimelineComponent, MapComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
+  declarations: [HomeComponent, TimelineComponent, AmexioFloatingPanelComponent, MapComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
   imports: [CommonModule,
     FormsModule, AmexioChartD3Module, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule, HttpClientModule,
