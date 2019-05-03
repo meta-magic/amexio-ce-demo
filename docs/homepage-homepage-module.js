@@ -41337,7 +41337,6 @@ var HomeComponent = /** @class */ (function () {
     };
     //////
     HomeComponent.prototype.themeChange = function (theme) {
-        console.log("theme", theme);
         var response;
         debugger;
         this.httpService.fetch('https://api.amexio.org/api/mda/' + theme.themeJSONFile).subscribe(function (data) {
