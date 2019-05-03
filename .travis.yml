@@ -25,11 +25,15 @@ script:
   #- rm -rf docs
   - npm install
   - npm i https://github.com/meta-magic/d3-charts-tar/blob/master/amexio-chart-d3.tgz?raw=true
-  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.7/amexio-ng-extensions.tgz?raw=true
+  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.11/amexio-ng-extensions.tgz?raw=true
   #- ng build --prod
   - ng build
 after_success: 
   - codecov
+  - git clone https://github.com/meta-magic/amexio-ce-demo.git -b master
+  - cd amexio-ce-demo/
+  - rm -rf docs/*
+  - cp -rf ../docs/* docs/
   - git add docs
   - git commit -m "[skip travis]  docs-updated"
   - git push  "https://deepali-arvind:${GITHUB_TOKEN}@github.com/meta-magic/amexio-ce-demo.git" HEAD:master
