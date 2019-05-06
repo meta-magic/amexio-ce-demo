@@ -18,7 +18,8 @@ import { DashboardTWoComponent } from '../dashboardtwo/dashboardtwo.component';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { MapComponent } from '../map/map.component';
 import {AmexioFloatingPanelComponent} from '../floatingpanel/floatingpanel.component';
-
+import { DataGridComponent} from '../data/data.component';
+// import { TemplatesGridComponent} from '../templates/templates.component'
 /**
  * Created by kedar on 11/2/19.
  */
@@ -34,12 +35,14 @@ const routes: Routes = [
       { path: 'dashboardtwo', component: DashboardTWoComponent },
       { path: 'timeline', component: TimelineComponent },
       { path: 'map', component: MapComponent },
+      { path: 'data',component: DataGridComponent},
+      // { path: '',component: TemplatesGridComponent}
     ]
   },
 ];
 
 @NgModule({
-  declarations: [HomeComponent, TimelineComponent, AmexioFloatingPanelComponent, MapComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
+  declarations: [DataGridComponent, HomeComponent, TimelineComponent, AmexioFloatingPanelComponent, MapComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
   imports: [CommonModule,
     FormsModule, AmexioChartD3Module, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule, HttpClientModule,

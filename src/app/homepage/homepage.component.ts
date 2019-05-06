@@ -65,7 +65,31 @@ export class HomeComponent implements OnInit {
   navigateToGithub(event: any) {
     window.open('https://github.com/meta-magic/amexio-ce-demo', '_blank');
   }
+  navigateToData(event: any) {
+    debugger;
+    this.router.navigate(['home/data']);
+  }
+  navigateToTemplates(event: any) {
 
+  }
+  navigateToAction(event: any) {
+
+  }
+  navigateToGroupByIssue(event: any) {
+
+  }
+  navigateToIssue(event: any) {
+
+  }
+  navigateToProfile(event: any) {
+
+  }
+  navigateToEmail(event: any) {
+
+  }
+  navigateToNavigation(event: any) {
+
+  }
   getTheThemesData() {
       
     let amexioThemeRepsonse: any;
