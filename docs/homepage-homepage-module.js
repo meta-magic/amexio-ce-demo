@@ -41109,6 +41109,298 @@ var DashboardTWoComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/data/data.component.html":
+/*!******************************************!*\
+  !*** ./src/app/data/data.component.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<amexio-layout-columns [border]=\"false\" [fit]=\"true\" [alignment]=\"'center'\" [orientation]=\"'vertical'\">\n    <amexio-layout-item [fit]=\"true\">\n      <amexio-card-ce>\n        <amexio-header-ce>\n          Google Map\n        </amexio-header-ce>\n        <amexio-row>\n            <amexio-column [size]=\"12\">\n              <amexio-tab-view header=\"Data Grid\" [header-align]=\"'right'\" [divide-header-equally]=false>\n                <amexio-tab title=\"Grid\" active=\"true\" [amexio-color]=\"'red'\">\n                  <amexio-row>\n                    <amexio-column [size]=\"12\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header>Simple Data Grid</amexio-header>\n                        <amexio-body>\n                          <amexio-datagrid [enable-column-fiter]=\"true\" [enable-checkbox]=\"false\" [height]=\"300\" title=\"Country Grid\"\n                            [http-method]=\"'get'\" [http-url]=\"'assets/data/datagrid.json'\" [data-reader]=\"'data'\" [page-size]=\"10\"\n                            [enable-data-filter]=\"false\">\n                            <amexio-data-table-column [data-index]=\"'name_official'\" [data-type]=\"'string'\" [hidden]=\"false\"\n                              [text]=\"'Name'\">\n                            </amexio-data-table-column>\n                            <amexio-data-table-column [data-index]=\"'latitude'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'Latitude'\"></amexio-data-table-column>\n                            <amexio-data-table-column [data-index]=\"'longitude'\" [data-type]=\"'number'\" [hidden]=\"false\" [text]=\"'Longitude'\"></amexio-data-table-column>\n                          </amexio-datagrid>\n                        </amexio-body>\n                      </amexio-card>\n                    </amexio-column>\n                  </amexio-row><br>\n                  <amexio-row>\n                    <amexio-column [size]=\"12\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header>Data Grid with Template</amexio-header>\n                        <amexio-body>\n                          <amexio-datagrid [enable-checkbox]=\"false\" title=\"Country Grid\" [http-method]=\"'get'\" [http-url]=\"'assets/data/datagrid.json'\"\n                            [data-reader]=\"'data'\" [page-size]=\"10\" [enable-data-filter]=\"false\">\n                            <amexio-data-table-column [width]=\"50\" [data-index]=\"'name_official'\" [data-type]=\"'string'\" [hidden]=\"false\"\n                              [text]=\"'Name'\">\n                              <ng-template #amexioBodyTmpl let-column let-row=\"row\">\n                                <div class=\"datagrid-template\">\n                                  <span>\n                                    <amexio-image [path]=\"'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32\"></amexio-image>\n                                  </span>\n                                  <span>{{row.name}}</span>\n          \n                                  <span>( {{row.name_official}} )</span>\n                                </div>\n                              </ng-template>\n                            </amexio-data-table-column>\n                            <amexio-data-table-column [width]=\"20\" [data-index]=\"'latitude'\" [data-type]=\"'string'\" [hidden]=\"false\"\n                              [text]=\"'Latitude'\"></amexio-data-table-column>\n                            <amexio-data-table-column [width]=\"20\" [data-index]=\"'longitude'\" [data-type]=\"'number'\" [hidden]=\"false\"\n                              [text]=\"'Longitude'\"></amexio-data-table-column>\n                          </amexio-datagrid>\n                        </amexio-body>\n                      </amexio-card>\n                    </amexio-column>\n                  </amexio-row><br>\n                  <amexio-row>\n                    <amexio-column [size]=\"12\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header>Data Grid with Filtering</amexio-header>\n                        <amexio-body>\n                          <amexio-datagrid [title]=\"'Employee Data'\" [page-size]=\"10\" [data-reader]=\"'data'\" [http-url]=\"'assets/data/datagridgroupby.json'\"\n                            [http-method]=\"'get'\" [enable-data-filter]=\"true\">\n                            <amexio-data-table-column [data-index]=\"'preferredFullName'\" [data-type]=\"'string'\" [hidden]=\"false\"\n                              [text]=\"'FullName'\"></amexio-data-table-column>\n                            <amexio-data-table-column [data-index]=\"'jobTitle'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'Job Title'\">\n                            </amexio-data-table-column>\n                            <amexio-data-table-column [data-index]=\"'salary'\" [data-type]=\"'number'\" [hidden]=\"false\" [text]=\"'Salary'\"></amexio-data-table-column>\n                          </amexio-datagrid>\n                        </amexio-body>\n                      </amexio-card>\n                    </amexio-column>\n                  </amexio-row>\n                  <amexio-row>\n                    <amexio-column [size]=\"12\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header>Group By Data Grid</amexio-header>\n                        <amexio-body>\n                          <amexio-datagrid [enable-column-fiter]=\"true\" [groupby]=\"true\" [groupby-data-index]=\"'jobTitle'\"\n                            [enable-checkbox]=\"false\" title=\"Employee Details\" [http-method]=\"'get'\" [http-url]=\"'assets/data/datagridgroupby.json'\"\n                            [data-reader]=\"'data'\" [page-size]=\"5\" [enable-data-filter]=\"false\">\n                            <amexio-data-table-column [width]=\"30\" [data-index]=\"'preferredFullName'\" [data-type]=\"'string'\"\n                              [hidden]=\"false\" [text]=\"'FullName'\"></amexio-data-table-column>\n                            <amexio-data-table-column [width]=\"30\" [data-index]=\"'jobTitle'\" [data-type]=\"'string'\" [hidden]=\"false\"\n                              [text]=\"'Job Title'\">\n                            </amexio-data-table-column>\n                            <amexio-data-table-column [width]=\"30\" [data-index]=\"'salary'\" [data-type]=\"'number'\" [hidden]=\"false\"\n                              [text]=\"'Salary'\"></amexio-data-table-column>\n                          </amexio-datagrid>\n                        </amexio-body>\n                      </amexio-card>\n                    </amexio-column>\n                  </amexio-row>\n                  <br>\n                  <amexio-row>\n                    <amexio-column [size]=\"12\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header> Data Grid with Global Filter</amexio-header>\n                        <amexio-body>\n                          <amexio-datagrid [global-filter]=\"true\" title=\"Country Grid\" [http-method]=\"'get'\" [http-url]=\"'assets/data/datagrid.json'\"\n                            [data-reader]=\"'data'\" [page-size]=\"10\">\n                            <amexio-data-table-column [data-index]=\"'name_official'\" [data-type]=\"'string'\" [hidden]=\"false\"\n                              [text]=\"'Name'\">\n                            </amexio-data-table-column>\n                            <amexio-data-table-column [data-index]=\"'code3l'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'Code'\">\n                            </amexio-data-table-column>\n                            <amexio-data-table-column [data-index]=\"'latitude'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'Latitude'\"></amexio-data-table-column>\n                            <amexio-data-table-column [data-index]=\"'longitude'\" [data-type]=\"'number'\" [hidden]=\"false\" [text]=\"'Longitude'\"></amexio-data-table-column>\n                          </amexio-datagrid>\n                        </amexio-body>\n                      </amexio-card>\n                    </amexio-column>\n                  </amexio-row>\n          \n                </amexio-tab>\n                <amexio-tab title=\"Tree Data Grid\" [amexio-color]=\"'blue'\">\n          \n                  <amexio-row>\n                    <amexio-column [size]=\"12\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header>Tree Data Grid</amexio-header>\n                        <amexio-body>\n                          <amexio-tree-data-table [http-method]=\"'get'\" [http-url]=\"'assets/data/treedatatable.json'\"\n                            [data-reader]=\"'data'\">\n                            <amexio-data-table-column [data-index]=\"'task'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'Task'\"></amexio-data-table-column>\n                            <amexio-data-table-column [data-index]=\"'user'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'User'\"></amexio-data-table-column>\n                            <amexio-data-table-column [data-index]=\"'duration'\" [data-type]=\"'number'\" [hidden]=\"false\" [text]=\"'Duration'\"></amexio-data-table-column>\n                          </amexio-tree-data-table>\n                        </amexio-body>\n                      </amexio-card>\n                    </amexio-column>\n                  </amexio-row><br>\n                </amexio-tab>\n                <amexio-tab title=\"Tree\" [amexio-color]=\"'green'\">\n                  <amexio-row>\n                    <amexio-column [size]=\"3\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header>Simple Tree</amexio-header>\n                        <amexio-body>\n                          <amexio-treeview [data-reader]=\"'data'\" [http-url]=\"'assets/data/simpletree.json'\" [http-method]=\"'get'\">\n                          </amexio-treeview>\n          \n                        </amexio-body>\n                      </amexio-card>\n                    </amexio-column>\n                    <amexio-column [size]=\"3\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header>Tree with Filtering</amexio-header>\n                        <amexio-body>\n                          <amexio-tree-filter-view [data-reader]=\"'data'\" [http-method]=\"'get'\" [http-url]=\"'assets/data/simpletree.json'\">\n                          </amexio-tree-filter-view>\n                        </amexio-body>\n          \n                      </amexio-card>\n                    </amexio-column>\n                    <amexio-column [size]=\"3\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header>Tree with Checkbox</amexio-header>\n                        <amexio-body>\n                          <amexio-treeview [enable-checkbox]=\"true\" [data-reader]=\"'data'\" [http-url]=\"'assets/data/treecheckbox.json'\"\n                            [http-method]=\"'get'\">\n                          </amexio-treeview>\n                        </amexio-body>\n                      </amexio-card>\n                    </amexio-column>\n                    <amexio-column [size]=\"3\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header>Tree with Template</amexio-header>\n                        <amexio-body>\n                          <amexio-treeview [data-reader]=\"'data'\" [http-url]=\"'assets/data/treecheckbox.json'\" [http-method]=\"'get'\">\n                            <ng-template #amexioTreeTemplate let-tree let-icon=\"icon\" let-node=\"node\">\n                              <i [attr.class]=\"node.icon\"></i> &nbsp;{{tree.text}}\n                            </ng-template>\n                          </amexio-treeview>\n                        </amexio-body>\n                      </amexio-card>\n                    </amexio-column>\n                  </amexio-row><br>\n                </amexio-tab>\n                <amexio-tab title=\"Horizontal Tree View\" [amexio-color]=\"'brown'\">\n                  <amexio-row>\n                    <amexio-column [size]=\"12\">\n                      <amexio-card [footer]=\"false\" [header]=\"true\">\n                        <amexio-header>Horizontal Tree View</amexio-header>\n                        <amexio-body>\n                          <amexio-horizontal-treeview [data-reader]=\"'data'\" [http-url]=\"'assets/data/menus/sidebar.json'\"\n                            [http-method]=\"'get'\" label=\"Menu\"></amexio-horizontal-treeview>\n                        </amexio-body>\n                      </amexio-card>\n                    </amexio-column>\n                  </amexio-row><br>\n                </amexio-tab>\n          \n              </amexio-tab-view>\n          \n          \n            </amexio-column>\n          </amexio-row>\n      </amexio-card-ce>\n    </amexio-layout-item>\n  </amexio-layout-columns>"
+
+/***/ }),
+
+/***/ "./src/app/data/data.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/data/data.component.ts ***!
+  \****************************************/
+/*! exports provided: DataGridComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataGridComponent", function() { return DataGridComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _service_http_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../service/http.service */ "./src/app/service/http.service.ts");
+/* harmony import */ var amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! amexio-ng-extensions */ "./node_modules/amexio-ng-extensions/amexio-ng-extensions.es5.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/**
+ * Created by dattaram on 13/1/18.
+ */
+
+
+
+var DataGridComponent = /** @class */ (function () {
+    function DataGridComponent(httpService, _gridlayoutService) {
+        this.httpService = httpService;
+        this._gridlayoutService = _gridlayoutService;
+        this.localData = [];
+        this.lastTenMonthRevenue = [];
+        this.lastTenMonthUsers = [];
+        this.globalVists = [];
+        this.globalVistsData = [];
+        this.bindData = {
+            "response": {
+                "success": true,
+                "message": "Fetching  Data  Request Succeeded: Profile",
+                "data": [
+                    {
+                        "name": "Ketan Gote",
+                        "name_official": "Ketan Gote",
+                        "profile": "ketan.jpg"
+                    },
+                    {
+                        "name": "vrushabh kokil",
+                        "name_official": "vrushabh kokil",
+                        "profile": "vrushabh.jpg"
+                    },
+                    {
+                        "name": "Dattaram Gawas",
+                        "name_official": "Dattaram Gawas",
+                        "profile": "dats.jpg"
+                    },
+                    {
+                        "name": "Sagar Jadhav",
+                        "name_official": "Sagar Jadhav",
+                        "profile": "sagar.jpg"
+                    },
+                    {
+                        "name": "sandip mohite",
+                        "name_official": "sandip mohite",
+                        "profile": "sandip.jpg"
+                    },
+                    {
+                        "name": "vrushabh Jadhav",
+                        "name_official": "vrushabh Jadhav",
+                        "profile": "ahutosh.jpg"
+                    }
+                ]
+            }
+        };
+        this.localData = [
+            {
+                "status": "Open",
+                "issue": "Bug with .share operator?",
+                "severity": "High",
+                "date": "10-06-2017"
+            }, {
+                "status": "Close",
+                "issue": "e.preventDefault broken in ie8",
+                "severity": "Low",
+                "date": "01-06-2017"
+            }, {
+                "status": "Close",
+                "issue": "Third groupBy argument (key serializer) ignored",
+                "severity": "Medium",
+                "date": "16-06-2017"
+            }, {
+                "status": "Open",
+                "issue": "Animate no longer supports objects",
+                "severity": "Medium",
+                "date": "16-06-2017"
+            }, {
+                "status": "Close",
+                "issue": "Automatic build-version-publish after 1.0",
+                "severity": "Medium",
+                "date": "15-06-2017"
+            }, {
+                "status": "Open",
+                "issue": "Uncaught TypeError: Cannot read property 'ngOriginalError' of null",
+                "severity": "Medium",
+                "date": "03-05-2017"
+            }, {
+                "status": "Open",
+                "issue": "Animation background color changes for state when using *",
+                "severity": "Medium",
+                "date": "01-05-2017"
+            }, {
+                "status": "Close",
+                "issue": "Component/declarative error handling (ala React 16's <ErrorBoundary/>)",
+                "severity": "Low",
+                "date": "01-05-2017"
+            }, {
+                "status": "Open",
+                "issue": "Angular Router + Browser History=> extra page view count in GA",
+                "severity": "High",
+                "date": "23-04-2017"
+            }, {
+                "status": "Open",
+                "issue": "[Hidden] not working in platform-server",
+                "severity": "High",
+                "date": "22-04-2017"
+            }, {
+                "status": "Close",
+                "issue": "Set ViewEncapsulation per module",
+                "severity": "Medium",
+                "date": "20-04-2017"
+            }, {
+                "status": "Open",
+                "issue": "Router upgrade does not work when initial state is Angular ",
+                "severity": "Medium",
+                "date": "19-04-2017"
+            }, {
+                "status": "Open",
+                "issue": "Animations: animateChild() not working correctly ",
+                "severity": "Medium",
+                "date": "18-04-2017"
+            }, {
+                "status": "Close",
+                "issue": "type definition of UrlMatcher should allow to return null",
+                "severity": "High",
+                "date": "16-04-2017"
+            }, {
+                "status": "Open",
+                "issue": "Animations - stagger not working in route outlet ",
+                "severity": "High",
+                "date": "15-04-2017"
+            }, {
+                "status": "Close",
+                "issue": "Angular Router cuts off URL at &",
+                "severity": "High",
+                "date": "15-04-2017"
+            }, {
+                "status": "Open",
+                "issue": "Add scientific number format pipe",
+                "severity": "Low",
+                "date": "13-04-2017"
+            },
+            {
+                "status": "Open",
+                "issue": "Route param auto change when refresh the window.",
+                "severity": "Low",
+                "date": "13-04-2017"
+            }, {
+                "status": "Close",
+                "issue": "Add scientific number format pipe",
+                "severity": "Medium",
+                "date": "12-04-2017"
+            }, {
+                "status": "Open",
+                "issue": "docs(aio): API missing constructor overloads",
+                "severity": "Low",
+                "date": "13-04-2017"
+            }, {
+                "status": "Open",
+                "issue": "Http request status always pending ",
+                "severity": "Low",
+                "date": "11-04-2017"
+            }
+        ];
+        this.treeLocalData = {
+            "data": [{
+                    "text": "Web App",
+                    "expand": true,
+                    "children": [
+                        {
+                            "text": "app",
+                            "expand": true,
+                            "children": [
+                                {
+                                    "leaf": true,
+                                    "text": "Application.js"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "button",
+                            "expand": true,
+                            "children": [
+                                {
+                                    "leaf": true,
+                                    "text": "Button.js"
+                                },
+                                {
+                                    "leaf": true,
+                                    "text": "Cycle.js"
+                                },
+                                {
+                                    "leaf": true,
+                                    "text": "Split.js"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "container",
+                            "expand": true,
+                            "children": [
+                                {
+                                    "leaf": true,
+                                    "text": "ButtonGroup.js"
+                                },
+                                {
+                                    "leaf": true,
+                                    "text": "Container.js"
+                                },
+                                {
+                                    "leaf": true,
+                                    "text": "Viewport.js",
+                                    "expand": true,
+                                    "children": [],
+                                    "lazy": {
+                                        "httpurl": "data/treeview.json",
+                                        "httpmethod": "get"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "text": "core",
+                            "expand": true,
+                            "children": [
+                                {
+                                    "text": "dom",
+                                    "expand": true,
+                                    "children": [
+                                        {
+                                            "leaf": true,
+                                            "text": "Element.form.js"
+                                        },
+                                        {
+                                            "leaf": true,
+                                            "text": "Element.static-more.js"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+        };
+    }
+    DataGridComponent.prototype.ngOnInit = function () {
+    };
+    DataGridComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'data-grid',
+            template: __webpack_require__(/*! ./data.component.html */ "./src/app/data/data.component.html")
+        }),
+        __metadata("design:paramtypes", [_service_http_service__WEBPACK_IMPORTED_MODULE_1__["HTTPService"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_2__["AmexioGridLayoutService"]])
+    ], DataGridComponent);
+    return DataGridComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/floatingpanel/floatingpanel.component.html":
 /*!************************************************************!*\
   !*** ./src/app/floatingpanel/floatingpanel.component.html ***!
@@ -41256,7 +41548,7 @@ var AmexioFloatingPanelComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<amexio-homepage-ce [type]=\"homePageType\">\n    <amexio-homepage-northpanel>\n        <amexio-nav [enable-side-nav-position]=\"true\" class=\"ok\" [title]=\"'CREATIVE'\" [logo]=\"'assets/images/a_Logo.png'\">\n            <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-bell'\">\n            </amexio-nav-item>\n            <amexio-nav-item position-right [type]=\"'textfield'\" [title]=\"'Enter your name'\">\n            </amexio-nav-item>\n            <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-sign-out'\" [title]=\"'Logout'\" (onNavItemClick)=\"logout($event)\">\n            </amexio-nav-item>\n        </amexio-nav>\n    </amexio-homepage-northpanel>\n    <amexio-homepage-westpanel>\n        <amexio-side-nav [height]=\"'92%'\" [background]=\"'rgba(0,0,0,.7)'\" [color]=\"'white'\" [bg-image]=\"'assets/images/p.jpeg'\">\n\n            <amexio-sidenav-node>\n                <amexio-layout-columns [border]=\"false\" [fit]=\"true\" [orientation]=\"'horizontal'\">\n                    <amexio-layout-item>\n                        <amexio-image [height]=\"'79.75px'\" [width]=\"'79.75px'\" [c-class]=\"'image-round'\" path=\"assets/images/john.jpg\">\n                        </amexio-image>\n                    </amexio-layout-item>\n                    <amexio-layout-item>\n                        <amexio-label [size]=\"'medium'\"> John Deo</amexio-label>\n                        <amexio-label> CEO/CO-Founder</amexio-label>\n                    </amexio-layout-item>\n                </amexio-layout-columns>\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='dashboardMenu' [label]=\"'Dashboards'\" [icon]=\"'fa fa-th'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='pageMenu' [label]=\"'Pages'\" [icon]=\"'fa fa-address-card'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Github'\" [icon]=\"'fa fa-github'\" (nodeClick)=\"navigateToGithub($event)\">\n            </amexio-sidenav-node>\n\n        </amexio-side-nav>\n    </amexio-homepage-westpanel>\n    <amexio-homepage-centerpanel>\n        <div *ngIf=\"isRouteLoading\">\n            <amexio-spinner [type]=\"'rectanglebounce'\" [vertical-position]=\"'center'\" [horizontal-position]=\"'center'\" [color]=\"'black'\" [size]=\"'7px'\">\n            </amexio-spinner>\n        </div>\n\n        <router-outlet></router-outlet>\n    </amexio-homepage-centerpanel>\n</amexio-homepage-ce>\n\n<amexio-floating-panel [event]=\"event\" [show]=\"showfloatplanel\">\n    <amexio-card [header]=\"false\">\n      <amexio-body>\n        <div class=\"floating-theme\">\n\n            <div style=\" width:400px; height: 350px;overflow-x: auto\">\n              <amexio-row *ngFor=\"let objArray of materialThemeArray\" >\n                <ng-container *ngFor=\"let obj of objArray\">\n                  <amexio-column style=\"cursor: pointer\" [size]=\"4\"  (click)=\"themeChange(obj)\">\n                    <amexio-image [path]=\"'assets/themeimages/'+ obj.link\"></amexio-image><br><b>{{obj.themeName}}</b>\n                  </amexio-column>\n                </ng-container>\n              </amexio-row>\n            </div>\n    \n        \n      </div>\n      </amexio-body>\n    </amexio-card>\n    </amexio-floating-panel>"
+module.exports = "<amexio-homepage-ce [type]=\"homePageType\">\n    <amexio-homepage-northpanel>\n        <amexio-nav [enable-side-nav-position]=\"true\" class=\"ok\" [title]=\"'CREATIVE'\" [logo]=\"'assets/images/a_Logo.png'\">\n            <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-bell'\">\n            </amexio-nav-item>\n            <amexio-nav-item position-right [type]=\"'textfield'\" [title]=\"'Enter your name'\">\n            </amexio-nav-item>\n            <amexio-nav-item position-right [type]=\"'link'\" [icon]=\"'fa fa-sign-out'\" [title]=\"'Logout'\" (onNavItemClick)=\"logout($event)\">\n            </amexio-nav-item>\n        </amexio-nav>\n    </amexio-homepage-northpanel>\n    <amexio-homepage-westpanel>\n        <amexio-side-nav [height]=\"'92%'\" [background]=\"'rgba(0,0,0,.7)'\" [color]=\"'white'\" [bg-image]=\"'assets/images/p.jpeg'\">\n\n            <amexio-sidenav-node>\n                <amexio-layout-columns [border]=\"false\" [fit]=\"true\" [orientation]=\"'horizontal'\">\n                    <amexio-layout-item>\n                        <amexio-image [height]=\"'79.75px'\" [width]=\"'79.75px'\" [c-class]=\"'image-round'\" path=\"assets/images/john.jpg\">\n                        </amexio-image>\n                    </amexio-layout-item>\n                    <amexio-layout-item>\n                        <amexio-label [size]=\"'medium'\"> John Deo</amexio-label>\n                        <amexio-label> CEO/CO-Founder</amexio-label>\n                    </amexio-layout-item>\n                </amexio-layout-columns>\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='dashboardMenu' [label]=\"'Dashboards'\" [icon]=\"'fa fa-th'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [data]='pageMenu' [label]=\"'Pages'\" [icon]=\"'fa fa-address-card'\" (nodeClick)=\"onMenuClick($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Github'\" [icon]=\"'fa fa-github'\" (nodeClick)=\"navigateToGithub($event)\">\n            </amexio-sidenav-node>\n\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Data'\" [icon]=\"'fa fa-database fa-fw'\" (nodeClick)=\"navigateToData($event)\">\n            </amexio-sidenav-node>\n            <!-- <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Templates'\" [icon]=\"'fa fa-th fa-fw'\" (nodeClick)=\"navigateToTemplates($event)\">\n            </amexio-sidenav-node>  -->\n            <!-- <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Action Button'\" [icon]=\"'fa fa-keyboard-o fa-fw'\" (nodeClick)=\"navigateToAction($event)\">\n            </amexio-sidenav-node>\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Group By Issue'\" [icon]=\"'fa fa-ticket fa-fw'\" (nodeClick)=\"navigateToGroupByIssue($event)\">\n            </amexio-sidenav-node>\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Issue'\" [icon]=\"'fa fa-ticket fa-fw'\" (nodeClick)=\"navigateToIssue($event)\">\n            </amexio-sidenav-node>\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Profile'\" [icon]=\"'fa fa-user fa-fw'\" (nodeClick)=\"navigateToProfile($event)\">\n            </amexio-sidenav-node>\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Email'\" [icon]=\"'fa fa-envelope fa-fw'\" (nodeClick)=\"navigateToEmail($event)\">\n            </amexio-sidenav-node>\n            <amexio-sidenav-node [expand]=\"true\" [enable-border]=\"true\" [label]=\"'Navigation'\" [icon]=\"'fa fa-bars fa-fw'\" (nodeClick)=\"navigateToNavigation($event)\">\n            </amexio-sidenav-node> -->\n        </amexio-side-nav>\n    </amexio-homepage-westpanel>\n    <amexio-homepage-centerpanel>\n        <div *ngIf=\"isRouteLoading\">\n            <amexio-spinner [type]=\"'rectanglebounce'\" [vertical-position]=\"'center'\" [horizontal-position]=\"'center'\" [color]=\"'black'\" [size]=\"'7px'\">\n            </amexio-spinner>\n        </div>\n\n        <router-outlet></router-outlet>\n    </amexio-homepage-centerpanel>\n</amexio-homepage-ce>\n\n<amexio-floating-panel [event]=\"event\" [show]=\"showfloatplanel\">\n    <amexio-card [header]=\"false\">\n      <amexio-body>\n        <div class=\"floating-theme\">\n\n            <div style=\" width:400px; height: 350px;overflow-x: auto\">\n              <amexio-row *ngFor=\"let objArray of materialThemeArray\" >\n                <ng-container *ngFor=\"let obj of objArray\">\n                  <amexio-column style=\"cursor: pointer\" [size]=\"4\"  (click)=\"themeChange(obj)\">\n                    <amexio-image [path]=\"'assets/themeimages/'+ obj.link\"></amexio-image><br><b>{{obj.themeName}}</b>\n                  </amexio-column>\n                </ng-container>\n              </amexio-row>\n            </div>\n    \n        \n      </div>\n      </amexio-body>\n    </amexio-card>\n    </amexio-floating-panel>"
 
 /***/ }),
 
@@ -41333,6 +41625,24 @@ var HomeComponent = /** @class */ (function () {
     HomeComponent.prototype.navigateToGithub = function (event) {
         window.open('https://github.com/meta-magic/amexio-ce-demo', '_blank');
     };
+    HomeComponent.prototype.navigateToData = function (event) {
+        debugger;
+        this.router.navigate(['home/data']);
+    };
+    HomeComponent.prototype.navigateToTemplates = function (event) {
+    };
+    HomeComponent.prototype.navigateToAction = function (event) {
+    };
+    HomeComponent.prototype.navigateToGroupByIssue = function (event) {
+    };
+    HomeComponent.prototype.navigateToIssue = function (event) {
+    };
+    HomeComponent.prototype.navigateToProfile = function (event) {
+    };
+    HomeComponent.prototype.navigateToEmail = function (event) {
+    };
+    HomeComponent.prototype.navigateToNavigation = function (event) {
+    };
     HomeComponent.prototype.getTheThemesData = function () {
         var _this = this;
         var amexioThemeRepsonse;
@@ -41406,6 +41716,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _timeline_timeline_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../timeline/timeline.component */ "./src/app/timeline/timeline.component.ts");
 /* harmony import */ var _map_map_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../map/map.component */ "./src/app/map/map.component.ts");
 /* harmony import */ var _floatingpanel_floatingpanel_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../floatingpanel/floatingpanel.component */ "./src/app/floatingpanel/floatingpanel.component.ts");
+/* harmony import */ var _data_data_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../data/data.component */ "./src/app/data/data.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41427,6 +41738,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+// import { TemplatesGridComponent} from '../templates/templates.component'
 /**
  * Created by kedar on 11/2/19.
  */
@@ -41441,6 +41754,7 @@ var routes = [
             { path: 'dashboardtwo', component: _dashboardtwo_dashboardtwo_component__WEBPACK_IMPORTED_MODULE_11__["DashboardTWoComponent"] },
             { path: 'timeline', component: _timeline_timeline_component__WEBPACK_IMPORTED_MODULE_12__["TimelineComponent"] },
             { path: 'map', component: _map_map_component__WEBPACK_IMPORTED_MODULE_13__["MapComponent"] },
+            { path: 'data', component: _data_data_component__WEBPACK_IMPORTED_MODULE_15__["DataGridComponent"] },
         ]
     },
 ];
@@ -41449,7 +41763,7 @@ var HomeModule = /** @class */ (function () {
     }
     HomeModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            declarations: [_homepage_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], _timeline_timeline_component__WEBPACK_IMPORTED_MODULE_12__["TimelineComponent"], _floatingpanel_floatingpanel_component__WEBPACK_IMPORTED_MODULE_14__["AmexioFloatingPanelComponent"], _map_map_component__WEBPACK_IMPORTED_MODULE_13__["MapComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_6__["DashboardComponent"], _userprofile_userprofile_component__WEBPACK_IMPORTED_MODULE_7__["userProfileComponent"], _dashboardtwo_dashboardtwo_component__WEBPACK_IMPORTED_MODULE_11__["DashboardTWoComponent"], _dashboardthree_dashboardthree_component__WEBPACK_IMPORTED_MODULE_10__["DashboardThreeComponent"]],
+            declarations: [_data_data_component__WEBPACK_IMPORTED_MODULE_15__["DataGridComponent"], _homepage_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], _timeline_timeline_component__WEBPACK_IMPORTED_MODULE_12__["TimelineComponent"], _floatingpanel_floatingpanel_component__WEBPACK_IMPORTED_MODULE_14__["AmexioFloatingPanelComponent"], _map_map_component__WEBPACK_IMPORTED_MODULE_13__["MapComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_6__["DashboardComponent"], _userprofile_userprofile_component__WEBPACK_IMPORTED_MODULE_7__["userProfileComponent"], _dashboardtwo_dashboardtwo_component__WEBPACK_IMPORTED_MODULE_11__["DashboardTWoComponent"], _dashboardthree_dashboardthree_component__WEBPACK_IMPORTED_MODULE_10__["DashboardThreeComponent"]],
             imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], amexio_chart_d3__WEBPACK_IMPORTED_MODULE_8__["AmexioChartD3Module"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioChartsModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioDashBoardModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioEnterpriseModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioMapModule"],
                 amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioWidgetModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_9__["HttpClientModule"],
