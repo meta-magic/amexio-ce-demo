@@ -1,19 +1,19 @@
 {
     "dashboard":[
         {
-          "text": "Demo One",
+          "text": "Traffic Analysis",
           "icon": "fa fa-th-large",
           "mdaIcon": "link",
           "link": "home/dashboard"
         },
         {
-          "text": "Demo Two",
+          "text": "City Analysis",
           "icon": "fa fa-th-list",
           "mdaIcon": "link",
           "link": "home/dashboardtwo"
         },
         {
-          "text": "Demo Three",
+          "text": "Statistics",
           "icon": "fa fa-table",
           "mdaIcon": "link",
           "link": "home/dashboardthree"
