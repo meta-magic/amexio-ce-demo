@@ -14,12 +14,14 @@ export class HomeComponent implements OnInit {
   sideNavList: any;
   pageMenu: any;
   dashboardMenu: any;
+  component: any;
+  reportData: any;
   isRouteLoading: boolean = false;
   homePageType = '1';
   newTheme: string;
   newThemePath: string;
   flag: boolean;
-  materialThemeArray:any;
+  materialThemeArray: any;
 
   constructor(private router: Router, private httpService: HTTPService, private rt: ActivatedRoute) {
   }
@@ -29,10 +31,10 @@ export class HomeComponent implements OnInit {
       if (params && params.params) {
         this.homePageType = params.params.type;
       }
-   });
-   if (!this.homePageType) {
-    this.homePageType = '1';
-   }
+    });
+    if (!this.homePageType) {
+      this.homePageType = '1';
+    }
     this.router.events.subscribe(event => {
       if (event instanceof RouteConfigLoadStart) {
         this.isRouteLoading = true;
@@ -49,6 +51,8 @@ export class HomeComponent implements OnInit {
     this.httpService.fetch("assets/jsondata/sidenav.json").subscribe((resp: any) => {
       this.dashboardMenu = resp.dashboard;
       this.pageMenu = resp.userprofile;
+      this.component = resp.componentData;
+      this.reportData = resp.reports;
     });
   }
 
@@ -65,33 +69,18 @@ export class HomeComponent implements OnInit {
   navigateToGithub(event: any) {
     window.open('https://github.com/meta-magic/amexio-ce-demo', '_blank');
   }
-  navigateToData(event: any) {
-    debugger;
-    this.router.navigate(['home/data']);
-  }
-  navigateToTemplates(event: any) {
 
-  }
-  navigateToAction(event: any) {
-
-  }
-  navigateToGroupByIssue(event: any) {
-
-  }
-  navigateToIssue(event: any) {
-
-  }
-  navigateToProfile(event: any) {
+  
+  navigateToProfile() {
+    this.router.navigate(['home/profile']);
 
   }
   navigateToEmail(event: any) {
-
+    this.router.navigate(['home/email']);
   }
-  navigateToNavigation(event: any) {
 
-  }
   getTheThemesData() {
-      
+
     let amexioThemeRepsonse: any;
     let materialThemeResponse: any;
 
@@ -105,32 +94,32 @@ export class HomeComponent implements OnInit {
   }
 
   themeChange(theme: any) {
-    let response:any;
-    this.httpService.fetch('https://api.amexio.org/api/mda/'+theme.themeJSONFile).subscribe(data => {
+    let response: any;
+    this.httpService.fetch('https://api.amexio.org/api/mda/' + theme.themeJSONFile).subscribe(data => {
       response = data;
     }, error => {
     }, () => {
       let themeColor = response.themeColor;
       let appColor = response.appColor;
       let compColor = response.compColor;
-     themeColor.forEach((style:any) => {
-       let value=style.value.replace(';','');
-      document.documentElement.style.setProperty(style.key,value);
-      
+      themeColor.forEach((style: any) => {
+        let value = style.value.replace(';', '');
+        document.documentElement.style.setProperty(style.key, value);
+
       });
-  
-      appColor.forEach((style:any) => {
-        let value=style.value.replace(';','');
-       document.documentElement.style.setProperty(style.key,value);
-         
-       });
-  
-       compColor.forEach((style:any) => {
-       document.documentElement.style.setProperty(style.key,style.value);
-         
-       });
-  
-  
+
+      appColor.forEach((style: any) => {
+        let value = style.value.replace(';', '');
+        document.documentElement.style.setProperty(style.key, value);
+
+      });
+
+      compColor.forEach((style: any) => {
+        document.documentElement.style.setProperty(style.key, style.value);
+
+      });
+
+
     });
-    }
+  }
 }

@@ -1,0 +1,148 @@
+{
+  "response": {
+    "success": true,
+    "message": "Fetching  Data  Request Succeeded: Email",
+    "data": [
+      {
+        "from": "Araf Karsh Hamid",
+        "title": "AMEXIO Release Plans",
+        "date": "23-07-2017"
+      },
+      {
+        "from": "Araf Karsh Hamid",
+        "title": " Visual Studio Extension",
+        "date": "23-07-2017"
+      },
+      {
+        "from": "Ketan Gote",
+        "title": "Amexio on angular.io",
+        "date": "22-07-2017"
+      },
+      {
+        "from": "Araf Karsh Hamid",
+        "title": "Amexio NPM Download Spike",
+        "date": "21-07-2017"
+      },{
+        "from": "Dattaram Gawas",
+        "title": "Building Web Components",
+        "date": "20-07-2017"
+      },
+      {
+        "from": "Sagar Jadhav",
+        "title": "Showcase App URL",
+        "date": "20-07-2017"
+      },
+      {
+        "from": "Ketan Gote",
+        "title": "Spring cloud stream demo",
+        "date": "19-07-2017"
+      },
+      {
+        "from": "Ketan Gote",
+        "title": "Spring Microservice demo",
+        "date": "19-07-2017"
+      },
+      {
+        "from": "Ketan Gote",
+        "title": "Spring Kafka Integration",
+        "date": "18-07-2017"
+      },
+      {
+        "from": "vrushabh Jadhav",
+        "title": "JSR Implementation",
+        "date": "18-07-2017"
+      },
+      {
+        "from": "sandip mohite",
+        "title": "AXON CQRS demo",
+        "date": "17-07-2017"
+      },
+      {
+        "from": "vrushabh kokil",
+        "title": "Angular Routing",
+        "date": "17-07-2017"
+      },
+      {
+        "from": "Dattaram Gawas",
+        "title": "Angular Pipes",
+        "date": "16-07-2017"
+      },
+      {
+        "from": "Ketan Gote",
+        "title": "Ribbon, Hysterix",
+        "date": "15-07-2017"
+      },
+      {
+        "from": "Ketan Gote",
+        "title": "Eureka server using spring cloud",
+        "date": "14-07-2017"
+      },
+      {
+        "from": "sandip mohite",
+        "title": "RX Java",
+        "date": "14-07-2017"
+      },
+      {
+        "from": "payal Kulkarni",
+        "title": "Spring + Mongo DB",
+        "date": "13-07-2017"
+      },{
+        "from": "Araf Karsh Hamid",
+        "title": "Flux / Redux Architecture",
+        "date": "11-07-2017"
+      },{
+        "from": "Ketan Gote",
+        "title": "Desire Platform GIT repos",
+        "date": "11-07-2017"
+      },{
+        "from": "vrushabh kokil",
+        "title": "PWA from React to Angular/Ionic",
+        "date": "10-07-2017"
+      },{
+        "from": "Ketan Gote",
+        "title": "Messages in Platform",
+        "date": "10-07-2017"
+      },{
+        "from": "Araf Karsh Hamid",
+        "title": "TypeScript Secret Weapon...",
+        "date": "09-07-2017"
+      },{
+        "from": "Araf Karsh Hamid",
+        "title": "Visual Studio Code Plugin",
+        "date": "09-07-2017"
+      },{
+        "from": "Ketan Gote",
+        "title": "Hashing Algo",
+        "date": "08-07-2017"
+      },{
+        "from": "Araf Karsh Hamid",
+        "title": "VS Code for Windows, Linux and Mac OS",
+        "date": "07-07-2017"
+      },{
+        "from": "Araf Karsh Hamid",
+        "title": "Chart Library - Open Source",
+        "date": "06-07-2017"
+      },{
+        "from": "Ketan Gote",
+        "title": "TDOM updates in Angular",
+        "date": "06-07-2017"
+      },{
+        "from": "Araf Karsh Hamid",
+        "title": "Hampi Release",
+        "date": "05-07-2017"
+      },{
+        "from": "vrushabh kokil",
+        "title": "Building Web Components",
+        "date": "05-07-2017"
+      },{
+        "from": "Ketan Gote",
+        "title": "Spring + Redis ",
+        "date": "05-07-2017"
+      },{
+        "from": "Araf Karsh Hamid",
+        "title": "AMEXIO Plans",
+        "date": "04-07-2017"
+      }
+    ]
+  }
+}

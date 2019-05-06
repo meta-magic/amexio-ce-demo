@@ -1,6 +1,8 @@
 
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+// import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AmexioWidgetModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule } from "amexio-ng-extensions";
@@ -18,7 +20,7 @@ import { HTTPService } from './service/http.service';
  */
 @NgModule({
   declarations: [AppComponent, LoginPageComponent],
-  imports: [BrowserModule,
+  imports: [ BrowserAnimationsModule,
     FormsModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule,
     HttpClientModule,

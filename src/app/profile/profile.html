@@ -1,0 +1,57 @@
+
+<amexio-row>
+  <amexio-column [size]="5">
+    <amexio-card  [header] = "true" [footer]="false">
+      <amexio-header>
+        Araf Karsh
+      </amexio-header>
+
+      <amexio-body>
+        <amexio-row>
+          <amexio-column [size]="12">
+            <h4>Co-Founder / Chief Technology Officer</h4>
+          </amexio-column>
+        </amexio-row>
+        <amexio-row>
+          <amexio-column [size]="12">
+            <amexio-image [path]="'assets/images/profile/karsh.jpg'"></amexio-image>
+          </amexio-column>
+        </amexio-row>
+
+        <amexio-row>
+          <amexio-column [size]="12">
+            <a href="">xyz@metamagic.in</a><br>
+            Working since 13 months <br>
+            <a href="https://metamagicglobal.com/">www.metamagicglobal.com</a><br>
+          </amexio-column>
+        </amexio-row>
+
+        <amexio-row>
+          <amexio-column [size]="12">
+            &nbsp;&nbsp;
+          </amexio-column>
+        </amexio-row>
+      </amexio-body>
+    </amexio-card>
+  </amexio-column>
+  <amexio-column [size]="7">
+         <amexio-listbox [height]="620" [data]="bindData" [filter]="true" [header] = "'Contacts'"
+                        [enable-checkbox] = "false" [data-reader]="'response.data'"
+                        [display-field]="'name'">
+          <ng-template #amexioBodyTmpl let-row="row">
+            <amexio-row>
+             <amexio-column [size]="2">
+                <div class=profile-image-round>
+                  <img src="assets/images/profile/{{row.profile}}"/></div>
+              </amexio-column>
+              <amexio-column [size]="10">
+                <div  class="title">
+                  {{row.name}} <br><a href="#">xyz@metamagicglobal.com</a>
+                </div>
+            </amexio-column>
+            </amexio-row>
+          </ng-template>
+        </amexio-listbox>
+
+  </amexio-column>
+<amexio-row>

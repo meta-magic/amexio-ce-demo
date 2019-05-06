@@ -1,0 +1,65 @@
+<amexio-tab-view  [closable]="false">
+    <amexio-tab [title]="'Top Menu'"[icon]="'fa fa-bars'"  [active]="true" >
+       <amexio-card [header]="true">
+  <amexio-header>Top Menu</amexio-header>
+  <amexio-body>
+    <amexio-menu
+       [http-url]="'assets/data/menus/hometopmenu.json'"
+       [http-method]="'get'"
+       [data-reader]="'data'" >
+  </amexio-menu>
+
+</amexio-body>
+</amexio-card>
+
+</amexio-tab>
+<amexio-tab [title]="'Side Menu'" [icon]="'fa fa-building'">
+
+<amexio-card [header]="true">
+  <amexio-header>Side Menu</amexio-header>
+  <amexio-body>
+<amexio-row>
+    <amexio-column [size]="4">
+
+      <amexio-side-nav
+       [http-url]="'assets/data/menus/hometopmenu.json'"
+       [http-method]="'get'" [position]="'relative'"
+        [width] ="200">
+
+  </amexio-side-nav>
+
+    </amexio-column>
+  </amexio-row>
+</amexio-body>
+</amexio-card>
+
+</amexio-tab>
+<amexio-tab [title]="'Dockbar'" [icon]="'fa fa-cube'">
+
+<amexio-card [header]="true">
+  <amexio-header>Dockbar</amexio-header>
+  <amexio-body>
+  <amexio-row>
+    <amexio-column [size]="12">
+      <amexio-dockbar [height]="'300px'">
+          <amexio-dockbar-item [icon]="'fa fa-star'"
+                [title]="'Dockbar-I'"
+                [width]="'250px'"  [height]="'295px'">
+            Dockbar-I
+          </amexio-dockbar-item>
+          <amexio-dockbar-item [icon]="'fa fa-cube'"
+                    [title]="'Dockbar-II'"
+                    [width]="'250px'" [height]="'295px'">
+            Dockbar-II
+          </amexio-dockbar-item>
+          <amexio-dockbar-item [icon]="'fa fa-bug'"
+                      [title]="'Dockbar-III'"
+                      [width]="'250px'" [height]="'295px'">
+            Dockbar-III
+          </amexio-dockbar-item>
+      </amexio-dockbar>
+    </amexio-column>
+</amexio-row>
+</amexio-body>
+</amexio-card>
+</amexio-tab>

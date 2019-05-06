@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './homepage.component';
+
 import {
   AmexioWidgetModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule,
   AmexioMapModule
@@ -17,9 +18,15 @@ import { DashboardThreeComponent } from '../dashboardthree/dashboardthree.compon
 import { DashboardTWoComponent } from '../dashboardtwo/dashboardtwo.component';
 import { TimelineComponent } from '../timeline/timeline.component';
 import { MapComponent } from '../map/map.component';
-import {AmexioFloatingPanelComponent} from '../floatingpanel/floatingpanel.component';
-import { DataGridComponent} from '../data/data.component';
-// import { TemplatesGridComponent} from '../templates/templates.component'
+import { AmexioFloatingPanelComponent } from '../floatingpanel/floatingpanel.component';
+import { DataGridComponent } from '../data/data.component';
+import { TemplatesGridComponent } from '../templates/templates.component';
+import {ActionComponent} from '../action/action';
+import { GroupbyIssueComponent } from '../report/groupbyissue/groupbyissue.component';
+import { IssueComponent } from '../report/issue/issue.component';
+import { ProfileComponent } from '../profile/profile.component';
+import { EmailComponent } from '../email/email.component';
+import { NavigationComponent } from '../navigation/navigation.component';
 /**
  * Created by kedar on 11/2/19.
  */
@@ -35,14 +42,26 @@ const routes: Routes = [
       { path: 'dashboardtwo', component: DashboardTWoComponent },
       { path: 'timeline', component: TimelineComponent },
       { path: 'map', component: MapComponent },
-      { path: 'data',component: DataGridComponent},
-      // { path: '',component: TemplatesGridComponent}
+      { path: 'datagrid', component: DataGridComponent },
+      { path: 'template', component: TemplatesGridComponent },
+      { path: 'action', component: ActionComponent },
+      { path: 'group-by-issue', component: GroupbyIssueComponent },
+      { path: 'issue', component: IssueComponent },
+      { path: 'profile', component: ProfileComponent },
+      { path: 'email', component: EmailComponent },
+      { path: 'navigation', component: NavigationComponent }
+
+      
     ]
   },
 ];
 
 @NgModule({
-  declarations: [DataGridComponent, HomeComponent, TimelineComponent, AmexioFloatingPanelComponent, MapComponent, DashboardComponent, userProfileComponent, DashboardTWoComponent, DashboardThreeComponent],
+  declarations: [HomeComponent, TimelineComponent, AmexioFloatingPanelComponent, MapComponent, DashboardComponent, 
+    userProfileComponent, DashboardTWoComponent, DashboardThreeComponent,
+    DataGridComponent, TemplatesGridComponent, ActionComponent,GroupbyIssueComponent,IssueComponent,
+    ProfileComponent,EmailComponent,NavigationComponent
+  ],
   imports: [CommonModule,
     FormsModule, AmexioChartD3Module, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule, HttpClientModule,

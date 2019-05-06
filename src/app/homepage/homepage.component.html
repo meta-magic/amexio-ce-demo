@@ -5,7 +5,8 @@
             </amexio-nav-item>
             <amexio-nav-item position-right [type]="'textfield'" [title]="'Enter your name'">
             </amexio-nav-item>
-            <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-sign-out'" [title]="'Logout'" (onNavItemClick)="logout($event)">
+            <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-sign-out'" [title]="'Logout'"
+                (onNavItemClick)="logout($event)">
             </amexio-nav-item>
         </amexio-nav>
     </amexio-homepage-northpanel>
@@ -24,37 +25,36 @@
                     </amexio-layout-item>
                 </amexio-layout-columns>
             </amexio-sidenav-node>
-
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='dashboardMenu' [label]="'Dashboards'" [icon]="'fa fa-th'" (nodeClick)="onMenuClick($event)">
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Profile'" [icon]="'fa fa-user fa-fw'"
+                (nodeClick)="navigateToProfile($event)">
+            </amexio-sidenav-node>
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Email'" [icon]="'fa fa-envelope fa-fw'"
+                (nodeClick)="navigateToEmail($event)">
+            </amexio-sidenav-node>
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='dashboardMenu' [label]="'Dashboards'"
+                [icon]="'fa fa-th'" (nodeClick)="onMenuClick($event)">
             </amexio-sidenav-node>
 
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='pageMenu' [label]="'Pages'" [icon]="'fa fa-address-card'" (nodeClick)="onMenuClick($event)">
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='component' [label]="'Component'" [icon]="'fa fa-th'"
+                (nodeClick)="onMenuClick($event)">
+            </amexio-sidenav-node>
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='reportData' [label]="'Reports'" [icon]="'fa fa-th'"
+                (nodeClick)="onMenuClick($event)">
+            </amexio-sidenav-node>
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='pageMenu' [label]="'Pages'" [icon]="'fa fa-address-card'"
+                (nodeClick)="onMenuClick($event)">
             </amexio-sidenav-node>
 
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Github'" [icon]="'fa fa-github'" (nodeClick)="navigateToGithub($event)">
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Github'" [icon]="'fa fa-github'"
+                (nodeClick)="navigateToGithub($event)">
             </amexio-sidenav-node>
 
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Data'" [icon]="'fa fa-database fa-fw'" (nodeClick)="navigateToData($event)">
-            </amexio-sidenav-node>
-            <!-- <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Templates'" [icon]="'fa fa-th fa-fw'" (nodeClick)="navigateToTemplates($event)">
-            </amexio-sidenav-node>  -->
-            <!-- <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Action Button'" [icon]="'fa fa-keyboard-o fa-fw'" (nodeClick)="navigateToAction($event)">
-            </amexio-sidenav-node>
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Group By Issue'" [icon]="'fa fa-ticket fa-fw'" (nodeClick)="navigateToGroupByIssue($event)">
-            </amexio-sidenav-node>
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Issue'" [icon]="'fa fa-ticket fa-fw'" (nodeClick)="navigateToIssue($event)">
-            </amexio-sidenav-node>
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Profile'" [icon]="'fa fa-user fa-fw'" (nodeClick)="navigateToProfile($event)">
-            </amexio-sidenav-node>
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Email'" [icon]="'fa fa-envelope fa-fw'" (nodeClick)="navigateToEmail($event)">
-            </amexio-sidenav-node>
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Navigation'" [icon]="'fa fa-bars fa-fw'" (nodeClick)="navigateToNavigation($event)">
-            </amexio-sidenav-node> -->
         </amexio-side-nav>
     </amexio-homepage-westpanel>
     <amexio-homepage-centerpanel>
         <div *ngIf="isRouteLoading">
-            <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'" [color]="'black'" [size]="'7px'">
+            <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'"
+                [color]="'black'" [size]="'7px'">
             </amexio-spinner>
         </div>
 

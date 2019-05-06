@@ -1,0 +1,21 @@
+<amexio-card [header] = "true">
+  <amexio-header>
+Issue Details
+  </amexio-header>
+  <amexio-body>
+      <amexio-datagrid
+        [title]="'Issue Details by Severity'"
+        [page-size] = "10"
+        [groupby]="true"
+        [groupby-data-index]="'severity'"
+        [data-reader]="'response.data'"
+        [enable-checkbox]="false"
+        [http-url]="'assets/data/issue.json'"
+        [http-method]="'get'">
+        <amexio-data-table-column [width]="12" [data-index]="'status'" [data-type]="'string'" [hidden]="false" [text]="'Status'"></amexio-data-table-column>
+        <amexio-data-table-column [width]="50" [data-index]="'issue'" [data-type]="'string'" [hidden]="false" [text]="'Issue'"></amexio-data-table-column>
+        <amexio-data-table-column [width]="15" [data-index]="'severity'" [data-type]="'string'" [hidden]="false" [text]="'Severity'"></amexio-data-table-column>
+        <amexio-data-table-column [width]="20" [data-index]="'date'" [data-type]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
+      </amexio-datagrid>
+    </amexio-body>
+    </amexio-card>

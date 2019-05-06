@@ -1,0 +1,77 @@
+{
+  "response": {
+    "success": true,
+    "message": "Fetching  Data  Request Succeeded",
+    "data": [
+      {
+        "User": "Buck Kulkarni",
+        "profile": "buck.jpg",
+        "Date":"19-03-2018",
+        "Usage":42,
+        "usageFromDate":"June 11,2015",
+       "usageToDate":"Jul 10,2015",
+        "Payment":"ebay.png",
+        "Activity":"4 mins ago"
+      },{
+         "User": "Araf Karsh Hamid",
+          "profile": "karsh.jpg",
+          "Date":"2-03-2018",
+        "Usage":96,
+        "usageFromDate":"June 11,2015",
+       "usageToDate":"Jul 10,2015",
+        "Payment":"masterCard.jpg",
+        "Activity":"5 mins ago"
+      },{
+          
+         "User": "Ketan Gote",
+         "profile": "ketan.jpg",
+          "Date":"7-04-2018",
+        "Usage":0,
+        "usageFromDate":"June 11,2015",
+       "usageToDate":"Jul 10,2015",
+        "Payment":"paypal.jpg",
+        "Activity":" a mins ago"
+      },{
+        "User": "Dattaram Gawas",
+        "profile": "dats.jpg",
+         "Date":"19-01-2018",
+        "Usage":7,
+        "usageFromDate":"June 11,2015",
+       "usageToDate":"Jul 10,2015",
+        "Payment":"masterCard.jpg",
+        "Activity":"a mins ago"
+      },{
+       "User": "Sagar Jadhav",
+       "profile": "sagar.jpg",
+        "Date":"4-03-2018",
+        "Usage":36,
+        "usageFromDate":"June 11,2015",
+       "usageToDate":"Jul 10,2015",
+        "Payment":"paypal.jpg",
+        "Activity":"a mins ago"
+      },
+      {
+        "User": "Deepali Arvind",
+        "Date":"4-03-2018",
+        "Usage":33,
+        "usageFromDate":"June 11,2015",
+       "usageToDate":"Jul 10,2015",
+        "Payment":"paypal.jpg",
+        "Activity":"a mins ago",
+        "profile": "dipali.jpg"
+      },
+      {
+        "name": "Rashmi Thakkar",
+        "name_official": "Rashmi Thakkar",
+        "profile": "rashmi.jpg",
+        "Date":"5-03-2018",
+        "Usage":23,
+        "usageFromDate":"June 1,2015",
+       "usageToDate":"Jul 10,2015",
+        "Payment":"paypal.jpg",
+        "Activity":"a mins ago"
+        
+      }
+    ]
+  }
+}

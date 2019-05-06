@@ -1,0 +1,58 @@
+<amexio-card [header]="true">
+  <amexio-header>
+    Email
+  </amexio-header>
+  <amexio-body>  
+      <amexio-row>
+        <amexio-column [size]="3">
+          <div style="text-align: center;padding: 10px">
+            <amexio-button [label]="'Compose'" [type]="'danger'" [size]="'default'"[tooltip]="'Compose'" (click)="toggle()" ></amexio-button>
+          </div>
+          <amexio-treeview   [data]="data"
+                            (selectedRecord)="onRowSelect($event)"
+                            [enable-checkbox]="false" >
+          </amexio-treeview >        
+          <amexio-row>
+             <amexio-column [size] =12 >
+              
+            </amexio-column>
+          </amexio-row>
+          
+          <amexio-listbox [height]="400"  [header] = "'Contacts'" [search-placeholder]="'Search Contacts'" [data]="bindData" [filter]="false"
+                          [enable-checkbox] = "false" [data-reader]="'response.data'"
+                          [display-field]="'name'">
+            <ng-template #amexioBodyTmpl let-row="row">
+              <amexio-row>
+                <amexio-column [size]="12">
+                   <div class="profile-image-round">
+
+                    <amexio-image 
+                    [path]="'assets/images/profile/'+row.profile" 
+                    [c-class]="'image-round'">
+                    </amexio-image>
+                      <a>{{row.name}}</a>
+                     </div> 
+                    
+                </amexio-column>
+                </amexio-row>
+            </ng-template>
+          </amexio-listbox>
+        </amexio-column>
+        <amexio-column [size] ="9" >
+          <amexio-datagrid
+            [page-size] = "15"
+            [data-reader]="'response.data'"
+            [enable-checkbox]="false"
+            [http-url]="'assets/data/email.json'"
+            [http-method]="'get'"
+            [enable-data-filter]="false"
+            (selectedRowData)="onRowSelect($event)"
+            (rowSelect)="onRowClick($event)" [c-class]="'gridStyle'" [tableDatacclass]="'datagridrow'" [tableTitlecclass]="'headerStyle'" [tableHeadercclass]="'headerStyleColumn'">
+            <amexio-data-table-column [data-index]="'date'" [data-type]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
+            <amexio-data-table-column [data-index]="'from'" [data-type]="'string'" [hidden]="false" [text]="'From'"></amexio-data-table-column>
+            <amexio-data-table-column [data-index]="'title'" [data-type]="'string'" [hidden]="false" [text]="'Subject'"></amexio-data-table-column>
+          </amexio-datagrid>      
+          </amexio-column>
+      </amexio-row>
+  </amexio-body> 
+</amexio-card>

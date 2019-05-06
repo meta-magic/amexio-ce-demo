@@ -1,0 +1,112 @@
+<amexio-card [header] = "true">
+  <amexio-header>
+    Q2-2017 Issues Raised
+  </amexio-header>
+  <amexio-body>
+<amexio-row>
+
+  <amexio-column [size]="2">
+    <amexio-datapoints [west]="true" [center]="true">
+      <amexio-west [content-align]="'z'">
+        <amexio-image [icon-class]="'fa fa-check'"></amexio-image>
+      </amexio-west>
+      <amexio-center [content-align]="'right'">
+        <amexio-label size="small">8</amexio-label><br/> <amexio-box padding= "true">
+            <amexio-label size="small">Closed</amexio-label>
+          </amexio-box>
+      </amexio-center>
+    </amexio-datapoints>
+  </amexio-column>
+
+  <amexio-column [size]="2">
+    <amexio-datapoints [west]="true" [center]="true">
+      <amexio-west [content-align]="'left'">
+        <!--<i class="fa fa-envelope-open fa-2x"></i>-->
+        <amexio-image [icon-class]="'fa fa-envelope-open'"></amexio-image>
+      </amexio-west>
+     
+      <amexio-center [content-align]="'right'" >
+       <amexio-label size="small">13</amexio-label>
+        <br/>
+        <amexio-box padding= "true">
+          <amexio-label size="small">Open</amexio-label>
+        </amexio-box>
+      </amexio-center>
+    </amexio-datapoints>
+  </amexio-column>
+
+  <amexio-column [size]="2">
+    <amexio-datapoints [west]="true" [center]="true" >
+      <amexio-west [content-align]="'left'">
+        <!--<i class="fa fa-spinner fa-2x"></i>-->
+        <amexio-image [icon-class]="'fa fa-spinner'"></amexio-image>
+      </amexio-west>
+      <amexio-center [content-align]="'right'">
+        <amexio-label size="small">3</amexio-label><br/> <amexio-box padding= "true">
+            <amexio-label size="small">WIP</amexio-label>
+          </amexio-box>
+      </amexio-center>
+    </amexio-datapoints>
+  </amexio-column>
+
+  <amexio-column [size]="2">
+    <amexio-datapoints [west]="true" [center]="true">
+      <amexio-west [content-align]="'left'">
+        <amexio-image [icon-class]="'fa fa-bolt'"></amexio-image>
+      </amexio-west>
+      <amexio-center [content-align]="'right'">
+        <amexio-label size="small">6</amexio-label><br/>
+        <amexio-box padding= "true">
+            <amexio-label size="small">High</amexio-label>
+          </amexio-box>
+      </amexio-center>
+    </amexio-datapoints>
+  </amexio-column>
+
+<amexio-column [size]="2">
+    <amexio-datapoints [west]="true" [center]="true">
+      <amexio-west [content-align]="'left'">
+        <amexio-image [icon-class]="'fa fa-medium'"></amexio-image>
+      </amexio-west>
+      <amexio-center [content-align]="'right'">
+            <amexio-label size="small">9</amexio-label><br/>
+            <amexio-box padding= "true">
+                <amexio-label size="small">Medium</amexio-label>
+              </amexio-box>
+      </amexio-center>
+    </amexio-datapoints>
+  </amexio-column>
+
+  <amexio-column [size]="2">
+    <amexio-datapoints [west]="true" [center]="true">
+      <amexio-west [content-align]="'left'">
+        <amexio-image [icon-class]="'fa fa-low-vision'"></amexio-image>
+      </amexio-west>
+      <amexio-center [content-align]="'right'">
+        <amexio-label size="small">6</amexio-label><br/>
+        <amexio-box padding= "true">
+            <amexio-label size="small">Low</amexio-label>
+          </amexio-box>
+      </amexio-center>
+    </amexio-datapoints>
+  </amexio-column>
+
+</amexio-row>
+<br/>
+<amexio-datagrid
+      [height]="500"
+      [title]="'List of Issues Raised'"
+      [page-size] = "10"
+      [data-reader]="'response.data'"
+      [enable-checkbox]="false"
+      [http-url]="'assets/data/issue.json'"
+      [http-method]="'get'"
+      (selectedRowData)="onRowSelect($event)"
+      (rowSelect)="onRowClick($event)" [c-class]="'gridStyle'" [tableDatacclass]="'datagridrow'" [tableTitlecclass]="'headerStyle'" [tableHeadercclass]="'headerStyleColumn'">
+      <amexio-data-table-column [width]="'15'" [data-index]="'date'" [data-type]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
+      <amexio-data-table-column [width]="'15'" [data-index]="'status'" [data-type]="'string'" [hidden]="false" [text]="'Status'"></amexio-data-table-column>
+      <amexio-data-table-column [data-index]="'issue'" [data-type]="'string'" [hidden]="false" [text]="'Issue'"></amexio-data-table-column>
+      <amexio-data-table-column [width]="'15'" [data-index]="'severity'" [data-type]="'string'" [hidden]="false" [text]="'Severity'"></amexio-data-table-column>
+    </amexio-datagrid>
+</amexio-body>
+</amexio-card>

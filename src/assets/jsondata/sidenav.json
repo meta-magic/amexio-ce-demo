@@ -41,5 +41,50 @@
           "link": "home/map"
         }
   
+      ],
+      "componentData":[
+
+        {
+          "text": "Data Grid",
+          "icon": "fa fa-database fa-fw",
+          "mdaIcon": "link",
+          "link": "home/datagrid"
+        },
+        {
+          "text": "Template",
+          "icon": "fa fa-th fa-fw",
+          "mdaIcon": "link",
+          "link": "home/template"
+        },
+        {
+          "text": "Navigation",
+          "icon": "fa fa-bars fa-fw",
+          "mdaIcon": "link",
+          "link": "home/navigation"
+        },
+        {
+          "text": "Action Button",
+          "icon": "fa fa-keyboard-o fa-fw",
+          "mdaIcon": "link",
+          "link": "home/action"
+        }
+  
+      ],
+      
+      "reports":[
+
+        {
+          "text": "Group By Issue",
+          "icon": "fa fa-ticket fa-fw",
+          "mdaIcon": "link",
+          "link": "home/group-by-issue"
+        },
+        {
+          "text": "Issue",
+          "icon": "fa fa-ticket fa-fw",
+          "mdaIcon": "link",
+          "link": "home/issue"
+        }
+  
       ]
 }
