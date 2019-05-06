@@ -1,5 +1,5 @@
 /**
- * Created by vrushabh on 13/1/18.
+ * Created by kedar on 13/1/18.
  */
 import {Component, OnInit} from '@angular/core';
 import {NgModule} from '@angular/core';
@@ -227,18 +227,3 @@ export class ActionComponent implements OnInit {
   ngOnInit() {
   }
 }
-
-const routes: Routes = [
-  {path: '', component: ActionComponent},
-];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes),AmexioWidgetModule,
-  AmexioLayoutModule,AmexioFormsModule,AmexioDataModule],
-  exports: [RouterModule],
-  declarations : [ActionComponent]
-})
-export class ActionRoutingModule {
-}
-
-export const routedComponents = [ActionComponent];
