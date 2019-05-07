@@ -1,10 +1,14 @@
  
 <amexio-row>
   <amexio-column [size]="12">
-    <amexio-card [footer]="false" [header]="true">
-      <amexio-header>Data Grid with Template</amexio-header>
-      <amexio-body>
-        <amexio-datagrid [enable-checkbox]="false" title="User Activity Details" [http-method]="'get'" [http-url]="'assets/data/datagridtemplate.json'"
+    <amexio-card-ce>
+      <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+        <amexio-label size="medium">
+          User Activity Details
+        </amexio-label>
+      </amexio-header-ce>
+      <amexio-body-ce>
+        <amexio-datagrid [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/datagridtemplate.json'"
           [data-reader]="'response.data'" [page-size]="10" [enable-data-filter]="false">
           <amexio-data-table-column [width]="40" [data-index]="'User'" [data-type]="'string'" [hidden]="false" [text]="'USER'">
             <ng-template #amexioBodyTmpl let-column let-row="row">
@@ -129,17 +133,21 @@
 
         </amexio-datagrid>
 
-      </amexio-body>
-    </amexio-card>
+      </amexio-body-ce>
+    </amexio-card-ce>
   </amexio-column>
 </amexio-row>
 <br>
 <!--List Box Template-->
 <amexio-row>
   <amexio-column [size]="12">
-    <amexio-card [footer]="false" [header]="true">
-      <amexio-header>List Box With template</amexio-header>
-      <amexio-body>
+    <amexio-card-ce>
+      <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+        <amexio-label size="medium">
+          List Box With template
+        </amexio-label>
+      </amexio-header-ce>
+      <amexio-body-ce>
         <amexio-row>
           <amexio-column [size]="5">
             <amexio-listbox [height]="360" [data]="projectData" [filter]="false" [header]="'Project'" [enable-checkbox]="false" [data-reader]="'response.data'"
@@ -194,5 +202,5 @@
             </amexio-listbox>
           </amexio-column>
         </amexio-row>
-      </amexio-body>
-    </amexio-card>
+      </amexio-body-ce>
+    </amexio-card-ce>
