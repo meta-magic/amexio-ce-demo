@@ -42100,7 +42100,7 @@ var GridLayoutDemoOne = /** @class */ (function () {
     };
     GridLayoutDemoOne = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'gridlayout-demo-exp1',
+            selector: 'gridlayout',
             template: __webpack_require__(/*! ./gridlayout.demo.html */ "./src/app/gridlayout/gridlayoutone/gridlayout.demo.html")
         }),
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_2__["AmexioGridLayoutService"]])
@@ -42348,7 +42348,7 @@ var routes = [
             { path: 'navigation', component: _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_22__["NavigationComponent"] },
             { path: 'calender', component: _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_23__["CalendarDemoComponent"] },
             { path: 'window-ce-demo', component: _windows_window_component__WEBPACK_IMPORTED_MODULE_24__["CreativeWindowDemo"] },
-            { path: 'gridlayout-demo-exp1', component: _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_25__["GridLayoutDemoOne"] },
+            { path: 'gridlayout', component: _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_25__["GridLayoutDemoOne"] },
             { path: 'progress-ce-demo', component: _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_26__["CreativeCircularProgressBarDemo"] },
             { path: 'step-wizard-demo', component: _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_27__["StepWizardDemoComponent"] }
         ]
