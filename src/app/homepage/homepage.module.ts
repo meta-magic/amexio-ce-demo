@@ -27,6 +27,7 @@ import { IssueComponent } from '../report/issue/issue.component';
 import { ProfileComponent } from '../profile/profile.component';
 import { EmailComponent } from '../email/email.component';
 import { NavigationComponent } from '../navigation/navigation.component';
+import { CalendarDemoComponent } from '../calendar/calendar.component';
 import { CreativeWindowDemo } from '../windows/window.component';
 import { GridLayoutDemoOne } from '../gridlayout/gridlayoutone/gridlayout.demo';
 import { CreativeCircularProgressBarDemo } from '../progressce/progressce.component';
@@ -54,6 +55,7 @@ const routes: Routes = [
       { path: 'profile', component: ProfileComponent },
       { path: 'email', component: EmailComponent },
       { path: 'navigation', component: NavigationComponent },
+      { path: 'calender', component: CalendarDemoComponent },
       { path: 'window-ce-demo', component: CreativeWindowDemo },
       { path: 'gridlayout-demo-exp1', component: GridLayoutDemoOne },
       { path: 'progress-ce-demo', component: CreativeCircularProgressBarDemo },
@@ -68,7 +70,7 @@ const routes: Routes = [
   declarations: [HomeComponent, TimelineComponent, AmexioFloatingPanelComponent, MapComponent, DashboardComponent,
     userProfileComponent, DashboardTWoComponent, DashboardThreeComponent,
     DataGridComponent, TemplatesGridComponent, ActionComponent, GroupbyIssueComponent, IssueComponent,
-    ProfileComponent, EmailComponent, NavigationComponent, CreativeWindowDemo, GridLayoutDemoOne,
+    ProfileComponent, EmailComponent, NavigationComponent, CalendarDemoComponent, CreativeWindowDemo, GridLayoutDemoOne,
     CreativeCircularProgressBarDemo,StepWizardDemoComponent
   ],
   imports: [CommonModule,
