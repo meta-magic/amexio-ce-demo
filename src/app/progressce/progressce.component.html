@@ -1,0 +1,97 @@
+
+        <h2>Creative Progress Bar</h2>
+        <!-- RADIAL PROGRESS BAR-->
+        <amexio-card-ce>
+            <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+                <amexio-label size="medium">
+                    Progress Bar Type - radial
+                </amexio-label>
+              </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-row>
+                    <amexio-column size="4">
+                        <amexio-progress-ce [type]="'radial'" [height]="'150'" [width]="'150'" [show-label]="true"
+                            [show-unit]="true" [progress-value]="30" [background-color]="'#34495e'" [label-color]="'white'"
+                            [progress-color]="'blue'" [inactive-progress-color]="'#bdc3c7'" [tooltip]="'completed'">
+                        </amexio-progress-ce>
+                    </amexio-column>
+                    <amexio-column size="4">
+                        <amexio-progress-ce [type]="'radial'" [height]="'150'" [width]="'150'" [background-color]="'#34495e'"
+                            [show-label]="true" [show-unit]="true" [label-color]="'white'" [progress-color]="'#9b59b6'"
+                            [inactive-progress-color]="'#bdc3c7'" [tooltip]="'finished'" [progress-value]="60">
+                        </amexio-progress-ce>
+                    </amexio-column>
+                    <amexio-column size="4">
+                        <amexio-progress-ce [type]="'radial'" [height]="'150'" [background-color]="'#34495e'" [tooltip]="'completed'"
+                            [label-color]="'white'" [progress-color]="'#e67e22'" [inactive-progress-color]="'#bdc3c7'"
+                            [tooltip]="'finished'" [show-label]="true" [show-unit]="true" [width]="'150'"
+                            [progress-value]="90">
+                        </amexio-progress-ce>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-body-ce>
+
+        </amexio-card-ce>
+
+        <!-- RING PROGRESS BAR -->
+        <amexio-card-ce>
+            <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+                <amexio-label size="medium">
+                    Progress Bar Type - ring
+                </amexio-label>
+              </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-row>
+                    <amexio-column size="4">
+                        <amexio-progress-ce [type]="'ring'" [height]="'150'" [width]="'150'" [show-label]="true"
+                            [show-unit]="true" [progress-value]="45" [label-color]="'#34495e'" [progress-color]="'red'"
+                            [tooltip]="'completed'">
+                        </amexio-progress-ce>
+                    </amexio-column>
+                    <amexio-column size="4">
+                        <amexio-progress-ce [type]="'ring'" [height]="'150'" [width]="'150'" [show-label]="true"
+                            [show-unit]="true" [label-color]="'#34495e'" [progress-color]="'yellow'" [tooltip]="'finished'"
+                            [progress-value]="75">
+                        </amexio-progress-ce>
+                    </amexio-column>
+                    <amexio-column size="4">
+                        <amexio-progress-ce [type]="'ring'" [height]="'150'" [tooltip]="'completed'" [label-color]="'#34495e'"
+                            [progress-color]="'green'" [tooltip]="'finished'" [show-label]="true" [show-unit]="true"
+                            [width]="'150'" [progress-value]="95">
+                        </amexio-progress-ce>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-body-ce>
+        </amexio-card-ce>
+
+        <!--  PIE PROGRESS BAR -->
+
+        <amexio-card-ce>
+            <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+                <amexio-label size="medium">
+                    Progress Bar Type - pie
+                </amexio-label>
+              </amexio-header-ce>
+            <amexio-body-ce>
+                <amexio-row>
+                    <amexio-column size="4">
+                        <amexio-progress-ce [type]="'pie'" [height]="'150'" [width]="'150'" [show-label]="true"
+                            [show-unit]="true" [progress-value]="65" [label-color]="'white'" [inactive-progress-color]="'#a2add0'"
+                            [progress-color]="'mediumblue'" [tooltip]="'completed'">
+                        </amexio-progress-ce>
+                    </amexio-column>
+                    <amexio-column size="4">
+                        <amexio-progress-ce [type]="'pie'" [height]="'150'" [width]="'150'" [show-label]="true"
+                            [show-unit]="true" [label-color]="'#34495e'" [progress-color]="'green'" [tooltip]="'finished'"
+                            [inactive-progress-color]="'palegreen'" [progress-value]="25">
+                        </amexio-progress-ce>
+                    </amexio-column>
+                    <amexio-column size="4">
+                        <amexio-progress-ce [type]="'pie'" [height]="'150'" [tooltip]="'completed'" [label-color]="'white'"
+                            [progress-color]="' #8b4513'" [tooltip]="'finished'" [inactive-progress-color]="'#cd853f'"
+                            [show-label]="true" [show-unit]="true" [width]="'150'" [progress-value]="85">
+                        </amexio-progress-ce>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-body-ce>
+        </amexio-card-ce>

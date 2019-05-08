@@ -4,7 +4,7 @@
       <amexio-header-ce>
         Google Map
       </amexio-header-ce>
-      <amexio-google-map [initial-zoom-level]="2" [height]="'600px'" [data]="data" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'">
+      <amexio-google-map [initial-zoom-level]="12" [height]="'500px'" [data]="cdata" [initial-lat]="14.72118092" [initial-lng]="121.02939606" [co-ordinates]="coordinateData" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'" (onMarkerClick)="onMarkerClick($event)">
       </amexio-google-map>
     </amexio-card-ce>
   </amexio-layout-item>

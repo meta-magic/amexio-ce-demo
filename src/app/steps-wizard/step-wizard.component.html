@@ -1,0 +1,59 @@
+
+        <amexio-row>
+            <amexio-column size="12">
+                <amexio-row>
+                    <amexio-column size="12">
+                        <amexio-step-wizard  (finalStage)="finalStageClick($event)" [header-background]="'linear-gradient(40deg, rgb(32, 150, 255), rgb(5, 255, 163))'">
+                            <amexio-step-wizard-item title="User Details">
+                                <amexio-row>
+                                    <amexio-column [size]="6">
+                                        <amexio-text-input [min-length]="3" [(ngModel)]="userRegistration.firstName" [max-length]="5" [allow-blank]="false" field-label="First Name" name="firstName" place-holder="Enter first name" icon-feedback="true">
+                                        </amexio-text-input>
+                                    </amexio-column>
+                                    <amexio-column [size]="6">
+                                        <amexio-text-input field-label="Last Name" name="lastName" [(ngModel)]="userRegistration.lastName" place-holder="Enter last name" allow-blank="false" error-msg="Please enter last name" [min-length]="3" min-error-msg="Minimum 3 char required"
+                                            [max-length]="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                                        </amexio-text-input>
+                                    </amexio-column>
+                                </amexio-row>
+                                <amexio-row>
+                                    <amexio-column [size]="6">
+                                        <amexio-email-input [field-label]="'Email Id'" name="email" [(ngModel)]="userRegistration.email" [place-holder]="'Enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
+                                          </amexio-email-input>
+                                    </amexio-column>
+                                    <amexio-column [size]="6">
+                                        <amexio-text-input field-label="Phone" name="phone" [min-length]="3" [(ngModel)]="userRegistration.phone" place-holder="Enter last phone" allow-blank="false" error-msg="Please enter last name" 
+                                      icon-feedback="true">
+                                    </amexio-text-input>
+                                    </amexio-column>
+                                </amexio-row>
+                            </amexio-step-wizard-item>
+                            <amexio-step-wizard-item title="Address"> 
+                              <amexio-row>
+                                    <amexio-column [size]="6">
+                                        <amexio-textarea-input  [field-label]="'Address '" name="addresss" [(ngModel)]="address.address1" [place-holder]="'Enter address'" [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false"
+                                        [enable-popover]="true"></amexio-textarea-input>
+                                    </amexio-column>
+                                    <amexio-column [size]="6">
+                                        <amexio-textarea-input  [field-label]="'PinCode'" name="pincode" [(ngModel)]="address.pincode" [place-holder]="'Enter pincode'" [error-msg]="'Please enter pincode'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false"
+                                        [enable-popover]="true"></amexio-textarea-input>
+                                    </amexio-column>
+                                </amexio-row></amexio-step-wizard-item>
+                            <amexio-step-wizard-item title="Payment"><amexio-row>
+                                <amexio-column [size]="6">
+                                    <amexio-checkbox [field-label]="'Cash on delivery'" name="cashondelivery" [required]="true" [(ngModel)]="payment.payment">
+                                      </amexio-checkbox>
+                                </amexio-column>
+                               
+                            </amexio-row></amexio-step-wizard-item>
+                            <amexio-step-wizard-item title="Confirmation"> 
+                                <amexio-image [icon-class]="'fa fa-check-circle'"></amexio-image>  Order Confirmed..
+                            </amexio-step-wizard-item>
+                        </amexio-step-wizard>
+                    </amexio-column>
+                </amexio-row>
+                
+            </amexio-column>
+        </amexio-row>
+
+

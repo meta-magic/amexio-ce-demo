@@ -21,12 +21,17 @@ import { MapComponent } from '../map/map.component';
 import { AmexioFloatingPanelComponent } from '../floatingpanel/floatingpanel.component';
 import { DataGridComponent } from '../data/data.component';
 import { TemplatesGridComponent } from '../templates/templates.component';
-import {ActionComponent} from '../action/action';
+import { ActionComponent } from '../action/action';
 import { GroupbyIssueComponent } from '../report/groupbyissue/groupbyissue.component';
 import { IssueComponent } from '../report/issue/issue.component';
 import { ProfileComponent } from '../profile/profile.component';
 import { EmailComponent } from '../email/email.component';
 import { NavigationComponent } from '../navigation/navigation.component';
+import { CalendarDemoComponent } from '../calender/calender.component';
+import { CreativeWindowDemo } from '../windows/window.component';
+import { GridLayoutDemoOne } from '../gridlayout/gridlayoutone/gridlayout.demo';
+import { CreativeCircularProgressBarDemo } from '../progressce/progressce.component';
+import { StepWizardDemoComponent } from '../steps-wizard/step-wizard.component';
 /**
  * Created by kedar on 11/2/19.
  */
@@ -49,18 +54,24 @@ const routes: Routes = [
       { path: 'issue', component: IssueComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'email', component: EmailComponent },
-      { path: 'navigation', component: NavigationComponent }
+      { path: 'navigation', component: NavigationComponent },
+      { path: 'calender', component: CalendarDemoComponent },
+      { path: 'window-ce-demo', component: CreativeWindowDemo },
+      { path: 'gridlayout-demo-exp1', component: GridLayoutDemoOne },
+      { path: 'progress-ce-demo', component: CreativeCircularProgressBarDemo },
+      { path: 'step-wizard-demo', component: StepWizardDemoComponent }
 
-      
+
     ]
   },
 ];
 
 @NgModule({
-  declarations: [HomeComponent, TimelineComponent, AmexioFloatingPanelComponent, MapComponent, DashboardComponent, 
+  declarations: [HomeComponent, TimelineComponent, AmexioFloatingPanelComponent, MapComponent, DashboardComponent,
     userProfileComponent, DashboardTWoComponent, DashboardThreeComponent,
-    DataGridComponent, TemplatesGridComponent, ActionComponent,GroupbyIssueComponent,IssueComponent,
-    ProfileComponent,EmailComponent,NavigationComponent
+    DataGridComponent, TemplatesGridComponent, ActionComponent, GroupbyIssueComponent, IssueComponent,
+    ProfileComponent, EmailComponent, NavigationComponent, CalendarDemoComponent, CreativeWindowDemo, GridLayoutDemoOne,
+    CreativeCircularProgressBarDemo,StepWizardDemoComponent
   ],
   imports: [CommonModule,
     FormsModule, AmexioChartD3Module, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
