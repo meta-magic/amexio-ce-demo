@@ -42,7 +42,7 @@
   "componentData": [
     {
       "text": "Action Button",
-      "icon": "fa fa-keyboard-o fa-fw",
+      "icon": "fa fa-keyboard-o",
       "mdaIcon": "link",
       "link": "home/action"
     },
@@ -54,13 +54,13 @@
     },
     {
       "text": "Creative ProgressBar",
-      "icon": "fa fa-eercast fa-fw",
+      "icon": "fa fa-eercast",
       "mdbIcon": "link",
       "link": "home/progress-ce-demo"
     },
     {
       "text": "Data Grid",
-      "icon": "fa fa-database fa-fw",
+      "icon": "fa fa-database",
       "mdaIcon": "link",
       "link": "home/datagrid"
     },
@@ -72,13 +72,13 @@
     },
     {
       "text": "Template",
-      "icon": "fa fa-th fa-fw",
+      "icon": "fa fa-th",
       "mdaIcon": "link",
       "link": "home/template"
     },
     {
       "text": "Navigation",
-      "icon": "fa fa-bars fa-fw",
+      "icon": "fa fa-bars",
       "mdaIcon": "link",
       "link": "home/navigation"
     },
@@ -99,13 +99,13 @@
   "reports": [
     {
       "text": "Group By Issue",
-      "icon": "fa fa-ticket fa-fw",
+      "icon": "fa fa-ticket",
       "mdaIcon": "link",
       "link": "home/group-by-issue"
     },
     {
       "text": "Issue",
-      "icon": "fa fa-ticket fa-fw",
+      "icon": "fa fa-ticket",
       "mdaIcon": "link",
       "link": "home/issue"
     }
