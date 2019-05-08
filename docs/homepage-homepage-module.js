@@ -40959,6 +40959,161 @@ var ActionComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/calendar/calendar.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/calendar/calendar.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div style=\"height:2000px;\">\n        <amexio-calendar [event-color-grouping]=\"true\"  \n        [calendar-date]=\"calendardate\" \n        (onEventClicked)=\"onEventClicked($event)\" \n        [events]=\"events\">\n        </amexio-calendar>            \n    </div>"
+
+/***/ }),
+
+/***/ "./src/app/calendar/calendar.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/calendar/calendar.component.ts ***!
+  \************************************************/
+/*! exports provided: CalendarDemoComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CalendarDemoComponent", function() { return CalendarDemoComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CalendarDemoComponent = /** @class */ (function () {
+    function CalendarDemoComponent(http) {
+        this.http = http;
+        this.calendarDate = new Date();
+        this.calendarDate = new Date(1551697131284);
+        this.events = [
+            {
+                "title": "Kubernetes Workshop",
+                "start": "2019-02-25T11:00:00",
+                "end": "2019-03-02T14:00:00"
+            },
+            {
+                "title": "Microservice Workshop",
+                "start": "2019-02-25T03:00:00",
+                "end": "2019-03-03T06:00:00"
+            },
+            {
+                "title": "Docker Workshop",
+                "start": "2019-03-07",
+                "end": "2019-03-09"
+            },
+            {
+                "title": "Kubernetes Workshop",
+                "start": "2019-03-11",
+                "end": "2019-03-12"
+            },
+            {
+                "title": "Microservice Workshop",
+                "start": "2019-03-13",
+                "end": "2019-03-14"
+            },
+            {
+                "title": "Docker Workshop",
+                "start": "2019-03-17",
+                "end": "2019-03-18"
+            },
+            {
+                "title": "Amexio Meetup",
+                "start": "2019-03-25T18:00:00",
+                "end": "2019-03-25T20:00:00"
+            },
+            {
+                "title": "Angular Event",
+                "start": "2019-03-27T11:25:00",
+                "end": "2019-03-27T12:25:00"
+            },
+            {
+                "title": "Amexio Meetup",
+                "start": "2019-03-16T11:00:00",
+                "end": "2019-03-16T12:30:00"
+            },
+            {
+                "title": "Amexio Meetup ",
+                "start": "2019-02-22T18:25:00",
+                "end": "2019-02-22T21:25:00"
+            },
+            {
+                "title": "121 Conference",
+                "start": "2019-04-12",
+                "end": "2019-04-13"
+            },
+            {
+                "title": "122 Conference",
+                "start": "2019-05-22",
+                "end": "2019-05-24"
+            },
+            {
+                "title": "All Hands Meeting",
+                "start": "2019-02-28T09:15:00",
+                "end": "2019-02-28T10:15:00"
+            },
+            {
+                "title": "All Hands Meeting",
+                "start": "2019-04-30T09:15:00",
+                "end": "2019-04-30T10:15:00"
+            },
+            {
+                "title": "All Hands Meeting",
+                "start": "2019-05-31T09:15:00",
+                "end": "2019-05-31T09:15:00"
+            },
+            {
+                "title": "Technology Conference",
+                "start": "2019-03-05"
+            },
+            {
+                "title": "All Hands Meeting",
+                "start": "2019-03-22T09:15:00",
+                "end": "2019-03-22T10:15:00"
+            }
+        ];
+    }
+    CalendarDemoComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.http.get("assets/arc.json")
+            .subscribe(function (resp) {
+            _this.htmltemplate = resp.html;
+            _this.tscode = "";
+        });
+    };
+    CalendarDemoComponent.prototype.onEventClicked = function (event) {
+        this.eventobject = event.this;
+        console.log(event);
+    };
+    CalendarDemoComponent.prototype.setCalendarDate = function () {
+        this.calendarDate = new Date(this.calendarDate.setMonth(this.calendarDate.getMonth() + 1));
+    };
+    CalendarDemoComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'calendar',
+            template: __webpack_require__(/*! ./calendar.component.html */ "./src/app/calendar/calendar.component.html")
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], CalendarDemoComponent);
+    return CalendarDemoComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/dashboard/dashboard.component.html":
 /*!****************************************************!*\
   !*** ./src/app/dashboard/dashboard.component.html ***!
@@ -42114,16 +42269,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _profile_profile_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../profile/profile.component */ "./src/app/profile/profile.component.ts");
 /* harmony import */ var _email_email_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../email/email.component */ "./src/app/email/email.component.ts");
 /* harmony import */ var _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../navigation/navigation.component */ "./src/app/navigation/navigation.component.ts");
-/* harmony import */ var _windows_window_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../windows/window.component */ "./src/app/windows/window.component.ts");
-/* harmony import */ var _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../gridlayout/gridlayoutone/gridlayout.demo */ "./src/app/gridlayout/gridlayoutone/gridlayout.demo.ts");
-/* harmony import */ var _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../progressce/progressce.component */ "./src/app/progressce/progressce.component.ts");
-/* harmony import */ var _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../steps-wizard/step-wizard.component */ "./src/app/steps-wizard/step-wizard.component.ts");
+/* harmony import */ var _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../calendar/calendar.component */ "./src/app/calendar/calendar.component.ts");
+/* harmony import */ var _windows_window_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../windows/window.component */ "./src/app/windows/window.component.ts");
+/* harmony import */ var _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../gridlayout/gridlayoutone/gridlayout.demo */ "./src/app/gridlayout/gridlayoutone/gridlayout.demo.ts");
+/* harmony import */ var _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../progressce/progressce.component */ "./src/app/progressce/progressce.component.ts");
+/* harmony import */ var _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../steps-wizard/step-wizard.component */ "./src/app/steps-wizard/step-wizard.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -42173,10 +42330,11 @@ var routes = [
             { path: 'profile', component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_20__["ProfileComponent"] },
             { path: 'email', component: _email_email_component__WEBPACK_IMPORTED_MODULE_21__["EmailComponent"] },
             { path: 'navigation', component: _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_22__["NavigationComponent"] },
-            { path: 'window-ce-demo', component: _windows_window_component__WEBPACK_IMPORTED_MODULE_23__["CreativeWindowDemo"] },
-            { path: 'gridlayout-demo-exp1', component: _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_24__["GridLayoutDemoOne"] },
-            { path: 'progress-ce-demo', component: _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_25__["CreativeCircularProgressBarDemo"] },
-            { path: 'step-wizard-demo', component: _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_26__["StepWizardDemoComponent"] }
+            { path: 'calender', component: _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_23__["CalendarDemoComponent"] },
+            { path: 'window-ce-demo', component: _windows_window_component__WEBPACK_IMPORTED_MODULE_24__["CreativeWindowDemo"] },
+            { path: 'gridlayout-demo-exp1', component: _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_25__["GridLayoutDemoOne"] },
+            { path: 'progress-ce-demo', component: _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_26__["CreativeCircularProgressBarDemo"] },
+            { path: 'step-wizard-demo', component: _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_27__["StepWizardDemoComponent"] }
         ]
     },
 ];
@@ -42188,8 +42346,8 @@ var HomeModule = /** @class */ (function () {
             declarations: [_homepage_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"], _timeline_timeline_component__WEBPACK_IMPORTED_MODULE_12__["TimelineComponent"], _floatingpanel_floatingpanel_component__WEBPACK_IMPORTED_MODULE_14__["AmexioFloatingPanelComponent"], _map_map_component__WEBPACK_IMPORTED_MODULE_13__["MapComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_6__["DashboardComponent"],
                 _userprofile_userprofile_component__WEBPACK_IMPORTED_MODULE_7__["userProfileComponent"], _dashboardtwo_dashboardtwo_component__WEBPACK_IMPORTED_MODULE_11__["DashboardTWoComponent"], _dashboardthree_dashboardthree_component__WEBPACK_IMPORTED_MODULE_10__["DashboardThreeComponent"],
                 _data_data_component__WEBPACK_IMPORTED_MODULE_15__["DataGridComponent"], _templates_templates_component__WEBPACK_IMPORTED_MODULE_16__["TemplatesGridComponent"], _action_action__WEBPACK_IMPORTED_MODULE_17__["ActionComponent"], _report_groupbyissue_groupbyissue_component__WEBPACK_IMPORTED_MODULE_18__["GroupbyIssueComponent"], _report_issue_issue_component__WEBPACK_IMPORTED_MODULE_19__["IssueComponent"],
-                _profile_profile_component__WEBPACK_IMPORTED_MODULE_20__["ProfileComponent"], _email_email_component__WEBPACK_IMPORTED_MODULE_21__["EmailComponent"], _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_22__["NavigationComponent"], _windows_window_component__WEBPACK_IMPORTED_MODULE_23__["CreativeWindowDemo"], _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_24__["GridLayoutDemoOne"],
-                _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_25__["CreativeCircularProgressBarDemo"], _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_26__["StepWizardDemoComponent"]
+                _profile_profile_component__WEBPACK_IMPORTED_MODULE_20__["ProfileComponent"], _email_email_component__WEBPACK_IMPORTED_MODULE_21__["EmailComponent"], _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_22__["NavigationComponent"], _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_23__["CalendarDemoComponent"], _windows_window_component__WEBPACK_IMPORTED_MODULE_24__["CreativeWindowDemo"], _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_25__["GridLayoutDemoOne"],
+                _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_26__["CreativeCircularProgressBarDemo"], _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_27__["StepWizardDemoComponent"]
             ],
             imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], amexio_chart_d3__WEBPACK_IMPORTED_MODULE_8__["AmexioChartD3Module"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioChartsModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioDashBoardModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioEnterpriseModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioMapModule"],
