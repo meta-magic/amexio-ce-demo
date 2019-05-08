@@ -12,7 +12,7 @@ import { GridConfig } from 'amexio-ng-extensions';
 
 
 @Component({
-  selector: 'gridlayout-demo-exp1', templateUrl: 'gridlayout.demo.html'
+  selector: 'gridlayout', templateUrl: 'gridlayout.demo.html'
 })
 export class GridLayoutDemoOne  implements OnInit{
  

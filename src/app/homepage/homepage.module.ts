@@ -57,7 +57,7 @@ const routes: Routes = [
       { path: 'navigation', component: NavigationComponent },
       { path: 'calender', component: CalendarDemoComponent },
       { path: 'window-ce-demo', component: CreativeWindowDemo },
-      { path: 'gridlayout-demo-exp1', component: GridLayoutDemoOne },
+      { path: 'gridlayout', component: GridLayoutDemoOne },
       { path: 'progress-ce-demo', component: CreativeCircularProgressBarDemo },
       { path: 'step-wizard-demo', component: StepWizardDemoComponent }
 
