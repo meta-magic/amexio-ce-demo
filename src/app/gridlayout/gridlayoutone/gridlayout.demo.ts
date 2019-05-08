@@ -47,33 +47,33 @@ export class GridLayoutDemoOne  implements OnInit{
   // }
 
   createLayouts() {
-    this.gridDesktop = new GridConfig('Layout1', GridConstants.Desktop)
-      .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
-      .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridright1"])
-      .addlayout(["gridleft", "gridmenu2", "gridmenu3", "gridright2"])
-      .addlayout(["gridleft", "gridmenu4", "gridmenu4", "gridright3"])
-      .addlayout(["gridleft", "gridmenu4", "gridmenu4", "gridright4"]);
+    this.gridDesktop = new GridConfig('Layout11', GridConstants.Desktop)
+      .addlayout(["gridheader1", "gridheader1", "gridheader1", "gridheader1"])
+      .addlayout(["gridleft1", "gridmenu11", "gridmenu11", "gridright11"])
+      .addlayout(["gridleft1", "gridmenu21", "gridmenu31", "gridright21"])
+      .addlayout(["gridleft1", "gridmenu41", "gridmenu41", "gridright31"])
+      .addlayout(["gridleft1", "gridmenu41", "gridmenu41", "gridright41"]);
 
-      this.gridTablet = new GridConfig('Layout1', GridConstants.Tablet)
-      .addlayout(["gridheader", "gridheader", "gridheader", "gridheader", "gridheader"])
-      .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridmenu1", "gridmenu1"])
-      .addlayout(["gridright1", "gridmenu2", "gridmenu2", "gridmenu3", "gridmenu3"])
-      .addlayout(["gridright1", "gridmenu4", "gridmenu4", "gridmenu4", "gridmenu4"])
-      .addlayout(["gridright2", "gridmenu4", "gridmenu4", "gridmenu4", "gridmenu4"])
-      .addlayout(["gridright3", "gridmenu4", "gridmenu4", "gridmenu4", "gridmenu4"])
-      .addlayout(["gridright4", "gridmenu4", "gridmenu4", "gridmenu4", "gridmenu4"]);
+      this.gridTablet = new GridConfig('Layout11', GridConstants.Tablet)
+      .addlayout(["gridheader1", "gridheader1", "gridheader1", "gridheader1", "gridheader1"])
+      .addlayout(["gridleft1", "gridmenu11", "gridmenu11", "gridmenu11", "gridmenu11"])
+      .addlayout(["gridright11", "gridmenu21", "gridmenu21", "gridmenu31", "gridmenu31"])
+      .addlayout(["gridright11", "gridmenu41", "gridmenu41", "gridmenu41", "gridmenu41"])
+      .addlayout(["gridright21", "gridmenu41", "gridmenu41", "gridmenu41", "gridmenu41"])
+      .addlayout(["gridright31", "gridmenu41", "gridmenu41", "gridmenu41", "gridmenu41"])
+      .addlayout(["gridright41", "gridmenu41", "gridmenu41", "gridmenu41", "gridmenu41"]);
 
-      this.gridMobile = new GridConfig('Layout1', GridConstants.Mobile)
-      .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
-      .addlayout(["gridmenu1", "gridmenu1", "gridmenu1", "gridmenu1"])
-      .addlayout(["gridmenu2", "gridmenu2", "gridmenu2", "gridmenu2"])
-      .addlayout(["gridmenu3", "gridmenu3", "gridmenu3", "gridmenu3"])
-      .addlayout(["gridmenu4", "gridmenu4", "gridmenu4", "gridmenu4"])
-      .addlayout(["gridleft", "gridleft", "gridleft", "gridleft"])
-      .addlayout(["gridright1", "gridright1", "gridright1", "gridright1"])
-      .addlayout(["gridright2", "gridright2", "gridright2", "gridright2"])
-      .addlayout(["gridright3", "gridright3", "gridright3", "gridright3"])
-      .addlayout(["gridright4", "gridright4", "gridright4", "gridright4"]);
+      this.gridMobile = new GridConfig('Layout11', GridConstants.Mobile)
+      .addlayout(["gridheader1", "gridheader1", "gridheader1", "gridheader1"])
+      .addlayout(["gridmenu11", "gridmenu11", "gridmenu11", "gridmenu11"])
+      .addlayout(["gridmenu21", "gridmenu21", "gridmenu21", "gridmenu21"])
+      .addlayout(["gridmenu31", "gridmenu31", "gridmenu31", "gridmenu31"])
+      .addlayout(["gridmenu41", "gridmenu41", "gridmenu41", "gridmenu41"])
+      .addlayout(["gridleft1", "gridleft1", "gridleft1", "gridleft1"])
+      .addlayout(["gridright11", "gridright11", "gridright11", "gridright11"])
+      .addlayout(["gridright21", "gridright21", "gridright21", "gridright21"])
+      .addlayout(["gridright31", "gridright31", "gridright31", "gridright31"])
+      .addlayout(["gridright41", "gridright41", "gridright41", "gridright41"]);
   }
   
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
