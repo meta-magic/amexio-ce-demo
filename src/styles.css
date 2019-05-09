@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-.Layout1{ 
+/* .Layout1{ 
     gap: 0px !important;
 }
 
 .chartLayout{ 
     gap: 0px !important;
-}
+} */
 
 
 .image-top-center{
@@ -18,6 +18,7 @@
     margin-top: -20px;
     border-radius : 10px;
 }
+
  
 .creative-header, .card-container-narrower-header, amexio-card-ce > div , .card-container-ce {
     border-radius: 10px;
@@ -26,10 +27,10 @@
 .timeline .timeline-item .timeline-panel{
     padding: 10px 0px;
 }
-.datatable .datatable-header{
+/* .datatable .datatable-header{
     background-color: unset;
     color: rgb(255, 75, 31);
-}
+} */
 
 .sidenav .activenode{
     background-color: unset;

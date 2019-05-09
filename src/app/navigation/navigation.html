@@ -1,6 +1,6 @@
 <amexio-tab-view [closable]="false">
   <amexio-tab [title]="'Top Menu'" [icon]="'fa fa-bars'" [active]="true">
-    <amexio-card-ce>
+    <amexio-card-ce [style-type]="'narrower-header'">
       <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
         <amexio-label size="medium">
           Top Menu
@@ -13,8 +13,12 @@
     </amexio-card-ce>
   </amexio-tab>
   <amexio-tab [title]="'Side Menu'" [icon]="'fa fa-building'">
-    <amexio-card-ce>
-      <amexio-header-ce>Side Menu</amexio-header-ce>
+    <amexio-card-ce [style-type]="'narrower-header'">
+      <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+        <amexio-label size="medium">
+          Side Menu
+        </amexio-label>
+      </amexio-header-ce>
       <amexio-body-ce>
         <amexio-row>
           <amexio-column [size]="4">
@@ -27,8 +31,12 @@
     </amexio-card-ce>
   </amexio-tab>
   <amexio-tab [title]="'Dockbar'" [icon]="'fa fa-cube'">
-    <amexio-card-ce>
-      <amexio-header-ce>Dockbar</amexio-header-ce>
+    <amexio-card-ce [style-type]="'narrower-header'">
+      <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+        <amexio-label size="medium">
+          Dockbar
+        </amexio-label>
+      </amexio-header-ce>
       <amexio-body-ce>
         <amexio-row>
           <amexio-column [size]="12">

@@ -1,13 +1,13 @@
 <amexio-layout-columns [border]="false" [fit]="true" [alignment]="'center'" [orientation]="'vertical'">
   <amexio-layout-item [fit]="true">
-    <amexio-card-ce>
+    <amexio-card-ce [style-type]="'narrower-header'">
       <amexio-row>
         <amexio-column [size]="12">
           <amexio-tab-view header="Data Grid" [header-align]="'right'" [divide-header-equally]=false>
             <amexio-tab title="Grid" active="true" [amexio-color]="'red'">
               <amexio-row>
                 <amexio-column [size]="12">
-                  <amexio-card-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
                       <amexio-label size="medium">
                         Simple Data Grid
@@ -31,7 +31,7 @@
               </amexio-row><br>
               <amexio-row>
                 <amexio-column [size]="12">
-                  <amexio-card-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
                       <amexio-label size="medium">
                         Data Grid with Template
@@ -64,7 +64,7 @@
               </amexio-row><br>
               <amexio-row>
                 <amexio-column [size]="12">
-                  <amexio-card-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
                       <amexio-label size="medium">
                         Data Grid with Filtering
@@ -87,7 +87,7 @@
               </amexio-row>
               <amexio-row>
                 <amexio-column [size]="12">
-                  <amexio-card-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
                       <amexio-label size="medium">
                         Group By Data Grid
@@ -112,7 +112,7 @@
               <br>
               <amexio-row>
                 <amexio-column [size]="12">
-                  <amexio-card-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
                       <amexio-label size="medium">
                         Data Grid with Global Filter
@@ -142,7 +142,7 @@
 
               <amexio-row>
                 <amexio-column [size]="12">
-                  <amexio-card-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
                       <amexio-label size="medium">
                         Tree Data Grid
@@ -164,12 +164,12 @@
             <amexio-tab title="Tree" [amexio-color]="'green'">
               <amexio-row>
                 <amexio-column [size]="3">
-                  <amexio-card-ce>
-                      <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
-                          <amexio-label size="medium">
-                              Simple Tree
-                          </amexio-label>
-                        </amexio-header-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
+                    <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+                      <amexio-label size="medium">
+                        Simple Tree
+                      </amexio-label>
+                    </amexio-header-ce>
                     <amexio-body-ce>
                       <amexio-treeview [data-reader]="'data'" [http-url]="'assets/data/simpletree.json'" [http-method]="'get'">
                       </amexio-treeview>
@@ -178,12 +178,12 @@
                   </amexio-card-ce>
                 </amexio-column>
                 <amexio-column [size]="3">
-                  <amexio-card-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
-                        <amexio-label size="medium">
-                            Tree with Filtering    
-                        </amexio-label>
-                      </amexio-header-ce>
+                      <amexio-label size="medium">
+                        Tree with Filtering
+                      </amexio-label>
+                    </amexio-header-ce>
                     <amexio-body-ce>
                       <amexio-tree-filter-view [data-reader]="'data'" [http-method]="'get'" [http-url]="'assets/data/simpletree.json'">
                       </amexio-tree-filter-view>
@@ -192,12 +192,12 @@
                   </amexio-card-ce>
                 </amexio-column>
                 <amexio-column [size]="3">
-                  <amexio-card-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
-                        <amexio-label size="medium">
-                            Tree with Checkbox
-                        </amexio-label>
-                      </amexio-header-ce>
+                      <amexio-label size="medium">
+                        Tree with Checkbox
+                      </amexio-label>
+                    </amexio-header-ce>
                     <amexio-body-ce>
                       <amexio-treeview [enable-checkbox]="true" [data-reader]="'data'" [http-url]="'assets/data/treecheckbox.json'"
                         [http-method]="'get'">
@@ -206,13 +206,13 @@
                   </amexio-card-ce>
                 </amexio-column>
                 <amexio-column [size]="3">
-                  <amexio-card-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header>Tree with Template</amexio-header>
                     <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
-                        <amexio-label size="medium">
-                            Tree with Template
-                        </amexio-label>
-                      </amexio-header-ce>
+                      <amexio-label size="medium">
+                        Tree with Template
+                      </amexio-label>
+                    </amexio-header-ce>
                     <amexio-body-ce>
                       <amexio-treeview [data-reader]="'data'" [http-url]="'assets/data/treecheckbox.json'"
                         [http-method]="'get'">
@@ -228,13 +228,13 @@
             <amexio-tab title="Horizontal Tree View" [amexio-color]="'brown'">
               <amexio-row>
                 <amexio-column [size]="12">
-                  <amexio-card-ce>
+                  <amexio-card-ce [style-type]="'narrower-header'">
                     <amexio-header>Horizontal Tree View</amexio-header>
                     <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
-                        <amexio-label size="medium">
-                            Horizontal Tree View
-                        </amexio-label>
-                      </amexio-header-ce>
+                      <amexio-label size="medium">
+                        Horizontal Tree View
+                      </amexio-label>
+                    </amexio-header-ce>
                     <amexio-body-ce>
                       <amexio-horizontal-treeview [data-reader]="'data'" [http-url]="'assets/data/menus/sidebar.json'"
                         [http-method]="'get'" label="Menu"></amexio-horizontal-treeview>
