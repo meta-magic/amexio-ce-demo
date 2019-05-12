@@ -1,7 +1,7 @@
 <amexio-layout-grid [layout]="'Layout1'">
     <amexio-grid-item [name]="'gridheader1'">
-        <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(60deg,#26c6da,#00acc1)'" [align]="'space-between'">
+        <amexio-card-ce  [style-type]="'narrower-header'">
+            <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color6'" [gradient]="true" [align]="'space-between'">
                 <amexio-image [icon-class]="'fa fa-usd fa-3x'"></amexio-image>
                 <div style="text-align: center;">
                     <amexio-label [size]="'large-bold'">34,245</amexio-label><br />
@@ -24,7 +24,7 @@
 
     <amexio-grid-item [name]="'gridheader2'">
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(60deg,#ef5350,#e53935)'" [align]="'space-between'">
+            <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color2'" [gradient]="true" [align]="'space-between'">
                 <amexio-image [icon-class]="'fa fa-database fa-3x'"></amexio-image>
                 <div style="text-align: center;">
                     <amexio-label [size]="'large-bold'">105 PB</amexio-label><br />
@@ -47,7 +47,7 @@
     </amexio-grid-item>
     <amexio-grid-item [name]="'gridheader3'">
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(60deg,#ffa726,#fb8c00)'" [align]="'space-between'">
+            <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color3'" [gradient]="true" [align]="'space-between'">
                 <amexio-image [icon-class]="'fa fa fa-bug fa-3x'"></amexio-image>
                 <div style="text-align: center;">
                     <amexio-label [size]="'large-bold'">75</amexio-label><br />
@@ -70,7 +70,7 @@
     </amexio-grid-item>
     <amexio-grid-item [name]="'gridheader4'">
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(60deg,#66bb6a,#43a047)'" [align]="'space-between'">
+            <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color4'" [gradient]="true" [align]="'space-between'">
                 <amexio-image [icon-class]="'fa fa-users fa-3x'"></amexio-image>
                 <div style="text-align: center;">
                     <amexio-label [size]="'large-bold'">20k</amexio-label><br />
@@ -95,7 +95,7 @@
 <amexio-layout-grid [layout]="'chartLayout'">
     <amexio-grid-item [name]="'gridchart1'">
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(60deg,#26c6da,#00acc1)'">
+            <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color1'" [gradient]="true">
                 <div style="display: block; width: 100%;">
                     <amexio-d3-chart-line [horizontal-scale]="false" [height]="125" [yaxis-interval] = "3" [legend]="false" [label-color]="'white'" [yaxis-interval]="5" [data]="lineChartData">
                     </amexio-d3-chart-line>
@@ -129,7 +129,7 @@
     <amexio-grid-item [name]="'gridchart2'">
 
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(60deg,#ef5350,#e53935)'">
+            <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color2'" [gradient]="true">
                 <div style="display: block; width: 100%;">
                     <amexio-d3-chart-bar [height]="125" [yaxis-interval] = "3" [data]="cityPopulationData" [horizontal-scale]="false" [label-color]="'white'"
                         [label]="false" [legend]="false">
@@ -163,7 +163,7 @@
     <amexio-grid-item [name]="'gridchart3'">
 
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(60deg,#66bb6a,#43a047)'">
+            <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color3'" [gradient]="true">
                 <div style="display: block; width: 100%;">
                     <amexio-d3-chart-bar [height]="125" [yaxis-interval] = "3" [data]="lastThreeYearsData" [horizontal-scale]="false" [label-color]="'white'"
                         [label]="false" [legend]="false">
@@ -197,7 +197,7 @@
     <amexio-grid-item  [name]="'datagrid1'">
         <br /> <br />
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(60deg,#ffa726,#fb8c00)'">
+            <amexio-header-ce amexioColorPalette [color-palette]="'random'" [gradient]="true" >
                 <div>
                     <amexio-label [size]="'medium'">
                         Employee Stats
@@ -208,7 +208,7 @@
                 </div>
             </amexio-header-ce>
             <amexio-body-ce>
-                <amexio-datagrid [page-size]="10" [data-reader]="'data'" [http-url]="'assets/jsondata/datagrid.json'"
+                <amexio-datagrid  amexioColorPalette [color-palette]="'vibrant'" [gradient]="true"  [page-size]="10" [data-reader]="'data'" [http-url]="'assets/jsondata/datagrid.json'"
                     [http-method]="'get'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="'6'" [data-index]="'id'" [data-type]="'string'" [hidden]="false"
                         [text]="'ID'">
@@ -234,7 +234,7 @@
     <amexio-grid-item  [name]="'datagrid2'">
         <br /> <br />
         <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(60deg,#66bb6a,#43a047)'">
+            <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color6'" [gradient]="true" >
                 <div>
                     <amexio-label [size]="'medium'">
                         Tasks
@@ -248,7 +248,7 @@
             <amexio-body-ce>
 
 
-                <amexio-datagrid [http-url]="'assets/jsondata/listbox.json'" [http-method]="'get'" [data-reader]="'data'">
+                <amexio-datagrid amexioColorPalette [color-palette]="'vibrant'" [gradient]="true"  [http-url]="'assets/jsondata/listbox.json'" [http-method]="'get'" [data-reader]="'data'">
 
                     <amexio-data-table-column [sort]="false" [data-index]="'name'" [text]="'Description'" [data-type]="'string'"
                         [hidden]="false">
