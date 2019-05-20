@@ -97,7 +97,13 @@
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color1'" [gradient]="false">
                 <div style="display: block; width: 100%;">
-                    <amexio-d3-chart-line [horizontal-scale]="false" [height]="125" [yaxis-interval] = "3" [legend]="false" [label-color]="'white'" [yaxis-interval]="5" [data]="lineChartData">
+                    <amexio-d3-chart-line [horizontal-scale]="false" 
+                    [height]="125" [yaxis-interval] = "3" [legend]="false" 
+                    [label-color]="'white'" [yaxis-interval]="5" 
+                    [http-method]="'get'" 
+                    [data-reader]="'lineChartData'" 
+                    [http-url]="'assets/jsondata/dashboardone.json'" 
+                    >
                     </amexio-d3-chart-line>
                 </div>
             </amexio-header-ce>
@@ -131,9 +137,16 @@
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color2'" [gradient]="false">
                 <div style="display: block; width: 100%;">
-                    <amexio-d3-chart-bar [height]="125" [yaxis-interval] = "3" [data]="cityPopulationData" [horizontal-scale]="false" [label-color]="'white'"
-                        [label]="false" [legend]="false">
-                    </amexio-d3-chart-bar>
+                    <amexio-d3-chart-bar [height]="125" 
+[yaxis-interval] = "3" 
+[horizontal-scale]="false" 
+[label-color]="'white'"
+[label]="false" [legend]="false"
+[http-method]="'get'" 
+[data-reader]="'cityPopulationData'" 
+[http-url]="'assets/jsondata/dashboardone.json'"
+>
+</amexio-d3-chart-bar>
                 </div>
             </amexio-header-ce>
             <amexio-body-ce>
@@ -165,8 +178,15 @@
         <amexio-card-ce [style-type]="'narrower-header'">
             <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color3'" [gradient]="false">
                 <div style="display: block; width: 100%;">
-                    <amexio-d3-chart-bar [height]="125" [yaxis-interval] = "3" [data]="lastThreeYearsData" [horizontal-scale]="false" [label-color]="'white'"
-                        [label]="false" [legend]="false">
+                    <amexio-d3-chart-bar [height]="125" [yaxis-interval] = "3" 
+                    [horizontal-scale]="false" 
+                    [label-color]="'white'"
+                    [label]="false" 
+                    [legend]="false"
+                    [http-method]="'get'" 
+                    [data-reader]="'lastThreeYearsData'" 
+                    [http-url]="'assets/jsondata/dashboardone.json'" 
+                    >
                     </amexio-d3-chart-bar>
                 </div>
             </amexio-header-ce>

@@ -71,7 +71,12 @@
                 </amexio-badge>
             </amexio-header-ce>
             <amexio-body-ce>
-                <amexio-d3-chart-line [legend]="false" [label-color]="'white'" [yaxis-interval]="5" [data]="lastTenMonthRevenue">
+                <amexio-d3-chart-line [legend]="false" [label-color]="'white'" 
+                [yaxis-interval]="5" 
+                [http-method]="'get'" 
+                [data-reader]="'lastTenMonthRevenue'" 
+                [http-url]="'assets/jsondata/dashboardthree.json'" 
+                >
                 </amexio-d3-chart-line>
             </amexio-body-ce>
             <amexio-action-ce [align]="'center'" [height]="'50px'" [align]="'center'" [color]="'grey'" [border-top]="true">
@@ -89,7 +94,12 @@
                 </amexio-badge>
             </amexio-header-ce>
             <amexio-body-ce>
-                <amexio-d3-chart-bar [legend]="false" [label-color]="'white'" [yaxis-interval]="5" [data]="lastTenMonthUsers">
+                <amexio-d3-chart-bar [legend]="false" [label-color]="'white'" 
+                [yaxis-interval]="5" 
+                [http-method]="'get'" 
+                [data-reader]="'lastTenMonthUsers'" 
+                [http-url]="'assets/jsondata/dashboardthree.json'" 
+                >
                 </amexio-d3-chart-bar>
             </amexio-body-ce>
             <amexio-action-ce [align]="'center'" [height]="'50px'" [align]="'center'" [color]="'grey'" [border-top]="true">
