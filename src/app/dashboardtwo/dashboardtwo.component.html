@@ -105,7 +105,13 @@
                     <amexio-header-ce>
                         <amexio-label size="medium-bold">Day Temperature </amexio-label>
                     </amexio-header-ce>
-                    <amexio-d3-chart-multiarea [data]="tempData" [label]="false" [legend]="false">
+                    <!-- [data]="tempData" -->
+                    <amexio-d3-chart-multiarea  [label]="false" 
+                    [legend]="false"
+                    [http-method]="'get'" 
+                    [data-reader]="'temperature'" 
+                    [http-url]="'assets/jsondata/temperature.json'" 
+                    >
                     </amexio-d3-chart-multiarea>
                 </amexio-card-ce>
             </amexio-column>
