@@ -10,13 +10,9 @@
         <div style="text-align: center;padding: 10px">
           <amexio-button [label]="'Compose'" [type]="'danger'" [size]="'default'" [tooltip]="'Compose'" (click)="toggle()"></amexio-button>
         </div>
-        <amexio-treeview [data]="data" (selectedRecord)="onRowSelect($event)" [enable-checkbox]="false">
+        <amexio-treeview style="text-align: left;" [data]="data" (selectedRecord)="onRowSelect($event)" [enable-checkbox]="false">
         </amexio-treeview>
-        <amexio-row>
-          <amexio-column [size]=12>
-
-          </amexio-column>
-        </amexio-row>
+     
 
         <amexio-listbox [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'" [data]="bindData"
           [filter]="false" [enable-checkbox]="false" [data-reader]="'response.data'" [display-field]="'name'">
