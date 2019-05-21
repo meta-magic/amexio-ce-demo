@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { AmexioWidgetModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule } from "amexio-ng-extensions";
 
 
-import { RouterModule } from "@angular/router";
+import { RouterModule, PreloadAllModules } from "@angular/router";
 import { CREATIVE_DEMO_ROUTE } from "./app.routes";
 
 import { LoginPageComponent } from './loginpage/loginpage.component';
@@ -24,7 +24,7 @@ import { HTTPService } from './service/http.service';
     FormsModule, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
     AmexioWidgetModule,
     HttpClientModule,
-    RouterModule.forRoot(CREATIVE_DEMO_ROUTE, { useHash: true })],
+    RouterModule.forRoot(CREATIVE_DEMO_ROUTE,  { preloadingStrategy: PreloadAllModules, useHash: true })],
 
   bootstrap: [AppComponent],
   providers: [HTTPService],
