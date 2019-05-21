@@ -1,25 +1,25 @@
 <amexio-tab-view [closable]="false">
   <amexio-tab [title]="'Top Menu'" [icon]="'fa fa-bars'" [active]="true">
-    <amexio-card-ce [style-type]="'narrower-header'">
-      <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+    <amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
+      <amexio-header align="start">
         <amexio-label size="medium">
           Top Menu
         </amexio-label>
-      </amexio-header-ce>
-      <amexio-body-ce>
+      </amexio-header>
+      <amexio-body>
         <amexio-menu [http-url]="'assets/data/menus/hometopmenu.json'" [http-method]="'get'" [data-reader]="'data'">
         </amexio-menu>
-      </amexio-body-ce>
-    </amexio-card-ce>
+      </amexio-body>
+    </amexio-card>
   </amexio-tab>
   <amexio-tab [title]="'Side Menu'" [icon]="'fa fa-building'">
-    <amexio-card-ce [style-type]="'narrower-header'">
-      <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+    <amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
+      <amexio-header align="start">
         <amexio-label size="medium">
           Side Menu
         </amexio-label>
-      </amexio-header-ce>
-      <amexio-body-ce>
+      </amexio-header>
+      <amexio-body>
         <amexio-row>
           <amexio-column [size]="4">
             <amexio-side-nav [http-url]="'assets/data/menus/hometopmenu.json'" [http-method]="'get'" [position]="'relative'"
@@ -27,17 +27,17 @@
             </amexio-side-nav>
           </amexio-column>
         </amexio-row>
-      </amexio-body-ce>
-    </amexio-card-ce>
+      </amexio-body>
+    </amexio-card>
   </amexio-tab>
   <amexio-tab [title]="'Dockbar'" [icon]="'fa fa-cube'">
-    <amexio-card-ce [style-type]="'narrower-header'">
-      <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+    <amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
+      <amexio-header align="start">
         <amexio-label size="medium">
           Dockbar
         </amexio-label>
-      </amexio-header-ce>
-      <amexio-body-ce>
+      </amexio-header>
+      <amexio-body>
         <amexio-row>
           <amexio-column [size]="12">
             <amexio-dockbar [height]="'300px'">
@@ -53,6 +53,6 @@
             </amexio-dockbar>
           </amexio-column>
         </amexio-row>
-      </amexio-body-ce>
-    </amexio-card-ce>
+      </amexio-body>
+    </amexio-card>
   </amexio-tab>

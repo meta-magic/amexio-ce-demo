@@ -1,10 +1,10 @@
-<amexio-card-ce [style-type]="'narrower-header'">
-  <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+<amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
+  <amexio-header align="start">
     <amexio-label size="medium">
       Q2-2017 Issues Raised
     </amexio-label>
-  </amexio-header-ce>
-  <amexio-body-ce>
+  </amexio-header>
+  <amexio-body>
     <amexio-row>
       <amexio-column [size]="2">
         <amexio-datapoints [west]="true" [center]="true">
@@ -105,5 +105,5 @@
       <amexio-data-table-column [data-index]="'issue'" [data-type]="'string'" [hidden]="false" [text]="'Issue'"></amexio-data-table-column>
       <amexio-data-table-column [width]="'15'" [data-index]="'severity'" [data-type]="'string'" [hidden]="false" [text]="'Severity'"></amexio-data-table-column>
     </amexio-datagrid>
-  </amexio-body-ce>
-</amexio-card-ce>
+  </amexio-body>
+</amexio-card>

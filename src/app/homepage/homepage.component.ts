@@ -72,11 +72,8 @@ export class HomeComponent implements OnInit {
 
   
   navigateToProfile() {
-    this.router.navigate(['home/profile']);
+    this.router.navigate(['home/userprofile']);
 
-  }
-  navigateToEmail(event: any) {
-    this.router.navigate(['home/email']);
   }
 
   getTheThemesData() {

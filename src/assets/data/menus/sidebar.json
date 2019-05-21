@@ -1,24 +1,43 @@
 {
-"data":[
-  {
-    "text": "Home",
-    "icon" : "fa fa-home fa-fw",
-    "mdbIcon" : "home",
-    "link" : "home",
-    "active":true
-  },
+  "data": [
     {
-      "text": "Email",
-      "icon": "fa fa-envelope fa-fw",
-      "mdbIcon": "email",
-      "link": "email",
-      "active":true
+      "text": "Home",
+      "icon": "fa fa-home fa-fw",
+      "mdbIcon": "home",
+      "link": "home",
+      "active": true
     },
     {
       "text": "Profile",
       "icon": "fa fa-user fa-fw",
       "mdbIcon": "account_box",
       "link": "profile"
+    },
+    {
+      "text": "Dashboards",
+      "icon": "fa fa-picture-o fa-fw",
+      "mdbIcon": "assignment",
+      "expand": true,
+      "children": [
+        {
+          "text": "Charts",
+          "icon": "fa fa-bar-chart fa-fw",
+          "mdbIcon": "insert_chart",
+          "link": "charts"
+        },
+        {
+          "text": "Maps",
+          "icon": "fa fa-map-marker fa-fw",
+          "mdbIcon": "location_on",
+          "link": "maps"
+        },
+        {
+          "text": "Gauges",
+          "icon": "fa fa-television fa-fw",
+          "mdbIcon": "dashboard",
+          "link": "dashboard"
+        }
+      ]
     },
     {
       "text": "Pages",
@@ -52,63 +71,6 @@
         }
       ]
     },
-  {
-    "text": "Components",
-    "icon": "fa fa-clone fa-fw",
-    "mdbIcon": "dashboard",
-    "expand": true,
-    "children": [
-      {
-        "text": "Data",
-        "icon": "fa fa-database fa-fw",
-        "mdbIcon": "bug_report",
-        "link": "datagrid"
-      },
-       {
-        "text": "Template",
-        "icon": "fa fa-th fa-fw",
-        "mdbIcon": "",
-        "link": "templates"
-      },
-      {
-        "text": "Action Button",
-        "icon": "fa fa-keyboard-o fa-fw",
-        "mdbIcon": "",
-        "link": "action"
-      },
-      {
-        "text": "Form Utilities",
-        "icon": "fa fa-bolt fa-fw",
-        "mdbIcon": "",
-        "link": "formutils"
-      },
-      {
-        "text": "Panels/Layout",
-        "icon": "fa fa-television fa-fw",
-        "mdbIcon": "layout",
-        "link": "layout"
-      },
-      {
-        "text": "Navigation",
-        "icon": "fa fa-bars fa-fw",
-        "mdbIcon": "navigation",
-        "link": "navigation"
-      },
-      {
-        "text": "Carousel Demo",
-        "icon": "fa fa-tasks",
-        "mdbIcon": "carouseldemo",
-        "link": "carouseldemo",
-        "active":true
-      },
-      {
-        "text": "Media - Image",
-        "mdbIcon": "open_in_browser",
-        "icon": "fa fa-camera fa-fw",
-        "link": "images"
-      }
-    ]
-  },
     {
       "text": "Reports",
       "icon": "fa fa-picture-o fa-fw",
@@ -129,32 +91,62 @@
         }
       ]
     },
-  {
-    "text": "Dashboards",
-    "icon": "fa fa-picture-o fa-fw",
-    "mdbIcon": "assignment",
-    "expand": true,
-    "children": [
-      {
-        "text": "Charts",
-        "icon": "fa fa-bar-chart fa-fw",
-        "mdbIcon": "insert_chart",
-        "link": "charts"
-      },
-      {
-        "text": "Maps",
-        "icon": "fa fa-map-marker fa-fw",
-        "mdbIcon": "location_on",
-        "link": "maps"
-      },
-      {
-        "text": "Gauges",
-        "icon" : "fa fa-television fa-fw",
-        "mdbIcon":"dashboard",
-        "link" : "dashboard"
-      }
-    ]
-  }
-
+    {
+      "text": "Components",
+      "icon": "fa fa-clone fa-fw",
+      "mdbIcon": "dashboard",
+      "expand": true,
+      "children": [
+        {
+          "text": "Data",
+          "icon": "fa fa-database fa-fw",
+          "mdbIcon": "bug_report",
+          "link": "datagrid"
+        },
+        {
+          "text": "Template",
+          "icon": "fa fa-th fa-fw",
+          "mdbIcon": "",
+          "link": "templates"
+        },
+        {
+          "text": "Action Button",
+          "icon": "fa fa-keyboard-o fa-fw",
+          "mdbIcon": "",
+          "link": "action"
+        },
+        {
+          "text": "Form Utilities",
+          "icon": "fa fa-bolt fa-fw",
+          "mdbIcon": "",
+          "link": "formutils"
+        },
+        {
+          "text": "Panels/Layout",
+          "icon": "fa fa-television fa-fw",
+          "mdbIcon": "layout",
+          "link": "layout"
+        },
+        {
+          "text": "Navigation",
+          "icon": "fa fa-bars fa-fw",
+          "mdbIcon": "navigation",
+          "link": "navigation"
+        },
+        {
+          "text": "Carousel Demo",
+          "icon": "fa fa-tasks",
+          "mdbIcon": "carouseldemo",
+          "link": "carouseldemo",
+          "active": true
+        },
+        {
+          "text": "Media - Image",
+          "mdbIcon": "open_in_browser",
+          "icon": "fa fa-camera fa-fw",
+          "link": "images"
+        }
+      ]
+    }
   ]
 }

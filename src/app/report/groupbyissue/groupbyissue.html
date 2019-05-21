@@ -1,11 +1,11 @@
-<amexio-card-ce [style-type]="'narrower-header'">
-  <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+<amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
+  <amexio-header align="start">
     <amexio-label size="medium">
       Issue Details
     </amexio-label>
-  </amexio-header-ce>
+  </amexio-header>
   <br>
-  <amexio-body-ce>
+  <amexio-body>
     <amexio-datagrid
         [title]="'Issue Details by Severity'"
         [page-size] = "10"
@@ -20,5 +20,5 @@
         <amexio-data-table-column [width]="15" [data-index]="'severity'" [data-type]="'string'" [hidden]="false" [text]="'Severity'"></amexio-data-table-column>
         <amexio-data-table-column [width]="20" [data-index]="'date'" [data-type]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
       </amexio-datagrid>
-    </amexio-body-ce>
-    </amexio-card-ce>
+    </amexio-body>
+    </amexio-card>

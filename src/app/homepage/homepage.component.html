@@ -28,20 +28,18 @@
             <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Profile'" [icon]="'fa fa-user fa-fw'"
                 (nodeClick)="navigateToProfile()">
             </amexio-sidenav-node>
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [label]="'Email'" [icon]="'fa fa-envelope fa-fw'"
-                (nodeClick)="navigateToEmail($event)">
-            </amexio-sidenav-node>
+           
             <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='dashboardMenu' [label]="'Dashboards'"
                 [icon]="'fa fa-th'" (nodeClick)="onMenuClick($event)">
             </amexio-sidenav-node>
-
+            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='pageMenu' [label]="'Pages'" [icon]="'fa fa-address-card'"
+            (nodeClick)="onMenuClick($event)">
+        </amexio-sidenav-node>
 
             <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='reportData' [label]="'Reports'" [icon]="'fa fa-th'"
                 (nodeClick)="onMenuClick($event)">
             </amexio-sidenav-node>
-            <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='pageMenu' [label]="'Pages'" [icon]="'fa fa-address-card'"
-                (nodeClick)="onMenuClick($event)">
-            </amexio-sidenav-node>
+           
             <amexio-sidenav-node [expand]="true" [enable-border]="true" [data]='component' [label]="'Component'" [icon]="'fa fa-th'"
                 (nodeClick)="onMenuClick($event)">
             </amexio-sidenav-node>
@@ -76,8 +74,6 @@
                         </ng-container>
                     </amexio-row>
                 </div>
-
-
             </div>
         </amexio-body>
     </amexio-card>

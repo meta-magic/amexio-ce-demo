@@ -1,10 +1,10 @@
-<amexio-card-ce [style-type]="'narrower-header'">
-    <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+<amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
+    <amexio-header align="start">
         <amexio-label size="medium">
             Amexio Button Variation.
         </amexio-label>
-      </amexio-header-ce>
-    <amexio-body-ce>
+      </amexio-header>
+    <amexio-body>
         <amexio-row>
             <amexio-column [size]="12">
                 <h2>Button - Small / Default / Large</h2>
@@ -197,6 +197,6 @@
         <amexio-floating-button [type]="'theme-color'" [vertical-position]="'bottom'" [horizontal-position]="'right'"
             [icon]="'fa fa-commenting'"></amexio-floating-button>
         <amexio-button [label]="'Transparent'" [badge]="50" [type]="'transparent'" [tooltip]="'I m transparent'"></amexio-button>
-    </amexio-body-ce>
+    </amexio-body>
 
-</amexio-card-ce>
+</amexio-card>

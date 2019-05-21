@@ -1,13 +1,13 @@
 
         <h2>Creative Progress Bar</h2>
         <!-- RADIAL PROGRESS BAR-->
-        <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+        <amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
+            <amexio-header>
                 <amexio-label size="medium">
                     Progress Bar Type - radial
                 </amexio-label>
-              </amexio-header-ce>
-            <amexio-body-ce>
+              </amexio-header>
+            <amexio-body>
                 <amexio-row>
                     <amexio-column size="4">
                         <amexio-progress-ce [type]="'radial'" [height]="'150'" [width]="'150'" [show-label]="true"
@@ -29,18 +29,18 @@
                         </amexio-progress-ce>
                     </amexio-column>
                 </amexio-row>
-            </amexio-body-ce>
+            </amexio-body>
 
-        </amexio-card-ce><br>
+        </amexio-card><br>
 
         <!-- RING PROGRESS BAR -->
-        <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+        <amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
+            <amexio-header align="start">
                 <amexio-label size="medium">
                     Progress Bar Type - ring
                 </amexio-label>
-              </amexio-header-ce>
-            <amexio-body-ce>
+              </amexio-header>
+            <amexio-body>
                 <amexio-row>
                     <amexio-column size="4">
                         <amexio-progress-ce [type]="'ring'" [height]="'150'" [width]="'150'" [show-label]="true"
@@ -61,18 +61,18 @@
                         </amexio-progress-ce>
                     </amexio-column>
                 </amexio-row>
-            </amexio-body-ce>
-        </amexio-card-ce><br>
+            </amexio-body>
+        </amexio-card><br>
 
         <!--  PIE PROGRESS BAR -->
 
-        <amexio-card-ce [style-type]="'narrower-header'">
-            <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+        <amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
+            <amexio-header align="start">
                 <amexio-label size="medium">
                     Progress Bar Type - pie
                 </amexio-label>
-              </amexio-header-ce>
-            <amexio-body-ce>
+              </amexio-header>
+            <amexio-body>
                 <amexio-row>
                     <amexio-column size="4">
                         <amexio-progress-ce [type]="'pie'" [height]="'150'" [width]="'150'" [show-label]="true"
@@ -93,5 +93,5 @@
                         </amexio-progress-ce>
                     </amexio-column>
                 </amexio-row>
-            </amexio-body-ce>
-        </amexio-card-ce>
+            </amexio-body>
+        </amexio-card>

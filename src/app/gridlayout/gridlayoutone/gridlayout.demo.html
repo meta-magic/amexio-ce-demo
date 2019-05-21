@@ -1,12 +1,12 @@
 <amexio-row>
         <amexio-column size="12">
-            <amexio-card-ce [style-type]="'narrower-header'">
-                <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'60px'" align="start">
+            <amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
+                <amexio-header align="start">
                     <amexio-label size="medium">
                         Grid Layout
                     </amexio-label>
-                  </amexio-header-ce>
-                <amexio-body-ce>
+                  </amexio-header>
+                <amexio-body>
                     <amexio-layout-grid [layout]="'Layout11'">
                         <amexio-grid-item [name]="'gridheader1'">
                             <amexio-panel [content-align]="'center'" [expanded]="true">
@@ -123,7 +123,7 @@
                         </amexio-grid-item>
                         <amexio-grid-item [name]="'gridmenu21'">
 
-                            <amexio-card-ce>
+                            <amexio-card>
 
                                 <amexio-body>
                                     <amexio-image path="assets/images/grid1.jpg"></amexio-image>
@@ -135,13 +135,13 @@
                                         dimensions </amexio-label>
                                 </amexio-body>
 
-                            </amexio-card-ce>
+                            </amexio-card>
 
 
                         </amexio-grid-item>
                         <amexio-grid-item [name]="'gridmenu31'">
 
-                            <amexio-card-ce>
+                            <amexio-card>
 
                                 <amexio-body>
                                     <amexio-image path="assets/images/grid2.jpg"></amexio-image>
@@ -152,7 +152,7 @@
                                         out a series of identical boxes like those
                                         you see here, Flex may be a better option.</amexio-label>
                                 </amexio-body>
-                            </amexio-card-ce>
+                            </amexio-card>
                         </amexio-grid-item>
 
                         <amexio-grid-item [name]="'gridmenu41'">
@@ -169,8 +169,8 @@
                             </amexio-panel>
                         </amexio-grid-item>
                     </amexio-layout-grid>
-                </amexio-body-ce>
-            </amexio-card-ce>
+                </amexio-body>
+            </amexio-card>
         </amexio-column>
     </amexio-row>
 
