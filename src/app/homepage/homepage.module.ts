@@ -32,6 +32,8 @@ import { CreativeWindowDemo } from '../windows/window.component';
 import { GridLayoutDemoOne } from '../gridlayout/gridlayoutone/gridlayout.demo';
 import { CreativeCircularProgressBarDemo } from '../progressce/progressce.component';
 import { StepWizardDemoComponent } from '../steps-wizard/step-wizard.component';
+import { PolaroidCardDemo } from '../polaroidcard/polaroidcard.demo.component';
+import {CreativeCardDemo } from '../cardce/card.demo';
 /**
  * Created by kedar on 11/2/19.
  */
@@ -59,7 +61,9 @@ const routes: Routes = [
       { path: 'window-ce-demo', component: CreativeWindowDemo },
       { path: 'gridlayout', component: GridLayoutDemoOne },
       { path: 'progress-ce-demo', component: CreativeCircularProgressBarDemo },
-      { path: 'step-wizard-demo', component: StepWizardDemoComponent }
+      { path: 'step-wizard-demo', component: StepWizardDemoComponent },
+      { path: 'polaroid-card-demo',component:PolaroidCardDemo},
+      { path:'card-ce-demo', component:CreativeCardDemo}
 
 
     ]
@@ -71,7 +75,7 @@ const routes: Routes = [
     userProfileComponent, DashboardTWoComponent, DashboardThreeComponent,
     DataGridComponent, TemplatesGridComponent, ActionComponent, GroupbyIssueComponent, IssueComponent,
     ProfileComponent, EmailComponent, NavigationComponent, CalendarDemoComponent, CreativeWindowDemo, GridLayoutDemoOne,
-    CreativeCircularProgressBarDemo,StepWizardDemoComponent
+    CreativeCircularProgressBarDemo,StepWizardDemoComponent,PolaroidCardDemo,CreativeCardDemo
   ],
   imports: [CommonModule,
     FormsModule, AmexioChartD3Module, AmexioChartsModule, AmexioDashBoardModule, AmexioEnterpriseModule, AmexioMapModule,
