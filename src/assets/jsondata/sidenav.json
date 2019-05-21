@@ -80,12 +80,6 @@
       "link": "home/gridlayout"
     },
     {
-      "text": "Polaroid",
-      "icon": "fa fa-camera",
-      "mdbIcon": "link",
-      "link": "home/polaroid-card-demo"
-    },
-    {
       "text": "Template",
       "icon": "fa fa-th",
       "mdaIcon": "link",
