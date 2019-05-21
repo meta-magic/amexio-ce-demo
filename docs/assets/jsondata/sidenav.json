@@ -21,11 +21,12 @@
   ],
   "userprofile": [
     {
-      "text": "User Profile",
-      "icon": "fa fa-user",
-      "mdaIcon": "link",
-      "link": "home/userprofile"
+      "text":"Email",
+      "icon":"fa fa-envelope fa-fw",
+      "mdaIcon":"link",
+      "link":"home/email"
     },
+   
     {
       "text": "TimeLine",
       "icon": "fa fa-th-list",
@@ -37,6 +38,12 @@
       "icon": "fa fa-map",
       "mdaIcon": "link",
       "link": "home/map"
+    },
+    {
+      "text": "Events",
+      "icon": "fa fa-calendar",
+      "mdbIcon": "link",
+      "link": "home/calender"
     }
   ],
   "componentData": [
@@ -46,12 +53,7 @@
       "mdaIcon": "link",
       "link": "home/action"
     },
-    {
-      "text": "Calender",
-      "icon": "fa fa-calendar",
-      "mdbIcon": "link",
-      "link": "home/calender"
-    },
+    
     {
       "text": "Creative ProgressBar",
       "icon": "fa fa-eercast",
@@ -81,12 +83,6 @@
       "icon": "fa fa-bars",
       "mdaIcon": "link",
       "link": "home/navigation"
-    },
-    {
-      "text":"Steps-Wizard",
-      "icon": "fa fa-step-forward",
-      "mdaIcon":"link",
-      "link":"home/step-wizard-demo"
     },
     {
       "text": "Window",
