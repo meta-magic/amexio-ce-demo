@@ -1,0 +1,122 @@
+{
+  "data": [
+    {
+      "text": "All",
+      "expand": true,
+      "checked": false,
+      "icon1": "fa fa-sitemap",
+      "children": [
+        {
+          "text": "Home",
+          "expand": true,
+          "checked": false,
+          "icon1": "fa fa-home",
+          "children": [
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Messages",
+              "icon1": "fa fa-inbox"
+            },
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Archive",
+              "icon1": "fa fa-database"
+            },
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Music",
+              "icon1": "fa fa-music"
+            },
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Film",
+              "icon1": "fa fa-film"
+            }
+          ]
+        },
+        {
+          "text": "Users",
+          "expand": true,
+          "checked": false,
+          "icon1": "fa fa-user",
+          "children": [
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Tagged",
+              "icon1": "fa fa-tag"
+            },
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Inactived",
+              "icon1": "fa fa-trash"
+            }
+          ]
+        },
+        {
+          "text": "Groups",
+          "expand": true,
+          "checked": false,
+          "icon1": "fa fa-group",
+          "children": [
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Settings",
+              "icon1": "fa fa-share-alt"
+            },
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Network",
+              "icon1": "fa fa-signal"
+            },
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Lazy",
+              "expand": true,
+              "children": [],
+              "icon1": "",
+              "lazy": {
+                "httpUrl": "assets/data/treeview.json",
+                "httpMethod": "get"
+              }
+            }
+          ]
+        },
+        {
+          "text": "Travel",
+          "expand": true,
+          "checked": false,
+          "icon1": "fa fa-suitcase",
+          "children": [
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Car",
+              "icon1": "fa fa-car"
+            },
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Train",
+              "icon1": "fa fa-train"
+            },
+            {
+              "leaf": true,
+              "checked": false,
+              "text": "Rocket",
+              "icon1": "fa fa-rocket"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
