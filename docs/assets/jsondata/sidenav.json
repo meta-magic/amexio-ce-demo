@@ -28,7 +28,7 @@
     },
    
     {
-      "text": "TimeLine",
+      "text": "Timeline",
       "icon": "fa fa-th-list",
       "mdaIcon": "link",
       "link": "home/timeline"
@@ -60,6 +60,13 @@
       "mdbIcon": "link",
       "link": "home/progress-ce-demo"
     },
+   
+    {
+      "text": "Creative Card",
+      "icon": "fa fa-creative-commons",
+      "mdbIcon": "link",
+      "link": "home/card-ce-demo"
+    },
     {
       "text": "Data Grid",
       "icon": "fa fa-database",
@@ -71,6 +78,12 @@
       "icon": "fa fa-indent",
       "mdbIcon": "link",
       "link": "home/gridlayout"
+    },
+    {
+      "text": "Polaroid",
+      "icon": "fa fa-camera",
+      "mdbIcon": "link",
+      "link": "home/polaroid-card-demo"
     },
     {
       "text": "Template",

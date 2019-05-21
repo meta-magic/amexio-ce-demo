@@ -41268,6 +41268,117 @@ var CalendarDemoComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/cardce/card.demo.html":
+/*!***************************************!*\
+  !*** ./src/app/cardce/card.demo.html ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "        <amexio-row>\n            <amexio-column [size]=\"12\">\n                <amexio-card amexioColorPalette [color-palette]=\"'vibrant'\"  [gradient]=\"true\" [header]=\"true\">\n                    <amexio-header>\n                        Creative Card Demo\n                    </amexio-header>\n                    <amexio-body>\n                        <amexio-row>\n                            <amexio-column size=\"4\" [fit]=\"true\">\n                                <amexio-card-ce align=\"center\">\n                                    <amexio-header-ce amexioColorPalette [color-palette]=\"'vibrant'\"  [gradient]=\"true\"  [height]=\"'75px'\"\n                                        align=\"center\">\n                                        <amexio-image width=\"100px\" [c-class]=\"'card-img-center'\" height=\"100px\"\n                                            [filter]=\"'round'\" path=\"assets/images/profile/karsh.jpg\"></amexio-image>\n                                    </amexio-header-ce>\n                                    <amexio-body-ce [align]=\"'start'\">\n                                        <br /><br />\n                                        <br />\n                                        <amexio-label [size]=\"'large'\">\n                                            Araf Karsh\n                                        </amexio-label>\n                                        <p>\n                                            Entrepreneur | Author | Speaker | Architect : UI/UX, Containers,\n                                            Kubernetes, Microservices (DDD, ES / CQRS), Blockchain\n                                        </p>\n                                        <p>\n                                            Araf Karsh has with over 27 years of experience leading the design and\n                                            development of mission-critical, object-oriented and web-based applications\n                                            for premier organizations including Bank of America, CIBC, Johnson &\n                                            Johnson, Kaiser Permanente, the U.S.\n                                            Department of State, and the U.S\n                                        </p>\n                                    </amexio-body-ce>\n                                    <amexio-action-ce [align]=\"'center'\" [border-top]=\"true\">\n                                        <amexio-floating-button [relative]=\"true\" [type]=\"'red'\" [icon]=\"'fa fa-google-plus'\">\n                                        </amexio-floating-button>\n                                        <amexio-floating-button [relative]=\"true\" [bg-color]=\"'#4267b2'\" [icon]=\"'fa fa-facebook'\">\n                                        </amexio-floating-button>\n                                        <amexio-floating-button [relative]=\"true\" [bg-color]=\"'#0077B5'\" [icon]=\"'fa fa-linkedin'\">\n                                        </amexio-floating-button>\n                                    </amexio-action-ce>\n                                </amexio-card-ce>\n                            </amexio-column>\n\n                            <amexio-column [size]=\"4\" [fit]=\"true\">\n                             \n                                <amexio-card-ce>\n                                    <amexio-header-ce>\n                                        <amexio-image width=\"50px\" height=\"50px\" [filter]=\"'round'\" path=\"assets/images/card_ce/triumph_icon.jpg\"></amexio-image>\n                                        <amexio-label size=\"medium-bold\">Triumph Bonneville T120\n                                        </amexio-label>\n                                    </amexio-header-ce>\n                                    <amexio-image width=\"100%\" path=\"assets/images/card_ce/Trimuph_2019.jpg\"></amexio-image>\n                                    <amexio-badge [absolute]=\"true\" [background]=\"'#e74c3c'\" [color]=\"'white'\" [top]=\"'6%'\"\n                                        [right]=\"'5%'\">\n                                        <amexio-label size=\"large\">2019</amexio-label>\n                                        <amexio-label>Jan</amexio-label>\n                                    </amexio-badge>\n\n                                    <amexio-body-ce>\n                                        <p>\n                                            It accomplishes that goal with unique finishes and a limited production\n                                            run. Let’s take a look at what makes the 2019 Triumph Bonneville T120\n                                            Diamond Edition a special motorcycle.\n                                        </p>\n                                    </amexio-body-ce>\n                                    <amexio-action-ce>\n                                        <amexio-button [label]=\"'BUY'\" [type]=\"'transparent'\" [tooltip]=\"'BUY'\">\n                                        </amexio-button>\n                                        <amexio-button [label]=\"'SELL'\" [type]=\"'transparent'\" [tooltip]=\"'SELL'\">\n                                        </amexio-button>\n                                    </amexio-action-ce>\n                                </amexio-card-ce>\n                            </amexio-column>\n\n                            <amexio-column [size]=\"4\" [fit]=\"true\">\n                                <amexio-card-ce>\n                                    <amexio-header-ce [height]=\"'300px'\" [color]=\"'white'\" [bg-image]=\"'assets/images/card_ce/laddak.jpg'\">\n                                        <amexio-badge [absolute]=\"true\" [background]=\"'#e74c3c'\" [color]=\"'white'\"\n                                            [top]=\"'0px'\" [right]=\"'5%'\">\n                                            <amexio-label>2011</amexio-label>\n                                            <amexio-label>June</amexio-label>\n                                        </amexio-badge>\n                                    </amexio-header-ce>\n                                    <amexio-body-ce>\n                                        <p>\n                                            Ladakh is a region in the Indian state of Jammu and Kashmir that currently\n                                            extends from the Siachen Glacier in the Karakoram range to the main Great\n                                            Himalayas to the south, inhabited by people of Indo-Aryan and Tibetan\n                                            descent.\n                                        </p>\n                                    </amexio-body-ce>\n                                    <amexio-action-ce [align]=\"'space-between'\">\n                                        <amexio-button [label]=\"'READ MORE'\" [type]=\"'red'\" [tooltip]=\"'READ MORE'\">\n                                        </amexio-button>\n                                        <amexio-image [icon-class]=\"'fa fa-heart fa-2x'\" [tooltip]=\"'Like'\"></amexio-image>\n                                        <amexio-image [icon-class]=\"'fa fa-share-alt-square fa-2x'\" [tooltip]=\"'Fontawesome apple'\"></amexio-image>\n                                    </amexio-action-ce>\n                                </amexio-card-ce>\n                            </amexio-column>\n                        </amexio-row>\n                    </amexio-body>\n                </amexio-card>\n            </amexio-column>\n        </amexio-row>\n"
+
+/***/ }),
+
+/***/ "./src/app/cardce/card.demo.ts":
+/*!*************************************!*\
+  !*** ./src/app/cardce/card.demo.ts ***!
+  \*************************************/
+/*! exports provided: CreativeCardDemo */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CreativeCardDemo", function() { return CreativeCardDemo; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/**
+ * Created by sagar on 04/02/19.
+ */
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CreativeCardDemo = /** @class */ (function () {
+    function CreativeCardDemo(http) {
+        this.http = http;
+        this.contactList = [];
+        this.contactList = [
+            {
+                'name': 'Ketan Gote',
+                'description': 'UI/UX, Microservice, Kubernetes, Docker ',
+                'imagepath': 'assets/images/profile/ketan.jpg',
+                'bgcolor': 'linear-gradient(40deg,#12c2e9, #ec38bc)'
+            },
+            {
+                'name': 'Sagar Jadhav',
+                'description': 'Angular, Java, Microservices',
+                'imagepath': 'assets/images/profile/sagar.jpeg',
+                'bgcolor': 'linear-gradient(40deg,#141E30,#243B55)'
+            },
+            {
+                'name': 'Dattaram Gawas',
+                'description': 'UI / UX Desinger',
+                'imagepath': 'assets/images/profile/dats.jpg',
+                'bgcolor': 'linear-gradient(40deg,#a8ff78, #78ffd6)'
+            },
+            {
+                'name': 'Rashmi Thakkar',
+                'description': 'UI Developer',
+                'imagepath': 'assets/images/profile/rashmi.jpg',
+                'bgcolor': 'linear-gradient(40deg,#457fca, #5691c8)'
+            },
+            {
+                'name': 'Ashwini Agre',
+                'description': 'UI Developer',
+                'imagepath': 'assets/images/profile/ashwini.jpg',
+                'bgcolor': 'linear-gradient(40deg,#bc4e9c, #f80759)'
+            },
+            {
+                'name': 'Deepali Arvind',
+                'description': 'Security Analyst',
+                'imagepath': 'assets/images/profile/dipali.jpg',
+                'bgcolor': 'linear-gradient(40deg,#40E0D0, #FF0080)'
+            }
+        ];
+        this.samplecreativecardchipdata = [{
+                "label": "7:00",
+                "closable": false,
+            },
+            {
+                "label": "8:00",
+                "closable": false,
+            },
+            {
+                "label": "9:00",
+                "closable": false,
+            },
+            {
+                "label": "11:00",
+                "closable": false,
+            }
+        ];
+    }
+    CreativeCardDemo = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'card-ce-demo',
+            template: __webpack_require__(/*! ./card.demo.html */ "./src/app/cardce/card.demo.html")
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], CreativeCardDemo);
+    return CreativeCardDemo;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/dashboard/dashboard.component.html":
 /*!****************************************************!*\
   !*** ./src/app/dashboard/dashboard.component.html ***!
@@ -42425,12 +42536,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../gridlayout/gridlayoutone/gridlayout.demo */ "./src/app/gridlayout/gridlayoutone/gridlayout.demo.ts");
 /* harmony import */ var _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../progressce/progressce.component */ "./src/app/progressce/progressce.component.ts");
 /* harmony import */ var _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../steps-wizard/step-wizard.component */ "./src/app/steps-wizard/step-wizard.component.ts");
+/* harmony import */ var _polaroidcard_polaroidcard_demo_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../polaroidcard/polaroidcard.demo.component */ "./src/app/polaroidcard/polaroidcard.demo.component.ts");
+/* harmony import */ var _cardce_card_demo__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../cardce/card.demo */ "./src/app/cardce/card.demo.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -42485,7 +42600,9 @@ var routes = [
             { path: 'window-ce-demo', component: _windows_window_component__WEBPACK_IMPORTED_MODULE_24__["CreativeWindowDemo"] },
             { path: 'gridlayout', component: _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_25__["GridLayoutDemoOne"] },
             { path: 'progress-ce-demo', component: _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_26__["CreativeCircularProgressBarDemo"] },
-            { path: 'step-wizard-demo', component: _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_27__["StepWizardDemoComponent"] }
+            { path: 'step-wizard-demo', component: _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_27__["StepWizardDemoComponent"] },
+            { path: 'polaroid-card-demo', component: _polaroidcard_polaroidcard_demo_component__WEBPACK_IMPORTED_MODULE_28__["PolaroidCardDemo"] },
+            { path: 'card-ce-demo', component: _cardce_card_demo__WEBPACK_IMPORTED_MODULE_29__["CreativeCardDemo"] }
         ]
     },
 ];
@@ -42498,7 +42615,7 @@ var HomeModule = /** @class */ (function () {
                 _userprofile_userprofile_component__WEBPACK_IMPORTED_MODULE_7__["userProfileComponent"], _dashboardtwo_dashboardtwo_component__WEBPACK_IMPORTED_MODULE_11__["DashboardTWoComponent"], _dashboardthree_dashboardthree_component__WEBPACK_IMPORTED_MODULE_10__["DashboardThreeComponent"],
                 _data_data_component__WEBPACK_IMPORTED_MODULE_15__["DataGridComponent"], _templates_templates_component__WEBPACK_IMPORTED_MODULE_16__["TemplatesGridComponent"], _action_action__WEBPACK_IMPORTED_MODULE_17__["ActionComponent"], _report_groupbyissue_groupbyissue_component__WEBPACK_IMPORTED_MODULE_18__["GroupbyIssueComponent"], _report_issue_issue_component__WEBPACK_IMPORTED_MODULE_19__["IssueComponent"],
                 _profile_profile_component__WEBPACK_IMPORTED_MODULE_20__["ProfileComponent"], _email_email_component__WEBPACK_IMPORTED_MODULE_21__["EmailComponent"], _navigation_navigation_component__WEBPACK_IMPORTED_MODULE_22__["NavigationComponent"], _calendar_calendar_component__WEBPACK_IMPORTED_MODULE_23__["CalendarDemoComponent"], _windows_window_component__WEBPACK_IMPORTED_MODULE_24__["CreativeWindowDemo"], _gridlayout_gridlayoutone_gridlayout_demo__WEBPACK_IMPORTED_MODULE_25__["GridLayoutDemoOne"],
-                _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_26__["CreativeCircularProgressBarDemo"], _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_27__["StepWizardDemoComponent"]
+                _progressce_progressce_component__WEBPACK_IMPORTED_MODULE_26__["CreativeCircularProgressBarDemo"], _steps_wizard_step_wizard_component__WEBPACK_IMPORTED_MODULE_27__["StepWizardDemoComponent"], _polaroidcard_polaroidcard_demo_component__WEBPACK_IMPORTED_MODULE_28__["PolaroidCardDemo"], _cardce_card_demo__WEBPACK_IMPORTED_MODULE_29__["CreativeCardDemo"]
             ],
             imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], amexio_chart_d3__WEBPACK_IMPORTED_MODULE_8__["AmexioChartD3Module"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioChartsModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioDashBoardModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioEnterpriseModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_4__["AmexioMapModule"],
@@ -42708,6 +42825,67 @@ var NavigationComponent = /** @class */ (function () {
 /***/ (function(module, exports) {
 
 module.exports = "<amexio-tab-view [closable]=\"false\">\n  <amexio-tab [title]=\"'Top Menu'\" [icon]=\"'fa fa-bars'\" [active]=\"true\">\n    <amexio-card amexioColorPalette [color-palette]=\"'vibrant'\"  [gradient]=\"true\" header=\"true\">\n      <amexio-header align=\"start\">\n        <amexio-label size=\"medium\">\n          Top Menu\n        </amexio-label>\n      </amexio-header>\n      <amexio-body>\n        <amexio-menu [http-url]=\"'assets/data/menus/hometopmenu.json'\" [http-method]=\"'get'\" [data-reader]=\"'data'\">\n        </amexio-menu>\n      </amexio-body>\n    </amexio-card>\n  </amexio-tab>\n  <amexio-tab [title]=\"'Side Menu'\" [icon]=\"'fa fa-building'\">\n    <amexio-card amexioColorPalette [color-palette]=\"'vibrant'\"  [gradient]=\"true\" header=\"true\">\n      <amexio-header align=\"start\">\n        <amexio-label size=\"medium\">\n          Side Menu\n        </amexio-label>\n      </amexio-header>\n      <amexio-body>\n        <amexio-row>\n          <amexio-column [size]=\"4\">\n            <amexio-side-nav [http-url]=\"'assets/data/menus/hometopmenu.json'\" [http-method]=\"'get'\" [position]=\"'relative'\"\n              [width]=\"200\">\n            </amexio-side-nav>\n          </amexio-column>\n        </amexio-row>\n      </amexio-body>\n    </amexio-card>\n  </amexio-tab>\n  <amexio-tab [title]=\"'Dockbar'\" [icon]=\"'fa fa-cube'\">\n    <amexio-card amexioColorPalette [color-palette]=\"'vibrant'\"  [gradient]=\"true\" header=\"true\">\n      <amexio-header align=\"start\">\n        <amexio-label size=\"medium\">\n          Dockbar\n        </amexio-label>\n      </amexio-header>\n      <amexio-body>\n        <amexio-row>\n          <amexio-column [size]=\"12\">\n            <amexio-dockbar [height]=\"'300px'\">\n              <amexio-dockbar-item [icon]=\"'fa fa-star'\" [title]=\"'Dockbar-I'\" [width]=\"'250px'\" [height]=\"'295px'\">\n                Dockbar-I\n              </amexio-dockbar-item>\n              <amexio-dockbar-item [icon]=\"'fa fa-cube'\" [title]=\"'Dockbar-II'\" [width]=\"'250px'\" [height]=\"'295px'\">\n                Dockbar-II\n              </amexio-dockbar-item>\n              <amexio-dockbar-item [icon]=\"'fa fa-bug'\" [title]=\"'Dockbar-III'\" [width]=\"'250px'\" [height]=\"'295px'\">\n                Dockbar-III\n              </amexio-dockbar-item>\n            </amexio-dockbar>\n          </amexio-column>\n        </amexio-row>\n      </amexio-body>\n    </amexio-card>\n  </amexio-tab>"
+
+/***/ }),
+
+/***/ "./src/app/polaroidcard/polaroidcard.demo.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/polaroidcard/polaroidcard.demo.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n    <amexio-row>\n      <amexio-column size=\"12\">\n        <amexio-card [header]=\"true\" [header-align]=\"'left'\" [footer]=\"false\" [footer-align]=\"'left'\" [show]=\"'showVariable'\"\n          height=\"height\">\n          <amexio-header>\n            Polroid Cards \n          </amexio-header>\n          <amexio-body>\n            <amexio-row>\n              <amexio-column size=\"3\">\n                <amexio-card [header]=\"true\" [header-align]=\"'left'\" [footer]=\"false\" [footer-align]=\"'left'\" [show]=\"'showVariable'\"\n                  height=\"height\" [polaroid-type]=\"'tilted-2-degree'\">\n                  <amexio-header>\n                    Taj Mahal\n                  </amexio-header>\n                  <amexio-body>\n                    <amexio-image [path]=\"'assets/images/polaroid/p1_card.jpeg'\">\n                    </amexio-image>\n                  </amexio-body>\n                  <amexio-action>\n                    footer\n                  </amexio-action>\n                </amexio-card>\n              </amexio-column>\n              <amexio-column size=\"3\">\n                <amexio-card [header]=\"true\" [header-align]=\"'left'\" [footer]=\"false\" [footer-align]=\"'left'\" [show]=\"'showVariable'\"\n                  height=\"height\" [polaroid-type]=\"'tilted-minus-2-degree'\">\n                  <amexio-header>\n                    Tower Of Pisa\n                  </amexio-header>\n                  <amexio-body>\n                    <amexio-image [path]=\"'assets/images/polaroid/p2_card.jpg'\">\n                    </amexio-image>\n                  </amexio-body>\n                  <amexio-action>\n                    footer\n                  </amexio-action>\n                </amexio-card>\n              </amexio-column>\n              <amexio-column size=\"3\">\n                <amexio-card [header]=\"true\" [header-align]=\"'left'\" [footer]=\"false\" [footer-align]=\"'left'\" [show]=\"'showVariable'\"\n                  height=\"height\" [polaroid-type]=\"'tilted-minus-4-degree'\">\n                  <amexio-header>\n                    Pyramid Of Giza\n                  </amexio-header>\n                  <amexio-body>\n                    <amexio-image [path]=\"'assets/images/polaroid/p3_card.jpeg'\">\n                    </amexio-image>\n                  </amexio-body>\n                  <amexio-action>\n                    footer\n                  </amexio-action>\n                </amexio-card>\n              </amexio-column>\n              <amexio-column size=\"3\">\n                <amexio-card [header]=\"true\" [header-align]=\"'left'\" [footer]=\"false\" [footer-align]=\"'left'\" [show]=\"'showVariable'\"\n                  height=\"height\" [polaroid-type]=\"'tilted-4-degree'\">\n                  <amexio-header>\n                    Statue Of Liberty\n                  </amexio-header>\n                  <amexio-body>\n                    <amexio-image [path]=\"'assets/images/polaroid/p4_card.jpeg'\">\n                    </amexio-image>\n                  </amexio-body>\n                  <amexio-action>\n                    footer\n                  </amexio-action>\n                </amexio-card>\n              </amexio-column>\n            </amexio-row>\n          </amexio-body>\n        </amexio-card>\n      </amexio-column>\n    </amexio-row>\n    <amexio-row>\n      <br>\n      <amexio-column size=\"12\">\n        <amexio-card [header]=\"true\" [header-align]=\"'left'\" [footer]=\"false\" [footer-align]=\"'left'\" [show]=\"'showVariable'\"\n          height=\"height\">\n          <amexio-header>\n            Polaroid Creative Cards \n          </amexio-header>\n          <amexio-body>\n            <amexio-row>\n              <amexio-column size=\"3\">\n                <br>\n                <amexio-card-ce [style-type]=\"'narrower-header'\" [align]=\"'center'\" [polaroid-type]=\"'tilted-minus-4-degree'\">\n                  <amexio-header-ce amexioColorPalette [gradient]=\"true\" [color-palette]=\"'classic'\" [color]=\"'white'\">\n                    Dolphin\n                  </amexio-header-ce>\n                  <amexio-body-ce [align]=\"'center'\">\n                    <amexio-image [path]=\"'assets/images/polaroid/p5_card.jpg'\"></amexio-image>\n                  </amexio-body-ce>\n\n                </amexio-card-ce>\n              </amexio-column>\n              <amexio-column size=\"3\">\n                <br>\n                <amexio-card-ce [style-type]=\"'narrower-header'\" [polaroid-type]=\"'tilted-minus-2-degree'\">\n                  <amexio-header-ce amexioColorPalette [gradient]=\"true\" [color-palette]=\"'classic'\" [color]=\"'white'\">\n                    Kitten\n                  </amexio-header-ce>\n                  <amexio-body-ce [align]=\"'center'\">\n                    <amexio-image [path]=\"'assets/images/polaroid/p6_card.jpg'\">\n                    </amexio-image>\n                  </amexio-body-ce>\n                </amexio-card-ce>\n              </amexio-column>\n              <amexio-column size=\"3\">\n                <br>\n                <amexio-card-ce [style-type]=\"'narrower-header'\" [polaroid-type]=\"'tilted-4-degree'\">\n                  <amexio-header-ce amexioColorPalette [gradient]=\"true\" [color-palette]=\"'classic'\" [color]=\"'white'\">\n                    Rabbit\n                  </amexio-header-ce>\n                  <amexio-body-ce [align]=\"'center'\">\n                    <amexio-image [path]=\"'assets/images/polaroid/p7_card.jpg'\">\n                    </amexio-image>\n                  </amexio-body-ce>\n                </amexio-card-ce>\n              </amexio-column>\n              <amexio-column size=\"3\">\n                <br>\n                <amexio-card-ce [style-type]=\"'narrower-header'\" [polaroid-type]=\"'tilted-4-degree'\">\n                  <amexio-header-ce amexioColorPalette [gradient]=\"true\" [color-palette]=\"'classic'\">\n                    Husky\n                  </amexio-header-ce>\n                  <amexio-body-ce [align]=\"'center'\">\n                    <amexio-image [path]=\"'assets/images/polaroid/p8_card.jpg'\">\n                    </amexio-image>\n                  </amexio-body-ce>\n                </amexio-card-ce>\n              </amexio-column>\n            </amexio-row>\n          </amexio-body>\n        </amexio-card>\n      </amexio-column>\n    </amexio-row>\n\n  "
+
+/***/ }),
+
+/***/ "./src/app/polaroidcard/polaroidcard.demo.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/polaroidcard/polaroidcard.demo.component.ts ***!
+  \*************************************************************/
+/*! exports provided: PolaroidCardDemo */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PolaroidCardDemo", function() { return PolaroidCardDemo; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/**
+ * Created by Ankita on 16/5/19.
+ */
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PolaroidCardDemo = /** @class */ (function () {
+    function PolaroidCardDemo(http, router) {
+        this.http = http;
+        this.router = router;
+        this.flag = true;
+    }
+    PolaroidCardDemo.prototype.ngOnInit = function () {
+    };
+    PolaroidCardDemo = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'polaroid-card-demo',
+            template: __webpack_require__(/*! ./polaroidcard.demo.component.html */ "./src/app/polaroidcard/polaroidcard.demo.component.html")
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], PolaroidCardDemo);
+    return PolaroidCardDemo;
+}());
+
+
 
 /***/ }),
 
