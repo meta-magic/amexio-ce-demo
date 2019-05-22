@@ -41988,6 +41988,8 @@ var EmailComponent = /** @class */ (function () {
         this.isComposeOpen = false;
         this.createLayouts();
         this._gridlayoutService.createLayout(this.gridDesktop);
+        this._gridlayoutService.createLayout(this.gridTablet);
+        this._gridlayoutService.createLayout(this.gridMobile);
         this.bindData = {
             "data": [
                 {
@@ -42067,6 +42069,14 @@ var EmailComponent = /** @class */ (function () {
     }
     EmailComponent.prototype.createLayouts = function () {
         this.gridDesktop = new amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_1__["GridConfig"]('emailLayout', amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_1__["GridConstants"].Desktop)
+            .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+            .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+            .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"]);
+        this.gridTablet = new amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_1__["GridConfig"]('emailLayout', amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_1__["GridConstants"].Tablet)
+            .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+            .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+            .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"]);
+        this.gridMobile = new amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_1__["GridConfig"]('emailLayout', amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_1__["GridConstants"].Mobile)
             .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
             .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
             .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"]);
