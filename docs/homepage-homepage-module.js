@@ -41965,6 +41965,7 @@ var DataGridComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmailComponent", function() { return EmailComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! amexio-ng-extensions */ "./node_modules/amexio-ng-extensions/amexio-ng-extensions.es5.js");
 /**
  * Created by sagar on 2/8/17.
  */
@@ -41978,49 +41979,98 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var EmailComponent = /** @class */ (function () {
-    function EmailComponent() {
+    function EmailComponent(_gridlayoutService) {
+        this._gridlayoutService = _gridlayoutService;
         this.isComposeOpen = false;
+        this.createLayouts();
+        this._gridlayoutService.createLayout(this.gridDesktop);
         this.bindData = {
-            "response": {
-                "success": true,
-                "message": "Fetching  Data  Request Succeeded: Profile",
-                "data": [
-                    {
-                        "name": "Ketan Gote",
-                        "name_official": "Ketan Gote",
-                        "profile": "ketan.jpg"
-                    },
-                    {
-                        "name": "Ashwini agre",
-                        "name_official": "Ashwini agre",
-                        "profile": "ashwini.jpg"
-                    },
-                    {
-                        "name": "Dattaram Gawas",
-                        "name_official": "Dattaram Gawas",
-                        "profile": "dats.jpg"
-                    },
-                    {
-                        "name": "Sagar Jadhav",
-                        "name_official": "Sagar Jadhav",
-                        "profile": "sagar.jpg"
-                    },
-                    {
-                        "name": "Deepali Arvind",
-                        "name_official": "Deepali Arvind",
-                        "profile": "dipali.jpg"
-                    },
-                    {
-                        "name": "Rashmi Thakkar",
-                        "name_official": "Rashmi Thakkar",
-                        "profile": "rashmi.jpg"
-                    }
-                ]
-            }
+            "data": [
+                {
+                    "name": "Ketan Gote",
+                    "name_official": "Ketan Gote",
+                    "profile": "ketan.jpg"
+                },
+                {
+                    "name": "Ashwini agre",
+                    "name_official": "Ashwini agre",
+                    "profile": "ashwini.jpg"
+                },
+                {
+                    "name": "Dattaram Gawas",
+                    "name_official": "Dattaram Gawas",
+                    "profile": "dats.jpg"
+                },
+                {
+                    "name": "Sagar Jadhav",
+                    "name_official": "Sagar Jadhav",
+                    "profile": "sagar.jpg"
+                },
+                {
+                    "name": "Deepali Arvind",
+                    "name_official": "Deepali Arvind",
+                    "profile": "dipali.jpg"
+                },
+                {
+                    "name": "Rashmi Thakkar",
+                    "name_official": "Rashmi Thakkar",
+                    "profile": "rashmi.jpg"
+                }
+            ]
         };
         this.isVisible = false;
+        this.accordianScheduleData = [
+            {
+                "task": "Kubernetes Workshop",
+                "start": "2019-02-25T11:00:00",
+                "end": "2019-03-02T14:00:00"
+            },
+            {
+                "task": "Microservice Workshop",
+                "start": "2019-02-25T03:00:00",
+                "end": "2019-03-03T06:00:00"
+            },
+            {
+                "task": "Docker Workshop",
+                "start": "2019-03-07",
+                "end": "2019-03-09"
+            },
+            {
+                "task": "Amexio Meetup",
+                "start": "2019-03-11",
+                "end": "2019-03-12"
+            },
+            {
+                "task": "Angular Event",
+                "start": "2019-03-13",
+                "end": "2019-03-14"
+            }
+        ];
+        this.accordianTodoData = [
+            {
+                "task": "Kubernetes Concept"
+            },
+            {
+                "task": "Angular Core Concepts"
+            },
+            {
+                "task": "Basic of Docker"
+            },
+            {
+                "task": "Basic of Angular and Amexio"
+            }
+        ];
     }
+    EmailComponent.prototype.createLayouts = function () {
+        this.gridDesktop = new amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_1__["GridConfig"]('emailLayout', amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_1__["GridConstants"].Desktop)
+            .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+            .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+            .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"]);
+    };
     EmailComponent.prototype.onRowSelect = function (event) {
         if (event.length > 0) {
             this.isVisible = true;
@@ -42084,7 +42134,7 @@ var EmailComponent = /** @class */ (function () {
             selector: 'email',
             template: __webpack_require__(/*! ./email.html */ "./src/app/email/email.html")
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_1__["AmexioGridLayoutService"]])
     ], EmailComponent);
     return EmailComponent;
 }());
@@ -42100,7 +42150,7 @@ var EmailComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<amexio-card amexioColorPalette [color-palette]=\"'vibrant'\"  [gradient]=\"true\" header=\"true\">\n  <amexio-header align=\"start\">\n    <amexio-label size=\"medium\" [font-color]=\"'white'\">\n      Email\n    </amexio-label>\n  </amexio-header>\n  <amexio-body>\n    <amexio-row>\n      <amexio-column [size]=\"3\">\n        <div style=\"text-align: center;padding: 10px\">\n          <amexio-button [label]=\"'Compose'\" [type]=\"'danger'\" [size]=\"'default'\" [tooltip]=\"'Compose'\" (click)=\"toggle()\"></amexio-button>\n        </div>\n        <amexio-treeview style=\"text-align: left;\" [data]=\"data\" (selectedRecord)=\"onRowSelect($event)\" [enable-checkbox]=\"false\">\n        </amexio-treeview>\n     \n\n        <amexio-listbox [height]=\"400\" [header]=\"'Contacts'\" [search-placeholder]=\"'Search Contacts'\" [data]=\"bindData\"\n          [filter]=\"false\" [enable-checkbox]=\"false\" [data-reader]=\"'response.data'\" [display-field]=\"'name'\">\n          <ng-template #amexioBodyTmpl let-row=\"row\">\n            <amexio-row>\n              <amexio-column [size]=\"12\">\n                <div class=\"profile-image-round\">\n\n                  <amexio-image [path]=\"'assets/images/profile/'+row.profile\" [c-class]=\"'image-round'\">\n                  </amexio-image>\n                  <a>{{row.name}}</a>\n                </div>\n\n              </amexio-column>\n            </amexio-row>\n          </ng-template>\n        </amexio-listbox>\n      </amexio-column>\n      <amexio-column [size]=\"9\">\n        <amexio-datagrid [page-size]=\"15\" [data-reader]=\"'response.data'\" [enable-checkbox]=\"false\" [http-url]=\"'assets/data/email.json'\"\n          [http-method]=\"'get'\" [enable-data-filter]=\"false\" (selectedRowData)=\"onRowSelect($event)\" (rowSelect)=\"onRowClick($event)\"\n          [c-class]=\"'gridStyle'\" [tableDatacclass]=\"'datagridrow'\" [tableTitlecclass]=\"'headerStyle'\"\n          [tableHeadercclass]=\"'headerStyleColumn'\">\n          <amexio-data-table-column [data-index]=\"'date'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'Date'\"></amexio-data-table-column>\n          <amexio-data-table-column [data-index]=\"'from'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'From'\"></amexio-data-table-column>\n          <amexio-data-table-column [data-index]=\"'title'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'Subject'\"></amexio-data-table-column>\n        </amexio-datagrid>\n      </amexio-column>\n    </amexio-row>\n  </amexio-body>\n</amexio-card>"
+module.exports = "<amexio-card amexioColorPalette [color-palette]=\"'vibrant'\" [gradient]=\"true\" header=\"true\">\n    <amexio-header align=\"start\">\n      <amexio-label size=\"medium\" [font-color]=\"'white'\">\n        Email\n      </amexio-label>\n    </amexio-header>\n    <amexio-body>\n      <amexio-row>\n        <amexio-layout-grid [layout]=\"'emailLayout'\">\n          <amexio-grid-item [name]=\"'gridheaderemail'\">\n            <amexio-button [block]=\"true\" [label]=\"'Compose'\" [type]=\"'danger'\" [size]=\"'default'\" [tooltip]=\"'Compose'\"\n              (click)=\"toggle()\"></amexio-button><br>\n            <amexio-accordion transparent=\"true\" [angle-icon]=\"true\" expand-all=\"true\">\n              <amexio-accordion-tab header=\"Mail\" [active]=\"true\">\n                <amexio-listbox style=\"display:block;margin:-18px;\" [enable-header]=\"false\" [data]=\"data\" [display-field]=\"'text'\">\n                </amexio-listbox>\n              </amexio-accordion-tab>\n              <amexio-accordion-tab header=\"Contacts\" [active]=\"false\">\n                <amexio-listbox style=\"display:block;margin:-18px;\" [enable-header]=\"false\" [data]=\"bindData.data\"\n                  [display-field]=\"'name'\">\n                  <ng-template #amexioBodyTmpl let-row=\"row\">\n                    <amexio-image class=\"profile-image-round\" height=\"50px\" width=\"50px\" path=\"assets/images/profile/{{row.profile}}\"></amexio-image>\n                    {{row.name}}\n                  </ng-template>\n                </amexio-listbox>\n  \n              </amexio-accordion-tab>\n            </amexio-accordion>\n          </amexio-grid-item>\n          <amexio-grid-item [name]=\"'gridheaderemail1'\">\n            <amexio-toolbar>\n              <amexio-toolbar-item position-left>\n                <amexio-label [size]=\"small\" [font-color]=\"'black'\">\n                  Email\n                </amexio-label>\n              </amexio-toolbar-item>\n              <amexio-toolbar-item position-right [seperator-position]=\"'left'\">\n                <amexio-image aria-hidden=\"true\" [icon-class]=\"'fa fa-refresh'\"> </amexio-image>\n              </amexio-toolbar-item>\n              <amexio-toolbar-item position-right [seperator-position]=\"'left'\">\n                <amexio-image aria-hidden=\"true\" [icon-class]=\"'fa fa-info-circle'\"> </amexio-image>\n              </amexio-toolbar-item>\n            </amexio-toolbar>\n            <amexio-datagrid style=\"display:block;margin-top:-15px;\" [page-size]=\"15\" [data-reader]=\"'response.data'\" [enable-checkbox]=\"false\" [http-url]=\"'assets/data/email.json'\"\n              [http-method]=\"'get'\" [enable-data-filter]=\"false\" (selectedRowData)=\"onRowSelect($event)\" (rowSelect)=\"onRowClick($event)\"\n              [c-class]=\"'gridStyle'\" [tableDatacclass]=\"'datagridrow'\" [tableTitlecclass]=\"'headerStyle'\"\n              [tableHeadercclass]=\"'headerStyleColumn'\">\n              <amexio-data-table-column [data-index]=\"'date'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'Date'\"></amexio-data-table-column>\n              <amexio-data-table-column [data-index]=\"'from'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'From'\"></amexio-data-table-column>\n              <amexio-data-table-column [data-index]=\"'title'\" [data-type]=\"'string'\" [hidden]=\"false\" [text]=\"'Subject'\"></amexio-data-table-column>\n            </amexio-datagrid>\n          </amexio-grid-item>\n          <amexio-grid-item [name]=\"'gridheaderemail2'\">\n            <amexio-accordion transparent=\"true\" [angle-icon]=\"true\" expand-all=\"true\">\n              <amexio-accordion-tab header=\"Today's Schedule\" [active]=\"true\" >\n                <amexio-listbox style=\"display:block;margin: 0px -18px;\" [enable-header]=\"false\" [height]=\"height\" [data]=\"accordianScheduleData\"\n                  [display-field]=\"'task'\">\n                </amexio-listbox>\n              </amexio-accordion-tab>\n              <amexio-accordion-tab header=\"To Do\" [active]=\"true\">\n                <amexio-accordion-header>\n                </amexio-accordion-header>\n                <amexio-listbox style=\"display:block;margin:-18px;\" [enable-header]=\"false\" [height]=\"height\" [data]=\"accordianTodoData\"\n                  [display-field]=\"'task'\">\n                </amexio-listbox>\n              </amexio-accordion-tab>\n            </amexio-accordion>\n          </amexio-grid-item>\n        </amexio-layout-grid>\n  \n  \n      </amexio-row>\n    </amexio-body>\n  </amexio-card>"
 
 /***/ }),
 
