@@ -25,7 +25,7 @@
             "styles": [
               "node_modules/amexio-chart-d3/lib/styles/amexio-chart-d3-components.css",
               "node_modules/font-awesome/scss/font-awesome.scss",
-              "node_modules/amexio-ng-extensions/styles/mda/at-md-black.scss",
+              "node_modules/amexio-ng-extensions/styles/mda/at-md-z-flag-usa.scss",
               "src/styles.css"
             ],
             "scripts": []
