@@ -1,242 +1,228 @@
+<amexio-row>
+  <amexio-column [size]="12">
+    <amexio-card amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [header]="true">
+
+      <amexio-header>
+        <amexio-label size="medium" [font-color]="'white'">
+          Creative Card Demo
+        </amexio-label>
+
+      </amexio-header>
+      <amexio-body>
         <amexio-row>
-            <amexio-column [size]="12">
-                <amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" [header]="true">
-                    <amexio-header>
-                        Creative Card Demo
-                    </amexio-header>
-                    <amexio-body>
-                        <amexio-row>
-                            <amexio-column size="4" [fit]="true">
-                                <amexio-card-ce align="center">
-                                    <amexio-header-ce amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true"  [height]="'75px'"
-                                        align="center">
-                                        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px"
-                                            [filter]="'round'" path="assets/images/profile/karsh.jpg"></amexio-image>
-                                    </amexio-header-ce>
-                                    <amexio-body-ce [align]="'start'">
-                                        <br /><br />
-                                        <br />
-                                        <amexio-label [size]="'large'">
-                                            Araf Karsh
-                                        </amexio-label>
-                                        <p>
-                                            Entrepreneur | Author | Speaker | Architect : UI/UX, Containers,
-                                            Kubernetes, Microservices (DDD, ES / CQRS), Blockchain
-                                        </p>
-                                        <p>
-                                            Araf Karsh has with over 27 years of experience leading the design and
-                                            development of mission-critical, object-oriented and web-based applications
-                                            for premier organizations including Bank of America, CIBC, Johnson &
-                                            Johnson, Kaiser Permanente, the U.S.
-                                            Department of State, and the U.S
-                                        </p>
-                                    </amexio-body-ce>
-                                    <amexio-action-ce [align]="'center'" [border-top]="true">
-                                        <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus'">
-                                        </amexio-floating-button>
-                                        <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook'">
-                                        </amexio-floating-button>
-                                        <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
-                                        </amexio-floating-button>
-                                    </amexio-action-ce>
-                                </amexio-card-ce>
-                            </amexio-column>
+          <amexio-column size="4" [fit]="true">
+            <amexio-card-ce align="center">
+              <amexio-header-ce amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [height]="'75px'"
+                align="center">
+                <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'"
+                  path="assets/images/profile/karsh.jpg"></amexio-image>
+              </amexio-header-ce>
+              <amexio-body-ce [align]="'start'">
+                <br /><br />
+                <br />
+                <amexio-label [size]="'large'">
+                  Araf Karsh
+                </amexio-label>
+                <p>
+                  Entrepreneur | Author | Speaker | Architect : UI/UX, Containers,
+                  Kubernetes, Microservices (DDD, ES / CQRS), Blockchain
+                </p>
+                <p>
+                  Araf Karsh has with over 27 years of experience leading the design and
+                  development of mission-critical, object-oriented and web-based applications
+                  for premier organizations including Bank of America, CIBC, Johnson &
+                  Johnson, Kaiser Permanente, the U.S.
+                  Department of State, and the U.S
+                </p>
+              </amexio-body-ce>
+              <amexio-action-ce [align]="'center'" [border-top]="true">
+                <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus'">
+                </amexio-floating-button>
+                <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook'">
+                </amexio-floating-button>
+                <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
+                </amexio-floating-button>
+              </amexio-action-ce>
+            </amexio-card-ce>
+          </amexio-column>
 
-                            <amexio-column [size]="4" [fit]="true">
-                             
-                                <amexio-card-ce>
-                                    <amexio-header-ce>
-                                        <amexio-image width="50px" height="50px" [filter]="'round'" path="assets/images/card_ce/triumph_icon.jpg"></amexio-image>
-                                        <amexio-label size="medium-bold">Triumph Bonneville T120
-                                        </amexio-label>
-                                    </amexio-header-ce>
-                                    <amexio-image width="100%" path="assets/images/card_ce/Trimuph_2019.jpg"></amexio-image>
-                                    <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'6%'"
-                                        [right]="'5%'">
-                                        <amexio-label size="large">2019</amexio-label>
-                                        <amexio-label>Jan</amexio-label>
-                                    </amexio-badge>
+          <amexio-column [size]="4" [fit]="true">
 
-                                    <amexio-body-ce>
-                                        <p>
-                                            It accomplishes that goal with unique finishes and a limited production
-                                            run. Let’s take a look at what makes the 2019 Triumph Bonneville T120
-                                            Diamond Edition a special motorcycle.
-                                        </p>
-                                    </amexio-body-ce>
-                                    <amexio-action-ce>
-                                        <amexio-button [label]="'BUY'" [type]="'transparent'" [tooltip]="'BUY'">
-                                        </amexio-button>
-                                        <amexio-button [label]="'SELL'" [type]="'transparent'" [tooltip]="'SELL'">
-                                        </amexio-button>
-                                    </amexio-action-ce>
-                                </amexio-card-ce>
-                            </amexio-column>
+            <amexio-card-ce>
+              <amexio-header-ce>
+                <amexio-image width="50px" height="50px" [filter]="'round'"
+                  path="assets/images/card_ce/triumph_icon.jpg"></amexio-image>
+                <amexio-label size="medium-bold">Triumph Bonneville T120
+                </amexio-label>
+              </amexio-header-ce>
+              <amexio-image width="100%" path="assets/images/card_ce/Trimuph_2019.jpg"></amexio-image>
+              <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'6%'" [right]="'5%'">
+                <amexio-label size="large">2019</amexio-label>
+                <amexio-label>Jan</amexio-label>
+              </amexio-badge>
 
-                            <amexio-column [size]="4" [fit]="true">
-                                <amexio-card-ce>
-                                    <amexio-header-ce [height]="'300px'" [color]="'white'" [bg-image]="'assets/images/card_ce/laddak.jpg'">
-                                        <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'"
-                                            [top]="'0px'" [right]="'5%'">
-                                            <amexio-label>2011</amexio-label>
-                                            <amexio-label>June</amexio-label>
-                                        </amexio-badge>
-                                    </amexio-header-ce>
-                                    <amexio-body-ce>
-                                        <p>
-                                            Ladakh is a region in the Indian state of Jammu and Kashmir that currently
-                                            extends from the Siachen Glacier in the Karakoram range to the main Great
-                                            Himalayas to the south, inhabited by people of Indo-Aryan and Tibetan
-                                            descent.
-                                        </p>
-                                    </amexio-body-ce>
-                                    <amexio-action-ce [align]="'space-between'">
-                                        <amexio-button [label]="'READ MORE'" [type]="'red'" [tooltip]="'READ MORE'">
-                                        </amexio-button>
-                                        <amexio-image [icon-class]="'fa fa-heart fa-2x'" [tooltip]="'Like'"></amexio-image>
-                                        <amexio-image [icon-class]="'fa fa-share-alt-square fa-2x'" [tooltip]="'Fontawesome apple'"></amexio-image>
-                                    </amexio-action-ce>
-                                </amexio-card-ce>
-                            </amexio-column>
-                        </amexio-row>
-                    </amexio-body>
-                </amexio-card>
-            </amexio-column>
+              <amexio-body-ce>
+                <p>
+                  It accomplishes that goal with unique finishes and a limited production
+                  run. Let’s take a look at what makes the 2019 Triumph Bonneville T120
+                  Diamond Edition a special motorcycle.
+                </p>
+              </amexio-body-ce>
+              <amexio-action-ce>
+                <amexio-button [label]="'BUY'" [type]="'transparent'" [tooltip]="'BUY'">
+                </amexio-button>
+                <amexio-button [label]="'SELL'" [type]="'transparent'" [tooltip]="'SELL'">
+                </amexio-button>
+              </amexio-action-ce>
+            </amexio-card-ce>
+          </amexio-column>
+
+          <amexio-column [size]="4" [fit]="true">
+            <amexio-card-ce>
+              <amexio-header-ce [height]="'300px'" [color]="'white'" [bg-image]="'assets/images/card_ce/laddak.jpg'">
+                <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'" [right]="'5%'">
+                  <amexio-label>2011</amexio-label>
+                  <amexio-label>June</amexio-label>
+                </amexio-badge>
+              </amexio-header-ce>
+              <amexio-body-ce>
+                <p>
+                  Ladakh is a region in the Indian state of Jammu and Kashmir that currently
+                  extends from the Siachen Glacier in the Karakoram range to the main Great
+                  Himalayas to the south, inhabited by people of Indo-Aryan and Tibetan
+                  descent.
+                </p>
+              </amexio-body-ce>
+              <amexio-action-ce [align]="'space-between'">
+                <amexio-button [label]="'READ MORE'" [type]="'red'" [tooltip]="'READ MORE'">
+                </amexio-button>
+                <amexio-image [icon-class]="'fa fa-heart fa-2x'" [tooltip]="'Like'"></amexio-image>
+                <amexio-image [icon-class]="'fa fa-share-alt-square fa-2x'" [tooltip]="'Fontawesome apple'">
+                </amexio-image>
+              </amexio-action-ce>
+            </amexio-card-ce>
+          </amexio-column>
         </amexio-row>
+
+        <br/>
+       
         <amexio-row>
-                <amexio-column size="12">
-                  <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
-                    height="height">
-                    <amexio-header>
-                      Polaroid Cards 
-                    </amexio-header>
-                    <amexio-body>
-                      <amexio-row>
-                        <amexio-column size="3">
-                          <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
-                            height="height" [polaroid-type]="'tilted-2-degree'">
-                            <amexio-header>
-                              Taj Mahal
-                            </amexio-header>
-                            <amexio-body>
-                              <amexio-image [path]="'assets/images/polaroid/p1_card.jpeg'">
-                              </amexio-image>
-                            </amexio-body>
-                            <amexio-action>
-                              footer
-                            </amexio-action>
-                          </amexio-card>
-                        </amexio-column>
-                        <amexio-column size="3">
-                          <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
-                            height="height" [polaroid-type]="'tilted-minus-2-degree'">
-                            <amexio-header>
-                              Tower Of Pisa
-                            </amexio-header>
-                            <amexio-body>
-                              <amexio-image [path]="'assets/images/polaroid/p2_card.jpg'">
-                              </amexio-image>
-                            </amexio-body>
-                            <amexio-action>
-                              footer
-                            </amexio-action>
-                          </amexio-card>
-                        </amexio-column>
-                        <amexio-column size="3">
-                          <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
-                            height="height" [polaroid-type]="'tilted-minus-4-degree'">
-                            <amexio-header>
-                              Pyramid Of Giza
-                            </amexio-header>
-                            <amexio-body>
-                              <amexio-image [path]="'assets/images/polaroid/p3_card.jpeg'">
-                              </amexio-image>
-                            </amexio-body>
-                            <amexio-action>
-                              footer
-                            </amexio-action>
-                          </amexio-card>
-                        </amexio-column>
-                        <amexio-column size="3">
-                          <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
-                            height="height" [polaroid-type]="'tilted-4-degree'">
-                            <amexio-header>
-                              Statue Of Liberty
-                            </amexio-header>
-                            <amexio-body>
-                              <amexio-image [path]="'assets/images/polaroid/p4_card.jpeg'">
-                              </amexio-image>
-                            </amexio-body>
-                            <amexio-action>
-                              footer
-                            </amexio-action>
-                          </amexio-card>
-                        </amexio-column>
-                      </amexio-row>
-                    </amexio-body>
-                  </amexio-card>
-                </amexio-column>
-              </amexio-row>
-              <amexio-row>
-                <br>
-                <amexio-column size="12">
-                  <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
-                    height="height">
-                    <amexio-header>
-                      Polaroid Creative Cards 
-                    </amexio-header>
-                    <amexio-body>
-                      <amexio-row>
-                        <amexio-column size="3">
-                          <br>
-                          <amexio-card-ce [style-type]="'narrower-header'" [align]="'center'" [polaroid-type]="'tilted-minus-4-degree'">
-                            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
-                              Dolphin
-                            </amexio-header-ce>
-                            <amexio-body-ce [align]="'center'">
-                              <amexio-image [path]="'assets/images/polaroid/p5_card.jpg'"></amexio-image>
-                            </amexio-body-ce>
-          
-                          </amexio-card-ce>
-                        </amexio-column>
-                        <amexio-column size="3">
-                          <br>
-                          <amexio-card-ce [style-type]="'narrower-header'" [polaroid-type]="'tilted-minus-2-degree'">
-                            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
-                              Kitten
-                            </amexio-header-ce>
-                            <amexio-body-ce [align]="'center'">
-                              <amexio-image [path]="'assets/images/polaroid/p6_card.jpg'">
-                              </amexio-image>
-                            </amexio-body-ce>
-                          </amexio-card-ce>
-                        </amexio-column>
-                        <amexio-column size="3">
-                          <br>
-                          <amexio-card-ce [style-type]="'narrower-header'" [polaroid-type]="'tilted-4-degree'">
-                            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
-                              Rabbit
-                            </amexio-header-ce>
-                            <amexio-body-ce [align]="'center'">
-                              <amexio-image [path]="'assets/images/polaroid/p7_card.jpg'">
-                              </amexio-image>
-                            </amexio-body-ce>
-                          </amexio-card-ce>
-                        </amexio-column>
-                        <amexio-column size="3">
-                          <br>
-                          <amexio-card-ce [style-type]="'narrower-header'" [polaroid-type]="'tilted-4-degree'">
-                            <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'">
-                              Husky
-                            </amexio-header-ce>
-                            <amexio-body-ce [align]="'center'">
-                              <amexio-image [path]="'assets/images/polaroid/p8_card.jpg'">
-                              </amexio-image>
-                            </amexio-body-ce>
-                          </amexio-card-ce>
-                        </amexio-column>
-                      </amexio-row>
-                    </amexio-body>
-                  </amexio-card>
-                </amexio-column>
-              </amexio-row>
+            <amexio-column size="3">
+              <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'"
+                [show]="'showVariable'" height="height" [polaroid-type]="'tilted-2-degree'">
+                <amexio-header>
+                  Taj Mahal
+                </amexio-header>
+                <amexio-body>
+                  <amexio-image [path]="'assets/images/polaroid/p1_card.jpeg'">
+                  </amexio-image>
+                </amexio-body>
+                <amexio-action>
+                  footer
+                </amexio-action>
+              </amexio-card>
+            </amexio-column>
+            <amexio-column size="3">
+              <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'"
+                [show]="'showVariable'" height="height" [polaroid-type]="'tilted-minus-2-degree'">
+                <amexio-header>
+                  Tower Of Pisa
+                </amexio-header>
+                <amexio-body>
+                  <amexio-image [path]="'assets/images/polaroid/p2_card.jpg'">
+                  </amexio-image>
+                </amexio-body>
+                <amexio-action>
+                  footer
+                </amexio-action>
+              </amexio-card>
+            </amexio-column>
+            <amexio-column size="3">
+              <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'"
+                [show]="'showVariable'" height="height" [polaroid-type]="'tilted-minus-4-degree'">
+                <amexio-header>
+                  Pyramid Of Giza
+                </amexio-header>
+                <amexio-body>
+                  <amexio-image [path]="'assets/images/polaroid/p3_card.jpeg'">
+                  </amexio-image>
+                </amexio-body>
+                <amexio-action>
+                  footer
+                </amexio-action>
+              </amexio-card>
+            </amexio-column>
+            <amexio-column size="3">
+              <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'"
+                [show]="'showVariable'" height="height" [polaroid-type]="'tilted-4-degree'">
+                <amexio-header>
+                  Statue Of Liberty
+                </amexio-header>
+                <amexio-body>
+                  <amexio-image [path]="'assets/images/polaroid/p4_card.jpeg'">
+                  </amexio-image>
+                </amexio-body>
+                <amexio-action>
+                  footer
+                </amexio-action>
+              </amexio-card>
+            </amexio-column>
+          </amexio-row>
+
+        <br/>
+        <amexio-row>
+            <amexio-column size="3">
+              <br>
+              <amexio-card-ce [style-type]="'narrower-header'" [align]="'center'"
+                [polaroid-type]="'tilted-minus-4-degree'">
+                <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
+                  Dolphin
+                </amexio-header-ce>
+                <amexio-body-ce [align]="'center'">
+                  <amexio-image [path]="'assets/images/polaroid/p5_card.jpg'"></amexio-image>
+                </amexio-body-ce>
+  
+              </amexio-card-ce>
+            </amexio-column>
+            <amexio-column size="3">
+              <br>
+              <amexio-card-ce [style-type]="'narrower-header'" [polaroid-type]="'tilted-minus-2-degree'">
+                <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
+                  Kitten
+                </amexio-header-ce>
+                <amexio-body-ce [align]="'center'">
+                  <amexio-image [path]="'assets/images/polaroid/p6_card.jpg'">
+                  </amexio-image>
+                </amexio-body-ce>
+              </amexio-card-ce>
+            </amexio-column>
+            <amexio-column size="3">
+              <br>
+              <amexio-card-ce [style-type]="'narrower-header'" [polaroid-type]="'tilted-4-degree'">
+                <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
+                  Rabbit
+                </amexio-header-ce>
+                <amexio-body-ce [align]="'center'">
+                  <amexio-image [path]="'assets/images/polaroid/p7_card.jpg'">
+                  </amexio-image>
+                </amexio-body-ce>
+              </amexio-card-ce>
+            </amexio-column>
+            <amexio-column size="3">
+              <br>
+              <amexio-card-ce [style-type]="'narrower-header'" [polaroid-type]="'tilted-4-degree'">
+                <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'">
+                  Husky
+                </amexio-header-ce>
+                <amexio-body-ce [align]="'center'">
+                  <amexio-image [path]="'assets/images/polaroid/p8_card.jpg'">
+                  </amexio-image>
+                </amexio-body-ce>
+              </amexio-card-ce>
+            </amexio-column>
+          </amexio-row>
+      </amexio-body>
+    </amexio-card>
+  </amexio-column>
+</amexio-row>
+ 
