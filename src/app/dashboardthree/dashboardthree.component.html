@@ -116,13 +116,13 @@
     <amexio-grid-item [name]="'gridmap'">
 
         <amexio-card-ce>
-            <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color1'" [gradient]="true"  [border-bottom]="true">
+            <amexio-header-ce amexioColorPalette [color-palette]="'vibrant'" [gradient]="false">
                 <amexio-label [size]="'medium'">Region wise</amexio-label>
             </amexio-header-ce>
             <amexio-body-ce>
                 <amexio-row>
                     <amexio-column [size]=6>
-                        <amexio-datagrid amexioColorPalette [color-palette]="'vibrant'" [gradient]="true"  [page-size]="10" [data]="globalVistsData" [enable-data-filter]="false">
+                        <amexio-datagrid amexioColorPalette [color-palette]="'classic'" [gradient]="false" [page-size]="10" [data]="globalVistsData" [enable-data-filter]="false">
                             <amexio-data-table-column [data-index]="'country'" [data-type]="'string'" [hidden]="false"
                                 [text]="'Country'">
                                 <ng-template #amexioBodyTmpl let-column let-row="row">
