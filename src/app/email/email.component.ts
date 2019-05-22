@@ -25,6 +25,8 @@ export class EmailComponent implements OnInit {
     this.isComposeOpen = false;
     this.createLayouts();
     this._gridlayoutService.createLayout(this.gridDesktop);
+    this._gridlayoutService.createLayout(this.gridTablet);
+    this._gridlayoutService.createLayout(this.gridMobile);
 
     this.bindData = {
       "data": [
@@ -107,6 +109,17 @@ export class EmailComponent implements OnInit {
   }
   createLayouts() {
     this.gridDesktop = new GridConfig('emailLayout', GridConstants.Desktop)
+      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+
+      this.gridTablet = new GridConfig('emailLayout', GridConstants.Tablet)
+      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+
+
+      this.gridMobile = new GridConfig('emailLayout', GridConstants.Mobile)
       .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
       .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
       .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
