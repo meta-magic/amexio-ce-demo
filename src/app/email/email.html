@@ -59,6 +59,10 @@
               <amexio-accordion-tab header="Today's Schedule" [active]="true" >
                 <amexio-listbox style="display:block;margin: 0px -18px;" [enable-header]="false" [height]="height" [data]="accordianScheduleData"
                   [display-field]="'task'">
+                  <ng-template #amexioBodyTmpl let-row="row">
+                   {{row.task}}<br>
+                      {{row.start}}
+                    </ng-template>
                 </amexio-listbox>
               </amexio-accordion-tab>
               <amexio-accordion-tab header="To Do" [active]="true">
@@ -71,8 +75,6 @@
             </amexio-accordion>
           </amexio-grid-item>
         </amexio-layout-grid>
-  
-  
       </amexio-row>
     </amexio-body>
   </amexio-card>
