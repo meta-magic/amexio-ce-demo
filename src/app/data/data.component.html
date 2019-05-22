@@ -12,7 +12,7 @@
                           Simple Data Grid
                         </amexio-header>
                         <amexio-body>
-                          <amexio-datagrid amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" [enable-column-fiter]="true" title="Simple Data Grid " [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/datagrid.json'"
+                          <amexio-datagrid [enable-column-fiter]="true" title="Simple Data Grid " [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/datagrid.json'"
                                            [data-reader]="'data'" [page-size]="10">
             
                             <amexio-data-table-column [data-index]="'name_official'" [data-type]="'string'" [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
@@ -33,7 +33,7 @@
                  
                     </amexio-header>
                     <amexio-body>
-                      <amexio-datagrid   amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" [enable-checkbox]="false" title="Country Grid" [http-method]="'get'" [http-url]="'assets/data/datagrid.json'"
+                      <amexio-datagrid  [enable-checkbox]="false" title="Country Grid" [http-method]="'get'" [http-url]="'assets/data/datagrid.json'"
                         [data-reader]="'data'" [page-size]="10" [enable-data-filter]="false">
                         <amexio-data-table-column [width]="50" [data-index]="'name_official'" [data-type]="'string'"
                           [hidden]="false" [text]="'Name'">
@@ -66,7 +66,7 @@
                       </amexio-label>
                     </amexio-header>
                     <amexio-body>
-                      <amexio-datagrid  amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" [title]="'Employee Data'" [page-size]="10" [data-reader]="'data'" [http-url]="'assets/data/datagridgroupby.json'"
+                      <amexio-datagrid  [title]="'Employee Data'" [page-size]="10" [data-reader]="'data'" [http-url]="'assets/data/datagridgroupby.json'"
                         [http-method]="'get'" [enable-data-filter]="true">
                         <amexio-data-table-column [data-index]="'preferredFullName'" [data-type]="'string'" [hidden]="false"
                           [text]="'FullName'"></amexio-data-table-column>
@@ -89,7 +89,7 @@
                       </amexio-label>
                     </amexio-header>
                     <amexio-body>
-                      <amexio-datagrid amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" [enable-column-fiter]="true" [groupby]="true" [groupby-data-index]="'jobTitle'"
+                      <amexio-datagrid  [enable-column-fiter]="true" [groupby]="true" [groupby-data-index]="'jobTitle'"
                         [enable-checkbox]="false" title="Employee Details" [http-method]="'get'" [http-url]="'assets/data/datagridgroupby.json'"
                         [data-reader]="'data'" [page-size]="5" [enable-data-filter]="false">
                         <amexio-data-table-column [width]="30" [data-index]="'preferredFullName'" [data-type]="'string'"
@@ -114,7 +114,7 @@
                       </amexio-label>
                     </amexio-header>
                     <amexio-body>
-                      <amexio-datagrid amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" [global-filter]="true" title="Country Grid" [http-method]="'get'" [http-url]="'assets/data/datagrid.json'"
+                      <amexio-datagrid  [global-filter]="true" title="Country Grid" [http-method]="'get'" [http-url]="'assets/data/datagrid.json'"
                         [data-reader]="'data'" [page-size]="10">
                         <amexio-data-table-column [data-index]="'name_official'" [data-type]="'string'" [hidden]="false"
                           [text]="'Name'">
