@@ -6,17 +6,23 @@
       {
         "from": "Araf Karsh Hamid",
         "title": "AMEXIO Release Plans",
-        "date": "23-07-2017"
+        "date": "23-07-2017",
+        "label":["Amexio"],
+        "bgcolor":"red"
       },
       {
         "from": "Araf Karsh Hamid",
         "title": " Visual Studio Extension",
-        "date": "23-07-2017"
+        "date": "23-07-2017",
+        "label":["VS"],
+        "bgcolor":"green"
       },
       {
         "from": "Ketan Gote",
         "title": "Amexio on angular.io",
-        "date": "22-07-2017"
+        "date": "22-07-2017",
+        "label":["Amexio"],
+        "bgcolor":"red"
       },
       {
         "from": "Araf Karsh Hamid",
@@ -25,12 +31,16 @@
       },{
         "from": "Dattaram Gawas",
         "title": "Building Web Components",
-        "date": "20-07-2017"
+        "date": "20-07-2017",
+        "label":["R&D"],
+        "bgcolor":"black"
       },
       {
         "from": "Sagar Jadhav",
-        "title": "Showcase App URL",
-        "date": "20-07-2017"
+        "title": "Amexio Showcase App",
+        "date": "20-07-2017",
+        "label":["Amexio"],
+        "bgcolor":"red"
       },
       {
         "from": "Ketan Gote",
@@ -46,6 +56,13 @@
         "from": "Ketan Gote",
         "title": "Spring Kafka Integration",
         "date": "18-07-2017"
+      },
+      {
+        "from": "Araf Karsh Hamid",
+        "title": "AMEXIO Plans",
+        "date": "04-07-2017",
+        "label":["Amexio"],
+        "bgcolor":"red"
       },
       {
         "from": "vrushabh Jadhav",
@@ -65,7 +82,9 @@
       {
         "from": "Dattaram Gawas",
         "title": "Angular Pipes",
-        "date": "16-07-2017"
+        "date": "16-07-2017",
+        "label":["R&D"],
+        "bgcolor":"black"
       },
       {
         "from": "Ketan Gote",
@@ -138,11 +157,9 @@
         "from": "Ketan Gote",
         "title": "Spring + Redis ",
         "date": "05-07-2017"
-      },{
-        "from": "Araf Karsh Hamid",
-        "title": "AMEXIO Plans",
-        "date": "04-07-2017"
       }
     ]
   }
 }
+
+

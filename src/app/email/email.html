@@ -45,14 +45,25 @@
                 <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'"> </amexio-image>
               </amexio-toolbar-item>
             </amexio-toolbar>
-            <amexio-datagrid style="display:block;margin-top:-15px;" [page-size]="15" [data-reader]="'response.data'" [enable-checkbox]="false" [http-url]="'assets/data/email.json'"
-              [http-method]="'get'" [enable-data-filter]="false" (selectedRowData)="onRowSelect($event)" (rowSelect)="onRowClick($event)"
-              [c-class]="'gridStyle'" [tableDatacclass]="'datagridrow'" [tableTitlecclass]="'headerStyle'"
-              [tableHeadercclass]="'headerStyleColumn'">
-              <amexio-data-table-column [data-index]="'date'" [data-type]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
-              <amexio-data-table-column [data-index]="'from'" [data-type]="'string'" [hidden]="false" [text]="'From'"></amexio-data-table-column>
-              <amexio-data-table-column [data-index]="'title'" [data-type]="'string'" [hidden]="false" [text]="'Subject'"></amexio-data-table-column>
-            </amexio-datagrid>
+            <amexio-datagrid style="display:block;margin-top:-15px;" [page-size]="15" [data-reader]="'response.data'"
+            [enable-checkbox]="false" [http-url]="'assets/data/email.json'" [http-method]="'get'"
+            [enable-data-filter]="false" (selectedRowData)="onRowSelect($event)" (rowSelect)="onRowClick($event)"
+            [c-class]="'gridStyle'" [tableDatacclass]="'datagridrow'" [tableTitlecclass]="'headerStyle'"
+            [tableHeadercclass]="'headerStyleColumn'">
+            <amexio-data-table-column [width]="20" [data-index]="'date'" [data-type]="'string'" [hidden]="false"
+              [text]="'Date'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="30" [data-index]="'from'" [data-type]="'string'" [hidden]="false"
+              [text]="'From'"></amexio-data-table-column>
+            <amexio-data-table-column [data-index]="'title'" [data-type]="'string'" [hidden]="false" [text]="'Subject'">
+              <ng-template #amexioBodyTmpl let-column let-row="row">
+                {{row.title}}
+                &nbsp;
+                <amexio-chip *ngFor="let item of row.label" [label]="item" [color]="row.bgcolor" [font-color]="'white'">
+                </amexio-chip>
+
+              </ng-template>
+            </amexio-data-table-column>
+          </amexio-datagrid>
           </amexio-grid-item>
           <amexio-grid-item [name]="'gridheaderemail2'" [hc-enabled]="true" [hc-direction]="'right'">
             <amexio-accordion transparent="true" [angle-icon]="true" expand-all="true">
