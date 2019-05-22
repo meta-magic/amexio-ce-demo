@@ -109,20 +109,20 @@ export class EmailComponent implements OnInit {
   }
   createLayouts() {
     this.gridDesktop = new GridConfig('emailLayout', GridConstants.Desktop)
-      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
-      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
-      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+      .addlayout(["gridheaderemail1", "gridheaderemail2", "gridheaderemail2", "gridheaderemail2", "gridheaderemail3"])
+      .addlayout(["gridheaderemail1", "gridheaderemail2", "gridheaderemail2", "gridheaderemail2", "gridheaderemail3"])
+      .addlayout(["gridheaderemail1", "gridheaderemail2", "gridheaderemail2", "gridheaderemail2", "gridheaderemail3"])
 
-      this.gridTablet = new GridConfig('emailLayout', GridConstants.Tablet)
-      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
-      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
-      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+    this.gridTablet = new GridConfig('emailLayout', GridConstants.Tablet)
+      .addlayout(["gridheaderemail1", "gridheaderemail2", "gridheaderemail2", "gridheaderemail2", "gridheaderemail3"])
+      .addlayout(["gridheaderemail1", "gridheaderemail2", "gridheaderemail2", "gridheaderemail2", "gridheaderemail3"])
+      .addlayout(["gridheaderemail1", "gridheaderemail2", "gridheaderemail2", "gridheaderemail2", "gridheaderemail3"])
 
 
-      this.gridMobile = new GridConfig('emailLayout', GridConstants.Mobile)
-      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
-      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
-      .addlayout(["gridheaderemail", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail2"])
+    this.gridMobile = new GridConfig('emailLayout', GridConstants.Mobile)
+      .addlayout(["gridheaderemail2", "gridheaderemail2", "gridheaderemail2", "gridheaderemail2", "gridheaderemail2"])
+      .addlayout(["gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1", "gridheaderemail1"])
+      .addlayout(["gridheaderemail3", "gridheaderemail3", "gridheaderemail3", "gridheaderemail3", "gridheaderemail3"])
 
   }
   onRowSelect(event: any) {
