@@ -7,7 +7,7 @@ import { AmexioGridLayoutService } from "amexio-ng-extensions";
 import { GridConstants } from 'amexio-ng-extensions';
 import { GridConfig } from 'amexio-ng-extensions';
 @Component({
-  selector: 'email',
+  selector: 'email-demo',
   templateUrl: 'email.html'
 })
 
