@@ -66,43 +66,43 @@ export class EmailComponent implements OnInit {
     this.accordianScheduleData = [
       {
         "task": "Kubernetes Workshop",
-        "start": "2019-02-25T11:00:00",
+        "start": "11:00:00",
         "end": "2019-03-02T14:00:00"
       },
       {
         "task": "Microservice Workshop",
-        "start": "2019-02-25T03:00:00",
+        "start": "1:00:00",
         "end": "2019-03-03T06:00:00"
       },
       {
         "task": "Docker Workshop",
-        "start": "2019-03-07",
+        "start": "3:00:00",
         "end": "2019-03-09"
       },
       {
         "task": "Amexio Meetup",
-        "start": "2019-03-11",
+        "start": "5:00:00",
         "end": "2019-03-12"
       },
       {
         "task": "Angular Event",
-        "start": "2019-03-13",
+        "start": "6:00:00",
         "end": "2019-03-14"
       }
 
     ]
     this.accordianTodoData = [
       {
-        "task": "Kubernetes Concept"
+        "task": "Microservice Workshop Setup"
       },
       {
-        "task": "Angular Core Concepts"
+        "task": "Presentation Upgradation"
       },
       {
-        "task": "Basic of Docker"
+        "task": "Amexio Release Plan"
       },
       {
-        "task": "Basic of Angular and Amexio"
+        "task": "Migration Plan"
       }
     ]
 
