@@ -10,7 +10,7 @@
           <amexio-grid-item [name]="'gridheaderemail'" [hc-enabled]="true" [hc-direction]="'left'">
             <amexio-button [block]="true" [label]="'Compose'" [type]="'danger'" [size]="'default'" [tooltip]="'Compose'"
               (click)="toggle()"></amexio-button><br>
-            <amexio-accordion multi-open=true transparent="true" [angle-icon]="true" expand-all="true">
+            <amexio-accordion [multi-open]="true" transparent="true" [angle-icon]="true" expand-all="true">
               <amexio-accordion-tab header="Mail" [active]="true">
                 <amexio-listbox style="display:block;margin:-18px;" [enable-header]="false" [data]="data" [display-field]="'text'">
                     <ng-template #amexioBodyTmpl let-row="row">
@@ -66,7 +66,7 @@
           </amexio-datagrid>
           </amexio-grid-item>
           <amexio-grid-item [name]="'gridheaderemail2'" [hc-enabled]="true" [hc-direction]="'right'">
-            <amexio-accordion transparent="true" [angle-icon]="true" expand-all="true">
+            <amexio-accordion [multi-open]="true" transparent="true" [angle-icon]="true" expand-all="true">
               <amexio-accordion-tab header="Today's Schedule" [active]="true" >
                 <amexio-listbox style="display:block;margin: 0px -18px;" [enable-header]="false" [height]="height" [data]="accordianScheduleData"
                   [display-field]="'task'">
