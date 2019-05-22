@@ -1,46 +1,74 @@
-<amexio-card amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="true">
-  <amexio-header align="start">
-    <amexio-label size="medium" [font-color]="'white'">
-      Email
-    </amexio-label>
-  </amexio-header>
-  <amexio-body>
-    <amexio-row>
-      <amexio-column [size]="3">
-        <div style="text-align: center;padding: 10px">
-          <amexio-button [label]="'Compose'" [type]="'danger'" [size]="'default'" [tooltip]="'Compose'" (click)="toggle()"></amexio-button>
-        </div>
-        <amexio-treeview style="text-align: left;" [data]="data" (selectedRecord)="onRowSelect($event)" [enable-checkbox]="false">
-        </amexio-treeview>
-     
-
-        <amexio-listbox [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'" [data]="bindData"
-          [filter]="false" [enable-checkbox]="false" [data-reader]="'response.data'" [display-field]="'name'">
-          <ng-template #amexioBodyTmpl let-row="row">
-            <amexio-row>
-              <amexio-column [size]="12">
-                <div class="profile-image-round">
-
-                  <amexio-image [path]="'assets/images/profile/'+row.profile" [c-class]="'image-round'">
-                  </amexio-image>
-                  <a>{{row.name}}</a>
-                </div>
-
-              </amexio-column>
-            </amexio-row>
-          </ng-template>
-        </amexio-listbox>
-      </amexio-column>
-      <amexio-column [size]="9">
-        <amexio-datagrid [page-size]="15" [data-reader]="'response.data'" [enable-checkbox]="false" [http-url]="'assets/data/email.json'"
-          [http-method]="'get'" [enable-data-filter]="false" (selectedRowData)="onRowSelect($event)" (rowSelect)="onRowClick($event)"
-          [c-class]="'gridStyle'" [tableDatacclass]="'datagridrow'" [tableTitlecclass]="'headerStyle'"
-          [tableHeadercclass]="'headerStyleColumn'">
-          <amexio-data-table-column [data-index]="'date'" [data-type]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
-          <amexio-data-table-column [data-index]="'from'" [data-type]="'string'" [hidden]="false" [text]="'From'"></amexio-data-table-column>
-          <amexio-data-table-column [data-index]="'title'" [data-type]="'string'" [hidden]="false" [text]="'Subject'"></amexio-data-table-column>
-        </amexio-datagrid>
-      </amexio-column>
-    </amexio-row>
-  </amexio-body>
-</amexio-card>
+<amexio-card amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" header="true">
+    <amexio-header align="start">
+      <amexio-label size="medium" [font-color]="'white'">
+        Email
+      </amexio-label>
+    </amexio-header>
+    <amexio-body>
+      <amexio-row>
+        <amexio-layout-grid [layout]="'emailLayout'">
+          <amexio-grid-item [name]="'gridheaderemail'">
+            <amexio-button [block]="true" [label]="'Compose'" [type]="'danger'" [size]="'default'" [tooltip]="'Compose'"
+              (click)="toggle()"></amexio-button><br>
+            <amexio-accordion transparent="true" [angle-icon]="true" expand-all="true">
+              <amexio-accordion-tab header="Mail" [active]="true">
+                <amexio-listbox style="display:block;margin:-18px;" [enable-header]="false" [data]="data" [display-field]="'text'">
+                </amexio-listbox>
+              </amexio-accordion-tab>
+              <amexio-accordion-tab header="Contacts" [active]="false">
+                <amexio-listbox style="display:block;margin:-18px;" [enable-header]="false" [data]="bindData.data"
+                  [display-field]="'name'">
+                  <ng-template #amexioBodyTmpl let-row="row">
+                    <amexio-image class="profile-image-round" height="50px" width="50px" path="assets/images/profile/{{row.profile}}"></amexio-image>
+                    {{row.name}}
+                  </ng-template>
+                </amexio-listbox>
+  
+              </amexio-accordion-tab>
+            </amexio-accordion>
+          </amexio-grid-item>
+          <amexio-grid-item [name]="'gridheaderemail1'">
+            <amexio-toolbar>
+              <amexio-toolbar-item position-left>
+                <amexio-label [size]="small" [font-color]="'black'">
+                  Email
+                </amexio-label>
+              </amexio-toolbar-item>
+              <amexio-toolbar-item position-right [seperator-position]="'left'">
+                <amexio-image aria-hidden="true" [icon-class]="'fa fa-refresh'"> </amexio-image>
+              </amexio-toolbar-item>
+              <amexio-toolbar-item position-right [seperator-position]="'left'">
+                <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'"> </amexio-image>
+              </amexio-toolbar-item>
+            </amexio-toolbar>
+            <amexio-datagrid style="display:block;margin-top:-15px;" [page-size]="15" [data-reader]="'response.data'" [enable-checkbox]="false" [http-url]="'assets/data/email.json'"
+              [http-method]="'get'" [enable-data-filter]="false" (selectedRowData)="onRowSelect($event)" (rowSelect)="onRowClick($event)"
+              [c-class]="'gridStyle'" [tableDatacclass]="'datagridrow'" [tableTitlecclass]="'headerStyle'"
+              [tableHeadercclass]="'headerStyleColumn'">
+              <amexio-data-table-column [data-index]="'date'" [data-type]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
+              <amexio-data-table-column [data-index]="'from'" [data-type]="'string'" [hidden]="false" [text]="'From'"></amexio-data-table-column>
+              <amexio-data-table-column [data-index]="'title'" [data-type]="'string'" [hidden]="false" [text]="'Subject'"></amexio-data-table-column>
+            </amexio-datagrid>
+          </amexio-grid-item>
+          <amexio-grid-item [name]="'gridheaderemail2'">
+            <amexio-accordion transparent="true" [angle-icon]="true" expand-all="true">
+              <amexio-accordion-tab header="Today's Schedule" [active]="true" >
+                <amexio-listbox style="display:block;margin: 0px -18px;" [enable-header]="false" [height]="height" [data]="accordianScheduleData"
+                  [display-field]="'task'">
+                </amexio-listbox>
+              </amexio-accordion-tab>
+              <amexio-accordion-tab header="To Do" [active]="true">
+                <amexio-accordion-header>
+                </amexio-accordion-header>
+                <amexio-listbox style="display:block;margin:-18px;" [enable-header]="false" [height]="height" [data]="accordianTodoData"
+                  [display-field]="'task'">
+                </amexio-listbox>
+              </amexio-accordion-tab>
+            </amexio-accordion>
+          </amexio-grid-item>
+        </amexio-layout-grid>
+  
+  
+      </amexio-row>
+    </amexio-body>
+  </amexio-card>

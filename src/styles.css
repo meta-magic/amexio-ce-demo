@@ -18,7 +18,8 @@ dashboard .card-container-narrower-header amexio-header-ce {
     margin-top: -20px;
     border-radius : 10px;
 }
-
+.itemclass{   padding:0px !important;
+}
  
 dashboard .creative-header, .card-container-narrower-header, dashboard amexio-card-ce > div , dashboard .card-container-ce {
     border-radius: 10px;
