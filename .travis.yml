@@ -34,7 +34,7 @@ after_success:
   - cp -rf ../docs/* amexio-api-website-test/demo/ce-demo/
   - cd amexio-api-website-test/
   - git add demo/ce-demo/
-  - git commit -m "${COMMIT}"
+  - git commit -m "DATE"
   - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then git push "https://deepali-arvind:${TOKEN}@github.com/${REPO}.git" HEAD:master; fi
 cache:
   yarn: true
