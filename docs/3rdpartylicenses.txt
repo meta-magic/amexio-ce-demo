@@ -1,4 +1,4 @@
-amexio-chart-d3@0.1.6
+amexio-chart-d3@0.1.7
 Apache 2.0
 Apache 2.0
 
