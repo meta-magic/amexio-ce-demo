@@ -8,6 +8,9 @@
     gap: 0px !important;
 } */
 
+amexio-theme-switcher  .card-container{
+    max-width: 333.33px !important;
+}
 email-demo .listbox{
     box-shadow: unset !important;
 }
