@@ -31,7 +31,7 @@ after_success:
   - codecov
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
   - rm -rf amexio-api-website-test/demo/ce-demo/*
-  - cp -rf ../docs/* amexio-api-website-test/demo/ce-demo/
+  - cp -rf docs/* amexio-api-website-test/demo/ce-demo/
   - cd amexio-api-website-test/
   - git add demo/ce-demo/
   - git commit -m "DATE"
