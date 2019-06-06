@@ -25,7 +25,7 @@ script:
   #- rm -rf docs
   - npm install
   - npm i https://github.com/meta-magic/d3-charts-tar/blob/master/amexio-chart-d3.tgz?raw=true
-  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.12/amexio-ng-extensions.tgz?raw=true
+  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.13/amexio-ng-extensions.tgz?raw=true
   #- ng build --prod
   - ng build
 after_success: 
