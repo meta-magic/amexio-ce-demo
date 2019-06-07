@@ -21,13 +21,14 @@
   ],
   "userprofile": [
     {
-      "text": "User Profile",
-      "icon": "fa fa-user",
-      "mdaIcon": "link",
-      "link": "home/userprofile"
+      "text":"Email",
+      "icon":"fa fa-envelope fa-fw",
+      "mdaIcon":"link",
+      "link":"home/email"
     },
+   
     {
-      "text": "TimeLine",
+      "text": "Timeline",
       "icon": "fa fa-th-list",
       "mdaIcon": "link",
       "link": "home/timeline"
@@ -37,6 +38,12 @@
       "icon": "fa fa-map",
       "mdaIcon": "link",
       "link": "home/map"
+    },
+    {
+      "text": "Events",
+      "icon": "fa fa-calendar",
+      "mdbIcon": "link",
+      "link": "home/calender"
     }
   ],
   "componentData": [
@@ -46,17 +53,19 @@
       "mdaIcon": "link",
       "link": "home/action"
     },
-    {
-      "text": "Calender",
-      "icon": "fa fa-calendar",
-      "mdbIcon": "link",
-      "link": "home/calender"
-    },
+    
     {
       "text": "Creative ProgressBar",
       "icon": "fa fa-eercast",
       "mdbIcon": "link",
       "link": "home/progress-ce-demo"
+    },
+   
+    {
+      "text": "Creative Card",
+      "icon": "fa fa-creative-commons",
+      "mdbIcon": "link",
+      "link": "home/card-ce-demo"
     },
     {
       "text": "Data Grid",
@@ -81,12 +90,6 @@
       "icon": "fa fa-bars",
       "mdaIcon": "link",
       "link": "home/navigation"
-    },
-    {
-      "text":"Steps-Wizard",
-      "icon": "fa fa-step-forward",
-      "mdaIcon":"link",
-      "link":"home/step-wizard-demo"
     },
     {
       "text": "Window",
