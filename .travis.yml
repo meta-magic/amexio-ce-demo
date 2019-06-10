@@ -34,6 +34,7 @@ after_success:
   - cd amexio-ce-demo/
   - rm -rf docs/*
   - cp -rf ../docs/* docs/
+  - cp -rf CNAME docs/
   - git add docs
   - git commit -m "[skip travis]  docs-updated"
   - git push  "https://deepali-arvind:${GITHUB_TOKEN}@github.com/meta-magic/amexio-ce-demo.git" HEAD:master
