@@ -1,0 +1,381 @@
+[
+    {
+      "text": "Home",
+      "icon" : "fa fa-home"
+    },
+    {
+      "text": "Electronics",
+      "icon" : "fa fa-simplybuilt",
+      "children": [
+        {
+          "text": "Accessories",
+          "icon" : "fa fa-sitemap",
+          "children": [
+            {
+              "text": "Mobile",
+              "icon" : "fa fa-mobile",
+              "children": [
+
+                {
+                  "text": "Powerbank",
+                  "icon" : "fa fa-hdd-o"
+                },
+                {
+                  "text": "Headphone",
+                  "icon" : "fa fa-headphones"
+                }
+              ]
+            },
+            {
+              "text": "Laptops",
+              "icon" : "fa fa-laptop",
+              "children": [
+                {
+                  "text": "Bag" ,
+                  "icon" : "fa fa-briefcase"
+                },
+                {
+                  "text": "Charger",
+                  "icon" : "fa fa-plug"
+                },
+                {
+                  "text": "Harddrive",
+                  "icon" : "fa fa-hdd-o"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Camera",
+          "icon" : "fa fa-camera",
+          "children": [
+            {
+              "text": "DSLR",
+              "icon" : "fa fa-camera-retro"
+            },
+            {
+              "text": "Digital",
+              "icon" : "fa fa-camera"
+            },
+            {
+              "text": "Camcorder",
+              "icon" : "fa fa-camera-retro"
+            }
+          ]
+        },
+        {
+          "text": "Mobile",
+          "icon" : "fa fa-mobile",
+          "header": true,
+          "children": [
+            {
+              "text": "Samsung",
+              "icon" : "fa fa-building"
+            },
+            {
+              "text": "Lenovo",
+              "icon" : "fa fa-mobile"
+            },
+            {
+              "text": "Motorolo",
+              "icon" : "fa fa-building"
+
+            },
+            {
+              "text": "Apple",
+              "icon" : "fa fa-apple"
+
+            },
+            {
+              "text": "Asus",
+              "icon" : "fa fa-mobile"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Appliance",
+      "icon" : "fa fa-sitemap",
+      "children": [
+        {
+          "text": "TV",
+          "icon" : "fa fa-desktop",
+          "children": [
+            {
+              "text": "Sony",
+              "icon" : "fa fa-television"
+            },
+            {
+              "text": "Samsung",
+              "icon" : "fa fa-television"
+            },
+            {
+              "text": "Toshiba",
+              "icon" : "fa fa-television"
+            },
+            {
+              "text": "LG",
+              "icon" : "fa fa-laptop"
+            },
+            {
+              "text": "Cloudwalker",
+              "icon" : "fa fa-desktop"
+            }
+          ]
+        },
+        {
+          "text": "Refrigerator",
+          "icon" : "fa fa-building",
+          "children": [
+            {
+              "text": "Singledoor",
+              "icon" : "fa fa-building-o"
+            },
+            {
+              "text": "Doubledoor",
+              "icon" : "fa fa-building-o"
+            },
+            {
+              "text": "Tripledoor",
+              "icon" : "fa fa-building-o"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Home Furnishing",
+      "icon" : "fa fa-building",
+      "children": [
+        {
+          "text": "Home Décor",
+          "icon" : "fa fa-building-o"
+        },
+        {
+          "text": "Garden & Outdoors",
+          "icon" : "fa fa-building-o"
+        },
+        {
+          "text": "Home Storage",
+          "icon" : "fa fa-building-o"
+        }
+      ]
+    },
+    {
+      "text": "Entertainment",
+      "icon" : "fa fa-video-camera",
+      "children": [
+        {
+          "text": "All Movies & TV Shows",
+          "icon" : "fa fa-desktop",
+          "children": [
+            {
+              "text": "All English",
+              "icon" : "fa fa-television"
+            }
+          ]
+        },
+        {
+          "text": "All Music",
+          "icon" : "fa fa-music",
+          "children": [
+            {
+              "text": "International Music",
+              "icon" : "fa fa-play"
+            },
+            {
+              "text": "Film Songs",
+              "icon" : "fa fa-play"
+            },
+            {
+              "text": "Indian Classical",
+              "icon" : "fa fa-play"
+            },
+            {
+              "text": "Musical Instruments & Professional Audio",
+              "icon" : "fa fa-play"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Beauty & Grocery",
+      "icon" : "fa fa-shopping-basket",
+      "children": [
+        {
+          "text": "Beauty & Grooming",
+          "icon" : "fa fa-shopping-cart",
+          "children": [
+            {
+              "text": "Make-up",
+              "icon" : "fa fa-shopping-cart"
+            },
+            {
+              "text": "Beauty Services",
+              "icon" : "fa fa-shopping-cart"
+            },
+            {
+              "text": "Luxury Beauty",
+              "icon" : "fa fa-shopping-cart"
+            }
+          ]
+        },
+        {
+          "text": "Value Bazaar",
+          "icon" : "fa fa-shopping-cart",
+          "children": [
+            {
+              "text": "Coffee, Tea & Beverages",
+              "icon" : "fa fa-shopping-cart"
+            },
+            {
+              "text": "All Grocery & Gourmet Foods",
+              "icon" : "fa fa-shopping-cart"
+            },
+            {
+              "text": "Snack Foods",
+              "icon" : "fa fa-shopping-cart"
+            }
+          ]
+        }
+
+      ]
+    },
+    {
+      "text": "Fashion",
+      "icon" : "fa fa-sitemap",
+      "children": [
+        {
+          "text": "Men's Fashion",
+          "icon" : "fa fa-male",
+          "children": [
+            {
+              "text": "T-shirts & Polos",
+              "icon" : "fa fa-male"
+            },
+            {
+              "text": "Watches",
+              "icon" : "fa fa-male"
+            },
+            {
+              "text": "Shoes",
+              "icon" : "fa fa-male",
+              "children": [
+                {
+                  "text": "Sport-Shoes",
+                  "icon" : "fa fa-male"
+                },
+                {
+                  "text": "Formal-Shoes",
+                  "icon" : "fa fa-male"
+                },
+                {
+                  "text": "Casual-Shoes",
+                  "icon" : "fa fa-male"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Women's Fashion",
+          "icon" : "fa fa-female",
+          "children": [
+            {
+              "text": "Clothing",
+              "icon" : "fa fa-female"
+            },
+            {
+              "text": "Handbags & Clutches",
+              "icon" : "fa fa-female"
+            },
+            {
+              "text": "Jewellery",
+              "icon" : "fa fa-female",
+              "children": [
+                {
+                  "text": "Fashion Jewellery",
+                  "icon" : "fa fa-female"
+                },
+                {
+                  "text": "Sunglasses",
+                  "icon" : "fa fa-female"
+                },
+                {
+                  "text": "Gold & Diamond Jewellery",
+                  "icon" : "fa fa-female"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Sports & Luggage",
+      "icon" : "fa fa-futbol-o",
+      "children": [
+        {
+          "text": "Sports",
+          "icon" : "fa fa-futbol-o",
+          "children": [
+            {
+              "text": "Cricket",
+              "icon" : "fa fa-futbol-o"
+            },
+            {
+              "text": "Badminton",
+              "icon" : "fa fa-futbol-o"
+            },
+            {
+              "text": "Cycling",
+              "icon" : "fa fa-futbol-o"
+            },
+            {
+              "text": "Running",
+              "icon" : "fa fa-futbol-o"
+            },
+            {
+              "text": "Camping & Hiking",
+              "icon" : "fa fa-futbol-o"
+            }
+          ]
+        },
+        {
+          "text": "Fitness Accessories",
+          "icon" : "fa fa-trophy",
+          "children": [
+            {
+              "text": "Strength Training",
+              "icon" : "fa fa-trophy"
+            },
+            {
+              "text": "Cardio Equipment",
+              "icon" : "fa fa-trophy"
+            },
+            {
+              "text": "Bags",
+              "icon" : "fa fa-suitcase",
+              "children": [
+                {
+                  "text": "Backpacks",
+                  "icon" : "fa fa-suitcase"
+                },
+                {
+                  "text": "Suitcases & Trolley Bags",
+                  "icon" : "fa fa-suitcase"
+                },
+                {
+                  "text": "Travel Duffles",
+                  "icon" : "fa fa-suitcase"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]

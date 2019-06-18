@@ -1,45 +1,116 @@
 {
-    "dashboard":[
-        {
-          "text": "Demo One",
-          "icon": "fa fa-th-large",
-          "mdaIcon": "link",
-          "link": "home/dashboard"
-        },
-        {
-          "text": "Demo Two",
-          "icon": "fa fa-th-list",
-          "mdaIcon": "link",
-          "link": "home/dashboardtwo"
-        },
-        {
-          "text": "Demo Three",
-          "icon": "fa fa-table",
-          "mdaIcon": "link",
-          "link": "home/dashboardthree"
-        }
+  "dashboard": [
+    {
+      "text": "Traffic Analysis",
+      "icon": "fa fa-th-large",
+      "mdaIcon": "link",
+      "link": "home/dashboard"
+    },
+    {
+      "text": "City Analysis",
+      "icon": "fa fa-th-list",
+      "mdaIcon": "link",
+      "link": "home/dashboardtwo"
+    },
+    {
+      "text": "Statistics",
+      "icon": "fa fa-table",
+      "mdaIcon": "link",
+      "link": "home/dashboardthree"
+    }
+  ],
+  "userprofile": [
+    {
+      "text":"Email",
+      "icon":"fa fa-envelope fa-fw",
+      "mdaIcon":"link",
+      "link":"home/email"
+    },
+   
+    {
+      "text": "Timeline",
+      "icon": "fa fa-th-list",
+      "mdaIcon": "link",
+      "link": "home/timeline"
+    },
+    {
+      "text": "Map",
+      "icon": "fa fa-map",
+      "mdaIcon": "link",
+      "link": "home/map"
+    },
+    {
+      "text": "Events",
+      "icon": "fa fa-calendar",
+      "mdbIcon": "link",
+      "link": "home/calender"
+    }
+  ],
+  "componentData": [
+    {
+      "text": "Action Button",
+      "icon": "fa fa-keyboard-o",
+      "mdaIcon": "link",
+      "link": "home/action"
+    },
     
-      ],
-    "userprofile":[
-
-        {
-          "text": "User Profile",
-          "icon": "fa fa-user",
-          "mdaIcon": "link",
-          "link": "home/userprofile"
-        },
-        {
-          "text": "TimeLine",
-          "icon": "fa fa-th-list",
-          "mdaIcon": "link",
-          "link": "home/timeline"
-        },
-        {
-          "text": "Map",
-          "icon": "fa fa-map",
-          "mdaIcon": "link",
-          "link": "home/map"
-        }
-  
-      ]
+    {
+      "text": "Creative ProgressBar",
+      "icon": "fa fa-eercast",
+      "mdbIcon": "link",
+      "link": "home/progress-ce-demo"
+    },
+   
+    {
+      "text": "Creative Card",
+      "icon": "fa fa-creative-commons",
+      "mdbIcon": "link",
+      "link": "home/card-ce-demo"
+    },
+    {
+      "text": "Data Grid",
+      "icon": "fa fa-database",
+      "mdaIcon": "link",
+      "link": "home/datagrid"
+    },
+    {
+      "text": "Gridlayout",
+      "icon": "fa fa-indent",
+      "mdbIcon": "link",
+      "link": "home/gridlayout"
+    },
+    {
+      "text": "Template",
+      "icon": "fa fa-th",
+      "mdaIcon": "link",
+      "link": "home/template"
+    },
+    {
+      "text": "Navigation",
+      "icon": "fa fa-bars",
+      "mdaIcon": "link",
+      "link": "home/navigation"
+    },
+    {
+      "text": "Window",
+      "icon": "fa fa-calendar",
+      "mdbIcon": "link",
+      "link": "home/window-ce-demo"
+    }
+    
+  ],
+  "reports": [
+    {
+      "text": "Group By Issue",
+      "icon": "fa fa-ticket",
+      "mdaIcon": "link",
+      "link": "home/group-by-issue"
+    },
+    {
+      "text": "Issue",
+      "icon": "fa fa-ticket",
+      "mdaIcon": "link",
+      "link": "home/issue"
+    }
+  ]
 }
